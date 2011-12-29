@@ -1,76 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-
-  <title>NantesJS/nantesjs-website @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: black;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      background-color: white;
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: black; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: black;  }
-    h3 { text-align: center; color: black; }
-    a { color: black; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+  <meta charset="utf-8">
+  <title>NantesJS - Communauté Nantaise des Utilisateurs de JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for eventbrite" href="http://www.eventbrite.com/rss/organizer_list_events/1783148271">
+  <script src="http://cdn.lanyrd.net/badges/person-v1.min.js"></script>
 </head>
 
 <body>
-  <a href="https://github.com/NantesJS/nantesjs-website"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-  <img src="js_logo.jpg" alt="JavaScript" width="225" height="225" style="position: absolute; top: 0; left: 0; border: 0;" />
-
+  <!-- LOGO -->
+  <img id="JSLogo"  src="nantesjs_logo2.png" alt="JavaScript" width="225" height="225" />
   <div id="container">
+	<br>
+    <h1>NantesJS<br>
+       <br>
+      <img src="The-Machine-Animals-of-Nantes.jpg" width="512" height="330"></h1>
 
-    <div class="download"></div>
-
-    <h1><a href="https://github.com/NantesJS/nantesjs-website">NantesJS</a></h1>
-    <h1><a href="https://github.com/NantesJS/nantesjs-website"><img src="The-Machine-Animals-of-Nantes.jpg" width="512" height="330" border="0"></a><span class="small"><a href="https://github.com/NantesJS"></a></span></h1>
-
-    <div class="description">Site Internet de la communauté Nantaise des utilisateurs de JavaScript</div>
+    <div class="description">Site Internet de la communauté Nantaise des utilisateurs de JavaScript
 
     
-      <h2>Twitter</h2>
-      <p> <a href="http://twitter.com/NantesJS">@NantesJS</a></p>
-      <h2>Groupe de discussion<br/>
-      </h2>
-      <p><a href="http://groups.google.com/group/nantesjs">http://groups.google.com/group/nantesjs
-      </a></p>
-      <h2>EventBrite</h2>
-      <p><a href="http://www.eventbrite.com/org/1783148271">http://www.eventbrite.com/org/1783148271</a></p>
-      <p>&nbsp;</p>
-      <p>get the source code on GitHub : <a href="https://github.com/NantesJS/nantesjs-website">NantesJS/nantesjs-website</a>
+      <!-- GOOGLE GROUP -->
+      <p>
+        <table id="googleGroup" border=0 align="center" cellpadding="10" cellspacing=0>
+          <tr>
+              <td>Abonnez vous à la mailing list NantesJS</td>
+          </tr>
+          <form action="http://groups.google.com/group/nantesjs/boxsubscribe">
+              <tr>
+                  <td style="padding-left: 5px;"> Email:
+                      <input type=text name=email>
+                      <input type=submit name="sub" value="Subscribe"></td>
+              </tr>
+          </form>
+          <tr>
+              <td align=left><a href="http://groups.google.com/group/nantesjs">Accèdez à ce groupe de discussion</a></td>
+          </tr>
+        </table>
       </p>
-</div>
-<script type="text/javascript">
+      <!-- LANYRD -->
+      <p align="center">
+        <div class="lanyrd-target-splat "><a href="http://lanyrd.com/profile/nantesjs/future/involved/" class="lanyrd-splat lanyrd-template-detailed lanyrd-number-1 lanyrd-type-involved lanyrd-context-future" rel="me">Prochaine Rencontre NantesJS</a></div>
+      </p>
+      <!-- p align="center" class="lanyrd-target-splat"><a href="http://lanyrd.com/profile/nantesjs/past/involved/" class="lanyrd-splat lanyrd-template-compact lanyrd-number-30 lanyrd-type-involved lanyrd-context-past" rel="me">Previous Meetups</a></p -->
+      <p align="center" class="lanyrd-target-splat "><a href="http://lanyrd.com/profile/nantesjs/future/tracking/" class="lanyrd-splat lanyrd-template-standard lanyrd-number-5 lanyrd-type-tracking lanyrd-context-future" rel="me">Evènement JavaScript interessant selectionnés par NantesJS</a></p>
 
+      <!--h2>EventBrite</h2>
+      <p><a href="http://www.eventbrite.com/org/1783148271">http://www.eventbrite.com/org/1783148271</a></p-->
+      
+      <p>&nbsp;</p>
+      <p align="center">Faite évoluer le code source de ce site Web sur GitHub: <br>
+        <a href="https://github.com/NantesJS/nantesjs-website">NantesJS/nantesjs-website</a>      <br>
+         
+      </p>
+  </div>
+</div>  <!-- TWITTER -->
+  <div id="twitterWidget">
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 10,
+  interval: 30000,
+  width: 250,
+  height: 800,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#F0DB4E'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    behavior: 'all'
+  }
+}).render().setUser('NantesJS').start();
+    </script>
+  </div>
+  <script>
+  /*global  _gap*/
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-27967727-1']);
   _gaq.push(['_setDomainName', 'nantesjs.org']);
   _gaq.push(['_setAllowLinker', true]);
   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  (function Scope_gap() {
+	var ga, s;
+    ga = document.createElement('script'); 
+	ga.async = true;
+    ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s = document.getElementsByTagName('script')[0]; 
+	s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+  </script>
+  <!-- GITHUB -->
+  <a href="https://github.com/NantesJS/nantesjs-website"><img id="ForkMe" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a> 
 </body>
 </html>
