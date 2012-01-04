@@ -70,6 +70,30 @@ img {
     width:85%;
 }
 
+.twitter-follow-button {
+    position: relative;
+    top: 10px;
+    left: 10px;    
+}
+
+.twitter-share-button {
+    position: relative;
+    top: 10px;
+    left: -180px;    
+}
+
+#___plusone_0 {
+    position: relative;
+    top: -20px;
+    left: -140px;    
+}
+
+.fb-like {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
 .footer { 
 	text-align:center; 
     padding-top:30px; 

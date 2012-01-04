@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Organization">
 <head>
   <meta charset="utf-8">
   <title>NantesJS - Communauté Nantaise des Utilisateurs de JavaScript</title>
+  <meta itemprop="name" content="NantesJS">
+  <meta itemprop="description" content="Communauté Nantaise des utilisateurs de JavaScript">
   <link rel="stylesheet" href="style.css">
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for eventbrite" href="http://www.eventbrite.com/rss/organizer_list_events/1783148271">
   <script src="http://cdn.lanyrd.net/badges/person-v1.min.js"></script>
 </head>
 
 <body>
-  <!-- LOGO -->
-  <img id="JSLogo"  src="nantesjs_logo2.png" alt="JavaScript" width="225" height="225" />
+
+  <!-- FACEBOOK - Recommander -->
+  <div id="fb-root"></div>
+  
   <div id="container">
-	<br>
+  
+    <!-- TWITTER SUIVRE ET PARTAGER -->
+    <a href="https://twitter.com/NantesJS" class="twitter-follow-button" data-show-count="false" data-lang="fr" data-size="large">Suivre @NantesJS</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="NantesJS" data-lang="fr" data-size="large">Tweeter</a>
+	
+    
+    <!-- FACEBOOK LIKE -->
+    <!-- div class="fb-like" data-href="http://nantesjs.org" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-action="recommend"></div -->
+	<div class="fb-like" data-href="http://nantesjs.org" data-send="true" data-width="450" data-show-faces="false"></div>
+    
+    <!-- GOOGLE PLUS -->
+    <div class="g-plusone"></div>
+
     <h1>NantesJS<br>
+      <!-- LOGO -->
+      <img id="JSLogo"  src="nantesjs_logo2.png" alt="NantesJS" width="225" height="225">
        <br>
       <img src="The-Machine-Animals-of-Nantes.jpg" width="512" height="330"></h1>
 
-    <div class="description">Site Internet de la communauté Nantaise des utilisateurs de JavaScript
-
-    
-      <!-- GOOGLE GROUP -->
-      <p>
+    <div class="description">
+        <p align="center">Site Internet de la communauté Nantaise des utilisateurs de JavaScript        </p>
+        <p align="center">
+Offres/Demande d'emploi: <a href="http://www.linkedin.com/groups?jobs=&gid=4233280&trk=anet_ug_jobs">sur le groupe NantesJS de LinkedIn </a> 
+<!-- GOOGLE GROUP -->
+        </p>
+        <p>
         <table id="googleGroup" border=0 align="center" cellpadding="10" cellspacing=0>
           <tr>
               <td>Abonnez vous à la mailing list NantesJS</td>
@@ -39,22 +59,23 @@
         </table>
       </p>
       <!-- LANYRD -->
+      <p align="center"><a href="http://www.eventbrite.com/org/1783148271">Réservez votre place pour le prochain Meetup sur EventBrite</a></p>
       <p align="center">
-        <div class="lanyrd-target-splat "><a href="http://lanyrd.com/profile/nantesjs/future/involved/" class="lanyrd-splat lanyrd-template-detailed lanyrd-number-1 lanyrd-type-involved lanyrd-context-future" rel="me">Prochaine Rencontre NantesJS</a></div>
+        <div class="lanyrd-target-splat"><a href="http://lanyrd.com/profile/nantesjs/future/involved/" class="lanyrd-splat lanyrd-template-detailed lanyrd-number-1 lanyrd-type-involved lanyrd-context-future" rel="me">Prochaine Rencontre NantesJS</a></div>
       </p>
       <!-- p align="center" class="lanyrd-target-splat"><a href="http://lanyrd.com/profile/nantesjs/past/involved/" class="lanyrd-splat lanyrd-template-compact lanyrd-number-30 lanyrd-type-involved lanyrd-context-past" rel="me">Previous Meetups</a></p -->
-      <p align="center" class="lanyrd-target-splat "><a href="http://lanyrd.com/profile/nantesjs/future/tracking/" class="lanyrd-splat lanyrd-template-standard lanyrd-number-5 lanyrd-type-tracking lanyrd-context-future" rel="me">Evènement JavaScript interessant selectionnés par NantesJS</a></p>
-
-      <!--h2>EventBrite</h2>
-      <p><a href="http://www.eventbrite.com/org/1783148271">http://www.eventbrite.com/org/1783148271</a></p-->
-      
-      <p>&nbsp;</p>
+      <p align="center" class="lanyrd-target-splat "><a href="http://lanyrd.com/profile/nantesjs/future/tracking/" class="lanyrd-splat lanyrd-template-standard lanyrd-number-10 lanyrd-type-tracking lanyrd-context-future" rel="me">Evènement JavaScript interessant sélectionnés par NantesJS</a></p>
       <p align="center">Faite évoluer le code source de ce site Web sur GitHub: <br>
         <a href="https://github.com/NantesJS/nantesjs-website">NantesJS/nantesjs-website</a>      <br>
          
-      </p>
+  </p>
   </div>
-</div>  <!-- TWITTER -->
+</div>
+
+  <!-- GITHUB -->
+  <a href="https://github.com/NantesJS/nantesjs-website"><img id="ForkMe" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a> 
+  
+  <!-- TWITTER -->
   <div id="twitterWidget">
     <script src="http://widgets.twimg.com/j/2/widget.js"></script>
     <script>
@@ -85,6 +106,7 @@ new TWTR.Widget({
 }).render().setUser('NantesJS').start();
     </script>
   </div>
+  
   <script>
   /*global  _gap*/
   var _gaq = _gaq || [];
@@ -103,7 +125,46 @@ new TWTR.Widget({
   })();
 
   </script>
-  <!-- GITHUB -->
-  <a href="https://github.com/NantesJS/nantesjs-website"><img id="ForkMe" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a> 
+  
+  
+  <script>
+(function ScopeLike(d, s, id) {
+	var 
+		js, 
+		fjs = d.getElementsByTagName(s)[0];
+	if  (d.getElementById(id))  {
+		return;
+	}
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+  </script>
+  
+    <script>
+!function ScopeTwitterFollowButton(d, s, id) {
+
+	var 
+		js,
+		fjs = d.getElementsByTagName(s)[0];
+
+	if (!d.getElementById(id)) {
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "//platform.twitter.com/widgets.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}
+}(document, "script","twitter-wjs");
+    </script>
+    
+    <script type="text/javascript">
+window.___gcfg = {lang: 'fr'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+    </script>
 </body>
 </html>
