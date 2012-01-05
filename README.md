@@ -1,6 +1,14 @@
 # NantesJS.org
 
-This is the source of the nantesjs.org website.
+This is the source of the nantesjs.org website. Fork it to propose enhancements, as it is in a "gh-pages" branch, you can show the result of your version to anyone via URLs formed like this:
+
+http://{Your_GitHub_Username}.github.com/nantesjs-website/
+
+the version on this repository can then be tested on http://nantesjs.github.com/nantesjs-website/
+
+For anything but little fixes, please propose your modifications on the mailing list before sending a Pull Request so all the community can agree on it: http://groups.google.com/group/nantesjs/
+Note that any updates done to this website will available under the license given bellow.
+
 
 ## License
 
