@@ -1,0 +1,18 @@
+# OSX
+*.DS_Store
+._*
+
+# Wakanda
+*.waLog
+*/Logs
+*.waSym
+*.waSymData
+*.waIndx
+*.waPreferences
+*.Match
+*.waBackup
+studio_log*
+
+# Dreamweaver
+*notes
+* (Autosaved).*
