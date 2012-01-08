@@ -1,0 +1,21 @@
+/* TEAM */
+	Creator: Alexandre Morgaut
+	Contact: alexandre [at] morgaut.com
+	Twitter: @amorgaut
+	From: Vertou, France
+	
+	First speaker: Loic Guillois
+	Twitter: @amnesic
+	From: Nantes, France
+
+/* THANKS */
+
+	Support & communication: Florent Gosselin
+	Twitter: @fgosselin
+	From: Nantes, France
+		
+
+/* SITE */
+	Last update:2012/01/07
+	Language:French
+	Doctype:HTML5 
