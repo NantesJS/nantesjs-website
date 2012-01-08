@@ -107,6 +107,14 @@ img {
     border: 0;
 }
 
+#eventBriteCalendar {
+    position: absolute;
+    top: 560;
+    left: 20;
+    z-index: 100;
+    margin-top: 300px;
+}
+
 #googleGroup {
     border:black solid thin;
     background-color: #EDF3FE; 
@@ -132,4 +140,3 @@ img {
   margin: 0 auto;
   width: 700px;
 }
-
