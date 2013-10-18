@@ -1,11 +1,12 @@
 /* TEAM */
+
 	Founder: Alexandre Morgaut
 	Contributions: Webmaster, Meetup Organizer, Speaker, Sponsor (via 4D)
 	Contact: alexandre [at] morgaut.com
 	Github: https://github.com/AMorgaut
 	Twitter: @amorgaut
 	From: Vertou, France
-	
+
 	Contributor: Thomas Moyse
 	Contributions: Meetup Organizer, FranceJS Contact, Speaker
 	Github: https://github.com/t8g
@@ -35,22 +36,22 @@
 	Github: https://github.com/Delapouite
 	Twitter: @Delapouite
 	From: Nantes, France
-	
+
 	Contributor: Yoann Digue
 	Contributions: Speaker
 	Twitter: @YoDigue
 	From: Angers, France
-	
-	
+
 
 /* THANKS */
 
 	Support & communication: Florent Gosselin
 	Twitter: @fgosselin
 	From: Nantes, France
-		
+
 
 /* SITE */
-	Last update:2013/10/05
+
+	Last update:2013/10/18
 	Language:French
-	Doctype:HTML5 
+	Doctype:HTML5
