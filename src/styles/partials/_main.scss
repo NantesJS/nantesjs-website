@@ -1,0 +1,209 @@
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  text-align: center;
+  .section-heading,
+  .section-description {
+    margin-bottom: 6rem;
+  }
+  .container {
+    padding: 60px 20px;
+  }
+}
+
+.section-odd {
+  background: $yellow;
+  color: $dark-gray;
+  a:hover {
+    transition: color 0.5s;
+    color: $gray;
+    border-bottom: 1px solid $gray;
+  }
+}
+
+/* Sections specific
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  p.intro {
+    text-align: left;
+    margin-top: 50px;
+  }
+  .phones {
+    position: relative;
+  }
+  .phone {
+    position: relative;
+    max-height: 430px;
+    margin: 0;
+  }
+  .phone + .phone {
+    display: none;
+  }
+}
+
+.meetups {
+  .intro {
+    margin-bottom: 12px;
+  }
+  .intro:nth-of-type(4) {
+    margin-bottom: 5rem;
+  }
+
+  .meetup-next {
+    &>span {
+      display: block;
+      font-size: 3rem;
+      font-weight: $large;
+      &.place {
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: $large;
+      }
+    }
+    img {
+      margin: 40px auto 20px;
+    }
+  }
+
+  .meetup {
+    margin-top: 60px;
+    h4 {
+      margin-bottom: 0;
+    }
+    &>span {
+      display: block;
+      margin-bottom: 1rem;
+      &.place {
+        font-style: italic;
+        font-weight: $large;
+      }
+    }
+  }
+
+  .talk {
+    margin-bottom: 1rem;
+    list-style: none;
+    li {
+      margin-bottom: 6px;
+      &.talk-author::before {
+        content: "By ";
+        font-size: 12px;
+      }
+      &.talk-res {
+        font-weight: $large;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.world-jsug {
+  h4 {
+    margin-top: 4rem;
+  }
+}
+
+.one-third {
+  img {
+    max-height: 160px;
+    margin: 20px 0;
+  }
+}
+
+.one-half {
+  img {
+    max-height: 220px;
+    margin: 20px 0;
+  }
+}
+
+.newsletter {
+  margin: 5rem 0;
+}
+
+/* Bigger than 550px */
+@media (min-width: $mobile-screen) {
+  .section {
+    .container {
+      padding: 12rem 0 11rem;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    &.hero {
+      text-align: left;
+      .phone {
+        position: absolute;
+        top: 130px;
+        right: -40px;
+        max-height: 400px;
+      }
+    }
+    &.meetup {
+      margin-top: 32px;
+      h4 {
+        margin-bottom: 8px;
+        font-size: 20px;
+      }
+    }
+    .world-jsug {
+      h4 {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .section {
+    .container {
+      padding: 14rem 0 16rem;
+    }
+    .section-description {
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &.hero {
+      .disclaimer {
+        margin-top: 6rem;
+      }
+      .phone {
+        top: 70px;
+        right: -30px;
+        max-height: 530px;
+      }
+    }
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    .container {
+      padding: 18rem 0;
+    }
+    &.hero {
+      .container {
+        padding: 18rem 0 32rem;
+      }
+      .disclaimer {
+        margin-top: 0;
+      }
+      .phone {
+        top: -60px;
+        right: 100px;
+        max-height: 560px;
+        z-index: 100;
+      }
+      .phone + .phone {
+        display: block;
+        top: 40px;
+        right: -100px;
+        max-height: 520px;
+        z-index: 10;
+      }
+    }
+  }
+}

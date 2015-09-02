@@ -1,0 +1,24 @@
+<VirtualHost *:80>
+    ServerName nantesjs
+    ServerAlias nantesjs.loc
+
+    DocumentRoot /home/{YOUR_USER}/workspace/nantesjs-website/build/
+
+    <Directory /home/{YOUR_USER}/workspace/nantesjs-website/build/>
+        Options Indexes FollowSymLinks MultiViews
+        # enable the .htaccess rewrites
+        AllowOverride All
+
+        # apache 2.2 permissions
+        #
+
+        # apache 2.4 permissions
+        Require all granted
+    </Directory>
+
+    CustomLog ${APACHE_LOG_DIR}/nantesjs-website.access.log combined
+    ErrorLog ${APACHE_LOG_DIR}/nantesjs-website.error.log
+
+    # Possible values include: debug, info, notice, warn, error, crit, alert, emerg
+    LogLevel warn
+</VirtualHost>

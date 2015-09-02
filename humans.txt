@@ -52,6 +52,6 @@
 
 /* SITE */
 
-	Last update:2013/10/18
+	Last update:2015/09/03
 	Language:French
 	Doctype:HTML5

@@ -1,0 +1,42 @@
+{
+  "name": "nantesjs-website",
+  "version": "2.0.0",
+  "description": "Homepage of NantesJS",
+  "homepage": "https://github.com/NantesJS/nantesjs-website",
+  "owner": "J.Bachelier",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NantesJS/nantesjs-website.git"
+  },
+  "keywords": [
+    "NantesJS",
+    "Nantes",
+    "JavaScript"
+  ],
+  "author": {
+    "name": "Jacques Bachelier",
+    "home": "https://github.com/jacbac",
+    "twitter": "@jac_bachelier"
+  },
+  "contributor": {
+    "name": ""
+  },
+  "license": "WTF Licence",
+  "devDependencies": {
+    "browser-sync": "^2.7.10",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "imagemin-jpegoptim": "^4.0.0",
+    "imagemin-optipng": "^4.3.0",
+    "imagemin-pngquant": "^4.1.2",
+    "imagemin-svgo": "^4.1.2"
+  }
+}
