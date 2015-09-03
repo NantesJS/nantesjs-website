@@ -15,6 +15,8 @@ var pngquant     = require('imagemin-pngquant');
 var optipng      = require('imagemin-optipng');
 var svgo         = require('imagemin-svgo');
 
+var ghPages      = require('gulp-gh-pages');
+
 /* ========================================================================== */
 /* CONFIG HELPER                                                              */
 /* ========================================================================== */
@@ -132,6 +134,15 @@ gulp.task('images', function() {
         })())
         .pipe(svgo()())
         .pipe(gulp.dest(path.build.dir + path.build.images));
+});
+
+/* ========================================================================== */
+/* DEPLOY TASK                                                                */
+/* ========================================================================== */
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
 });
 
 /* ========================================================================== */

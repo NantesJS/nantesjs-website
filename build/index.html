@@ -13,7 +13,7 @@
     <meta description="A website about the Nantes JavaScript User Group and their meetup">
 
     <link rel="author" href="/humans.txt">
-    <link rel="stylesheet" href="/styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -339,37 +339,5 @@
     </footer>
 
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <script src="http://cdn.lanyrd.net/badges/person-v1.min.js"></script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-XXXXXXXX-X', 'XXXXXXXXXXX.TLD');
-        ga('send', 'pageview');
-    </script>
-    <script>
-        var token = 'MYTOKEN';
-
-        var HttpClient = function() {
-            this.get = function(url, callback) {
-                var httpRequest = new XMLHttpRequest();
-                httpRequest.onreadystatechange = function() {
-                    if (httpRequest.readyState == 4 && httpRequest.status == 200)
-                        callback(httpRequest.responseText);
-                }
-
-                httpRequest.open("GET", url, true);
-                httpRequest.send(null);
-            }
-        }
-
-        client = new HttpClient();
-        client.get('https://www.eventbriteapi.com/v3/users/me/?token='+token, function(response) {
-            // do something with response
-        });
-
-
-    </script>
 </body>
 </html>
