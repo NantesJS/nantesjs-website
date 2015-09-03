@@ -42,6 +42,10 @@
 	Twitter: @YoDigue
 	From: Angers, France
 
+	Contributor: Jacques Bachelier
+	Contributions: Webmaster (v2)
+	Twitter: @jac_bachelier
+	From: Nantes, France
 
 /* THANKS */
 
@@ -49,9 +53,8 @@
 	Twitter: @fgosselin
 	From: Nantes, France
 
-
 /* SITE */
 
-	Last update:2015/09/03
-	Language:French
-	Doctype:HTML5
+	Last update: 2015/09/04
+	Language: French
+	Doctype: HTML5

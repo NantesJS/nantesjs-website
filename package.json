@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "description": "Homepage of NantesJS",
   "homepage": "https://github.com/NantesJS/nantesjs-website",
-  "owner": "J.Bachelier",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
@@ -14,11 +13,6 @@
     "Nantes",
     "JavaScript"
   ],
-  "author": {
-    "name": "Jacques Bachelier",
-    "home": "https://github.com/jacbac",
-    "twitter": "@jac_bachelier"
-  },
   "contributor": {
     "name": ""
   },

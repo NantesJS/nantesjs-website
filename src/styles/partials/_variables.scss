@@ -10,7 +10,7 @@ $dark-yellow: #eeb422;
 
 // Fonts
 $sans-serif: "Source Sans Pro", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+$monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 $thin: 300;
 $normal: 400;
 $large: 900;
@@ -18,8 +18,4 @@ $large: 900;
 // Defaults
 $content-width: 960px;
 $content-body-padding: 15px;
-$content-body-width: $content-width - ($content-body-padding * 2);
-$default-font-family: $sans-serif;
-
-$large-screen: $content-width;
 $mobile-screen: 550px;
