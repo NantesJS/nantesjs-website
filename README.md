@@ -25,6 +25,16 @@ gulp
 
 That's it.
 
+## Deploy on gh-pages
+
+Use gulp-deploy for deployment on the gh-pages. Just a personal test (use your own way).
+
+```shell
+cd /home/your_user/your_workspace/nantesjs-website
+git checkout gh-pages
+gulp deploy
+```
+
 ## License
 
                 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
