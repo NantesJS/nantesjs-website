@@ -2,7 +2,7 @@
 
 This is the source of the [nantesjs.org](http://nantesjs.org) website.
 
-Fork it to propose enhancements, as it is in a `gh-pages` branch, you can show the result of your version to anyone via URLs formed like this:
+Fork it to propose enhancements, as it is in a `master` branch, you can show the result of your version to anyone via URLs formed like this:
 
     http://{Your_GitHub_Username}.github.com/nantesjs-website/
 
@@ -16,22 +16,24 @@ Note that any updates done to this website will available under the license give
 
 ```shell
 cd /home/your_user/your_workspace
-git clone ...
+git clone {YOUR_NANTESJS_FORK}
 cd nantesjs-website
+git checkout master
 [sudo] npm install gulp -g
 [sudo] npm install
 gulp
 ```
 
-That's it.
+That's it. Up and running !
 
 ## Deploy on gh-pages
 
-Use gulp-deploy for deployment on the gh-pages. Just a personal test (use your own way).
+Use [gulp-gh-pages](https://www.npmjs.com/package/gulp-gh-pages) for deployment on the `github pages`.
+Be sure to populate the `build` dir with the previous `gulp` command then:
 
 ```shell
-cd /home/your_user/your_workspace/nantesjs-website
-git checkout gh-pages
+cd nantesjs-website
+git checkout master
 gulp deploy
 ```
 

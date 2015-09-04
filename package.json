@@ -1,6 +1,6 @@
 {
   "name": "nantesjs-website",
-  "version": "2.0.0",
+  "version": "2.0.6",
   "description": "Homepage of NantesJS",
   "homepage": "https://github.com/NantesJS/nantesjs-website",
   "main": "gulpfile.js",
@@ -27,7 +27,6 @@
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.1",
-    "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^1.2.0",
     "imagemin-jpegoptim": "^4.0.0",
     "imagemin-optipng": "^4.3.0",

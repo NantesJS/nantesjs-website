@@ -27,7 +27,7 @@ var path = {
         styles: 'styles/**.*',
         scripts: 'scripts/**.*',
         images: 'images/**/*.{png,jpg,jpeg,gif,svg}',
-        files: '*.html'
+        files: ['*']
     },
     build: {
         dir: 'build/',
@@ -47,24 +47,6 @@ var onError = function(err) {
 
     this.emit('end');
 };
-
-/* ========================================================================== */
-/* BANNER HELPER                                                              */
-/* ========================================================================== */
-
-// Load the package.json and prepare banner
-var pkg = require('./package.json');
-var year = new Date().getFullYear();
-var banner = ['/**',
-  ' * <%= pkg.owner %>',
-  ' *',
-  ' * @link    <%= pkg.homepage %>',
-  ' * @version v<%= pkg.version %> (<%= year %>)',
-  ' * @author  <%= pkg.author.name %> => <%= pkg.author.home %> && <%= pkg.author.twitter %>',
-  ' *',
-  ' * Copyright (c) <%= year %> ' + '<%= pkg.owner %>',
-  ' */',
-  ''].join('\n');
 
 /* ========================================================================== */
 /* DEFAULT TASK                                                               */

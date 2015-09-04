@@ -6,8 +6,6 @@
 
     <Directory /home/{YOUR_USER}/workspace/nantesjs-website/build/>
         Options Indexes FollowSymLinks MultiViews
-        # enable the .htaccess rewrites
-        AllowOverride All
 
         # apache 2.2 permissions
         #

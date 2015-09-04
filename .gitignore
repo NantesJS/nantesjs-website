@@ -1,3 +1,6 @@
+# Build dir
+/build
+
 # Gulp & Bower dependencies
 /node_modules
 /bower_components
@@ -40,6 +43,3 @@ Thumbs.db
 *.Match
 *.waBackup
 studio_log*
-
-# GitHub Pages
-CNAME
