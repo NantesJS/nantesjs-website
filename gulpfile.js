@@ -8,7 +8,6 @@ var sass         = require('gulp-sass');
 var uglify       = require('gulp-uglify');
 var minifyCss    = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps   = require('gulp-sourcemaps');
 
 var jpegoptim    = require('imagemin-jpegoptim');
 var pngquant     = require('imagemin-pngquant');
@@ -71,17 +70,13 @@ gulp.task('serve', ['styles', 'scripts', 'files', 'images'], function() {
 gulp.task('styles', function() {
     return gulp.src(path.src.dir + path.src.styles)
         .pipe(plumber({errorHandler: onError}))
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            sourcemap: true
-        }))
+        .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
         .pipe(minifyCss())
         .pipe(rename({ extname: '.min.css'}))
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.dir + path.build.styles))
         .pipe(browserSync.stream());
 });
