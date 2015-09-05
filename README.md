@@ -24,18 +24,62 @@ git checkout master
 gulp
 ```
 
-That's it. Up and running !
+:metal: That's it. Up and running !
+
+You don't have to work on `gh-pages` branch. Make your change only on `master` branch, build under control of `browser-sync` tool and deploy.
 
 ## Deploy on gh-pages
 
 Use [gulp-gh-pages](https://www.npmjs.com/package/gulp-gh-pages) for deployment on the `github pages`.
-Be sure to populate the `build` dir with the previous `gulp` command then:
+Be sure to populate the `build` dir with the previous `gulp` command, test and verify your code:
 
 ```shell
 cd nantesjs-website
 git checkout master
+bump version in package.json
+git commit -m "..."
+
 gulp deploy
 ```
+
+## Notes
+
+* 2 commented buttons in the `meetup-next` div about doodle/framadate and vote. And not CSS styled.
+* A sponsor `ul` list is commented in the footer. And not CSS styled.
+
+## Use
+
+* [gulp](http://gulpjs.com/)
+* [gulp-notify](https://www.npmjs.com/package/gulp-notify)
+* [gulp-plumber](https://www.npmjs.com/package/gulp-plumber)
+* [gulp-rename](https://www.npmjs.com/package/gulp-rename)
+* [gulp-size](https://www.npmjs.com/package/gulp-size)
+* [browser-sync](http://www.browsersync.io/)
+
+### Assets optimization
+
+* [gulp-sass](https://www.npmjs.com/package/gulp-sass)
+* [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
+* [gulp-minify-css](https://www.npmjs.com/package/gulp-minify-css)
+* [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
+
+### Image optimization
+
+* [imagemin-jpegoptim](https://www.npmjs.com/package/imagemin-jpegoptim)
+* [imagemin-pngquant](https://www.npmjs.com/package/imagemin-pngquant)
+* [imagemin-optipng](https://www.npmjs.com/package/imagemin-optipng)
+* [imagemin-svgo](https://www.npmjs.com/package/imagemin-svgo)
+
+### Deployment
+
+* [gulp-gh-pages](https://www.npmjs.com/package/gulp-gh-pages)
+
+## Todo
+
+* [x] Start a todo list
+* [x] Do not leave an empty todolist
+* [ ] Talk better about :beers:, :cocktail:, :pizza: and :doughnut: in the NantesJS homepage
+* [ ] Work with Eventbrite API
 
 ## License
 
