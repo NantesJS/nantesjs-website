@@ -3,6 +3,8 @@ var notify       = require('gulp-notify');
 var plumber      = require('gulp-plumber');
 var rename       = require('gulp-rename');
 var browserSync  = require('browser-sync').create();
+var size         = require('gulp-size');
+var exec         = require('child_process').exec;
 
 var sass         = require('gulp-sass');
 var uglify       = require('gulp-uglify');
@@ -20,6 +22,7 @@ var ghPages      = require('gulp-gh-pages');
 /* CONFIG HELPER                                                              */
 /* ========================================================================== */
 
+var pkg  = require('./package.json');
 var path = {
     src: {
         dir: 'src/',
@@ -48,7 +51,7 @@ var onError = function(err) {
 };
 
 /* ========================================================================== */
-/* DEFAULT TASK                                                               */
+/* DEFAULT TASKS                                                              */
 /* ========================================================================== */
 
 // Static Server + watching scss/js/html files
@@ -100,58 +103,72 @@ gulp.task('files', function() {
 
 gulp.task('images', function() {
     return gulp.src(path.src.dir + path.src.images)
+        .pipe(size({
+            // showFiles: true, // display a complete list of files
+            title: "Before optimize"
+        }))
         .pipe(plumber({errorHandler: onError}))
         .pipe(pngquant({
             quality: '65-80',
             speed: 4
         })())
-        .pipe(optipng({optimizationLevel: 3})())
+        .pipe(optipng({
+            optimizationLevel: 3
+        })())
         .pipe(jpegoptim({
             max: 70
         })())
         .pipe(svgo()())
+        .pipe(size({
+            // showFiles: true, // display a complete list of files
+            title: "After optimize"
+        }))
         .pipe(gulp.dest(path.build.dir + path.build.images));
 });
 
 /* ========================================================================== */
-/* DEPLOY TASK                                                                */
+/* DEPLOY TASKS                                                               */
 /* ========================================================================== */
 
-gulp.task('deploy', function() {
-  return gulp.src('./build/**/*')
-    .pipe(ghPages());
+gulp.task('build', ['styles', 'scripts', 'files', 'images']);
+
+gulp.task('deploy', ['build'], function() {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages());
 });
 
 /* ========================================================================== */
-/* WATCHER TASK                                                               */
+/* WATCHER TASKS                                                              */
 /* ========================================================================== */
 
+var logEvent = function(event) {
+    console.log('Event type: ' + event.type);
+    console.log('Event path: ' + event.path);
+};
+
 gulp.task('watchers', function() {
-  var watcherStyles = gulp.watch('src/styles/partials/**.scss', ['styles']);
-  watcherStyles.on('change', function (event) {
-    console.log('Event type: ' + event.type);
-    console.log('Event path: ' + event.path);
-  });
+    gulp.watch(path.src.dir + path.src.styles, ['styles'])
+        .on('change', function (event) {
+            logEvent(event);
+        });
 
-  var watcherScripts = gulp.watch('src/scripts/**.*', ['scripts-watch']);
-  watcherScripts.on('change', function (event) {
-    console.log('Event type: ' + event.type);
-    console.log('Event path: ' + event.path);
-  });
+    gulp.watch(path.src.dir + path.src.scripts, ['scripts-watch'])
+        .on('change', function (event) {
+            logEvent(event);
+        });
 
-  var watcherImages = gulp.watch('src/images/**.*', ['images']);
-  watcherImages.on('change', function (event) {
-    console.log('Event type: ' + event.type);
-    console.log('Event path: ' + event.path);
-  });
+    gulp.watch(path.src.dir + path.src.images, ['images'])
+        .on('change', function (event) {
+            logEvent(event);
+        });
 
-  var watcherFiles = gulp.watch('src/*.html', ['files']);
-  watcherFiles.on('change', function (event) {
-    console.log('Event type: ' + event.type);
-    console.log('Event path: ' + event.path);
-  });
+    gulp.watch(path.src.dir + '*.html', ['files'])
+        .on('change', function (event) {
+            logEvent(event);
+        });
 
-  gulp.watch('build/*.html').on('change', browserSync.reload);
+    gulp.watch(path.build.dir + '*.html')
+        .on('change', browserSync.reload);
 });
 
 // create a task that ensures the `scripts` task is complete before reloading browsers
