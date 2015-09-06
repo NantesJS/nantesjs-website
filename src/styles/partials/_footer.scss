@@ -1,0 +1,68 @@
+footer {
+  background: $blind-gray;
+  color: $light-gray;
+  font-size: 1.4rem;
+  padding: $content-body-padding;
+  margin-top: 60px;
+
+  .footer-wrapper {
+    margin: 10px auto 0 auto;
+    width :100%;
+    @media (min-width: 960px) {
+      width: $content-width;
+    }
+
+    a {
+      color: $light-gray;
+      &:hover {
+        color: $lighter-gray;
+      }
+    }
+
+    .copyright {
+      text-align: center;
+    }
+
+    .profile {
+      *zoom: 1;
+      .image-wrapper {
+        float: right;
+        img {
+          border-radius: 75px;
+          width: 75px;
+          height: 75px;
+          margin-top: -40px;
+          margin-right: 40px;
+          box-shadow: $blind-gray 0px -1px 0 15px;
+        }
+      }
+    }
+    .profile:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    // .sponsors {
+    //   list-style: none;
+    //   .sponsor {
+    //     display: inline-block;
+    //     max-width: 60px;
+    //     padding: 10px 20px;
+    //   }
+    //   img {
+    //     max-height: 60px;
+    //     &.grayscale {
+    //       -webkit-filter: grayscale(100%);
+    //       filter: grayscale(100%);
+    //       filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
+    //     }
+
+    //   }
+    // }
+  }
+
+  @media (min-width: $mobile-screen) {
+    margin-top: 0;
+  }
+}
