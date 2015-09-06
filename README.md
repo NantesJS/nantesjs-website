@@ -21,17 +21,29 @@ cd nantesjs-website
 git checkout master
 [sudo] npm install gulp -g
 [sudo] npm install
+```
+
+By common habits, I use commonly for development an apache vhost (you will find one in `doc/apache/vhost` file).
+If you prefer working with a vhost, you must change the browser-sync `init` option with the commented one in the `gulpfile.js`.
+
+Finally,
+
+```
 gulp
 ```
 
 :metal: That's it. Up and running !
 
-You don't have to work on `gh-pages` branch. Make your change only on `master` branch, build under control of `browser-sync` tool and deploy.
+Disclaimer: You mustn't work on `gh-pages` branch !
+Make your change only on `master` branch, build and manual test under control of `browser-sync` tool then deploy.
 
 ## Deploy on gh-pages
 
 Use [gulp-gh-pages](https://www.npmjs.com/package/gulp-gh-pages) for deployment on the `github pages`.
-Be sure to populate the `build` dir with the previous `gulp` command, test and verify your code:
+
+The `gulp deploy` run the `build` task before committing and pushing to gh-pages remote branch.
+
+Test and verify your code locally:
 
 ```shell
 cd nantesjs-website
@@ -42,13 +54,16 @@ git commit -m "..."
 gulp deploy
 ```
 
+:metal: That's it. Test online on `http://{YOUR_GITHUB_USERNAME}.github.com/nantesjs-website/`
+
 ## Notes
 
 * 2 commented buttons in the `meetup-next` div about doodle/framadate and vote. And not CSS styled.
-* A sponsor `ul` list is commented in the footer. And not CSS styled.
+* A sponsor `ul` list commented in the footer. With some images in assets folder. And not CSS styled.
 
 ## Use
 
+* [sass](http://sass-lang.com/)
 * [gulp](http://gulpjs.com/)
 * [gulp-notify](https://www.npmjs.com/package/gulp-notify)
 * [gulp-plumber](https://www.npmjs.com/package/gulp-plumber)

@@ -59,7 +59,10 @@ gulp.task('default', ['serve']);
 
 gulp.task('serve', ['styles', 'scripts', 'files', 'images'], function() {
     browserSync.init({
-        proxy: 'nantesjs'
+        // proxy: 'nantesjs' // or whatever vhost name
+        server: {
+            baseDir: "build/"
+        }
     });
 
     gulp.start('watchers');
