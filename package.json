@@ -5,7 +5,8 @@
   "homepage": "https://github.com/NantesJS/nantesjs-website",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
