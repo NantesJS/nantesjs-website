@@ -1,9 +1,12 @@
 {
   "name": "nantesjs-website",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Homepage of NantesJS",
   "homepage": "https://github.com/NantesJS/nantesjs-website",
   "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:NantesJS/nantesjs-website.git"
