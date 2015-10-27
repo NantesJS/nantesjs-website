@@ -19,7 +19,6 @@ cd /home/your_user/your_workspace
 git clone {YOUR_NANTESJS_FORK}
 cd nantesjs-website
 git checkout master
-[sudo] npm install gulp -g
 [sudo] npm install
 ```
 
@@ -29,7 +28,7 @@ If you prefer working with a vhost, you must change the browser-sync `init` opti
 Finally,
 
 ```
-gulp
+npm start
 ```
 
 :metal: That's it. Up and running !
@@ -50,8 +49,9 @@ cd nantesjs-website
 git checkout master
 bump version in package.json
 git commit -m "..."
+git push
 
-gulp deploy
+npm run deploy
 ```
 
 :metal: That's it. Test online on `http://{YOUR_GITHUB_USERNAME}.github.com/nantesjs-website/`
@@ -95,6 +95,7 @@ gulp deploy
 * [x] Do not leave an empty todolist
 * [ ] Talk better about :beers:, :cocktail:, :pizza: and :doughnut: in the NantesJS homepage
 * [ ] Work with Eventbrite API
+* [ ] Vote system for next lightning talks
 
 ## License
 
