@@ -9,7 +9,6 @@ var del          = require('del');
 var gPath        = require('path');
 var changed      = require('gulp-changed');
 
-
 var sass         = require('gulp-sass');
 var uglify       = require('gulp-uglify');
 var minifyCss    = require('gulp-minify-css');
@@ -30,8 +29,8 @@ var pkg  = require('./package.json');
 var path = {
     src: {
         dir: 'src/',
-        styles: 'styles/**.*',
-        scripts: 'scripts/**.*',
+        styles: 'styles/**/*.*',
+        scripts: 'scripts/**/*.*',
         images: 'images/**/*.{png,jpg,jpeg,gif,svg}',
         files: ['*']
     },
