@@ -40,7 +40,7 @@ Make your change only on `master` branch, build and manual test under control of
 
 Use [gulp-gh-pages](https://www.npmjs.com/package/gulp-gh-pages) for deployment on the `github pages`.
 
-The `gulp deploy` run the `build` task before committing and pushing to gh-pages remote branch.
+The `npm run deploy` command run the `gulp build` task before committing and pushing to gh-pages remote branch.
 
 Test and verify your code locally:
 

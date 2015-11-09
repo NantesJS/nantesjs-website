@@ -5,6 +5,9 @@ var rename       = require('gulp-rename');
 var browserSync  = require('browser-sync').create();
 var size         = require('gulp-size');
 var exec         = require('child_process').exec;
+var del          = require('del');
+var gPath        = require('path');
+var changed      = require('gulp-changed');
 
 var sass         = require('gulp-sass');
 var uglify       = require('gulp-uglify');
@@ -26,8 +29,8 @@ var pkg  = require('./package.json');
 var path = {
     src: {
         dir: 'src/',
-        styles: 'styles/**.*',
-        scripts: 'scripts/**.*',
+        styles: 'styles/**/*.*',
+        scripts: 'scripts/**/*.*',
         images: 'images/**/*.{png,jpg,jpeg,gif,svg}',
         files: ['*']
     },
@@ -106,6 +109,8 @@ gulp.task('files', function() {
 
 gulp.task('images', function() {
     return gulp.src(path.src.dir + path.src.images)
+        // only files that has changed will pass through here
+        .pipe(changed(path.build.dir + path.build.images))
         .pipe(size({
             // showFiles: true, // display a complete list of files
             title: "Before optimize"
@@ -162,6 +167,14 @@ gulp.task('watchers', function() {
 
     gulp.watch(path.src.dir + path.src.images, ['images'])
         .on('change', function (event) {
+            // https://github.com/gulpjs/gulp/blob/master/docs/recipes/handling-the-delete-event-on-watch.md
+            if (event.type === 'deleted') {
+                var srcFilePath  = gPath.relative(gPath.resolve(path.src.dir), event.path);
+                var distFilePath = gPath.resolve(path.build.dir, srcFilePath);
+
+                del.sync(distFilePath);
+            }
+
             logEvent(event);
         });
 

@@ -1,7 +1,14 @@
 header {
   .logo {
-    height: 400px;
-    width: 400px;
     margin: 60px auto;
+    img {
+        width: 100%;
+        max-width: 400px;
+        max-height: 400px;
+        @media (min-width: 415px) {
+            display: block;
+            margin: 0 auto;
+        }
+    }
   }
 }
