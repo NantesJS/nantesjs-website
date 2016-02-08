@@ -47,6 +47,12 @@
 	Twitter: @jac_bachelier
 	From: Nantes, France
 
+	Contributor: Thomas Belin
+	Contributions: Meetup Organizer, Speaker
+	Github: https://github.com/atomrc
+	Twitter: @atomrc
+	From: Nantes, France
+
 /* THANKS */
 
 	Support & communication: Florent Gosselin
