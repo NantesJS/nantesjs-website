@@ -14,80 +14,27 @@ Note that any updates done to this website will available under the license give
 
 ## Installation for development
 
-```shell
-cd /home/your_user/your_workspace
-git clone {YOUR_NANTESJS_FORK}
-cd nantesjs-website
-git checkout master
-[sudo] npm install
-```
+First you will need `bundler` installed on your machine
 
-By common habits, I use commonly for development an apache vhost (you will find one in `doc/apache/vhost` file).
-If you prefer working with a vhost, you must change the browser-sync `init` option with the commented one in the `gulpfile.js`.
+    gem install bundler
 
-Finally,
+Then simply run :
 
-```
-npm start
-```
+    bundle install
 
-:metal: That's it. Up and running !
+And finally, once it's done
 
-Disclaimer: You mustn't work on `gh-pages` branch !
-Make your change only on `master` branch, build and manual test under control of `browser-sync` tool then deploy.
+    bundle exec jekyll serve
 
-## Deploy on gh-pages
 
-Use [gulp-gh-pages](https://www.npmjs.com/package/gulp-gh-pages) for deployment on the `github pages`.
+## Add a new meetup
 
-The `npm run deploy` command run the `gulp build` task before committing and pushing to gh-pages remote branch.
+To add a new meetup, you need to create a `.md` file in `src/_meetups/`.
 
-Test and verify your code locally:
+The suggested method is to duplicate the last meetup file and to fill in the fields with the new data.
 
-```shell
-cd nantesjs-website
-git checkout master
-bump version in package.json
-git commit -m "..."
-git push
+Don't forget to set the `status` of the previous meetup to `done` for it to be displayed in the previous section.
 
-npm run deploy
-```
-
-:metal: That's it. Test online on `http://{YOUR_GITHUB_USERNAME}.github.com/nantesjs-website/`
-
-## Notes
-
-* 2 commented buttons in the `meetup-next` div about doodle/framadate and vote. And not CSS styled.
-* A sponsor `ul` list commented in the footer. With some images in assets folder. And not CSS styled.
-
-## Use
-
-* [sass](http://sass-lang.com/)
-* [gulp](http://gulpjs.com/)
-* [gulp-notify](https://www.npmjs.com/package/gulp-notify)
-* [gulp-plumber](https://www.npmjs.com/package/gulp-plumber)
-* [gulp-rename](https://www.npmjs.com/package/gulp-rename)
-* [gulp-size](https://www.npmjs.com/package/gulp-size)
-* [browser-sync](http://www.browsersync.io/)
-
-### Assets optimization
-
-* [gulp-sass](https://www.npmjs.com/package/gulp-sass)
-* [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
-* [gulp-minify-css](https://www.npmjs.com/package/gulp-minify-css)
-* [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
-
-### Image optimization
-
-* [imagemin-jpegoptim](https://www.npmjs.com/package/imagemin-jpegoptim)
-* [imagemin-pngquant](https://www.npmjs.com/package/imagemin-pngquant)
-* [imagemin-optipng](https://www.npmjs.com/package/imagemin-optipng)
-* [imagemin-svgo](https://www.npmjs.com/package/imagemin-svgo)
-
-### Deployment
-
-* [gulp-gh-pages](https://www.npmjs.com/package/gulp-gh-pages)
 
 ## Todo
 

@@ -44,3 +44,5 @@ Thumbs.db
 *.Match
 *.waBackup
 studio_log*
+
+_site
