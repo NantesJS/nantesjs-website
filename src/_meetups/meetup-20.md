@@ -3,6 +3,7 @@ status: done
 title: 'MEETUP 20'
 date: 17/01/2017
 image: /images/meetup/ionic2.png
+ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-20-31061853841
 place:
     name: 'Akeneo'
     link: 'https://www.akeneo.com/'

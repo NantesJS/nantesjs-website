@@ -58,7 +58,8 @@
 
                         {% assign next = site.meetups | where: 'status', 'next' %}
 
-                        {% if next | size == 0 %}
+                        {% assign hasnext = next | size %}
+                        {% if hasnext == 0 %}
                             Le prochain meetup n'est pas encore annoncé.<br>
                             <b>Envie de parler au prochain NantesJS ? Contacte nous <a href="https://twitter.com/nantesjs">@nantesjs</a></b>
                         {% endif %}
@@ -80,9 +81,11 @@
                                 {% endfor %}
                             </ul>
                             {% endfor %}
+                            {% if meetup.ticketsUrl %}
                             <ul class="talk">
-                                 <li><a class="button" target="_blank" href="https://www.eventbrite.fr/e/billets-nantesjs-meetup-19-25341614451">Détails pratiques et inscriptions</a></li>
+                                <li><a class="button" target="_blank" href="{{ meetup.ticketsUrl }}">Détails pratiques et inscriptions</a></li>
                              </ul>
+                             {% endif %}
                         {% endfor %}
                     </div>
                 </div>
