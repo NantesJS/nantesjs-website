@@ -70,26 +70,39 @@
                         {% for meetup in next %}
                             <h4>{{ meetup.title }}</h4>
                             <span class="date">{{ meetup.date | date_to_string }} à 19h</span>
-                            <span class="place"><a href="{{ meetup.place.link }}">@ {{ meetup.place.name }}</a></span>
-                            <span class="place">{{ meetup.place.address }}</span>
-                            <span class="sponsor">
-                                <i class="fa fa-hand-peace-o"></i>
-                                <a target="_blank" href="{{ meetup.sponsor.link }}">{{ meetup.sponsor.name }}</a>
-                            </span>
-                            <img class="u-max-full-width" src="{{ meetup.image }}" alt="{{ meetup.title }}">
-                            {% for talk in meetup.talks %}
-                            <ul class="talk">
-                                <li class="talk-res"><a href="{{ talk.link }}">{{ talk.title }}</a></li>
-                                {% for speaker in talk.speakers %}
-                                <li class="talk-author"><a href="{{ speaker.link }}">{{ speaker.name }}</a></li>
+
+                            {% if meetup.place %}
+                                <span class="place"><a href="{{ meetup.place.link }}">@ {{ meetup.place.name }}</a></span>
+                                <span class="place">{{ meetup.place.address }}</span>
+                            {% endif %}
+
+                            {% if meetup.sponsor %}
+                                <span class="sponsor">
+                                    <i class="fa fa-hand-peace-o"></i>
+                                    <a target="_blank" href="{{ meetup.sponsor.link }}">{{ meetup.sponsor.name }}</a>
+                                </span>
+                            {% endif %}
+
+                            {% if meetup.image %}
+                                <img class="u-max-full-width" src="{{ meetup.image }}" alt="{{ meetup.title }}">
+                            {% endif %}
+
+                            {% if meetup.talks %}
+                                {% for talk in meetup.talks %}
+                                <ul class="talk">
+                                    <li class="talk-res"><a href="{{ talk.link }}">{{ talk.title }}</a></li>
+                                    {% for speaker in talk.speakers %}
+                                    <li class="talk-author"><a href="{{ speaker.link }}">{{ speaker.name }}</a></li>
+                                    {% endfor %}
+                                </ul>
                                 {% endfor %}
-                            </ul>
-                            {% endfor %}
+                            {% endif %}
+
                             {% if meetup.ticketsUrl %}
-                            <ul class="talk">
-                                <li><a class="button" target="_blank" href="{{ meetup.ticketsUrl }}">Détails pratiques et inscriptions</a></li>
-                             </ul>
-                             {% endif %}
+                                <ul class="talk">
+                                    <li><a class="button" target="_blank" href="{{ meetup.ticketsUrl }}">Détails pratiques et inscriptions</a></li>
+                                </ul>
+                            {% endif %}
                         {% endfor %}
                     </div>
                 </div>
