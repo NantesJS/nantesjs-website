@@ -91,6 +91,9 @@
                                 {% for talk in meetup.talks %}
                                 <ul class="talk">
                                     <li class="talk-res"><a href="{{ talk.link }}">{{ talk.title }}</a></li>
+                                    {% if talk.description %}
+                                        <li class="talk-desc"><p>{{ talk.description }}</p></li>
+                                    {% endif %}
                                     {% for speaker in talk.speakers %}
                                     <li class="talk-author"><a href="{{ speaker.link }}">{{ speaker.name }}</a></li>
                                     {% endfor %}
