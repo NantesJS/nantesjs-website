@@ -122,6 +122,20 @@
                         <h4>{{ meetup.title }}</h4>
                         <span class="date">{{ meetup.date | date_to_string }}</span>
                         <span class="place"><a href="{{ meetup.place.link }}">@ {{ meetup.place.name }}</a></span>
+                        {% if meetup.sponsor %}
+                          <span class="sponsor">
+                            {% if meetup.sponsor.link %}
+                              <a href="{{ meetup.sponsor.link }}"><i class="fa fa-hand-peace-o"></i> {{ meetup.sponsor.name }}</a>
+                            {% else %}
+                              <i class="fa fa-hand-peace-o"></i>
+                              {% if meetup.sponsor.name %}
+                                {{ meetup.sponsor.name }}
+                              {% else %}
+                                {{ meetup.sponsor }}
+                              {% endif %}
+                            {% endif %}
+                          </span>
+                        {% endif %}
                         <img class="u-max-full-width" src="{{ meetup.image }}" alt="{{ meetup.title }}">
                         {% for talk in meetup.talks %}
                         <ul class="talk">
