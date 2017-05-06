@@ -3,6 +3,7 @@ status: next
 title: 'MEETUP 22'
 date: '18/05/2017'
 image: /images/meetup/react.svg
+ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-22-34355966621
 place:
     name: 'Groupe Creative'
     link: 'http://www.groupe-creative.fr/'
