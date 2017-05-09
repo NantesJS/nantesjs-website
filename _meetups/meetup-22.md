@@ -8,8 +8,8 @@ place:
     name: 'Groupe Creative'
     link: 'http://www.groupe-creative.fr/'
 sponsor:
-    name: 'On le cherche encore 😆'
-    link: ''
+    name: 'Externatic'
+    link: 'http://www.externatic.fr/'
 talks:
     -
         title: React, Redux, JS et no-JS
