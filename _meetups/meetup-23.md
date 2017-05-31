@@ -1,7 +1,7 @@
 ---
 status: next
-title: 'MEETUP 22'
-date: '18/05/2017'
+title: 'MEETUP 23'
+date: '15/06/2017'
 image: /images/meetup/computer.jpg
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-23-34950562072
 place:
