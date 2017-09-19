@@ -1,0 +1,21 @@
+#social {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#social a {
+  color: #2e2e2c;
+  margin-bottom: 10px;
+}
+
+#social a:last-child {
+  margin-bottom: 0;
+}
+
+#social a:hover {
+  color: #666;
+}
