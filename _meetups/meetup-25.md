@@ -1,5 +1,5 @@
 ---
-status: next
+status: done
 title: 'MEETUP 25'
 date: '26/10/2017'
 image: /images/meetup/world.jpg
@@ -19,7 +19,7 @@ talks:
                 name: 'Jérémy Lesceau'
                 link: 'https://twitter.com/JLesceau'
     -
-        title: Promenade au pays de la cartographie 
+        title: Promenade au pays de la cartographie
         description: "Après une petite mise en jambe, on regardera de plus près mapboxgl - qui permet de d'afficher, styliser des cartes vectorielles 2D ou 2D½. Comment ça s'utilise ? Comment ça marche ? Comment l'alimenter ?"
         speakers:
             -
