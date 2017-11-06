@@ -12,7 +12,7 @@ sponsor:
     link: 'https://www.zenika.com/'
 talks:
     -
-        title: DoYouBuzz v3 : de la programmation impérative à la programmation réactive
+        title: "DoYouBuzz v3 : de la programmation impérative à la programmation réactive"
         description: "Fin septembre 2017, après 3 mois de recherches, de tests et de sessions de code, sortait la première itération d'un changement majeur dans notre front-end : le passage d'AngularJS à Cycle.js.
 
         Cette migration a été riche en apprentissages et découvertes que j'aimerais partager avec vous!
