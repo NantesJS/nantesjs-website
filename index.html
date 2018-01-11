@@ -112,8 +112,9 @@
                             {% endif %}
 
                             {% if meetup.ticketsUrl %}
-                                <ul class="talk">
-                                    <li><a class="button" target="_blank" href="{{ meetup.ticketsUrl }}">Détails pratiques et inscriptions</a></li>
+                                <ul class="talk buttons">
+                                    <li><a class="button" target="_blank" href="{{ meetup.ticketsUrl }}"><i class="fa fa-ticket fa-2x" aria-hidden="true"></i>Détails pratiques et inscriptions</a></li>
+                                    <li><a class="button" target="_blank" href="/affiche.html?title={{ meetup.title }}"><i class="fa fa-file-image-o fa-2x" aria-hidden="true"></i>Affiche</a></li>
                                 </ul>
                             {% endif %}
                         {% endfor %}

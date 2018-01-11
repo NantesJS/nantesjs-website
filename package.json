@@ -4,7 +4,8 @@
   "description": "Site Internet de NantesJS http://nantesjs.org",
   "main": "index.html",
   "scripts": {
-    "start": "bundle exec jekyll serve"
+    "start": "bundle exec jekyll serve",
+    "prestart": "bundle install"
   },
   "repository": {
     "type": "git",
