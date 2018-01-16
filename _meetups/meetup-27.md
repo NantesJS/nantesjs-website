@@ -5,8 +5,8 @@ date: '18/01/2018'
 image: /images/meetup/web-assembly.png
 ticketsUrl: http://bit.ly/2D5a8Eh
 place:
-    name: 'Capgemini'
-    link: 'https://www.capgemini.com/fr-fr/'
+    name: 'La fourchette'
+    link: 'https://www.lafourchette.com/'
 sponsor:
     name: 'La fourchette'
     link: 'https://www.lafourchette.com/'
