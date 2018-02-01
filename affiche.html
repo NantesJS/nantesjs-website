@@ -244,20 +244,20 @@
       const imagesToLoad = []
       const imageTemplate = document.querySelector("#image-template").content
 
-      meetup.talks.forEach(async talk => {
+      meetup.talks.forEach(talk => {
         const clone = document.importNode(talkTemplate, true)
 
-        for (let i = 0; i < talk.speakers.length; i++) {
+        talk.speakers.forEach(async speaker => {
+            const imagesNode = clone.querySelector('.left-part')
             const imageClone = document.importNode(imageTemplate, true)
 
-            const speaker = talk.speakers[i]
             const imgPromise = loadImage(`${speaker.link}/profile_image?size=original`)
             imagesToLoad.push(imgPromise)
             const img = await imgPromise
 
             imageClone.querySelector('.image').appendChild(img)
-            clone.querySelector('.left-part').appendChild(imageClone)
-        }
+            imagesNode.appendChild(imageClone)
+        })
 
         clone.querySelector('.title').textContent = talk.title
         clone.querySelector('.description').textContent = talk.description
@@ -276,10 +276,10 @@
 
       Promise.all(imagesToLoad).then(() => {
         const affiche = document.querySelector("#affiche")
-        /*html2canvas(affiche, { allowTaint: true }).then(canvas => {
+        html2canvas(affiche, { allowTaint: true }).then(canvas => {
           document.body.appendChild(canvas)
           document.body.removeChild(affiche)
-        });*/
+        });
       })
     }
 
