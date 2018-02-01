@@ -3,7 +3,7 @@ status: next
 title: 'MEETUP 28'
 date: '15/02/2018'
 image: /images/meetup/rxjs.png
-ticketsUrl: http://bit.ly/2D5a8Eh
+ticketsUrl: http://bit.ly/2GBzQhs
 place:
     name: 'Le phare'
     link: 'https://www.lephare.com/'
