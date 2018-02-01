@@ -115,6 +115,7 @@
         width: 100%;
         padding-top: 100%; /* 1:1 Aspect Ratio */
         position: relative; /* If you want text inside of it */
+        margin-bottom: 10px;
       }
       #talks img {
         position: absolute;
@@ -200,10 +201,13 @@
     </div>
   </body>
 
+  <template id="image-template">
+    <div class="image"></div>
+  </template>
+
   <template id="talk-template">
     <div class="talk">
       <div class="left-part">
-        <div class="image"></div>
       </div>
       <div class="right-part">
         <span class="title"></span>
@@ -238,20 +242,32 @@
       const talkTemplate = document.querySelector("#talk-template").content
 
       const imagesToLoad = []
+      const imageTemplate = document.querySelector("#image-template").content
 
       meetup.talks.forEach(async talk => {
         const clone = document.importNode(talkTemplate, true)
 
-        const imgPromise = loadImage(`${talk.speakers[0].link}/profile_image?size=original`)
-        imagesToLoad.push(imgPromise)
-        const img = await imgPromise
+        for (let i = 0; i < talk.speakers.length; i++) {
+            const imageClone = document.importNode(imageTemplate, true)
 
-        clone.querySelector('.image').appendChild(img)
+            const speaker = talk.speakers[i]
+            const imgPromise = loadImage(`${speaker.link}/profile_image?size=original`)
+            imagesToLoad.push(imgPromise)
+            const img = await imgPromise
+
+            imageClone.querySelector('.image').appendChild(img)
+            clone.querySelector('.left-part').appendChild(imageClone)
+        }
+
         clone.querySelector('.title').textContent = talk.title
         clone.querySelector('.description').textContent = talk.description
 
-        const linkParts = talk.speakers[0].link.split('/')
-        clone.querySelector('.twitter').textContent = `@${linkParts[linkParts.length - 1]}`
+        const twitter = talk.speakers.map(speaker => {
+            const linkParts = speaker.link.split('/')
+            return `@${linkParts[linkParts.length - 1]}`
+        })
+
+        clone.querySelector('.twitter').textContent = twitter.join(', ')
 
         talks.appendChild(clone)
       })
@@ -260,10 +276,10 @@
 
       Promise.all(imagesToLoad).then(() => {
         const affiche = document.querySelector("#affiche")
-        html2canvas(affiche, { allowTaint: true }).then(canvas => {
+        /*html2canvas(affiche, { allowTaint: true }).then(canvas => {
           document.body.appendChild(canvas)
           document.body.removeChild(affiche)
-        });
+        });*/
       })
     }
 
