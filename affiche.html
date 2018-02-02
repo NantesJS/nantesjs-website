@@ -108,6 +108,7 @@
       #talks .left-part {
         flex: 0 0 20%;
         overflow: hidden;
+        position: relative;
       }
       #talks .image {
         overflow: hidden;
@@ -247,7 +248,7 @@
       meetup.talks.forEach(talk => {
         const clone = document.importNode(talkTemplate, true)
 
-        talk.speakers.forEach(async speaker => {
+        talk.speakers.forEach(async (speaker, index) => {
             const imagesNode = clone.querySelector('.left-part')
             const imageClone = document.importNode(imageTemplate, true)
 
@@ -255,7 +256,24 @@
             imagesToLoad.push(imgPromise)
             const img = await imgPromise
 
-            imageClone.querySelector('.image').appendChild(img)
+            const imageContainer = imageClone.querySelector('.image')
+
+            if (talk.speakers.length > 1) {
+                const base = 25
+                const modifier = 75
+
+                const percent = `${base + modifier / talk.speakers.length}%`
+                imageContainer.style.width = percent
+                imageContainer.style.paddingTop = percent
+                imageContainer.style.borderRadius = percent
+
+                const position = `${index * modifier / talk.speakers.length}%`
+                imageContainer.style.position = 'absolute'
+                imageContainer.style.top = position
+                imageContainer.style.left = position
+            }
+
+            imageContainer.appendChild(img)
             imagesNode.appendChild(imageClone)
         })
 
