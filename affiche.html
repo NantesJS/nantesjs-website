@@ -37,8 +37,21 @@
         justify-content: center;
         align-items: center;
       }
-      .header img {
-        height: 7.5cm;
+      .header .logo {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+      .header .has-multiple-logos .logo:first-child {
+        margin-right: 1cm;
+      }
+      .header .logo img {
+        max-width: 100%;
+        max-height: 7.5cm;
+      }
+      .header .logos {
+        display: flex;
+        max-width: 60%;
       }
       .date {
         width: 3cm;
@@ -186,7 +199,11 @@
           <span id="day"></span>
           <span id="month"></span>
         </div>
-        <img src="images/logotype.png" alt="Logo de NantesJS">
+        <div class="logos">
+          <div class="logo">
+            <img src="images/logotype.png" alt="Logo de NantesJS">
+          </div>
+        </div>
       </div>
       <div id="title"></div>
       <div id="sponsors">
@@ -239,10 +256,24 @@
       document.querySelector('#eat').innerHTML = meetup.sponsor.name
       document.querySelector('#place').innerHTML = meetup.place.name
 
+      const imagesToLoad = []
+
+      if (meetup.secondLogo) {
+        document.querySelector('.logos').setAttribute('class', 'logos has-multiple-logos')
+
+        const imgPromise = loadImage(meetup.secondLogo)
+        imagesToLoad.push(imgPromise)
+        imgPromise.then(img => {
+          const div = document.createElement("div")
+          div.setAttribute('class', 'logo')
+          div.append(img)
+          document.querySelector('.logos').append(div)
+        })
+      }
+
       const talks = document.querySelector('#talks')
       const talkTemplate = document.querySelector("#talk-template").content
 
-      const imagesToLoad = []
       const imageTemplate = document.querySelector("#image-template").content
 
       meetup.talks.forEach(talk => {
