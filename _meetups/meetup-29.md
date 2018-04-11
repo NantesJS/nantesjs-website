@@ -1,5 +1,5 @@
 ---
-status: next
+status: done
 title: 'MEETUP 29'
 date: '15/03/2018'
 secondLogo: /images/graphdb.png
