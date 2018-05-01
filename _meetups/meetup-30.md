@@ -1,5 +1,5 @@
 ---
-status: next
+status: done
 title: 'MEETUP 30'
 date: '19/04/2018'
 image: /images/meetup/vintage_computers_01.jpg
