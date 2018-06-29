@@ -1,7 +1,7 @@
 ---
 status: next
 title: 'Le meetup dont vous êtes le héros'
-date: '04/06/2018'
+date: '04/07/2018'
 image: /images/meetup/casque.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-le-meetup-dont-vous-etes-le-heros-47458928934
 place:
