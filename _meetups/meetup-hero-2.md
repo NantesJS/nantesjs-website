@@ -1,5 +1,5 @@
 ---
-status: next
+status: done
 title: 'Le meetup dont vous êtes le héros'
 date: '04/07/2018'
 image: /images/meetup/casque.png
