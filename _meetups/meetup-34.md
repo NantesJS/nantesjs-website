@@ -18,7 +18,7 @@ talks:
         Je vais vous présenter les solutions mises en place lors d'une game jam, au menu : WebRTC, canvas API et Rust/WebAssembly"
         speakers:
             -
-                name: 'Samuel Huchet'
+                name: 'Samuel Hurel'
                 link: 'https://twitter.com/IcanDivideBy0'
     -
         title: "Du JS et des LEGO"
