@@ -2,7 +2,7 @@
 status: next
 title: 'MEETUP 35'
 date: '15/11/2018'
-image: /images/meetup/node_js.png
+image: /images/meetup/drone_js.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-35-52305278496
 place:
     name: 'Beekast'
