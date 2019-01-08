@@ -1,24 +1,41 @@
-import { inject } from '@k-ramel/react'
-import { compareDesc } from 'date-fns'
-import { parse } from 'date-fns/fp'
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
 import { OldMeetups } from './OldMeetups'
 
-const parseDate = parse(new Date(), 'dd/MM/yyyy')
-
-const mapState = store => {
-  const meetups = store.data.meetups
-    .getBy('status', 'done')
-    .sort((a, b) => {
-      const aDate = parseDate(a.date)
-      const bDate = parseDate(b.date)
-
-      return compareDesc(aDate, bDate)
-    })
-
-  return {
-    meetups,
-  }
+export function OldMeetupsContainer () {
+  return (
+    <StaticQuery
+      query={graphql`
+            {
+              allMarkdownRemark(
+                filter: { frontmatter: { status: { eq: "done" } } }
+                sort: { fields: [frontmatter___date], order: ASC }
+              ) {
+                edges { node { frontmatter {
+                  id
+                  status
+                  date
+                  image
+                  title
+                  sponsor { name }
+                  venue { name }
+                  talks {
+                      title
+                      speakers {
+                          id
+                          name
+                          link
+                      }
+                  }
+                }
+              } } }
+            }
+            `}
+      render={({ allMarkdownRemark: { edges } }) => {
+        const meetups = edges.map(edge => edge.node.frontmatter)
+        return <OldMeetups meetups={meetups} />
+      }}
+    />
+  )
 }
-
-export const OldMeetupsContainer = inject(mapState)(OldMeetups)
