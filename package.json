@@ -57,7 +57,7 @@
     "lint": "eslint src",
     "makeApi": "node src/tools/makeApi.js",
     "prebuild": "yarn makeApi",
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "prestart": "yarn makeApi",
     "start": "NODE_ENV=development gatsby develop",
     "serve": "gatsby serve"
