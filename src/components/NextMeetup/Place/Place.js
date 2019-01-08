@@ -2,6 +2,7 @@ import React from 'react'
 import { number } from 'prop-types'
 import { FullWidthContainer } from '../../FullWidthContainer'
 import ReactMapGL, { Marker } from 'react-map-gl'
+import { withPrefix } from 'gatsby'
 
 import styles from './Place.module.css'
 
@@ -33,7 +34,7 @@ export function Place ({ latitude, longitude }) {
           >
             <Marker {...coordinates} offsetLeft={-25} offsetTop={-25}>
               <img
-                src="http://nantesjs.org/images/logotype.png"
+                src={withPrefix('/images/logotype.png')}
                 height="50px"
               />
             </Marker>
