@@ -1,0 +1,21 @@
+@media screen and (min-width: 991px) {
+  .social-icons {
+    left: 15px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .social-icons {
+    padding: 10px 0 0 20px;
+  }
+}
+
+.social-icons__links {
+  justify-content: flex-start;
+}
+
+.social-icons__link {
+  height: 30px;
+  width: 30px;
+}

@@ -1,0 +1,24 @@
+.wrapper-full-width {
+  position: relative;
+}
+
+.wrapper-full-width__background:first-child {
+  position: absolute;
+  left: calc(((100vw - 980px) / 2) * -1);
+  width: 100vw;
+  height: 100%;
+  background-color: #d8d8d8;
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper-full-width > div:first-child {
+    left: -20px;
+  }
+}
+
+.wrapper-full-width__children {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}

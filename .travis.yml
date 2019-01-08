@@ -1,0 +1,22 @@
+language: node_js
+node_js: node
+cache:
+  yarn: true
+  directories:
+  - node_modules
+script:
+- yarn lint
+- yarn test --coverage && yarn coveralls < ./coverage/lcov.info
+before_deploy:
+- yarn build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  local-dir: public
+  on:
+    branch: master
+env:
+  global:
+    secure: iQO+eo5j+x3wgUpeweWkyDGuRm8kDUexOQu9LiNKXCXqemMvTO0eGh3N9iCMPmnmrBVpg8Eh5nM9jSVfYQjO7Lpd4pyb0Xmuk1rX2USouYckfQE+7z5Zmi0C4CGjZspYIFHfOaF6TddMraN0bwhUvRAA960dSXaKBZMwycKKc3zwFSiGwBm+V5uYHMBx9zmawoPt3e3UpT+D5ijoqXOECaC3IGvHIzvQ+yWn+Ztrsd5ynEUqmpDNhC7+Ux/tIOBRJp0CMZ41knVLSAIiGCFsJG1ieDoVY111CZjypaaY/fe8GXSc5uBkjtRNQdn9nFkZQoD/KOmTkJJrnTl4NG8I29Usur8Zfgr7W5/qPJBF2jt0ZBv64TvjqxaPNExkxJebmoniQ/oPRLTGiM0mSs3F/NPmyR8v5cFe5scrMjHbPUFjK1op25D7DOCvd4w/GENogUAK9XKkPzLf5bR/GreFg4Gh1so22xOzVIWry0iIv43otAS3rUrAbXqteN0e4MGIcFN+mVFgmsDJpqHfqbMfiPv8LFjmLEB1zwZxlJm6QoequRnI4PocoAJJjAYhC1asXzzVEfYSpRLcwKuhXyEWFQHZE+00ITvxSpTvcM8T1VTbWF15XZOAj9rNywVwtAUUKsxrnWyl+Dvcc1UwyqhXEhGBRxJKYqGWTSjHm7nz/Ho=

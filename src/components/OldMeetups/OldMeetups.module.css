@@ -1,0 +1,143 @@
+.old-meetups__hero {
+  height: 8rem;
+  margin: 2rem 0;
+}
+
+.old-meetups__title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.old-meetups__description {
+  margin-top: 0;
+  font-size: 1.1rem;
+  line-height: 1rem;
+}
+
+.meetup {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  padding-bottom: 20px;
+}
+
+.meetup__header {
+  display: flex;
+  align-items: center;
+}
+
+.meetup__header h4 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meetup__date {
+  margin-right: 1rem;
+  max-width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meetup__date > div:first-child {
+  margin-bottom: 1rem;
+}
+
+.meetup__title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.3rem;
+}
+
+.meetup__content {
+  width: calc(100% - 100px);
+}
+
+.talk__title {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.talk__speaker {
+  font-weight: 300;
+}
+
+.talks {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.meetup__sponsors {
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+.meetup__sponsors p {
+  text-align: right;
+  margin: 0;
+  color: #777;
+}
+
+.meetup__sponsors span {
+  white-space: nowrap;
+}
+
+.meetup--bordered {
+  border-bottom: 1px solid #ccc;
+}
+
+.meetup__image {
+  height: 4.5rem;
+  width: 4.5rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .meetup {
+    display: block;
+  }
+
+  .meetup__content {
+    width: 100%;
+  }
+
+  .meetup__date {
+    max-width: inherit;
+    margin: 0;
+  }
+
+  .meetup__date p {
+    text-align: right;
+    margin: 0;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .meetup__header {
+    flex-direction: column;
+  }
+
+  .meetup__header h4, .meetup__sponsors {
+    width: 100%;
+  }
+
+  .meetup__sponsors {
+    margin-left: inherit;
+    padding-left: 0;
+  }
+
+  .meetup__sponsors p {
+    text-align: left;
+  }
+}

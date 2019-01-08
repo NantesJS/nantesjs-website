@@ -1,0 +1,9 @@
+.place {
+  height: 21rem;
+}
+
+.place__map {
+  height: 100%;
+  width: 100%;
+  padding: .5rem 0;
+}

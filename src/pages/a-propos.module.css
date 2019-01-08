@@ -1,0 +1,29 @@
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__frame {
+  flex: 1;
+  height: 350px;
+}
+
+.gallery__frame:first-child {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 359px) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery__frame {
+    height: 250px;
+  }
+
+  .gallery__frame:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
