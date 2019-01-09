@@ -69,14 +69,7 @@ export function OldMeetups ({ meetups }) {
                     <div className={styles.meetup__date}>
                 */}
                 <div className={styles.hideOnMobile}>
-                  <div style={{
-                    marginRight: '1rem',
-                    maxWidth: '80px',
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                  }}>
+                  <div className={styles.meetup__date}>
                     <FullDate date={meetup.date} fontSize={.5} />
                     <div
                       className={styles.meetup__image}
