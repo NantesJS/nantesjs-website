@@ -26,13 +26,14 @@ Avatars.propTypes = {
 }
 
 function Avatars ({ speakers }) {
+  const filteredSpeakers = speakers.filter(speaker => speaker.link)
   return (
     <div className={styles.avatars}>
-      {speakers.map((speaker, index) => {
+      {filteredSpeakers.map((speaker, index) => {
         let style = {}
         if (speakers.length > 1) {
           const minSize = 25
-          const variableSize = 75 / speakers.length
+          const variableSize = 75 / filteredSpeakers.length
           const percent = `${ minSize + variableSize }%`
           const position = `${ index * variableSize }%`
 
@@ -52,7 +53,9 @@ function Avatars ({ speakers }) {
             style={style}
             className={classNames(
               styles.avatars__portrait,
-              { [styles.avatars__portraitSingle]: speakers.length === 1 }
+              {
+                [styles.avatars__portraitSingle]: filteredSpeakers.length === 1
+              }
             )}
             src={
               `https://avatars.io/twitter/${ speaker.link.split('/').pop() }`
@@ -82,14 +85,14 @@ export function Talks ({ talks = [] }) {
                 icon={faTwitter}
               />&nbsp;
               {talk.speakers
-                .map(speaker => (
+                .map(speaker => speaker.link ? (
                   <a
                     key={speaker.id}
                     href={speaker.link}
                   >
                     {speaker.link.split('/').pop()}
                   </a>
-                ))
+                ) : speaker.name)
                 .reduce((prev, curr) => [prev, ', ', curr])}
             </div>
           </div>

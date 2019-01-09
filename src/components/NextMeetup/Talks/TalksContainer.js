@@ -19,6 +19,7 @@ export function TalksContainer () {
                       description
                       speakers {
                           id
+                          name
                           link
                       }
                   }
