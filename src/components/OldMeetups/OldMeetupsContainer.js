@@ -1,7 +1,11 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { compareDesc } from 'date-fns'
+import { parse } from 'date-fns/fp'
 
 import { OldMeetups } from './OldMeetups'
+
+const parseDate = parse(new Date(), 'dd/MM/yyyy')
 
 export function OldMeetupsContainer () {
   return (
@@ -10,7 +14,6 @@ export function OldMeetupsContainer () {
             {
               allMarkdownRemark(
                 filter: { frontmatter: { status: { eq: "done" } } }
-                sort: { fields: [frontmatter___date], order: ASC }
               ) {
                 edges { node { frontmatter {
                   id
@@ -33,7 +36,14 @@ export function OldMeetupsContainer () {
             }
             `}
       render={({ allMarkdownRemark: { edges } }) => {
-        const meetups = edges.map(edge => edge.node.frontmatter)
+        const meetups = edges
+          .map(edge => edge.node.frontmatter)
+          .sort((a, b) => {
+            const aDate = parseDate(a.date)
+            const bDate = parseDate(b.date)
+
+            return compareDesc(aDate, bDate)
+          })
         return <OldMeetups meetups={meetups} />
       }}
     />
