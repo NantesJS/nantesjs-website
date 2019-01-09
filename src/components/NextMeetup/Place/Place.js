@@ -16,7 +16,7 @@ Place.propTypes = {
 }
 
 export function Place ({ latitude, longitude }) {
-  if (!latitude || !longitude) return null
+  if (!latitude || !longitude || !accessToken) return null
 
   const coordinates = { longitude, latitude }
 
