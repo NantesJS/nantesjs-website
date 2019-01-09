@@ -1,14 +1,32 @@
-import { first, get } from 'lodash'
-import { inject } from '@k-ramel/react'
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
 import { Buttons } from './Buttons'
 
-const mapState = store => {
-  const meetup = first(store.data.meetups.getBy('status', 'next'))
-
-  return {
-    ticketsUrl: get(meetup, 'ticketsUrl'),
-  }
+export function ButtonsContainer () {
+  return (
+    <StaticQuery
+      query={graphql`
+            {
+              allMarkdownRemark(
+                filter: { frontmatter: { status: { eq: "next" } } }
+                limit: 1
+              ) {
+                edges { node { frontmatter {
+                  id
+                  ticketsUrl
+                }
+              } } }
+            }
+            `}
+      render={({ allMarkdownRemark: { edges } }) => {
+        const { ticketsUrl } = edges[0].node.frontmatter
+        return (
+          <Buttons
+            ticketsUrl={ticketsUrl}
+          />
+        )
+      }}
+    />
+  )
 }
-
-export const ButtonsContainer = inject(mapState)(Buttons)
