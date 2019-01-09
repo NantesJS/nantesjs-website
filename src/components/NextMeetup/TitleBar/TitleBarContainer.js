@@ -1,18 +1,46 @@
-import { first, get } from 'lodash'
-import { inject } from '@k-ramel/react'
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
 import { TitleBar } from './TitleBar'
 
-const mapState = store => {
-  const meetup = first(store.data.meetups.getBy('status', 'next'))
-
-  return {
-    title: get(meetup, 'title'),
-    date: get(meetup, 'date'),
-    image: get(meetup, 'image'),
-    sponsor: get(meetup, 'sponsor.name'),
-    venue: get(meetup, 'venue.name'),
-  }
+export function TitleBarContainer () {
+  return (
+    <StaticQuery
+      query={graphql`
+            {
+              allMarkdownRemark(
+                filter: { frontmatter: { status: { eq: "next" } } }
+                limit: 1
+              ) {
+                edges { node { frontmatter {
+                  id
+                  title
+                  date
+                  image
+                  sponsor {
+                    id
+                    name
+                  }
+                  venue {
+                      id
+                      name
+                  }
+                }
+              } } }
+            }
+            `}
+      render={({ allMarkdownRemark: { edges } }) => {
+        const { title, date, image, venue, sponsor } = edges[0].node.frontmatter
+        return (
+          <TitleBar
+            title={title}
+            date={date}
+            image={image}
+            venue={venue.name}
+            sponsor={sponsor.name}
+          />
+        )
+      }}
+    />
+  )
 }
-
-export const TitleBarContainer = inject(mapState)(TitleBar)
