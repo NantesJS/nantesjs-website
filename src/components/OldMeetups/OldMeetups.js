@@ -62,8 +62,20 @@ export function OldMeetups ({ meetups }) {
               <div className={classNames(styles.meetup, {
                 [styles.meetupBordered]: lastIndex !== index,
               })}>
-                <MediaQuery minWidth={768}>
-                  <div className={styles.meetup__date}>
+                {/*
+                  Bug with MediaQuery and mixing class names
+                  https://github.com/gatsbyjs/gatsby/pull/8092
+                  <MediaQuery minWidth={768}/>
+                    <div className={styles.meetup__date}>
+                */}
+                <div className={styles.hideOnMobile}>
+                  <div style={{
+                    marginRight: '1rem',
+                    maxWidth: '80px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                  }}>
                     <FullDate date={meetup.date} fontSize={.5} />
                     <div
                       className={styles.meetup__image}
@@ -72,7 +84,7 @@ export function OldMeetups ({ meetups }) {
                       style={{ backgroundImage }}
                     />
                   </div>
-                </MediaQuery>
+                </div>
                 <div className={styles.meetup__content}>
                   <div className={styles.meetup__header}>
                     <h4

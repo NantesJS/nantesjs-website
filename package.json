@@ -18,7 +18,6 @@
     "gatsby-plugin-react-leaflet": "^2.0.0-alpha.3",
     "gatsby-plugin-sharp": "^2.0.7",
     "gatsby-source-filesystem": "^2.0.12",
-    "gatsby-transformer-json": "^2.1.6",
     "gatsby-transformer-remark": "^2.1.19",
     "gatsby-transformer-sharp": "^2.1.4",
     "hoc-react-loader": "^6.3.0",

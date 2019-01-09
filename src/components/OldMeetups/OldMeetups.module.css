@@ -140,4 +140,8 @@
   .meetup__sponsors p {
     text-align: left;
   }
+
+  .hideOnMobile {
+      display: none;
+  }
 }
