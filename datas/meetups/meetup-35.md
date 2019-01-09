@@ -1,6 +1,6 @@
 ---
 id: ab36d815-3e69-4722-b1e2-9c42f5fb9144
-status: next
+status: done
 title: 'MEETUP 35'
 date: '15/11/2018'
 image: /images/meetup/drone_js.png
