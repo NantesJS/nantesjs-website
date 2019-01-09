@@ -72,6 +72,7 @@ export function OldMeetups ({ meetups }) {
                   <div style={{
                     marginRight: '1rem',
                     maxWidth: '80px',
+                    height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
