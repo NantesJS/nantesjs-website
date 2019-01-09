@@ -2,15 +2,8 @@ import React from "react"
 import { compose } from 'recompose'
 
 import {
-  getCorporations,
-  getMeetups,
-  getSpeakers,
-  getTalks,
-} from './src/api'
-import {
   createStore,
   simpleObject,
-  keyValue,
 } from 'k-ramel'
 import {
   provider,
