@@ -5,6 +5,7 @@ cache:
   directories:
   - node_modules
 script:
+- echo $GATSBY_MAPBOX_TOKEN
 - yarn lint
 - yarn test --coverage && yarn coveralls < ./coverage/lcov.info
 before_deploy:
