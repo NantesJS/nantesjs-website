@@ -26,14 +26,14 @@ Avatars.propTypes = {
 }
 
 function Avatars ({ speakers }) {
-  const filteredSpeakers = speakers.filter(speaker => speaker.link)
+  const speakersWithLink = speakers.filter(speaker => speaker.link)
   return (
     <div className={styles.avatars}>
-      {filteredSpeakers.map((speaker, index) => {
+      {speakersWithLink.map((speaker, index) => {
         let style = {}
         if (speakers.length > 1) {
           const minSize = 25
-          const variableSize = 75 / filteredSpeakers.length
+          const variableSize = 75 / speakersWithLink.length
           const percent = `${ minSize + variableSize }%`
           const position = `${ index * variableSize }%`
 
@@ -54,7 +54,7 @@ function Avatars ({ speakers }) {
             className={classNames(
               styles.avatars__portrait,
               {
-                [styles.avatars__portraitSingle]: filteredSpeakers.length === 1
+                [styles.avatars__portraitSingle]: speakersWithLink.length === 1
               }
             )}
             src={
