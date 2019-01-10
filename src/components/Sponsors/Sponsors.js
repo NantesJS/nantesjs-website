@@ -13,6 +13,7 @@ export function Sponsors () {
       </FullWidthContainer>
       <div className={styles.sponsors__logos}>
         <img
+          alt="logo de alakarteio"
           className={styles.sponsors__logo}
           src={withPrefix('/images/sponsor/alakarteio.png')}
         />
