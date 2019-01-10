@@ -1,0 +1,14 @@
+.sponsors__hero {
+  height: 8rem;
+  margin: 2rem 0;
+}
+
+.sponsors__title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.sponsors__logo {
+    width: 20%;
+}
