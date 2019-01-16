@@ -45,8 +45,6 @@ export function SocialLinks ({
   className,
   linkClassName,
 }) {
-  const hasLabel = !withoutLabel
-
   return (
     <div className={classNames(styles.socialNetwork, className, {
       [styles.socialNetworkVertical]: vertical,
@@ -61,7 +59,8 @@ export function SocialLinks ({
           href={link.href}
           icon={link.icon}
           size={iconSize}
-          label={hasLabel ? link.label : ''}
+          label={link.label}
+          hideLabel={withoutLabel}
         />
       ))}
     </div>

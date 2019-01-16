@@ -34,17 +34,19 @@ const Layout = ({ children }) => (
           <html lang="fr" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <LargeContainer relative >
-          <div
-            style={{
-              margin: '0 auto',
-              maxWidth: '1020px',
-              padding: '0 20px',
-            }}
-          >
-            {children}
-          </div>
-        </LargeContainer>
+        <main>
+          <LargeContainer relative >
+            <div
+              style={{
+                margin: '0 auto',
+                maxWidth: '1020px',
+                padding: '0 20px',
+              }}
+            >
+              {children}
+            </div>
+          </LargeContainer>
+        </main>
         <Footer />
       </Fragment>
     )}

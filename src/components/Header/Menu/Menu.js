@@ -37,6 +37,7 @@ export class Menu extends Component {
             <button
               className={styles.menu__button}
               onClick={this.toggle}
+              aria-label="Ouvrir le menu"
             >
               <FontAwesomeIcon
                 className={styles.menu__icon}
