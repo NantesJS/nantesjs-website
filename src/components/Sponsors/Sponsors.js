@@ -12,11 +12,13 @@ export function Sponsors () {
         <h3 className={styles.sponsors__title}>Sponsors 2019</h3>
       </FullWidthContainer>
       <div className={styles.sponsors__logos}>
-        <img
-          alt="logo de alakarteio"
-          className={styles.sponsors__logo}
-          src={withPrefix('/images/sponsor/alakarteio.png')}
-        />
+        <a href="https://alakarte.io/">
+          <img
+            alt="alakarte io"
+            className={styles.sponsors__logo}
+            src={withPrefix('/images/sponsor/alakarteio.png')}
+          />
+        </a>
       </div>
     </Fragment>
   )
