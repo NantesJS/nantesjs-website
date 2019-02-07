@@ -15,6 +15,7 @@ const store = createStore({
   ui: { menu: simpleObject() },
 }, {
   init: { ui: { menu: { open: false } } },
+  devtools: process.env.NODE_ENV !== 'production',
 })
 
 const Hoc = compose(
