@@ -1,6 +1,6 @@
 ---
 id: 1bcdfd34-6185-40e3-8085-89fa931fe953
-status: next
+status: done
 title: 'MEETUP 36'
 date: '17/01/2019'
 image: /images/meetup/axe-core.png
