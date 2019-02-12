@@ -13,9 +13,6 @@ import styles from './Menu.module.css'
 export const MenuContext = createContext([false, () => {}])
 
 Menu.propTypes = {
-  isOpen: bool,
-  open: func,
-  close: func,
   children: node,
 }
 
