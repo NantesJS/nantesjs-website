@@ -6,7 +6,6 @@ export function MeetupsLink () {
     <MenuLink
       to="/"
       label="Evènements"
-      exact
     />
   )
 }
