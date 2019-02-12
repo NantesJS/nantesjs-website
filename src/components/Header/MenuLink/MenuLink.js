@@ -1,8 +1,5 @@
 import React, { useContext } from 'react'
-import {
-  string,
-  func
-} from 'prop-types'
+import { string } from 'prop-types'
 import { Link } from 'gatsby'
 import { MenuContext } from '../Menu/Menu'
 
