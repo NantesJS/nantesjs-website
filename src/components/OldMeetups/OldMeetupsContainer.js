@@ -24,6 +24,7 @@ export function OldMeetupsContainer () {
                   sponsor { name }
                   venue { name }
                   talks {
+                      id
                       title
                       speakers {
                           id

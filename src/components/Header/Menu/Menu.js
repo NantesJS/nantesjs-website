@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment, createContext, useState } from 'react'
 import {
   node,
   bool,
@@ -10,54 +10,48 @@ import faBars from '@fortawesome/fontawesome-free-solid/faBars'
 
 import styles from './Menu.module.css'
 
-export class Menu extends Component {
-  static propTypes = {
-    isOpen: bool,
-    open: func,
-    close: func,
-    children: node,
-  }
+export const MenuContext = createContext({ closeMenu: () => {} })
 
-  static defaultProps = {
-    children: null,
-  }
+Menu.propTypes = {
+  children: node,
+}
 
-  toggle = () => this.props.isOpen ? this.props.close() : this.props.open()
+Menu.defaultProps = {
+  children: null,
+}
 
-  render () {
-    const {
-      children,
-      isOpen,
-    } = this.props
+export function Menu ({ children }) {
+  const [isOpen, setOpen] = useState(false)
 
-    return (
-      <Fragment>
-        <MediaQuery maxWidth={991}>
-          <div className={styles.menu}>
-            <button
-              className={styles.menu__button}
-              onClick={this.toggle}
-              aria-label="Ouvrir le menu"
-            >
-              <FontAwesomeIcon
-                className={styles.menu__icon}
-                icon={faBars}
-                size="2x"
-              />
-            </button>
-          </div>
-          {isOpen && (
+  return (
+    <Fragment>
+      <MediaQuery maxWidth={991}>
+        <div className={styles.menu}>
+          <button
+            className={styles.menu__button}
+            onClick={() => setOpen(!isOpen)}
+            aria-label="Ouvrir le menu"
+          >
+            <FontAwesomeIcon
+              className={styles.menu__icon}
+              icon={faBars}
+              size="2x"
+            />
+          </button>
+        </div>
+        {isOpen && (
+          <MenuContext.Provider value={{ closeMenu: () => setOpen(false) }}>
             <div className={styles.menu__contentResponsive}>
               {children}
             </div>
-          )}
-        </MediaQuery>
-        <MediaQuery minWidth={992}>
-          <div className={styles.menu__content}>
-            {children}
-          </div>
-        </MediaQuery>
-      </Fragment>
-    )
-  }
+          </MenuContext.Provider>
+        )}
+      </MediaQuery>
+      <MediaQuery minWidth={992}>
+        <div className={styles.menu__content}>
+          {children}
+        </div>
+      </MediaQuery>
+    </Fragment>
+  )
 }
