@@ -30,7 +30,7 @@ export function Sponsors () {
         </a>
         <a
           className={styles.sponsors__logo}
-          href="http://seyos.fr/"
+          href="https://seyos.fr/"
         >
           <img
             alt="seyos"
