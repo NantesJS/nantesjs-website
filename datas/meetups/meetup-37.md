@@ -2,7 +2,7 @@
 id: d1391825-873f-442f-96ec-33c0e6f1685d
 status: next
 title: 'MEETUP 37'
-date: '22/02/2019'
+date: '21/02/2019'
 image: /images/meetup/guess.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-37-56359512820
 venue:
