@@ -4,7 +4,7 @@ status: next
 title: 'MEETUP 37'
 date: '22/02/2019'
 image: /images/meetup/guess.png
-ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-36-54638426003
+ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-37-56359512820
 venue:
     id: f7821fb2-6969-424c-9cf2-700bf7e1fccb
     name: 'Clever Age'
