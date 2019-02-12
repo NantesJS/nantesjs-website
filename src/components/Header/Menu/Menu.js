@@ -10,7 +10,7 @@ import faBars from '@fortawesome/fontawesome-free-solid/faBars'
 
 import styles from './Menu.module.css'
 
-export const MenuContext = createContext([false, () => {}])
+export const MenuContext = createContext({ closeMenu: () => {} })
 
 Menu.propTypes = {
   children: node,
@@ -40,7 +40,7 @@ export function Menu ({ children }) {
           </button>
         </div>
         {isOpen && (
-          <MenuContext.Provider value={[isOpen, setOpen]}>
+          <MenuContext.Provider value={{ closeMenu: () => setOpen(false) }}>
             <div className={styles.menu__contentResponsive}>
               {children}
             </div>

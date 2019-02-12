@@ -14,13 +14,12 @@ MenuLink.propTypes = {
 }
 
 export function MenuLink ({ label, ...otherProps }) {
-  // eslint-disable-next-line unused-var
-  const [isMenuOpen, setMenuOpen] = useContext(MenuContext)
+  const { closeMenu } = useContext(MenuContext)
   return (
     <Link
       activeClassName={styles.menu__linkSelected}
       className={styles.menu__link}
-      onClick={() => setMenuOpen(false)}
+      onClick={closeMenu}
       {...otherProps}
     >
       {label}
