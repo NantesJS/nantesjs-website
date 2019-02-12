@@ -12,7 +12,7 @@ venue:
     address: Bâtiment 7, 4 Rue des Olivettes - Passage d'ouard
     city: Nantes
     latitude: 47.2118285
-    longitude: -1.5508309.15
+    longitude: -1.5508309
     link: 'https://www.clever-age.com/fr/'
 sponsor:
     id: c288e397-e957-4349-aec6-ba9aa4149437
