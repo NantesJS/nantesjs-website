@@ -697,7 +697,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2":
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.3.1.tgz#574b03e8e8a9898eaf4a872a92ea20b7846f6f2a"
   integrity sha512-7jGW8ppV0ant637pIqAcFfQDDH1orEPGJb8aXfUozuCU3QqX7rX4DA8iwrbPrR1hcH0FTTHz47yQnk+bl5xHQA==
@@ -5328,14 +5328,6 @@ gatsby-plugin-react-helmet@^3.0.5:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-react-leaflet@^2.0.0-alpha.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-leaflet/-/gatsby-plugin-react-leaflet-2.0.3.tgz#bd7c685003c2753ad54065edf2ea40bd64753c0e"
-  integrity sha512-+Ss946YrQN/WVfoUyTgf77t8VDv/ZcNDUs/FqrBAYSF76FgbqHeZOzUucvmfJs0QERuZTmEaeqSFGQ0JZR5fpg==
-  dependencies:
-    gatsby "^2.0.0"
-    react-leaflet "^2.0.0"
-
 gatsby-plugin-sharp@^2.0.7:
   version "2.0.20"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.0.20.tgz#6c08558cdd7d8612a9ab9ca1abb038204499fc7f"
@@ -5425,7 +5417,7 @@ gatsby-transformer-sharp@^2.1.4:
     probe-image-size "^4.0.0"
     sharp "^0.21.3"
 
-gatsby@^2.0.0, gatsby@^2.0.19:
+gatsby@^2.0.19:
   version "2.0.119"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.119.tgz#c27d89ddef340e51184bf98a07d400bf8ea57428"
   integrity sha512-3l3n3PB/YVfa4n5S0Q3zPfatvmlY+cn/H74Yc8vXRF6cLndlRdvgA432UEws5apQholaVVZ6iY1phdmAEEWxpQ==
@@ -6216,13 +6208,6 @@ hoist-non-react-statics@^2.5.0:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
-
-hoist-non-react-statics@^3.2.1:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
-  integrity sha512-0XsbTXxgiaCDYDIWFcwkmerZPSwywfUqYmwT4jzewKTQSWoE6FCMoUVOeBJWK3E/CrWbxRG3m5GzY4lnIwGRBA==
-  dependencies:
-    react-is "^16.7.0"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -10673,16 +10658,6 @@ react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
   integrity sha512-ioMCzVDWvCvKD8eeT+iukyWrBGrA3DiFYkXfBsVYIRdaREZuBjENG+KjrikavCLasozqRWTwFUagU/O4vPpRMA==
 
-react-leaflet@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-2.2.0.tgz#9372dc74790515cef723a173833009b7709cbec6"
-  integrity sha512-TCjqIp9ET2LMOK+rBjJTQQesk/9UrP6+zsXoSJU8ZzuyJWVQERLGadDng4yZ63XgIcB7aEAXnl93IsmF46uDyQ==
-  dependencies:
-    "@babel/runtime" "^7.2.0"
-    fast-deep-equal "^2.0.1"
-    hoist-non-react-statics "^3.2.1"
-    warning "^4.0.0"
-
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -13190,13 +13165,6 @@ warning@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
   integrity sha1-MuU3fLVy3kqwR1O9+IIcAe1gW3w=
-  dependencies:
-    loose-envify "^1.0.0"
-
-warning@^4.0.0:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
-  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
   dependencies:
     loose-envify "^1.0.0"
 

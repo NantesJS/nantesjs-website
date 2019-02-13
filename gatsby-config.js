@@ -4,7 +4,6 @@ const options = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-react-leaflet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
