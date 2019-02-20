@@ -37,6 +37,24 @@ export function Sponsors () {
             src={withPrefix('/images/sponsor/seyos.png')}
           />
         </a>
+        <a
+          className={styles.sponsors__logo}
+          href="https://nantes.zenika.com/#/"
+        >
+          <img
+            alt="zenika"
+            src={withPrefix('/images/sponsor/zenika.png')}
+          />
+        </a>
+        <a
+          className={styles.sponsors__logo}
+          href="https://www.oxiane.com/"
+        >
+          <img
+            alt="oxiane"
+            src={withPrefix('/images/sponsor/oxiane.png')}
+          />
+        </a>
       </div>
     </Fragment>
   )
