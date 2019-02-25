@@ -29,6 +29,10 @@ const Layout = ({ children }) => (
               content: 'Communauté Nantaise des utilisateurs de JavaScript',
             },
             { name: 'keywords', content: 'meetup, Nantes, JavaScript' },
+            {
+              name: 'google-site-verification',
+              content: 'qlEe2-C1DYQueNyWsHnPDBC5JDDNZGLxyyz3uXynk0M',
+            },
           ]}
         >
           <html lang="fr" />
