@@ -48,11 +48,29 @@ export function Sponsors () {
         </a>
         <a
           className={styles.sponsors__logo}
-          href="https://www.oxiane.com/"
+          href="https://www.oxiane.bzh/"
         >
           <img
             alt="oxiane"
             src={withPrefix('/images/sponsor/oxiane.png')}
+          />
+        </a>
+        <a
+          className={styles.sponsors__logo}
+          href="https://www.externatic.fr/"
+        >
+          <img
+            alt="externatic"
+            src={withPrefix('/images/sponsor/externatic.png')}
+          />
+        </a>
+        <a
+          className={styles.sponsors__logo}
+          href="https://www.sfeir.com/"
+        >
+          <img
+            alt="sfeir"
+            src={withPrefix('/images/sponsor/sfeir.png')}
           />
         </a>
       </div>
