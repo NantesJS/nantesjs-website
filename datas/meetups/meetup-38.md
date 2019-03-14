@@ -22,7 +22,7 @@ talks:
   -
     id: 3EqOJvu72NZNHrSzN4iZ
     title: 'Retours sur Vue.js Amsterdam 2019'
-    description: "Nous avons eut la chance de participer à Vue.js Amsterdam, la conférence la plus importante en Europe pour la communauté des développeurs Vue.js 💚
+    description: "Nous avons eu la chance de participer à Vue.js Amsterdam, la conférence la plus importante en Europe pour la communauté des développeurs Vue.js 💚
 
 Ce fut 3 jours durant lesquels nous avons pu entendre des speakers tels qu'Evan You (créateur de Vue.js), Sebastien Chopin (créateur de Nuxt.js), des membres de la core team Vue.js, Webpack et bien d'autres...
 Nous vous proposons un tour d'horizon de ce que nous avons pu voir durant ces 3 jours. Au programme :
