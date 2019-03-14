@@ -1,6 +1,6 @@
 ---
 id: d1391825-873f-442f-96ec-33c0e6f1685d
-status: next
+status: done
 title: 'MEETUP 37'
 date: '21/02/2019'
 image: /images/meetup/guess.png
