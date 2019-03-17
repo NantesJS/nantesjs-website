@@ -73,6 +73,15 @@ export function Sponsors () {
             src={withPrefix('/images/sponsor/sfeir.png')}
           />
         </a>
+        <a
+          className={styles.sponsors__logo}
+          href="https://www.lafourchette.com/"
+        >
+          <img
+            alt="lafourchette"
+            src={withPrefix('/images/sponsor/lafourchette.png')}
+          />
+        </a>
       </div>
     </Fragment>
   )
