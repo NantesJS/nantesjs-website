@@ -10,10 +10,10 @@ venue:
   name: 'Epitech'
   link: 'https://www.epitech.eu/fr/ecole-informatique-nantes/'
   postal_code: 44100
-  address: 5 Rue d'Alger
+  address: 18 Rue Flandres - Dunkerque 40
   city: Nantes
-  latitude: 47.210464
-  longitude: -1.5667175
+  latitude: 47.2116262
+  longitude: -1.5658967
 sponsor:
     id: bb1d9169-50fb-4137-93f1-03b71e93c444
     name: 'Zenika'
