@@ -1,6 +1,6 @@
 ---
 id: b9c94d43-2939-4b91-8e37-b1d331ac823e
-status: next
+status: done
 title: 'Meetup #38'
 date: '21/03/2019'
 image: /images/meetup/typescript.png 
