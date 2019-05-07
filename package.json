@@ -19,6 +19,7 @@
     "gatsby-source-filesystem": "^2.0.12",
     "gatsby-transformer-remark": "^2.1.19",
     "gatsby-transformer-sharp": "^2.1.4",
+    "he": "^1.2.0",
     "mapbox-gl": "^0.52.0-beta.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",

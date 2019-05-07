@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import he from 'he'
 
 import { Talks } from './Talks'
 
@@ -28,7 +29,12 @@ export function TalksContainer () {
             }
             `}
       render={({ allMarkdownRemark: { edges } }) => {
-        const talks = edges[0].node.frontmatter.talks
+        const talks = edges[0].node.frontmatter.talks.map(talk => {
+          return {
+            ...talk,
+            description: he.decode(talk.description),
+          }
+        })
         return <Talks talks={talks} />
       }}
     />
