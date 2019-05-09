@@ -1,5 +1,6 @@
 language: node_js
-node_js: node
+node_js:
+  - "10.15.3"
 cache:
   yarn: true
   directories:
@@ -7,7 +8,6 @@ cache:
 script:
 - yarn lint
 - yarn test --coverage && yarn coveralls < ./coverage/lcov.info
-before_deploy:
 - yarn build
 deploy:
   provider: pages
@@ -17,6 +17,3 @@ deploy:
   local-dir: public
   on:
     branch: master
-env:
-  global:
-    secure: Ynia/vjOli8prAF43CskxQXKXN7MgjztrUNRUzSu3G3titsdBSPn0DisNeaDqGFx4yOn/sxkFmhZPmc78Sz4r5yZLNzYSKQc6y5YQ9Y6tHbh/+cNuynWzghoQmQFS1S5/tH/WyYZPT8RSiKRN1Gd2t4oS68nXEIRBe+yv7+ZmOk=

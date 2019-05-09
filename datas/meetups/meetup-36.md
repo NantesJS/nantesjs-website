@@ -1,6 +1,6 @@
 ---
 id: 1bcdfd34-6185-40e3-8085-89fa931fe953
-status: next
+status: done
 title: 'MEETUP 36'
 date: '17/01/2019'
 image: /images/meetup/axe-core.png
@@ -31,6 +31,7 @@ talks:
             -
                 id: 1b2fb6c4-96b1-411f-9756-37315d4a3d5d
                 name: 'Benoît Deglane'
+                link: 'https://twitter.com/BenoitDecline'
     -
         id: c29fd8aa-92f0-46ad-b4c6-cf18537e0507
         title: "LA NOUVELLE API CONTEXT DE REACT"

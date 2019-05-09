@@ -9,7 +9,7 @@ import styles from './Footer.module.css'
 
 export function Footer () {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <Logo
         className={styles.footer__logo}
         imageClassName={styles.footer__image}
@@ -20,8 +20,8 @@ export function Footer () {
           icon={faHeart}
         />&nbsp;
         <Link className={styles.footer__link} to="/">NantesJS</Link>&nbsp;
-         - © 2011-2019
+              - © 2011-2019
       </p>
-    </div>
+    </footer>
   )
 }

@@ -78,7 +78,7 @@ export function Talks ({ talks = [] }) {
         <div key={talk.id} className={styles.talk}>
           <Avatars speakers={talk.speakers} />
           <div>
-            <h3 className={styles.talk__title}>{talk.title}</h3>
+            <h2 className={styles.talk__title}>{talk.title}</h2>
             <p className={styles.talk__description}>{talk.description}</p>
             <div className={styles.talk__speakers}>
               <FontAwesomeIcon

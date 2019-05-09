@@ -29,22 +29,28 @@ const Layout = ({ children }) => (
               content: 'Communauté Nantaise des utilisateurs de JavaScript',
             },
             { name: 'keywords', content: 'meetup, Nantes, JavaScript' },
+            {
+              name: 'google-site-verification',
+              content: 'qlEe2-C1DYQueNyWsHnPDBC5JDDNZGLxyyz3uXynk0M',
+            },
           ]}
         >
           <html lang="fr" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <LargeContainer relative >
-          <div
-            style={{
-              margin: '0 auto',
-              maxWidth: '1020px',
-              padding: '0 20px',
-            }}
-          >
-            {children}
-          </div>
-        </LargeContainer>
+        <main>
+          <LargeContainer relative >
+            <div
+              style={{
+                margin: '0 auto',
+                maxWidth: '1020px',
+                padding: '0 20px',
+              }}
+            >
+              {children}
+            </div>
+          </LargeContainer>
+        </main>
         <Footer />
       </Fragment>
     )}

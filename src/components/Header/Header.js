@@ -10,11 +10,11 @@ import styles from './Header.module.css'
 
 export function Header () {
   // eslint-disable-next-line max-len
-  const proposalLink = 'https://conference-hall.io/public/event/DWIXMKeUnghfgJHerwEh' 
+  const proposalLink = 'https://conference-hall.io/public/event/DWIXMKeUnghfgJHerwEh'
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <LargeContainer>
-        <div className={styles.header__container}>
+        <nav className={styles.header__container}>
           <Logo className={styles.header__logo} />
           <div className={styles.header__links}>
             <SocialIcons className={styles.menu__socialIcons} />
@@ -27,12 +27,12 @@ export function Header () {
                 href={proposalLink}
                 className={styles.menu__button}
               >
-                Proposer un sujet
+                          Proposer un sujet
               </a>
             </Menu>
           </div>
-        </div>
+        </nav>
       </LargeContainer>
-    </div>
+    </header>
   )
 }

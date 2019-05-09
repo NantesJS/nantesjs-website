@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/frinyvonnick/nantesjs.svg?branch=master)](https://travis-ci.org/frinyvonnick/nantesjs)
-[![Coverage Status](https://coveralls.io/repos/github/frinyvonnick/nantesjs/badge.svg?branch=master)](https://coveralls.io/github/frinyvonnick/nantesjs?branch=master)
+[![Build Status](https://travis-ci.org/NantesJS/nantesjs-website.svg?branch=master)](https://travis-ci.org/NantesJS/nantesjs-website)
+[![Coverage Status](https://coveralls.io/repos/github/NantesJS/nantesjs-website/badge.svg?branch=master)](https://coveralls.io/github/NantesJs/nantesjs-website?branch=master)
 
 # NantesJS.org
 
