@@ -32,6 +32,7 @@ export function TalksContainer () {
         const talks = edges[0].node.frontmatter.talks.map(talk => {
           return {
             ...talk,
+            title: he.decode(talk.title),
             description: he.decode(talk.description),
           }
         })
