@@ -28,7 +28,7 @@ Ce talk a pour but de remettre de l&#x27;ordre dans l&#x27;esprit des développe
       -
           id: lrg9Y9uTtBaDBBhdpkVbkiVZWK73
           name: 'Antoine Bluchet'
-          link: 's0yuka'
+          link: 'https://twitter.com/s0yuka'
   -
     id: dkEmC6Acadn1NCJTJl0Z
     title: 'Lint, Coverage, Doc, Autocompletion, Transpilation, Minification... powered by AST'
@@ -41,4 +41,4 @@ Now the fun part... It is in fact quite simple to understand., and today&#x27;s 
       -
           id: P7GodQ7zT7ga11CdW9L1OkMbwfv2
           name: 'Alexandre Morgaut'
-          link: 'amorgaut'
+          link: 'https://twitter.com/amorgaut'
