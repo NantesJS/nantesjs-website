@@ -29,7 +29,7 @@ Et parce qu&#x27;on aime tous les librairie expérimentales, pourquoi ne pas ess
       -
           id: tTeFqn5IOIXyf5knHpncnFL7eSv2
           name: 'Thomas Colin'
-          link: 'thcolin3'
+          link: 'https://twitter.com/thcolin3'
   -
     id: cn7iNPSIAtspEb6BdFa8
     title: 'Quoi de neuf chez TC39 ?'
@@ -38,12 +38,12 @@ Et parce qu&#x27;on aime tous les librairie expérimentales, pourquoi ne pas ess
       -
           id: uXrDcVczMwZWdTwKLfAqZp6ObO42
           name: 'Charles-henri Guérin'
-          link: 'charlyx'
+          link: 'https://twitter.com/charlyx'
       -
           id: 0UtQRzdL0DPmfvuBFmeKh2PJyiD2
           name: 'Thomas Moyse'
-          link: 't8g'
+          link: 'https://twitter.com/t8g'
       -
           id: e48Hzn03cyQ94rsRUi3LmEjU3XV2
           name: 'Yvonnick Frin'
-          link: 'YvonnickFrin'
+          link: 'https://twitter.com/YvonnickFrin'
