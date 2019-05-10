@@ -25,11 +25,13 @@ yarn start
 
 ## Add a new meetup
 
-To add a new meetup, you need to create a `.md` file in `src/_meetups/`.
+To add a new meetup, you need to create a `.md` file in `dates/meetups/`.
 
 The suggested method is to duplicate the last meetup file and to fill in the fields with the new data.
 
 Don't forget to set the `status` of the previous meetup to `done` for it to be displayed in the previous section.
+
+You could also use [nantesjs-organizer](https://github.com/NantesJS/nantesjs-organizer) to generate the markdown file.
 
 ## License
 
