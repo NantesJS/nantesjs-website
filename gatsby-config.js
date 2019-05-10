@@ -30,6 +30,12 @@ const options = {
         path:`${ __dirname }/datas/meetups`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_ID,
+      },
+    },
   ]
 }
 
