@@ -25,7 +25,7 @@ yarn start
 
 ## Add a new meetup
 
-To add a new meetup, you need to create a `.md` file in `dates/meetups/`.
+To add a new meetup, you need to create a `.md` file in `datas/meetups/`.
 
 The suggested method is to duplicate the last meetup file and to fill in the fields with the new data.
 
