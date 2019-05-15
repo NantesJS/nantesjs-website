@@ -4,6 +4,10 @@ import classNames from 'classnames'
 import MediaQuery from 'react-responsive'
 import { withPrefix } from 'gatsby'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faYoutube } from '@fortawesome/fontawesome-free-brands'
+
+
 import { FullDate } from '../FullDate'
 import { FullWidthContainer } from '../FullWidthContainer'
 
@@ -17,7 +21,7 @@ function Talks ({ talks }) {
   return (
     <ul className={styles.talks}>
       {talks.map(talk => (
-        <li key={talk.id}>
+        <li className={styles.talk} key={talk.id}>
           <p className={styles.talk__title}>{talk.title}</p>
           {talk.speakers && talk.speakers
             .map(speaker => speaker.link ? (
@@ -32,6 +36,12 @@ function Talks ({ talks }) {
               </a>
             ) : speaker.name)
             .reduce((prev, curr) => [prev, ', ', curr])}
+          {talk.video && <a className={styles.talk__video}
+            aria-label="Voir la video"
+            href={talk.video}>
+            <FontAwesomeIcon icon={faYoutube} aria-hidden="true"/>
+          </a>
+          }
         </li>
       ))}
     </ul>
