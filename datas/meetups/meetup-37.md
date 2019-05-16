@@ -29,7 +29,6 @@ du data-driven bundling avec GuessPlugin, permettant d'optimiser votre build web
 du data-driven loading avec guess-static-sites, permettant de réaliser un prefetching automatique, dynamique et intelligent
 
 Pas besoin d'expertise en machine learning! Juste de quelques connaissances JavaScript 😉"
-        video: 'https://youtu.be/vLhbo-bRTNY'
         speakers:
             -
                 id: aeef1f0e-8727-4c51-a8a0-58f8500cb9d0
@@ -40,7 +39,6 @@ Pas besoin d'expertise en machine learning! Juste de quelques connaissances Java
         title: "Images Responsives"
         description: "Pour garantir de bonnes performances, il faut savoir servir à l’utilisateur les bonnes ressources graphiques en fonction de son contexte d’affichage. À ce jour, il existe une technologie standard qui combine code HTML et code CSS, mais qui est souvent mal employée. Nous verrons donc pourquoi, comment y remédier, et ce à travers de nombreux exemples.
 `picture`, `srcset`, `sizes`, `source`, `media` et `type` n’auront plus de secret pour vous !"
-        video: 'https://youtu.be/uJdIFcU2vwo'
         speakers:
             -
                 id: a3f2543b-6402-4896-bf2b-1fd578c2889f
