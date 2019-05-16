@@ -37,7 +37,7 @@ function Talks ({ talks }) {
             ) : speaker.name)
             .reduce((prev, curr) => [prev, ', ', curr])}
           {talk.video && <a className={styles.talk__video}
-            aria-label="Voir la video"
+            title="Voir la video"
             href={talk.video}>
             <FontAwesomeIcon icon={faYoutube} aria-hidden="true"/>
           </a>
