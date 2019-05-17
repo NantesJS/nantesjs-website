@@ -60,6 +60,10 @@
   width: calc(100% - 100px);
 }
 
+.talk {
+  position: relative;
+}
+
 .talk__title {
   margin-top: 1rem;
   margin-bottom: 0;
@@ -69,6 +73,12 @@
 
 .talk__speaker {
   font-weight: 300;
+}
+
+.talk__video {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .talks {

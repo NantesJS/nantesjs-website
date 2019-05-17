@@ -26,6 +26,7 @@ export function OldMeetupsContainer () {
                   talks {
                       id
                       title
+                      video
                       speakers {
                           id
                           name
