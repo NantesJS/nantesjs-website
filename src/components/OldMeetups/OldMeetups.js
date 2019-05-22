@@ -22,26 +22,29 @@ function Talks ({ talks }) {
     <ul className={styles.talks}>
       {talks.map(talk => (
         <li className={styles.talk} key={talk.id}>
-          <p className={styles.talk__title}>{talk.title}</p>
-          {talk.speakers && talk.speakers
-            .map(speaker => speaker.link ? (
-              <a
-                className={styles.talk__speaker}
-                key={speaker.id}
-                href={speaker.link}
-              >
-                {speaker.link.includes('twitter') ?
-                  `@${ speaker.link.split('/').pop() }` :
-                  speaker.name}
-              </a>
-            ) : speaker.name)
-            .reduce((prev, curr) => [prev, ', ', curr])}
-          {talk.video && <a className={styles.talk__video}
-            title="Voir la video"
-            href={talk.video}>
-            <FontAwesomeIcon icon={faYoutube} aria-hidden="true"/>
-          </a>
-          }
+          <div>
+            <p className={styles.talk__title}>{talk.title}</p>
+            {talk.speakers && talk.speakers
+              .map(speaker => speaker.link ? (
+                <a
+                  className={styles.talk__speaker}
+                  key={speaker.id}
+                  href={speaker.link}
+                >
+                  {speaker.link.includes('twitter') ?
+                    `@${ speaker.link.split('/').pop() }` :
+                    speaker.name}
+                </a>
+              ) : speaker.name)
+              .reduce((prev, curr) => [prev, ', ', curr])}
+          </div>
+          {talk.video && (
+            <a className={styles.talk__video}
+              title="Voir la video"
+              href={talk.video}>
+              <FontAwesomeIcon icon={faYoutube} aria-hidden="true"/>
+            </a>
+          )}
         </li>
       ))}
     </ul>
