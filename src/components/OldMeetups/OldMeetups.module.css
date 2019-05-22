@@ -81,6 +81,10 @@
   margin-left: 1rem;
 }
 
+.talk__video svg {
+  width: 1.125em;
+}
+
 .talks {
   padding: 0;
   margin: 0;
