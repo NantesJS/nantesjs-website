@@ -43,4 +43,10 @@
 
 .talk__speakers {
   color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.talk__speakers svg {
+  width: 1em;
 }
