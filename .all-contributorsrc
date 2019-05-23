@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "t8g",
+      "name": "Thomas Moyse",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/639759?v=4",
+      "profile": "http://byteclub.fr",
+      "contributions": [
+        "eventOrganizing",
+        "maintenance",
+        "projectManagement"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "nantesjs-website",
+  "projectOwner": "NantesJS",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
