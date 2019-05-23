@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/NantesJS/nantesjs-website.svg?branch=master)](https://travis-ci.org/NantesJS/nantesjs-website)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![Coverage Status](https://coveralls.io/repos/github/NantesJS/nantesjs-website/badge.svg?branch=master)](https://coveralls.io/github/NantesJs/nantesjs-website?branch=master)
 
 # NantesJS.org
@@ -48,3 +49,15 @@ You could also use [nantesjs-organizer](https://github.com/NantesJS/nantesjs-org
     TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
     0. You just DO WHAT THE FUCK YOU WANT TO.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="http://byteclub.fr"><img src="https://avatars2.githubusercontent.com/u/639759?v=4" width="100px;" alt="Thomas Moyse"/><br /><sub><b>Thomas Moyse</b></sub></a><br /><a href="#eventOrganizing-t8g" title="Event Organizing">📋</a> <a href="#maintenance-t8g" title="Maintenance">🚧</a> <a href="#projectManagement-t8g" title="Project Management">📆</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
