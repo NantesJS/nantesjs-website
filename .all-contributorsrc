@@ -1,0 +1,49 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "charlyx",
+      "name": "Charles-Henri GUERIN",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/481446?v=4",
+      "profile": "http://charlyx.dev",
+      "contributions": [
+        "code",
+        "eventOrganizing",
+        "maintenance",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "frinyvonnick",
+      "name": "Yvonnick FRIN",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13099512?v=4",
+      "profile": "https://twitter.com/YvonnickFrin",
+      "contributions": [
+        "code",
+        "eventOrganizing",
+        "maintenance",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "t8g",
+      "name": "Thomas Moyse",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/639759?v=4",
+      "profile": "http://byteclub.fr",
+      "contributions": [
+        "eventOrganizing",
+        "maintenance",
+        "projectManagement"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "nantesjs-website",
+  "projectOwner": "NantesJS",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
