@@ -1,6 +1,6 @@
 ---
 id: 8c5a9d2b-7d70-453c-8e93-d0fae400ca93
-status: next
+status: done
 title: 'Meetup #40'
 date: '16/05/2019'
 image: /images/meetup/react.svg
