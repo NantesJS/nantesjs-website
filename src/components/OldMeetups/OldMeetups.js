@@ -3,6 +3,7 @@ import { array } from 'prop-types'
 import classNames from 'classnames'
 import MediaQuery from 'react-responsive'
 import { withPrefix } from 'gatsby'
+import he from 'he'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/fontawesome-free-brands'
@@ -23,7 +24,7 @@ function Talks ({ talks }) {
       {talks.map(talk => (
         <li className={styles.talk} key={talk.id}>
           <div>
-            <p className={styles.talk__title}>{talk.title}</p>
+            <p className={styles.talk__title}>{he.decode(talk.title)}</p>
             {talk.speakers && talk.speakers
               .map(speaker => speaker.link ? (
                 <a
