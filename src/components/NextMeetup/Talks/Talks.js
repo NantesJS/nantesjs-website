@@ -3,6 +3,7 @@ import { string, object, array } from 'prop-types'
 import classNames from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter'
+import he from 'he'
 
 import styles from './Talks.module.css'
 
@@ -78,8 +79,10 @@ export function Talks ({ talks = [] }) {
         <div key={talk.id} className={styles.talk}>
           <Avatars speakers={talk.speakers} />
           <div>
-            <h2 className={styles.talk__title}>{talk.title}</h2>
-            <p className={styles.talk__description}>{talk.description}</p>
+            <h2 className={styles.talk__title}>{he.decode(talk.title)}</h2>
+            <p className={styles.talk__description}>
+              {he.decode(talk.description)}
+            </p>
             <div className={styles.talk__speakers}>
               <FontAwesomeIcon
                 icon={faTwitter}
