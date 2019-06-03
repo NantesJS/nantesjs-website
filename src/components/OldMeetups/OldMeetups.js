@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import { array } from 'prop-types'
 import classNames from 'classnames'
-import MediaQuery from 'react-responsive'
 import { withPrefix } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -75,12 +74,6 @@ export function OldMeetups ({ meetups }) {
               <div className={classNames(styles.meetup, {
                 [styles.meetupBordered]: lastIndex !== index,
               })}>
-                {/*
-                  Bug with MediaQuery and mixing class names
-                  https://github.com/gatsbyjs/gatsby/pull/8092
-                  <MediaQuery minWidth={768}/>
-                    <div className={styles.meetup__date}>
-                */}
                 <div className={styles.hideOnMobile}>
                   <div className={styles.meetup__date}>
                     <FullDate date={meetup.date} fontSize={.5} />
@@ -117,11 +110,9 @@ export function OldMeetups ({ meetups }) {
                     </div>
                   </div>
                   <Talks talks={meetup.talks}/>
-                  <MediaQuery maxWidth={767}>
-                    <div className={styles.meetup__date}>
-                      <p>{meetup.date}</p>
-                    </div>
-                  </MediaQuery>
+                  <div className={styles.meetup__date}>
+                    <p>{meetup.date}</p>
+                  </div>
                 </div>
               </div>
             </Fragment>
