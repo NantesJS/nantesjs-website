@@ -14,6 +14,7 @@ export function OldMeetupsContainer () {
             {
               allMarkdownRemark(
                 filter: { frontmatter: { status: { eq: "done" } } }
+                limit: 5
               ) {
                 edges { node { frontmatter {
                   id
