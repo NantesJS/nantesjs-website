@@ -119,6 +119,12 @@
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+  .meetup__date {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .meetup {
     display: block;
