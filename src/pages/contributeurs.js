@@ -1,9 +1,10 @@
-import React from "react";
-import Layout from "../components/layout";
-import { graphql } from "gatsby";
-import { Picture } from "../components/Picture";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 
-import styles from "./contributeurs.module.css";
+import Layout from '../components/layout'
+
+import styles from "./contributeurs.module.css"
 
 const contributions = {
   question: {
@@ -90,7 +91,7 @@ const contributions = {
     title: "Tests utilisateurs"
   },
   video: { emoji: "📹", title: "Vidéos" }
-};
+}
 
 export const query = graphql`
   query contributors {
@@ -106,9 +107,9 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default function Contributors({ data }) {
+export default function Contributors ({ data }) {
   return (
     <Layout>
       <h1>Un grand merci à tous les contributeurs</h1>
@@ -132,4 +133,18 @@ export default function Contributors({ data }) {
       </ul>
     </Layout>
   )
+}
+Contributors.propTypes = {
+  data: PropTypes.shape({
+    allContributorsJson: PropTypes.shape({
+      nodes: PropTypes.shape({
+        contributors: PropTypes.arrayOf(PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          login: PropTypes.string.isRequired,
+          avatar_url: PropTypes.string.isRequired,
+          contributions: PropTypes.arrayOf(PropTypes.string).isRequired,
+        })),
+      }),
+    }),
+  }),
 }
