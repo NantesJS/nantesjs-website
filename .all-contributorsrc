@@ -58,6 +58,15 @@
         "code",
         "video"
       ]
+    },
+    {
+      "login": "ripoul",
+      "name": "Jules",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/23215341?v=4",
+      "profile": "https://github.com/ripoul",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
