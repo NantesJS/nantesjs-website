@@ -8,6 +8,7 @@ import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter'
 import faSlack from '@fortawesome/fontawesome-free-brands/faSlack'
 import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
 import faRssSquare from '@fortawesome/fontawesome-free-solid/faRssSquare'
+import faYoutube from '@fortawesome/fontawesome-free-brands/faYoutube'
 import { SocialLink } from '../SocialLink'
 import styles from './SocialLinks.module.css'
 
@@ -42,6 +43,11 @@ const links = [
     label: 'RSS',
     icon: faRssSquare
   },
+  {
+    href: 'https://www.youtube.com/c/NantesJS',
+    label: 'Youtube',
+    icon: faYoutube
+  }
 ]
 
 export function SocialLinks ({
