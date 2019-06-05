@@ -7,6 +7,7 @@ import classNames from 'classnames'
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter'
 import faSlack from '@fortawesome/fontawesome-free-brands/faSlack'
 import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
+import faRssSquare from '@fortawesome/fontawesome-free-solid/faRssSquare'
 import { SocialLink } from '../SocialLink'
 import styles from './SocialLinks.module.css'
 
@@ -35,6 +36,11 @@ const links = [
     href: 'https://github.com/NantesJS',
     label: 'Github',
     icon: faGithub,
+  },
+  {
+    href: '/rss.xml',
+    label: 'RSS',
+    icon: faRssSquare
   },
 ]
 
