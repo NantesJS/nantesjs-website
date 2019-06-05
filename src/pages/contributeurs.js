@@ -41,7 +41,7 @@ const contributions = {
   },
   eventOrganizing: {
     emoji: "📋",
-    title: "Organisateur d'éveènement"
+    title: "Organisateur d'évènements"
   },
   financial: {
     emoji: "💵",
