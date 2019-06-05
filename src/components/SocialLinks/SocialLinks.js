@@ -44,7 +44,7 @@ const links = [
     icon: faRssSquare
   },
   {
-    href: 'https://www.youtube.com/channel/UCUPgZ16FyQUZf7vfSd7Ul0g',
+    href: 'https://www.youtube.com/c/NantesJS',
     label: 'Youtube',
     icon: faYoutube,
   },
