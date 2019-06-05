@@ -16,6 +16,15 @@
         "maintenance",
         "projectManagement"
       ]
+    },
+    {
+      "login": "greizgh",
+      "name": "greizgh",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1313624?v=4",
+      "profile": "https://github.com/greizgh",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
