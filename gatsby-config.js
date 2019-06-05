@@ -32,6 +32,14 @@ const options = {
       options: {
         path: `${ __dirname }/datas/meetups`,
       },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `contributors`, 
+        path:`${ __dirname }/datas/contributors`,
+      },
     }, {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

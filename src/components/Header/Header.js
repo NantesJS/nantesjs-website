@@ -1,6 +1,7 @@
 import React from 'react'
 import { Menu } from './Menu'
 import { AboutLink } from './AboutLink'
+import { ContributorsLink } from './ContributorsLink'
 import { MeetupsLink } from './MeetupsLink'
 import { Logo } from './Logo'
 import { LargeContainer } from '../../components/LargeContainer'
@@ -20,6 +21,7 @@ export function Header () {
             <SocialIcons className={styles.menu__socialIcons} />
             <Menu>
               <MeetupsLink />
+              <ContributorsLink />
               <AboutLink />
               <a
                 target="_blank"
