@@ -46,8 +46,8 @@ const links = [
   {
     href: 'https://www.youtube.com/c/NantesJS',
     label: 'Youtube',
-    icon: faYoutube,
-  },
+    icon: faYoutube
+  }
 ]
 
 export function SocialLinks ({
