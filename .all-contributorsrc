@@ -38,7 +38,7 @@
         "eventOrganizing",
         "maintenance",
         "projectManagement"
-        ]
+      ]
     },
     {
       "login": "greizgh",
@@ -47,6 +47,16 @@
       "profile": "https://github.com/greizgh",
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "jtanguy",
+      "name": "Julien Tanguy",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/551107?v=4",
+      "profile": "https://jtanguy.me",
+      "contributions": [
+        "code",
+        "video"
       ]
     }
   ],
