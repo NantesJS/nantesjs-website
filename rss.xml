@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Wed, 05 Jun 2019 06:31:02 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;Migration jQuery -&gt; AngularJS à DoYouBuzz&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/atomrc&quot;&gt;Thomas Belin&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  Stereolux&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 25]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">cdabd083-8d6e-4b84-b81f-c420519cb993</guid><pubDate>Thu, 26 Oct 2017 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Baobab.js, ou comment gérer simplement son état applicatif&lt;/h3&gt;
+      &lt;p&gt;Baobab est une bibliothèque JavaScript pour gérer son state dans une archi Flux comme un arbre centralisé, dont la particularité est qu&apos;il implémente les curseurs. Après avoir testé différentes architectures, pourquoi restons-nous sur Baobab chez Matlo ?&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/JLesceau&quot;&gt;Jérémy Lesceau&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Promenade au pays de la cartographie&lt;/h3&gt;
+      &lt;p&gt;Après une petite mise en jambe, on regardera de plus près mapboxgl - qui permet de d&apos;afficher, styliser des cartes vectorielles 2D ou 2D½. Comment ça s&apos;utilise ? Comment ça marche ? Comment l&apos;alimenter ?&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/rotoglup&quot;&gt;Nicolas Lelong&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://lonestone.consulting&quot;&gt;Lone Stone&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://seyos.fr/&quot;&gt;Seyos&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-25-39007724153&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 34]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1b509bae-ecc8-4ef4-985b-19c9661ec901</guid><pubDate>Thu, 25 Oct 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Journey through multiplayer online game development with JS&lt;/h3&gt;
+      &lt;p&gt;Retours d&apos;expérience sur le dévelopement d&apos;un jeu en ligne en JS. Quelle(s) architecture(s) réseau utiliser pour le jeu en ligne, et comment les adapter au web ? Comment créer un moteur graphique en quelques jours ? et un moteur physique ?
+Je vais vous présenter les solutions mises en place lors d&apos;une game jam, au menu : WebRTC, canvas API et Rust/WebAssembly&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/IcanDivideBy0&quot;&gt;Samuel Hurel&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Du JS et des LEGO&lt;/h3&gt;
+      &lt;p&gt;A 10 ans, je ne savais pas ce qu’était la programmation, mais je voulais faire un robot. A  34 ans passé, je sais ce que c’est. En plus j’ai toujours des LEGO. Et si je réalisais enfin ce rêve de gosse? Je vais donc partager avec vous mon expérience sur la création d’un drone terrestre tout en LEGO. C’était aussi le projet idéal pour tester plein de choses. On y causera donc hardware, Physical Web et CycleJS client side comme server side.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/pierrechabiland&quot;&gt;Pierre Chabiland&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://compte-nickel.fr/&quot;&gt;Nickel&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.externatic.fr/&quot;&gt;Externatic&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-34-51327446775&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 10]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">6c394ea4-6dab-4f12-827b-3fe2860ab2ea</guid><pubDate>Tue, 23 Sep 2014 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;SigmaJS&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jacomyal&quot;&gt;Alexis Jacomy&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  Eodim&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 24]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">0401bc38-6a34-4368-a5c8-f1b557edffe6</guid><pubDate>Thu, 21 Sep 2017 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;La dataviz pour les hipsters&lt;/h3&gt;
+      &lt;p&gt;La dataviz est devenue mainstream. Comme D3.js a quasi tué la profession, tout le monde en fait et on ne peut plus se démarquer… Vraiment ? Petit voyage au cœur des technos les plus insolites, afin de pouvoir encore faire la différence en 2017 !&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jacomyal&quot;&gt;Alexis Jacomy&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Un bon Brunch dans une bonne auberge&lt;/h3&gt;
+      &lt;p&gt;Brunch est un build tool, qui a l’instar de Task Runner comme Gulp ou Grunt nécessite très peu de conf pour faire la même chose... en mieux. Un petit quickie pour présenter l&apos;outil avec ses qualités et ses défauts.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/PierreChabiland&quot;&gt;Pierre Chabiland&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.externatic.fr/&quot;&gt;Externatic&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://thetribe.io/&quot;&gt;The Tribe&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-24-37661677090&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #38]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">b9c94d43-2939-4b91-8e37-b1d331ac823e</guid><pubDate>Thu, 21 Mar 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Retours sur Vue.js Amsterdam 2019&lt;/h3&gt;
+      &lt;p&gt;Nous avons eu la chance de participer à Vue.js Amsterdam, la conférence la plus importante en Europe pour la communauté des développeurs Vue.js 💚
+Ce fut 3 jours durant lesquels nous avons pu entendre des speakers tels qu&apos;Evan You (créateur de Vue.js), Sebastien Chopin (créateur de Nuxt.js), des membres de la core team Vue.js, Webpack et bien d&apos;autres... Nous vous proposons un tour d&apos;horizon de ce que nous avons pu voir durant ces 3 jours. Au programme : - Vue.js aujourd&apos;hui - Le futur de Vue.js (v3) - L&apos;écosystème Vue.js en 2019 - Vue.js et optimisations &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/_bruno_b_&quot;&gt;Bruno Bonnin&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/FranckAbgrall&quot;&gt;Franck Abgrall&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Typescript et les types opaques&lt;/h3&gt;
+      &lt;p&gt;Protéger son code des erreurs d&apos;executions avec typescript c&apos;est bien.
+Mais on peut aussi : - Améliorer la lisibilité de son code. - Eviter de  nombreux de bugs fonctionnels. - Profiter de cette opportunité pour créer des modules au limites claires. - Simplifier les pénibles réécritures de code en cas de breaking changes.
+Pour cela nous allons découvrir progressivement ce que sont les opaques types au travers d&apos;examples simples et concrets.
+Cette présentation ne nécessite qu&apos;une connaissance superficielle de typescript.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/catelandaxel&quot;&gt;Axel Cateland&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.epitech.eu/fr/ecole-informatique-nantes/&quot;&gt;Epitech&lt;/a&gt;&lt;br/&gt;
+  18 Rue Flandres - Dunkerque 40 44100 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://nantes.zenika.com&quot;&gt;Zenika&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-38-tickets-58796237128&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 03]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">c15a320f-72e7-41e4-b603-f1e4d5c34197</guid><pubDate>Wed, 21 Mar 2012 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Accueil &amp; actualité du Web&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;null&quot;&gt;Yoann Digue&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Analyse d&apos;un test de recrutement de développeur Front-end&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  La Cantine&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 37]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">d1391825-873f-442f-96ec-33c0e6f1685d</guid><pubDate>Thu, 21 Feb 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Machine Learning driven user-experiences made easy with Guess.js&lt;/h3&gt;
+      &lt;p&gt;Comment faire plus hype que le Machine Learning ?! Faire de la web perf avec !!! 🤯 #PWA #AI Faites entrer le web dans le #turfu grâce à Guess.js, une collection de libraries créée par Minko Gechev. Nous verrons durant ce talk comment mettre en place très simplement, grâce à vos données Google Analytics: du data-driven bundling avec GuessPlugin, permettant d&apos;optimiser votre build webpack, y compris avec React et Angular du data-driven loading avec guess-static-sites, permettant de réaliser un prefetching automatique, dynamique et intelligent
+Pas besoin d&apos;expertise en machine learning! Juste de quelques connaissances JavaScript 😉&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/noel_mace&quot;&gt;NOΞL MACÉ&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Images Responsives&lt;/h3&gt;
+      &lt;p&gt;Pour garantir de bonnes performances, il faut savoir servir à l’utilisateur les bonnes ressources graphiques en fonction de son contexte d’affichage. À ce jour, il existe une technologie standard qui combine code HTML et code CSS, mais qui est souvent mal employée. Nous verrons donc pourquoi, comment y remédier, et ce à travers de nombreux exemples. `picture`, `srcset`, `sizes`, `source`, `media` et `type` n’auront plus de secret pour vous !&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/htmlvv&quot;&gt;Vincent Valentin&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.clever-age.com/fr/&quot;&gt;Clever Age&lt;/a&gt;&lt;br/&gt;
+  Bâtiment 7, 4 Rue des Olivettes - Passage d&apos;ouard 44000 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.mymoneybank.fr/&quot;&gt;My Money Bank&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-37-56359512820&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 16]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">fd3aabba-2e39-40bd-b996-d1e300128fc9</guid><pubDate>Thu, 21 Jan 2016 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Beyond Flux: going full cycle with Functional Reactive Programming&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/clementd&quot;&gt;Clément Delafargue&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : Beyond flash ;)&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/pierrechabiland&quot;&gt;Pierre Chabiland&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.clever-age.com/fr/&quot;&gt;Clever Age&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 33]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">955c904b-550d-4009-85c1-a3c8c0ddf741</guid><pubDate>Thu, 20 Sep 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Faisons de la magie grace à Houdini CSS&lt;/h3&gt;
+      &lt;p&gt;La dernière spec de layout CSS vient tout juste de sortir et elle correspond exactement à votre besoin et va permettre de simplifier énormément votre travail quotidien. Seul hic, vous devez supporter tous ces navigateurs qui n’ont pas encore implémentés cette feature !
+Comment faire ? Un polyfill javascript ? Ca risque de plomber un peu les performances de votre projet. Ah si seulement de vrais polyfills css existaient !
+Et bien c’est un peu la version TL;DR; de Houdini CSS. Venez à ce talk pour voir ce que l’avenir du CSS nous réserve et comment cette spec va nous changer la vie !&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jefbinomed&quot;&gt;Jean-François Garreau&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;La gestion des erreurs dans une appli web (React) ou mobile (React Native)&lt;/h3&gt;
+      &lt;p&gt;Retour d&apos;expérience sur les patterns de gestion des erreurs mis en place dans nos applis web (React) et mobile (React Native) chez Beesbusy.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/pierrepinard_2&quot;&gt;Pierre Pinard&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.lafourchette.com/&quot;&gt;La fourchette&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.abtasty.com/fr/&quot;&gt;AB Tasty&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-33-49801021195&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Le meetup dont vous êtes le héros]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">a38fc14d-fe47-4658-871b-4bfe5223f394</guid><pubDate>Thu, 20 Jul 2017 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;Votre talk&lt;/h3&gt;
+      &lt;p&gt; &lt;ul style=&apos;margin-left:0;&apos;&gt; &lt;li&gt;1. &lt;strong&gt;Réunissez votre tribu&lt;/strong&gt; - Constituez votre équipe sur place ou amenez des amis.&lt;/li&gt; &lt;li&gt;2. &lt;strong&gt;Le choix des armes&lt;/strong&gt; - Choisissez un des sujets proposés (vous pouvez aussi amener le vôtre).&lt;/li&gt; &lt;li&gt;3. &lt;strong&gt;Peaufinez votre stratégie&lt;/strong&gt; - Vous avez 1h30 pour mettre sur pied quelques slides.&lt;/li&gt; &lt;li&gt;4. &lt;strong&gt;Entrez dans l&apos;arène&lt;/strong&gt; - Vous avez 5 à 10 minutes pour présenter votre oeuvre aux autres groupes.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Et finalement racontez vos aventures autour d&apos;une bonne flambée et d&apos;un godet&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Vous&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.akeneo.com/fr/&quot;&gt;Akeneo&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.lafourchette.com/&quot;&gt;La fourchette&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-summer-event-35686378920&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 04]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1dfd86b7-93fc-4b2b-8c9e-44446f75d4d2</guid><pubDate>Wed, 20 Jun 2012 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Welcome / JS News&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;AngularJS&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;JS Remote Debugging&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/thomasg77&quot;&gt;Thomas Gratier&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  La Cantine&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 21]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">bc5ccdd0-854c-41bb-9287-9ab015c5e9ec</guid><pubDate>Thu, 20 Apr 2017 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Comment manipuler une page web avec une API de marketing automation&lt;/h3&gt;
+      &lt;p&gt;Certains ESP expose une API qui permet de récupérer des infos d&apos;un visiteur, ce qui permet de manipuler le contenu d&apos;une page à la volée pour proposer des contenus pertinents. + Changer un formulaire en fonction du type de visiteur + Afficher un count-down personnalisé pendant une offre limitée + Segmenter en un click les visiteurs déjà connus. Avec des exemples de code.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/pl4n3th&quot;&gt;Aleth Gueguen&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Purescript: des sensations pures&lt;/h3&gt;
+      &lt;p&gt;Dans le monde du compile-to-js, il y a des langages proches (genre coffeescript), et des langages qui vont un peu plus loin (genre typescript). Et puis il y a purescript. Ce soir, on verra le pourquoi et le comment, avec la bibliothèque halogen, qui permet de créer des applications/interface graphiques.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/clementd&quot;&gt;Clément Delafargue&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Les tests en JavaScript®&lt;/h3&gt;
+      &lt;p&gt;L&apos;écosystème JavaScript® est riche en choix et la thématique des tests n&apos;échappe pas à la règle. Dressons un rapide panorama de ce qu&apos;il est possible de faire, pourquoi, avec quoi et comment.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/alvinberthelot&quot;&gt;Alvin Berthelot&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.lafourchette.com/&quot;&gt;La fourchette&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://seyos.fr/&quot;&gt;Seyos&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-21-33110196489&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 14]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">c4431f93-a473-48c0-92f7-4ddb6a7e833b</guid><pubDate>Thu, 19 Nov 2015 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Flux : les doigts dans le Flux ! (Slides)&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/atomrc&quot;&gt;Thomas Belin&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : Meteor&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/YannDanthu&quot;&gt;Yann Danthu&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  iAdvize&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 15]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">2bbde6a3-4c70-40a4-adf1-dce339acc675</guid><pubDate>Thu, 19 Nov 2015 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Un peu de programmation fonctionnelle en JS&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/d_sferruzza&quot;&gt;David Sferruzza&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : Grid Stylesheet&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http://twitter.com/chevreuil&quot;&gt;Antoine Banctel-Chevrel&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  Startup Palace&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 07]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">77fb5995-95d3-4c22-904c-6b22dbce9ab8</guid><pubDate>Tue, 19 Nov 2013 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;Workshop : GruntJS&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/xavier_seignard&quot;&gt;Xavier Seignard&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  Smile Nantes&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 19]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">385ee451-50dd-4887-976c-9eb84cb45b31</guid><pubDate>Thu, 19 May 2016 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Ionic&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/loic_guillois&quot;&gt;Loïc Guillois&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Reconnaissance d&apos;écriture&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http://padewitte.tumblr.com/&quot;&gt;Pierre Alban Dewitte&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Transducers en transat&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http://delapouite.com/&quot;&gt;Bruno Heridet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.lucca.fr/&quot;&gt;Lucca&lt;/a&gt;&lt;br/&gt;
+  4 rue des Olivettes null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://www.lucca.fr/&quot;&gt;Lucca&lt;/a&gt;
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 30]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">20dd8ab1-c862-415a-abaf-ebf6b320491b</guid><pubDate>Thu, 19 Apr 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Le JavaScript comme instrument de recherche en Sciences Humaines et Sociales&lt;/h3&gt;
+      &lt;p&gt;Depuis 9 ans, le médialab de Sciences Po crée des instruments de recherche a l&apos;intention des Sciences Humaines et Sociales. Son ambition est de concevoir des instruments rendant des moyens de traitement complexes accessibles à des équipes de recherches ou des citoyens au travers d&apos;Interfaces Homme-Machine. Nous retracerons dans cette présentation comment nous avons utilisé plusieurs générations de technologies web pour relever ce défi.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/paulanomalie&quot;&gt;Paul Girard&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/yomguithereal&quot;&gt;Guillaume Plique&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;La galaxie RxJS&lt;/h3&gt;
+      &lt;p&gt;RxJS vous offre plus de 100 opérateurs. Comment rechercher et localiser les opérateurs qui compléteront votre prochaine mission ? Observez la forme particulière de cette galaxie. Etudiez les matériaux qui la compose. Découvrez son cœur fondamental. Distinguez les opérateurs satellites des autres. Comprenez les forces gravitationnelles en jeu.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/cedricsoulas&quot;&gt;Cédric Soulas&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.lecolededesign.com/recherche-et-design-labs/readi-design-lab/&quot;&gt;READi Design Lab&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://seyos.fr/&quot;&gt;Seyos&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://bit.ly/2H8nIYH&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 22]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">8ae1f422-02c6-45bc-a54c-8f1cf45ee486</guid><pubDate>Thu, 18 May 2017 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;React, Redux, JS et no-JS&lt;/h3&gt;
+      &lt;p&gt;Retour d&apos;expérience et démo sur une mise en production où la très grande majorité du code est partagée entre client pour rendu js et serveur pour rendu no-js. Présentation et discussion autour de l&apos;architecture technique.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/Lythom&quot;&gt;Samuel Bouchet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Npm vs Yarn&lt;/h3&gt;
+      &lt;p&gt;Npm est actuellement le gestionnaire de paquets le plus utilisé dans le monde Javascript. Fin 2016, son jeune concurrent Yarn fait son apparition et gagne très vite en popularité. Yarn est-il à la hauteur de cette popularité ? Comment se démarque-t-il d&apos;Npm? Dans ce talk, nous allons mettre en évidence les principales différences entre les deux gestionnaires de paquets à travers une série de tests concrets.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/FranckAbgrall&quot;&gt;Frank Abgrall&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Étendre word et excel avec javascript c&apos;est possible&lt;/h3&gt;
+      &lt;p&gt;Microsoft change. Maintenant il est possible d&apos;étendre Office avec quelques lignes de HTML, CSS et Javascript. Venez découvrir comment il est possible de lire et d&apos;enrichir un document word ou bien de compléter un document excel en quelques lignes de code.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/padewitte&quot;&gt;Pierre-Alban Dewitte&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.groupe-creative.fr/&quot;&gt;Groupe Creative&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://www.externatic.fr/&quot;&gt;Externatic&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-22-34355966621&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #39]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">6344108a-8c11-46c4-a3f5-5e0e7afb6474</guid><pubDate>Thu, 18 Apr 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Écosystème Javascript: du module aux outils de pré-processing&lt;/h3&gt;
+      &lt;p&gt;En quelques années. l&amp;#x27;écosystème javascript à énormément évolué. Entre npm, yarn, webpack, babel, gulp, ecmascript etc. on peut facilement se perdre.  Ce talk a pour but de remettre de l&amp;#x27;ordre dans l&amp;#x27;esprit des développeurs junior. En rappelant l&amp;#x27;histoire derrière chacun de ces outils, je vous présente dans quels cas et comment ils sont utilisés dans les développements d&amp;#x27;aujourd&amp;#x27;hui et de demain.  &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/s0yuka&quot;&gt;Antoine Bluchet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lint, Coverage, Doc, Autocompletion, Transpilation, Minification... powered by AST&lt;/h3&gt;
+      &lt;p&gt;Today&amp;#x27;s Web Development tooling is now a very rich ecosystem that allows very professional workflows, and the fun thing is that they all share a very interesting technology called AST, for &amp;quot;Abstract syntax tree&amp;quot;. 
+That&amp;#x27;s so powerful that some people see it as a very complex magic thing. 
+Now the fun part... It is in fact quite simple to understand., and today&amp;#x27;s libraries (Arcon, Esprima, Espree, Babylon) allows anyone to create their own tools, fork existing ones, or write plugins matching our own desires.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://gensdeconfiance.fr/&quot;&gt;Gens de confiance&lt;/a&gt;&lt;br/&gt;
+  16 Boulevard Gabriel Guist&amp;#x27;Hau 44000 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://seyos.fr/&quot;&gt;Seyos&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-39-tickets-60120001543&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 05]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">be81a560-2155-4947-9286-67f89af48b6d</guid><pubDate>Thu, 18 Apr 2013 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Présentation et échanges sur FranceJS&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;AngularJS&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;W3C System Application and other APIs&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  KNPLabs&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 17]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">13d44bd6-0b75-48cb-93ab-c9a1186f0f9b</guid><pubDate>Thu, 18 Feb 2016 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Migration vers Angular 2&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/Nebounet&quot;&gt;Laurent Maillet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : Pourquoi le développement d&apos;applications Web n&apos;est pas encore résolu ?&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jacomyal&quot;&gt;Alexis Jacomy&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : Retour d&apos;expérience sur la stack MEAN&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Pierre Medard&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://twitter.com/ZenikaNantes&quot;&gt;Zenika Nantes&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://twitter.com/ZenikaNantes&quot;&gt;Zenika Nantes&lt;/a&gt;
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 27]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">d18bc624-580c-4ab7-a6cd-c57c3711e356</guid><pubDate>Thu, 18 Jan 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Past, Present, and Future of Web Assembly&lt;/h3&gt;
+      &lt;p&gt;Web Assembly est maintenant supporté par tous les navigateurs moderne. Certains y voient une solution pour developper pour le web sans JavaScript, tandis que d&apos;autres sont plus excités par les performances annoncées. Afin de mieux comprendre cette technologie, vous êtes invités à un voyage de ses origines au present, suivi d&apos;une vision sur les impacts concrets que nous pouvons attendre pour les années qui suivent.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;DotJS 2017 - rétrospective&lt;/h3&gt;
+      &lt;p&gt;NantesJS était partenaire de l&apos;édition 2017 du dotJS. Nous vous proposons un retour de cet événement incontournable, pour rester à la pointe des actus du monde JavaScript&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/YvonnickFrin&quot;&gt;Yvonnick FRIN&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.lafourchette.com/&quot;&gt;La fourchette&lt;/a&gt;&lt;br/&gt;
+  2ter quai François Mitterand 44200 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.lafourchette.com/&quot;&gt;La fourchette&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;http://bit.ly/2D5a8Eh&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 12]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">9a48e4ae-8824-49e4-bb21-b35ec21c31ea</guid><pubDate>Thu, 17 Sep 2015 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Présentation du Framework Ionic&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/aboudard&quot;&gt;Alain Boudard&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : React&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Antoine Cellier&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : Déploiement de projet front avec Lidlet&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Jonathan Redoute&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  Atelier Iceberg&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 31]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">a0c038f2-849f-4203-a0a2-5ad97217b85d</guid><pubDate>Thu, 17 May 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;Katas rapides sous contraintes&lt;/h3&gt;
+      &lt;p&gt;Il est bon de régulièrement sortir de sa zone de confort. Cela nous permet de découvrir de nouvelle manières de faire et d&apos;élargir notre vision des choses. Sortir de sa zone de confort sera le thème de la soirée. Nous ferons plusieurs katas dans la soirée, mais ils auront tous des contraintes fortes (et différentes). C&apos;est promis, vous ne serez pas à l&apos;aise mais vous apprendrez beaucoup :D ! N&apos;oubliez pas de venir équipé de votre laptop.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/xdetant&quot;&gt;Xavier Detant&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://nantes.zenika.com&quot;&gt;Zenika&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://byteclub.fr/&quot;&gt;ByteClub&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://bit.ly/2rGSsa5&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 18]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">daf13614-d944-4ad3-99d2-3ea9b5e1132a</guid><pubDate>Thu, 17 Mar 2016 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Implémentation de Pattern Matching en JavaScript&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/FGRibreau&quot;&gt;FG Ribreau&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Présentation de elm&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jutanguy&quot;&gt;Julien Tanguy&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.lengow.com/&quot;&gt;Lengow&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 11]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1ef542f6-45ab-420a-b059-a4ecc1ae650c</guid><pubDate>Tue, 17 Mar 2015 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;Bases de données graphe (framework TinkerPop, langage Gremlin) et leur utilisation avec JavaScript/Node.js&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jbmusso&quot;&gt;Jean-Baptiste Musso&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  La Cantine&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 09]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">d5804174-e4e0-4654-9b86-d0bb8aba55d8</guid><pubDate>Mon, 17 Feb 2014 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;Workshop : CasperJS by CasperJS&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/n1k0&quot;&gt;Nicolas Perriault (aka CasperJS)&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  Epitech&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 36]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1bcdfd34-6185-40e3-8085-89fa931fe953</guid><pubDate>Thu, 17 Jan 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Axe-Core et React : l&apos;accessibilité, ça se teste !&lt;/h3&gt;
+      &lt;p&gt;L&apos;accessibilité est un sujet vaste, qui concerne tout le monde. Il existe aujourd&apos;hui beaucoup d&apos;outils pour tester l&apos;accessibilité d&apos;un site, et nous allons présenter l&apos;un d&apos;entre eux : Axe-Core. Utilisé avec React et Jest, il permet (entre autres) de faire des tests unitaires sur l&apos;accessibilité.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/mireille_cmpcy&quot;&gt;Mireille Campourcy &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/BenoitDecline&quot;&gt;Benoît Deglane&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;LA NOUVELLE API CONTEXT DE REACT&lt;/h3&gt;
+      &lt;p&gt;La version 16.3 de React est arrivé, avec elle la nouvelle API context. Cette API existait déjà auparavant notamment pour partager des propriétés dans tous nos composants. Mais il y avait une problématique de taille, si une valeur du contexte changeais et qu&apos;un composant intermédiaire bloquait ce changement, les enfants n&apos;était pas mis à jour. Dans une application complexe ça peut devenir compliqué à maintenir.
+Dorénavant il est possible de créer plusieurs contextes et y avoir accès à n&apos;importe quel endroit de notre arbre de composant sans problématique de re-rendu des composants.
+Dans ce talk nous allons donc voir comment mettre en place plusieurs contextes et essayer de se passer d&apos;une bibliothéque de gestion d&apos;état comme Redux.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/AntoineCellier3&quot;&gt;Antoine Cellier &lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/jutanguy&quot;&gt;Julien Tanguy&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.pole-emploi.fr/accueil/&quot;&gt;Pôle Emploi&lt;/a&gt;&lt;br/&gt;
+  2 rue Konrad Adénauer 44000 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://alakarte.io/&quot;&gt;alakarteio&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-36-54638426003&lt;Paste&gt;&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 20]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">a9239673-1814-4d78-8f59-96816b2532f0</guid><pubDate>Tue, 17 Jan 2017 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Ionic2&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/PeekMo&quot;&gt;PeekMo&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Introduction à D3&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/calvein&quot;&gt;François Robichet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;La dataviz sans D3&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jacomyal&quot;&gt;Alexis Jacomy&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.akeneo.com/&quot;&gt;Akeneo&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://myscript.com/&quot;&gt;MyScript&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-20-31061853841&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 26]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">14866e9d-a8dd-4b32-b6c9-d4bbb36c2deb</guid><pubDate>Thu, 16 Nov 2017 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;DoYouBuzz v3 : de la programmation impérative à la programmation réactive&lt;/h3&gt;
+      &lt;p&gt;Fin septembre 2017, après 3 mois de recherches, de tests et de sessions de code, sortait la première itération d&apos;un changement majeur dans notre front-end : le passage d&apos;AngularJS à Cycle.js.
+Cette migration a été riche en apprentissages et découvertes que j&apos;aimerais partager avec vous!
+Pourquoi nous avons choisi Cycle.js et comment se distingue-t-il des autres alternatives ? Comment nous avons pu envisager une migration progressive plutôt qu&apos;une réécriture ? En quoi la programmation réactive a complètement changé la sémantique de notre codebase ?
+Laissez vous guider dans ce paradigme qui poussera votre code à être aussi fonctionnel que JavaScript peut le permettre&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/atomrc&quot;&gt;Thomas Belin&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Introduction à React Native&lt;/h3&gt;
+      &lt;p&gt;React Native est une déclinaison de React adaptée au développement d&apos;apps natives. Rapide introduction de l&apos;API, en live coding d&apos;une todo-list&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/zakarby&quot;&gt;Nicolas Kerdelhué&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.lucca.fr/&quot;&gt;Lucca&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.zenika.com/&quot;&gt;Zenika&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-26-39606119971&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #40]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">8c5a9d2b-7d70-453c-8e93-d0fae400ca93</guid><pubDate>Thu, 16 May 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;React, une librairie d&amp;#x27;interface universel, vraiment ?&lt;/h3&gt;
+      &lt;p&gt;Jusqu&amp;#x27;où pouvons nous pousser l&amp;#x27;approche &amp;quot;learn once, write anywhere&amp;quot; de React que Tom Occhino expose dans son article de présentation de React Native ? En prenant comme exemple le jeu vidéo, mondialement connu, Snake, nous allons voir comment il est possible de développer des interfaces dédiés à chaque appareil tout en gardant une logique métier commune.
+Et parce qu&amp;#x27;on aime tous les librairie expérimentales, pourquoi ne pas essayer de créer une interface de notre Snake pour le terminal, tout ça en React ?&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/thcolin3&quot;&gt;Thomas Colin&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Quoi de neuf chez TC39 ?&lt;/h3&gt;
+      &lt;p&gt;Depuis ES2015 le groupe TC39 de Ecma International a changé sa manière de fonctionner pour sortir une version de JavaScript chaque année. Ensemble nous allons voir les fonctionnalités qui vont arriver dans le standard mais aussi certaines propositions intéressantes encore à l&amp;#x27;étude.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/charlyx&quot;&gt;Charles-henri Guérin&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/YvonnickFrin&quot;&gt;Yvonnick Frin&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://wildcodeschool.fr/&quot;&gt;Wild Code School&lt;/a&gt;&lt;br/&gt;
+  2 bis Quai François Mitterrand 44200 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.lafourchette.com/&quot;&gt;LaFourchette&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-40-tickets-61638504426&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 35]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">ab36d815-3e69-4722-b1e2-9c42f5fb9144</guid><pubDate>Thu, 15 Nov 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Behind the drones: comment organiser un concours de programmation de drones avec Node.js&lt;/h3&gt;
+      &lt;p&gt;En février 2018, nous avons organisé un événement interne au sein d’Algolia : un concours de programmation de drones avec Node.js (autres languages acceptés). Ce talk vous explique les challenges de ce genre d’événements, tant techniques que organisationnels. On parlera de la lecture du protocole de communication du drone en PDF, son implémentation (simplifiée) mais aussi de comment obtenir une assurance pour faire voler des drones à Los Angeles.
+Afin que vous puissiez peut-être, vous aussi, organiser ce genre d’événements en privé ou même public.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/vvoyer&quot;&gt;Vincent Voyer&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;REX dotJS 2018&lt;/h3&gt;
+      &lt;p&gt;NantesJS était partenaire de l&apos;édition 2018 du dotJS. Nous vous proposons un retour de cet événement incontournable, pour rester à la pointe des actus du monde JavaScript&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/YvonnickFrin&quot;&gt;Yvonnick Frin&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/Kseniya_Saevich&quot;&gt;Kseniia Saevich&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/OliJBruce&quot;&gt;Olivia Bruce&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/MilletDelphine&quot;&gt;Delphine Millet&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/fabienjuif&quot;&gt;Fabien JUIF&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.beekast.com/fr&quot;&gt;Beekast&lt;/a&gt;&lt;br/&gt;
+  1-3 Rue Michel Columb 44000 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.a5sys.com/&quot;&gt;A5Sys&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-35-52305278496&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 13]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">0c4d540c-e1e5-4b49-8217-42c4ff81f3e5</guid><pubDate>Thu, 15 Oct 2015 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Live coding sur le Framework React Native&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/catelandaxel&quot;&gt;Axel Cateland&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : Bacon.js&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/rbelouin&quot;&gt;Rodolphe Belouin&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : Webpack (Slides)&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  Atelier Iceberg&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 06]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">026f549f-c8d1-4c7d-bd19-c2d361539e06</guid><pubDate>Tue, 15 Oct 2013 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Les meilleures ressources pour du JS front &amp; back&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/delapouite&quot;&gt;Bruno Heridet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Les stars du JS et les personnes à surveiller&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/delapouite&quot;&gt;Bruno Heridet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Les rivalités et autres potins&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/delapouite&quot;&gt;Bruno Heridet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  Clever Age&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 23]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">a644232d-fdac-4b4f-9d5f-fd6abe08b209</guid><pubDate>Thu, 15 Jun 2017 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;Lodasheries pour un JS plus clair&lt;/h3&gt;
+      &lt;p&gt;Dans ce talk je présente : - comment se servir de lodash dans une approche craftsman - comment s&apos;y retrouver dans les nombreuses méthodes exposées par lodash - lodash/fp - des exemples de refactoring avec lodash&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/mercury_wood&quot;&gt;Hugo Wood&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Gérer ses dépendances avec Webpack&lt;/h3&gt;
+      &lt;p&gt;Le développement frontend a pendant longtemps manqué un système de packaging afin d&apos;éviter de devoir trier manuellement les balises en tenant compte des dépendances. Browserify a été un premier pas dans cette direction, en gérant les dépendances entre fichiers js. Webpack est un peu un browserify on steroids, qui fait le même job et bien plus encore. Avec la prépondérance des frameworks frontend comme React, Angular ou Vue.js, nous verrons pourquoi il peut être intéressant de tout importer dans ses fichiers JS, et comment configurer webpack pour le faire.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jutanguy&quot;&gt;Julien Tanguy&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Code splitting d&apos;une Single Page App 2016/2017&lt;/h3&gt;
+      &lt;p&gt;Retour d&apos;expérience sur le chargement asynchrone des modules d&apos;une application reactjs.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/AllTheDey&quot;&gt;David Epely&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.umanit.fr/&quot;&gt;UmanIT&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.clever-cloud.com/&quot;&gt;Clever Cloud&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-23-34950562072&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 29]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">13f90e0d-bd0c-4915-b7bb-4bc50c0b2b8c</guid><pubDate>Thu, 15 Mar 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;GRAND Stack: GraphQL, React, Apollo, and Neo4j&lt;/h3&gt;
+      &lt;p&gt;Venez découvrir le monde de GraphQL et des graphes, avec le développement d&apos;application web basé sur la GRAND stack (GraphQL, React, Apollo, Neo4j). Benoit vous présentera ses différents composants, incluant un retour sur comment écrire des composants React, une introduction a JSX, et un tour d&apos;horizon de GraphQL. Vous verrez que la fusion de GraphQL avec une base de données graphe telle que Neo4j, facilite GRANDement le développement web. Vous y apprendrez comment modéliser, sauvegarder et requêter vos données dans Neo4j en utilisant GraphQL.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/logisima&quot;&gt;Benoît Simard&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;My journey into Clojure&lt;/h3&gt;
+      &lt;p&gt;Après 7 ans de JavaScript à temps plein, j&apos;ai enfin l&apos;occasion d&apos;apprendre un nouveau langage : Clojure ! Et si décider de faire du LISP sans avoir perdu un pari peut sembler surprenant pour certains, Clojure offre pleins de fonctionnalités très singulières. Petit résumé de ce que faire du Clojure peut apporter à un développeur résolument JavaScript.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jacomyal&quot;&gt;Alexis Jacomy&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.externatic.fr/&quot;&gt;Externatic&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.meetup.com/fr-FR/graphdb-Nantes/&quot;&gt;GraphDB&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;http://bit.ly/2FKIDOj&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 28]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">ee44317d-26e8-4d1c-bb44-f5ff69a1d5c7</guid><pubDate>Thu, 15 Feb 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;MythBusters : RxJS&lt;/h3&gt;
+      &lt;p&gt;Un Observable est-il une Promise sous stéroïds ? Est-ce que 2 Observables valent mieux que 1 Subject ? Le camembert est-il un Observer asynchrone ? Venez confronter votre compréhension des Observables à la dure réalité du banc d&apos;essai.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/alvinberthelot&quot;&gt;Alvin Berthelot&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Vim + Js : parce que pourquoi pas !&lt;/h3&gt;
+      &lt;p&gt;Découvrons rapidement que Vim n&apos;est pas réservé aux ops et est un choix raisonnable aussi pour le JS.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/bannier&quot;&gt;Sylvain Bannier&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.lephare.com/&quot;&gt;Le phare&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://knplabs.com/fr&quot;&gt;KNP Labs&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;http://bit.ly/2GBzQhs&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 02]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">73137de2-82e6-49e0-a6e3-1ebd0baf4486</guid><pubDate>Wed, 15 Feb 2012 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      &lt;h3&gt;I/O - Framework pour faire des applis découplées en node.js&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/t8g&quot;&gt;Thomas Moyse&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Pattern objet JavaScript : le pouvoir des closures et du prototype&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;JS everywhere with Wakanda (version courte)&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  La Cantine&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 32]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">f21adb13-f98a-4cd3-9932-f93be4c334e6</guid><pubDate>Thu, 14 Jun 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;L’immuabilité en Javascript&lt;/h3&gt;
+      &lt;p&gt;L’immuabilité en JavaScript, pourquoi est-ce un sujet ? Utilisée dans les frameworks modernes, elle fait l’objet de tout un écosystème d’utilitaires. Le concept n’est pas nouveau même si les raisons de son utilisation en javascript sont différentes. Nous allons voir ensemble les concepts et faire un tour d’horizon de l’écosystème.
+&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/njblepage&quot;&gt;Nicolas Lepage&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/YvonnickFrin&quot;&gt;Yvonnick Frin&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Reselect et données immuables&lt;/h3&gt;
+      &lt;p&gt;Reselect est un utilitaire de memoization d&apos;une efficacité redoutable dans un contexte de données immuables (ex: redux). Cependant les erreurs et incompréhensions sont fréquentes, à travers l&apos;étude de quelques tests unitaire, étudions le comportement de cet utilitaire et voyons comment l&apos;utiliser.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/lythom&quot;&gt;Samuel Bouchet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.pole-emploi.fr/accueil/&quot;&gt;Pôle Emploi&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.pole-emploi.fr/accueil/&quot;&gt;Pôle Emploi&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-32-46653271190&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[MEETUP 01]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">25bf5ef5-f576-47fb-b1b4-e260e04b4041</guid><pubDate>Mon, 09 Jan 2012 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      
+      
+      &lt;h3&gt;NantesJS premier meetup - Welcome&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Server-side JavaScript : How To Start ?&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/waxzce&quot;&gt;Quentin Adam&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;State of the art: server-side JavaScript&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Javascript dans le cadre du développement d&apos;applications pour TV connectées&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/loic_guillois&quot;&gt;Loïc Guillois&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  La Cantine&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[WORKSHOP 1]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">7f4d5838-c921-427f-8d0c-55b4f63b47c2</guid><pubDate>Thu, 07 Apr 2016 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;Workshop Phaser&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/alvinberthelot&quot;&gt;Alvin Berthelot&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/pierrechabiland&quot;&gt;Pierre Chabiland&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.dojonantes.fr/&quot;&gt;DojoCrea Nantes&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[Meetup #41]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">45375fd3-4f5c-4fe9-84d3-030191744086</guid><pubDate>Thu, 06 Jun 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;Nuxt.js, ou comment faire des applications universelles avec des fichiers&lt;/h3&gt;
+      &lt;p&gt;Nuxt.js est un framework JavaScript basé sur Vue.js. Au départ, il a commencé simple, un fichier = une route, comme en PHP. Au fil du temps, nous avons ajouté cette logique de fichiers pour d’autres fonctionnalités, donnant la possibilité à n’importe quel développeur, connaissant simplement le nom des dossiers et la syntaxe des fichiers, de créer des applications universelles hautement performantes sans compromettre l’experience utilisateur.  Dans ce live coding interactif, Sebastien va presenter comment developper une PWA en 20 minutes à partir de zéro avec Nuxt.js.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/atinux&quot;&gt;Sébastien Chopin&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.iadvize.com&quot;&gt;iAdvize&lt;/a&gt;&lt;br/&gt;
+  9 Rue Nina Simone 44000 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://nantesjs.org&quot;&gt;NantesJS&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-41-tickets-62567805992&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Le meetup dont vous êtes le héros]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">07b5785f-ddce-42a7-b007-163a2ea5f909</guid><pubDate>Wed, 04 Jul 2018 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;&lt;/h3&gt;
+      &lt;p&gt; &lt;ul style=&apos;margin-left:0;&apos;&gt; &lt;li&gt;1. &lt;strong&gt;Réunissez votre tribu&lt;/strong&gt; - Constituez votre équipe sur place ou amenez des amis.&lt;/li&gt; &lt;li&gt;2. &lt;strong&gt;Le choix des armes&lt;/strong&gt; - Choisissez un des sujets proposés (vous pouvez aussi amener le vôtre).&lt;/li&gt; &lt;li&gt;3. &lt;strong&gt;Peaufinez votre stratégie&lt;/strong&gt; - Vous avez 1h30 pour mettre sur pied quelques slides.&lt;/li&gt; &lt;li&gt;4. &lt;strong&gt;Entrez dans l&apos;arène&lt;/strong&gt; - Vous avez 5 à 10 minutes pour présenter votre oeuvre aux autres groupes.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Et finalement racontez vos aventures autour d&apos;une bonne flambée et d&apos;un godet&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Vous&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.akeneo.com/fr/&quot;&gt;Akeneo&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://gensdeconfiance.fr/&quot;&gt;Gens de confiance&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-le-meetup-dont-vous-etes-le-heros-47458928934&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item></channel></rss>
