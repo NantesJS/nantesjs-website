@@ -119,7 +119,7 @@ export default function Contributors ({ data }) {
             <figure className={styles.contributor}>
               <img className={styles.avatar} src={c.avatar_url} alt={c.name} />
               <figcaption>
-                {c.name}
+                <a href={c.profile}>{c.name}</a>
                 <br />
                 {c.contributions.map(contrib => (
                   <span key={contrib} title={contributions[contrib].title}>
