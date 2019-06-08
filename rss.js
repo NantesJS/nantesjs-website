@@ -7,6 +7,8 @@ const convertDate = (date) => {
 
 // Output article content based on frontmatter
 const formatContent = ({
+    title,
+    date,
     talks,
     sponsor,
     venue,
@@ -36,6 +38,7 @@ const formatContent = ({
   `;
 
   return `
+  <h1>${title} - ${date}</h1>
   <h2>Talks</h2>
   ${talkList}
   <h2>Lieu</h2>
