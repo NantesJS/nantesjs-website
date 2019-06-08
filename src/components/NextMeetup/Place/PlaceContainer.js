@@ -16,6 +16,11 @@ export function PlaceContainer () {
                   venue {
                     latitude
                     longitude
+                    name
+                    link
+                    address
+                    postal_code
+                    city
                   }
                 }
               } } }
