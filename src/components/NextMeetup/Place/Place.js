@@ -3,6 +3,7 @@ import { number } from 'prop-types'
 import { FullWidthContainer } from '../../FullWidthContainer'
 import { withPrefix } from 'gatsby'
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+import { iconNantesJS } from './Icon'
 
 import styles from './Place.module.css'
 
@@ -29,7 +30,9 @@ export function Place ({ latitude, longitude, name, link, address, postal_code, 
               attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={position}>
+            <Marker 
+              position={position} 
+              icon={iconNantesJS}>
               <Popup>
                 <table>
                   <tbody>
