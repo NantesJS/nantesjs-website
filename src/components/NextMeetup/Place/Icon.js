@@ -9,7 +9,7 @@ const iconNantesJS = new L.Icon({
   shadowUrl: null,
   shadowSize: null,
   shadowAnchor: null,
-  iconSize: new L.Point(50, 50),
+  iconSize: [50,50],
   className: 'marker'
 })
 
