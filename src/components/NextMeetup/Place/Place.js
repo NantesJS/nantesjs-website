@@ -18,7 +18,15 @@ Place.propTypes = {
 
 }
 
-export function Place ({ latitude, longitude, name, link, address, postal_code, city }) {
+export function Place ({
+  latitude,
+  longitude,
+  name,
+  link,
+  address,
+  postal_code,
+  city
+}) {
   if (!latitude || !longitude) return null
   const position = [latitude, longitude]
   return (
@@ -27,11 +35,13 @@ export function Place ({ latitude, longitude, name, link, address, postal_code, 
         {typeof window !== 'undefined' && (
           <Map center={position} zoom={15} className={styles.leaflet_container}>
             <TileLayer
-              attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+              attribution="&amp;copy 
+              <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a>
+               contributors"
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker 
-              position={position} 
+            <Marker
+              position={position}
               icon={iconNantesJS}>
               <Popup>
                 <table>
