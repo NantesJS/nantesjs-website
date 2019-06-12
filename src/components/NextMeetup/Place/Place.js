@@ -48,24 +48,20 @@ export function Place ({
               position={position}
               icon={new L.Icon(iconNantesJS)}>
               <Popup>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <img
-                          src={withPrefix('/images/logotype.png')}
-                          height="50px"
-                        />
-                      </td>
-                      <td>
-                        <b><a href={link}>{name}</a></b><br />
-                        {address}<br />
-                        {postal_code}<br />
-                        {city}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className={styles.col_popup_parent}>
+                  <div className={styles.col_popup_child}>
+                    <img
+                      src={withPrefix('/images/logotype.png')}
+                      height="50px"
+                    />
+                  </div>
+                  <div className={styles.col_popup_child}>
+                    <b><a href={link}>{name}</a></b><br />
+                    {address}<br />
+                    {postal_code}<br />
+                    {city}
+                  </div>
+                </div>
               </Popup>
             </Marker>
           </Map>

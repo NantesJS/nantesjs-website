@@ -12,3 +12,12 @@
   height: 100%;
   width: 100%;
 }
+
+.col_popup_parent {
+  display: flex;
+}
+
+.col_popup_child {
+  text-align: center;
+  margin: 5px;
+}
