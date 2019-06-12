@@ -4,6 +4,7 @@ import { FullWidthContainer } from '../../FullWidthContainer'
 import { withPrefix } from 'gatsby'
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import { iconNantesJS } from './Icon'
+import L from 'leaflet'
 
 import styles from './Place.module.css'
 
@@ -42,7 +43,7 @@ export function Place ({
             />
             <Marker
               position={position}
-              icon={iconNantesJS}>
+              icon={new L.Icon(iconNantesJS)}>
               <Popup>
                 <table>
                   <tbody>

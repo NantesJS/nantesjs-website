@@ -1,7 +1,6 @@
-import L from 'leaflet'
 import { withPrefix } from 'gatsby'
 
-const iconNantesJS = new L.Icon({
+const iconNantesJS = {
   iconUrl: withPrefix('/images/logotype.png'),
   iconRetinaUrl: null,
   iconAnchor: null,
@@ -11,6 +10,6 @@ const iconNantesJS = new L.Icon({
   shadowAnchor: null,
   iconSize: [50,50],
   className: 'marker'
-})
+}
 
 export { iconNantesJS }
