@@ -37,9 +37,12 @@ export function Place ({
           <Map center={position} zoom={15} className={styles.leaflet_container}>
             <TileLayer
               attribution="&amp;copy 
-              <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a>
+              <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> 
+              &amp;copy <a href=&quot;http://osm.org/copyright&quot;>Mapbox</a>
                contributors"
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              url="https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}"
+              accessToken={process.env.GATSBY_MAPBOX_TOKEN}
+              id='streets-v9'
             />
             <Marker
               position={position}
