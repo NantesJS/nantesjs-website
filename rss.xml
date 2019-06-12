@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Wed, 12 Jun 2019 10:47:34 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Wed, 12 Jun 2019 11:40:40 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -301,6 +301,38 @@ Et bien c’est un peu la version TL;DR; de Houdini CSS. Venez à ce talk pour v
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.lafourchette.com/&quot;&gt;La fourchette&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-summer-event-35686378920&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #42]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">c4566af7-9472-4b67-abec-6cfc816dc29d</guid><pubDate>Thu, 20 Jun 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #42 - 20/06/2019&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;JHipster: Spring boot and Angular/React/Vue.js in one handy generator&lt;/h3&gt;
+      &lt;p&gt;JHipster est une plateforme de développement Open Source permettant de générer, développer et déployer des applications web : Spring boot et Angular ou React ou depuis peu Vue.js dans une application monolithique ou suivant le pattern microservices
+Offrant des dizaines d’options qui vous permettent de générer une application adaptée à vos besoins et vos envies, JHipster porte une attention toute particulière à l’expérience du développeur et à la qualité du code généré.
+De la génération à la mise en production JHipster est l&amp;#x27;outil qu&amp;#x27;il vous faut afin d&amp;#x27;accélérer le développement et le déploiement de vos projets.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/avdev4j&quot;&gt;Anthony Viard&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;JHipster et Vue.js&lt;/h3&gt;
+      &lt;p&gt;Depuis quelques semaines, JHipster et Vue.js, c’est désormais possible.  De Vue Router à Vuex, en passant par TypeScript et Vue Class Component, sans oublier Jest et Protractor, découvrons ensemble comment construire une véritable application avec Vue.js et JHipster.
+La NASA a besoin de nous, après le live youtube en continu depuis l&amp;#x27;ISS, l&amp;#x27;agence spatiale américaine veut proposer aux utilisateurs de situer exactement l&amp;#x27;ISS en temps réel. Et cela doit être en production ce soir ! Découvrons ensemble comment proposer une véritable application profitant au maximum de la puissance de Spring Boot tout en disposant d&amp;#x27;un front performant. Grâce à JHipster et l&amp;#x27;intégration Vue.js, répondons ensemble à ce besoin.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/hdurix&quot;&gt;Hippolyte Durix&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/avdev4j&quot;&gt;Anthony Viard&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://fr.ippon.tech/&quot;&gt;Ippon&lt;/a&gt;&lt;br/&gt;
+  3 allée Susan Brownell Anthony, ZAC des Prairies 44200 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.externatic.fr/&quot;&gt;Externatic&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-42-tickets-63375292205&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[MEETUP 04]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1dfd86b7-93fc-4b2b-8c9e-44446f75d4d2</guid><pubDate>Wed, 20 Jun 2012 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 04 - 20/06/2012&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
