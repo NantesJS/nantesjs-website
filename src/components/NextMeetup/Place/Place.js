@@ -28,7 +28,8 @@ export function Place ({
   postal_code,
   city
 }) {
-  if (!latitude || !longitude) return null
+  const GATSBY_MAPBOX_TOKEN = process.env.GATSBY_MAPBOX_TOKEN
+  if (!latitude || !longitude || !GATSBY_MAPBOX_TOKEN) return null
   const position = [latitude, longitude]
   return (
     <FullWidthContainer className={styles.place}>
@@ -41,7 +42,7 @@ export function Place ({
               &amp;copy <a href=&quot;http://osm.org/copyright&quot;>Mapbox</a>
                contributors"
               url="https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}"
-              accessToken={process.env.GATSBY_MAPBOX_TOKEN}
+              accessToken={GATSBY_MAPBOX_TOKEN}
               id='streets-v9'
             />
             <Marker
