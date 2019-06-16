@@ -4,7 +4,7 @@
 
 .wrapper-full-width__background:first-child {
   position: absolute;
-  left: calc(((100vw - 980px) / 2) * -1);
+  left: calc(((100vw - 950px) / 2) * -1);
   width: 100vw;
   height: 100%;
   background-color: #d8d8d8;

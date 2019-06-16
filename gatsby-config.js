@@ -1,7 +1,7 @@
 const {
   convertDate,
   formatContent
-} = require('./rss');
+} = require('./rss')
 
 const options = {
   siteMetadata: {
@@ -15,6 +15,12 @@ const options = {
         name: 'images',
         path: `${ __dirname }/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-react-leaflet',
+      options: {
+        linkStyles: true
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp', {
@@ -103,7 +109,7 @@ const options = {
             `,
           output: "/rss.xml",
           title: "NantesJS RSS Feed",
-        }, ]
+        } ]
       },
     },
   ]
