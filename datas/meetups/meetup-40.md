@@ -22,7 +22,7 @@ talks:
   -
     id: rhIpjnCnwoznqtZytKQH
     title: 'React, une librairie d&#x27;interface universel, vraiment ?'
-    video: 'https://youtu.be/3YkS9gIsfjY?list=PLXhutZMMTBm0imcOvO2C3FQRVLEZQ_qmW'
+    video: 'https://youtu.be/3YkS9gIsfjY'
     description: 'Jusqu&#x27;où pouvons nous pousser l&#x27;approche &quot;learn once, write anywhere&quot; de React que Tom Occhino expose dans son article de présentation de React Native ? En prenant comme exemple le jeu vidéo, mondialement connu, Snake, nous allons voir comment il est possible de développer des interfaces dédiés à chaque appareil tout en gardant une logique métier commune.
 
 Et parce qu&#x27;on aime tous les librairie expérimentales, pourquoi ne pas essayer de créer une interface de notre Snake pour le terminal, tout ça en React ?'
@@ -34,7 +34,7 @@ Et parce qu&#x27;on aime tous les librairie expérimentales, pourquoi ne pas ess
   -
     id: cn7iNPSIAtspEb6BdFa8
     title: 'Quoi de neuf chez TC39 ?'
-    video: 'https://youtu.be/Vu4es0j9dW4?list=PLXhutZMMTBm0imcOvO2C3FQRVLEZQ_qmW'
+    video: 'https://youtu.be/Vu4es0j9dW4'
     description: 'Depuis ES2015 le groupe TC39 de Ecma International a changé sa manière de fonctionner pour sortir une version de JavaScript chaque année. Ensemble nous allons voir les fonctionnalités qui vont arriver dans le standard mais aussi certaines propositions intéressantes encore à l&#x27;étude.'
     speakers:
       -
