@@ -33,6 +33,11 @@
   max-height: 75px;
 }
 
+.menu__icon {
+  height: 75px;
+  max-width: 16px;
+}
+
 @media screen and (max-width: 767px) {
   .footer__logo {
     border-radius: 50px;
@@ -44,6 +49,11 @@
 
   .footer__logo img {
     max-height: 50px;
+  }
+
+  .menu__icon {
+    height: 50px;
+    max-width: 16px;
   }
 }
 
