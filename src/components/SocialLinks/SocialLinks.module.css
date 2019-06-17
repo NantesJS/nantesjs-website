@@ -43,6 +43,10 @@
   margin-bottom: 0;
 }
 
+.socialNetwork__link:not(:last-child) {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .socialNetwork__link{
     margin-right: .3rem;
