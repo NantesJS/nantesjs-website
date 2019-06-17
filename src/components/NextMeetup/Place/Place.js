@@ -35,7 +35,11 @@ export function Place ({
     <FullWidthContainer className={styles.place}>
       <div className={styles.place__map}>
         {typeof window !== 'undefined' && (
-          <Map center={position} zoom={15} className={styles.leaflet_container}>
+          <Map 
+            center={position} 
+            zoom={15} 
+            className={styles.leaflet_container}
+            scrollWheelZoom={false}>
             <TileLayer
               attribution="&amp;copy 
               <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> 
