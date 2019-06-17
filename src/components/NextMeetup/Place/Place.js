@@ -39,7 +39,8 @@ export function Place ({
             center={position} 
             zoom={15} 
             className={styles.leaflet_container}
-            scrollWheelZoom={false}>
+            scrollWheelZoom={false}
+            dragging={!L.Browser.mobile}>
             <TileLayer
               attribution="&amp;copy 
               <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> 
