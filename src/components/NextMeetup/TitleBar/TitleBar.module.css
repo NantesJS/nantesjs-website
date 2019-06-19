@@ -101,3 +101,33 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+
+.titlebar--large {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .titlebar--small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .titlebar--large {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .date--small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .date--large {
+    display: none;
+  }
+}

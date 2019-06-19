@@ -44,3 +44,15 @@
 .menu__content--responsive > * {
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 991px) {
+  .menu--large {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu--small {
+    display: none;
+  }
+}

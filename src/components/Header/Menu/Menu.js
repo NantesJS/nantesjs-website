@@ -1,6 +1,5 @@
 import React, { Fragment, createContext, useState } from 'react'
 import { node } from 'prop-types'
-import MediaQuery from 'react-responsive'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import faBars from '@fortawesome/fontawesome-free-solid/faBars'
 
@@ -21,7 +20,7 @@ export function Menu ({ children }) {
 
   return (
     <Fragment>
-      <MediaQuery maxWidth={991}>
+      <div className={styles.menuSmall}>
         <div className={styles.menu}>
           <button
             className={styles.menu__button}
@@ -42,12 +41,12 @@ export function Menu ({ children }) {
             </div>
           </MenuContext.Provider>
         )}
-      </MediaQuery>
-      <MediaQuery minWidth={992}>
+      </div>
+      <div className={styles.menuLarge}>
         <div className={styles.menu__content}>
           {children}
         </div>
-      </MediaQuery>
+      </div>
     </Fragment>
   )
 }
