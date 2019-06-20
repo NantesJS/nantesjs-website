@@ -40,7 +40,8 @@ export function Place ({
             zoom={15} 
             className={styles.leaflet_container}
             scrollWheelZoom={false}
-            dragging={!L.Browser.mobile}>
+            dragging={!L.Browser.mobile}
+            tap={!L.Browser.mobile}>
             <TileLayer
               attribution="&amp;copy 
               <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> 
