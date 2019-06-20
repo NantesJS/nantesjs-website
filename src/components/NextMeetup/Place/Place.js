@@ -1,10 +1,7 @@
 import React from 'react'
 import { number } from 'prop-types'
 import { FullWidthContainer } from '../../FullWidthContainer'
-import { withPrefix } from 'gatsby'
-import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
-import { iconNantesJS } from './Icon'
-import L from 'leaflet'
+import { Map } from './Map'
 
 import styles from './Place.module.css'
 
@@ -28,36 +25,28 @@ export function Place ({
   postal_code,
   city
 }) {
-  const GATSBY_MAPBOX_TOKEN = process.env.GATSBY_MAPBOX_TOKEN
-  if (!latitude || !longitude || !GATSBY_MAPBOX_TOKEN) return null
-  const position = [latitude, longitude]
+  const GMAP_KEY = process.env.GMAP_KEY
+  const coordonee = { latitude: latitude, longitude: longitude }
+  const infoPopup = {
+    name: name,
+    link: link,
+    address: address,
+    postal_code: postal_code,
+    city: city
+  }
+  if (!latitude || !longitude || !GMAP_KEY) return null
   return (
     <FullWidthContainer className={styles.place}>
       <div className={styles.place__map}>
         {typeof window !== 'undefined' && (
-          <Map center={position} zoom={15} className={styles.leaflet_container}>
-            <TileLayer
-              attribution="&amp;copy 
-              <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> 
-              &amp;copy <a href=&quot;http://osm.org/copyright&quot;>Mapbox</a>
-               contributors"
-              url="https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}"
-              accessToken={GATSBY_MAPBOX_TOKEN}
-              id='streets-v9'
-            />
-            <Marker
-              position={position}
-              icon={new L.Icon(iconNantesJS)}>
-              <Popup>
-                <div className={styles.popup}>
-                  <b><a href={link}>{name}</a></b><br />
-                  {address}<br />
-                  {postal_code}<br />
-                  {city}
-                </div>
-              </Popup>
-            </Marker>
-          </Map>
+          <Map
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${GMAP_KEY}`}
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `100%` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+            coordonee={coordonee}
+            infoPopup={infoPopup}
+          ></Map>
         )}
       </div>
     </FullWidthContainer>
