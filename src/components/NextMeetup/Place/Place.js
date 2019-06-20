@@ -40,7 +40,7 @@ export function Place ({
       <div className={styles.place__map}>
         {typeof window !== 'undefined' && (
           <Map
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${GMAP_KEY}`}
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${ GMAP_KEY }`}
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `100%` }} />}
             mapElement={<div style={{ height: `100%` }} />}
