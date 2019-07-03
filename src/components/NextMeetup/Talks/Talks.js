@@ -80,9 +80,10 @@ export function Talks ({ talks = [] }) {
           <Avatars speakers={talk.speakers} />
           <div>
             <h2 className={styles.talk__title}>{he.decode(talk.title)}</h2>
-            <p className={styles.talk__description}>
-              {he.decode(talk.description)}
-            </p>
+            <p
+              className={styles.talk__description}
+              dangerouslySetInnerHTML={{ __html: he.decode(talk.description) }}
+            />
             <div className={styles.talk__speakers}>
               <FontAwesomeIcon
                 icon={faTwitter}
