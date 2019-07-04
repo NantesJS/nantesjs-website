@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"venue":{"latitude":47.2037747,"longitude":-1.5687633,"name":"Ippon","link":"https://fr.ippon.tech/","address":"3 allée Susan Brownell Anthony, ZAC des Prairies","postal_code":44200,"city":"Nantes"}}}}]}}}
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"venue":{"latitude":null,"longitude":null,"name":"Akeneo","link":"https://www.akeneo.com/fr/","address":null,"postal_code":null,"city":null}}}}]}}}
