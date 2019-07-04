@@ -1,6 +1,6 @@
 ---
 id: c4566af7-9472-4b67-abec-6cfc816dc29d
-status: next
+status: done
 title: 'Meetup #42'
 date: '20/06/2019'
 image: /images/meetup/jhipster.png
