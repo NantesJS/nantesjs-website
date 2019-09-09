@@ -6,7 +6,7 @@ date: '19/09/2019'
 image: /images/meetup/yarn.svg
 ticketsUrl: https://www.eventbrite.fr/e/meetup-44-tickets-72080752471
 venue:
-  id: 37927789
+  id: '37927789'
   name: 'Lucca'
   link: 'https://www.lucca.fr/'
   postal_code: 44000
