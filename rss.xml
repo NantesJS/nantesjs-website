@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Mon, 09 Sep 2019 11:32:55 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Tue, 10 Sep 2019 10:59:36 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -486,6 +486,28 @@ La NASA a besoin de nous, après le live youtube en continu depuis l&amp;#x27;IS
   
   &lt;br/&gt;
   
+  </content:encoded></item><item><title><![CDATA[Meetup #44]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">17232255-9e67-4b00-ade1-38e623d41f9e</guid><pubDate>Thu, 19 Sep 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #44 - 19/09/2019&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      &lt;h3&gt;Yarn 2 - Le Package Management de 2020&lt;/h3&gt;
+      &lt;p&gt;Introduit il y a bientôt trois ans, Yarn s&amp;#x27;est depuis lors taillé une place solide dans l&amp;#x27;écosystème JavaScript grâce à sa mise au premier plan des problèmes de stabilité et de consistance.
+Il est maintenant temps de découvrir ce que Yarn 2 nous réserve, et vous dévoiler les prochaines étapes de notre plan pour rendre vos applications plus stables, et vos cycles de développement plus simples.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/arcanis&quot;&gt;Maël Nison&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.lucca.fr/&quot;&gt;Lucca&lt;/a&gt;&lt;br/&gt;
+  1-3 Rue Michel Columb 44000 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.oxiane.bzh/&quot;&gt;Oxiane&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-44-tickets-72080752471&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[MEETUP 19]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">385ee451-50dd-4887-976c-9eb84cb45b31</guid><pubDate>Thu, 19 May 2016 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 19 - 19/05/2016&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
