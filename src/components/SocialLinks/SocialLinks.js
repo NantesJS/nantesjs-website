@@ -24,7 +24,7 @@ SocialLinks.propTypes = {
 const links = [
   {
     // eslint-disable-next-line max-len
-    href: 'https://join.slack.com/t/nantesjs/shared_invite/enQtNTM0MjA0NTE0NTkzLTlkYzQ4NGQyYjEyMjM4YTllMjQ5MGEwMDI2ZDc5YjI2YWEyOWMzMTQ3OTc5Yjg1ZDA0ODhmMzU1OTMyZjBkNWY',
+    href: 'https://join.slack.com/t/nantesjs/shared_invite/enQtNTM0MjA0NTE0NTkzLTc3YWRkMjk3MTg3ZjEwYzVhYTA1YTA1OGE3MTdkMGE2ZjgzNzE1YzMwYWQwYmU0ZTEzNDhkZWUwZGY2ZjQ5OWY',
     label: 'Slack',
     icon: faSlack,
   },
