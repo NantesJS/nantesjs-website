@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Tue, 08 Oct 2019 11:47:21 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Wed, 09 Oct 2019 11:32:18 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -766,6 +766,37 @@ Now the fun part... It is in fact quite simple to understand., and today&amp;#x2
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.lafourchette.com/&quot;&gt;La fourchette&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;http://bit.ly/2D5a8Eh&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #45]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">d5806787-09e2-490e-b7ff-e20a62d00f32</guid><pubDate>Thu, 17 Oct 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #45 - 17/10/2019&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Démystifier les contributions open source&lt;/h3&gt;
+      &lt;p&gt;A quel projet contribuer?   Que puis-je apporter?   Comment vais-je être perçu?   Et surtout, suis-je légitime?   Alors que l’idée de contribuer à des projets open source germe en nous, de nombreuses questions viennent à se poser, tant sur un axe fonctionnel que technique. Aborder un projet ou mettre son code à nu aux yeux de tous ne sont pas des démarches aisées pour tous les développeurs. Dans le parcours qui vous amènera jusqu’à la pull request, découvrez quels sont les mécanismes humains et techniques qui interviendront dans cette démarche. &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/GeromeGrignon&quot;&gt;Gérôme Grignon&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Comment promouvoir son projet open-source ?&lt;/h3&gt;
+      &lt;p&gt;En tant que développeur, nous utilisons quotidiennement l’open source. Aujourd’hui, nous avons tous le réflexe d’utiliser ces projets basés sur un modèle collaboratif pour répondre à des problématiques du quotidien et accélérer le développement. Créer un projet open-source est une excellente opportunité de devenir acteur de la communauté.
+Comment promouvoir un projet open-source ? Quelles sont les étapes ? Comment inciter les visiteurs à l’utiliser, voire à y contribuer ?  Comment et où communiquer son existence ?
+Nous vous donnerons toutes les clés pour promouvoir votre projet open-source dans les meilleures conditions en s’appuyant sur des exemples concrets ainsi que notre expérience sur le sujet. &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/tbetous&quot;&gt;Thomas Betous&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/FranckAbgrall&quot;&gt;Franck Abgrall&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.umanit.fr/&quot;&gt;UmanIT&lt;/a&gt;&lt;br/&gt;
+  13 Place Sophie Trébuchet 44000 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://nantesjs.org&quot;&gt;NantesJS&lt;/a&gt;
+  &lt;br/&gt;
+  
   </content:encoded></item><item><title><![CDATA[MEETUP 12]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">9a48e4ae-8824-49e4-bb21-b35ec21c31ea</guid><pubDate>Thu, 17 Sep 2015 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 12 - 17/09/2015&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
