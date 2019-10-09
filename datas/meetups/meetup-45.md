@@ -4,7 +4,7 @@ status: next
 title: 'Meetup #45'
 date: '17/10/2019'
 image: /images/meetup/oss.png
-ticketsUrl: 
+ticketsUrl: https://www.eventbrite.fr/e/meetup-45-tickets-76005882641
 venue:
   id: '40193139'
   name: 'UmanIT'
