@@ -1,6 +1,6 @@
 ---
 id: 17232255-9e67-4b00-ade1-38e623d41f9e
-status: next
+status: done
 title: 'Meetup #44'
 date: '19/09/2019'
 image: /images/meetup/yarn.svg
