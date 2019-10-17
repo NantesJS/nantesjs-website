@@ -118,11 +118,11 @@ export function OldMeetups ({ meetups }) {
                     </div>
                   </div>
                   <Talks talks={meetup.talks}/>
-                  <MediaQuery maxWidth={767}>
+                  <div className={styles.showOnMobile}>
                     <div className={styles.meetup__date}>
                       <p>{meetup.date}</p>
                     </div>
-                  </MediaQuery>
+                  </div>
                 </div>
               </div>
             </Fragment>
