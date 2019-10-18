@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import { array } from 'prop-types'
 import classNames from 'classnames'
-import MediaQuery from 'react-responsive'
 import { withPrefix } from 'gatsby'
 import he from 'he'
 
