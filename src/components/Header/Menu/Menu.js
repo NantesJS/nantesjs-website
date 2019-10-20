@@ -1,6 +1,5 @@
 import React, { Fragment, createContext, useState } from 'react'
 import { node } from 'prop-types'
-import MediaQuery from 'react-responsive'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import faBars from '@fortawesome/fontawesome-free-solid/faBars'
 
