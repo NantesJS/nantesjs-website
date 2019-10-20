@@ -44,3 +44,15 @@
 .menu__content--responsive > * {
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: 992px) {
+  .hideOnDesktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .showOnDesktop {
+    display: none;
+  }
+}

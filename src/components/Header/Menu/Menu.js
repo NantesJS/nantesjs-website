@@ -21,7 +21,7 @@ export function Menu ({ children }) {
 
   return (
     <Fragment>
-      <MediaQuery maxWidth={991}>
+      <div className={styles.hideOnDesktop}>
         <div className={styles.menu}>
           <button
             className={styles.menu__button}
@@ -42,12 +42,12 @@ export function Menu ({ children }) {
             </div>
           </MenuContext.Provider>
         )}
-      </MediaQuery>
-      <MediaQuery minWidth={992}>
+      </div>
+      <div className={styles.showOnDesktop}>
         <div className={styles.menu__content}>
           {children}
         </div>
-      </MediaQuery>
+      </div>
     </Fragment>
   )
 }
