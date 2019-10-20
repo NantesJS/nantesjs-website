@@ -4,7 +4,7 @@ import { MenuLink } from '../MenuLink'
 export function AboutLink () {
   return (
     <MenuLink
-      to="/a-propos"
+      to="/a-propos/"
       label="A propos"
     />
   )
