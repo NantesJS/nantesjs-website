@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Wed, 13 Nov 2019 12:05:08 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Wed, 13 Nov 2019 12:24:01 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -99,6 +99,38 @@ Je vais vous présenter les solutions mises en place lors d&apos;une game jam, a
   
   &lt;br/&gt;
   
+  </content:encoded></item><item><title><![CDATA[Meetup #46]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">c3b7626f-51d2-4497-bd9a-0ba48ce2db16</guid><pubDate>Thu, 21 Nov 2019 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #46 - 21/11/2019&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;WebGL, WebXR, WebGPU, un décryptage en douceur&lt;/h3&gt;
+      &lt;p&gt;WebGL est une API bien installée dans nos navigateurs.
+Je vous invite à en faire un tour d&amp;#x27;horizon :
+- d&amp;#x27;où ça vient ? - à quoi ça sert ? - comment ça fonctionne ? - comment on l&amp;#x27;utilise *concrètement* ?
+Pour finir, nous aborderons également les nouveaux venus WebXR et WebGPU.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/rotoglup&quot;&gt;Nicolas Lelong&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Micro-Frontend: Toutes les techniques de synchronisation de scripts&lt;/h3&gt;
+      &lt;p&gt;Technique émergente de gestion du frontend, avec de belles promesses vient aussi son lot de difficultés, en particulier sur la communication des composants. En pleine maîtrise ou non de sa page web, il y a toujours moyen de s&amp;#x27;en sortir. Il arrive aussi parfois qu&amp;#x27;on soit dans le cas d&amp;#x27;une architecture micro-frontend sans s&amp;#x27;en rendre compte. Au travers d&amp;#x27;un REX, voyons comment des technologies comme rxjs, redux ou encore les custom events peuvent nous aider.  Passons en revue les différentes techniques de synchronisation avec leurs avantage et leurs inconvénients. &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/dedalusium&quot;&gt;Nordwin Hoff&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.talend.com/&quot;&gt;Talend SA (R&amp;D Center)&lt;/a&gt;&lt;br/&gt;
+  89 Boulevard de la Prairie au Duc 44200 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://nantesjs.org&quot;&gt;NantesJS&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-46-tickets-81708922587&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[MEETUP 24]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">0401bc38-6a34-4368-a5c8-f1b557edffe6</guid><pubDate>Thu, 21 Sep 2017 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 24 - 21/09/2017&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
