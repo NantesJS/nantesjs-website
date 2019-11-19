@@ -99,7 +99,7 @@ export function OldMeetups ({ meetups }) {
                       className={styles.meetup__title}
                       title={meetup.title}
                     >
-                      {meetup.title}
+                      {meetup.title} (<a href={ `/${meetup.id}.png` }>Affiche</a>)
                     </h4>
                     <div className={styles.meetup__sponsors}>
                       <p>

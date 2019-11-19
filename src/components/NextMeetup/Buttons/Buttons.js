@@ -5,9 +5,10 @@ import styles from './Buttons.module.css'
 
 Buttons.propTypes = {
   ticketsUrl: string,
+  id: string,
 }
 
-export function Buttons ({ ticketsUrl }) {
+export function Buttons ({ ticketsUrl, id }) {
   if (!ticketsUrl) return null
 
   return (
@@ -15,6 +16,14 @@ export function Buttons ({ ticketsUrl }) {
       <a
         className={styles.buttonDark}
         href={ticketsUrl}>Réserver votre place
+      </a>
+      <a
+        className={styles.buttonDark}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={ `/${ id }.png` }
+      >
+        Affiche
       </a>
     </div>
   )
