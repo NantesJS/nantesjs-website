@@ -6,18 +6,14 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@master
-      - name: Install Website Dependencies
-        uses: borales/actions-yarn@v2.0.0
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          cmd: install
-      - name: Build Website
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: build
-      - name: Archive Website Artifact
-        uses: actions/upload-artifact@master
+          node-version: '8.x'
+      - run: yarn install
+      - run: yarn test
+      - run: yarn build
+      - uses: actions/upload-artifact@master
         with:
           name: public
           path: public
@@ -26,19 +22,16 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@master
-      - name: Download Artifact
-        uses: actions/download-artifact@master
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '8.x'
+      - run: yarn install
+        working-directory: ./functions
+      - uses: actions/download-artifact@master
         with:
           name: public
-      - name: Install Functions Dependencies
-        uses: borales/actions-yarn@v2.0.0
-        working-directory: ./functions
-        with:
-          cmd: install
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+      - uses: w9jds/firebase-action@master
         with:
           args: deploy
         env:
