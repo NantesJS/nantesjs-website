@@ -12,10 +12,6 @@ jobs:
         uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
-      - name: Install Functions Dependencies
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
       - name: Build Website
         uses: borales/actions-yarn@v2.0.0
         with:
@@ -36,6 +32,11 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: public
+      - name: Install Functions Dependencies
+        uses: borales/actions-yarn@v2.0.0
+        working-directory: ./functions
+        with:
+          cmd: install
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
