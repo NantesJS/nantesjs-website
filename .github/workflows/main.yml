@@ -11,26 +11,10 @@ jobs:
         with:
           node-version: '8.x'
       - run: yarn install
-      - run: yarn test
-      - run: yarn build
-      - uses: actions/upload-artifact@master
-        with:
-          name: public
-          path: public
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '8.x'
       - run: yarn install
         working-directory: ./functions
-      - uses: actions/download-artifact@master
-        with:
-          name: public
+      - run: yarn test
+      - run: yarn build
       - uses: w9jds/firebase-action@master
         with:
           args: deploy
