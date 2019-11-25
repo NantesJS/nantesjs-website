@@ -1,6 +1,5 @@
 import React from 'react'
 import { string } from 'prop-types'
-import MediaQuery from 'react-responsive'
 import { withPrefix } from 'gatsby'
 
 import { FullDate } from '../../FullDate'
@@ -18,7 +17,7 @@ TitleBar.propTypes = {
 export function TitleBar ({ title, image, sponsor, venue, date }) {
   return (
     <div className={styles.titlebar}>
-      <MediaQuery maxWidth={767}>
+      <div className={styles.showOnMobile}>
         <div>
           <div
             role="img"
@@ -35,8 +34,8 @@ export function TitleBar ({ title, image, sponsor, venue, date }) {
             Hébergé par <b>{venue}</b>
           </p>
         </div>
-      </MediaQuery>
-      <MediaQuery minWidth={768}>
+      </div>
+      <div className={styles.hideOnMobile}>
         <div
           className={styles.titlebar__imageWrapper}
           style={{ backgroundImage: `url(${ withPrefix(image) })` }}
@@ -48,13 +47,13 @@ export function TitleBar ({ title, image, sponsor, venue, date }) {
             Hébergé par <b>{venue}</b>
           </p>
         </div>
-        <MediaQuery minWidth={992}>
+        <div className={styles.showOnDesktop}>
           <FullDate date={date} />
-        </MediaQuery>
-        <MediaQuery maxWidth={991}>
+        </div>
+        <div className={styles.hideOnTablet}>
           <FullDate date={date} fontSize={.8} />
-        </MediaQuery>
-      </MediaQuery>
+        </div>
+      </div>
     </div>
   )
 }

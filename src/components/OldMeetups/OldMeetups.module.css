@@ -161,3 +161,13 @@
       display: none;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hideOnMobile {
+      display: block;
+  }
+
+  .showOnMobile {
+      display: none;
+  }
+}

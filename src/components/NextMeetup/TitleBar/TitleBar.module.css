@@ -28,19 +28,31 @@
   .titlebar h1 {
     font-size: 3.8rem;
   }
+
+  .showOnDesktop {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {  
   .titlebar {
     flex-direction: column;
     height: auto;
   }
 
-  .titlebar > div:first-child {
+  .showOnMobile {
+    width: 100%;
+  }
+
+  .showOnMobile > div:first-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .hideOnMobile {
+    display: none;
   }
 
   .titlebar__infos {
@@ -56,6 +68,11 @@
   .titlebar__image-wrapper {
     height: 9rem;
     width: 9rem;
+  }
+
+  .date__day {
+    font-size: 4.64rem;
+    line-height: 3.84rem;
   }
 }
 
@@ -100,4 +117,37 @@
 .date__year {
   writing-mode: vertical-rl;
   text-orientation: upright;
+}
+
+@media (min-width: 992px) {
+  .hideOnTablet {
+    display: none;
+  }
+
+  .showOnTablet {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .hideOnMobile {
+    width: 100%;
+    /* same as titlebar */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 15rem;
+  }
+
+  .hideOnTablet {
+    margin-left: auto;
+  }
+
+  .showOnDesktop {
+    margin-left: auto;
+  }
+
+  .showOnMobile {
+    display: none;
+  }
 }

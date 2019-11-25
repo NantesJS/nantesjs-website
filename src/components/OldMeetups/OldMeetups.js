@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import { array } from 'prop-types'
 import classNames from 'classnames'
-import MediaQuery from 'react-responsive'
 import { withPrefix } from 'gatsby'
 import he from 'he'
 
@@ -118,11 +117,11 @@ export function OldMeetups ({ meetups }) {
                     </div>
                   </div>
                   <Talks talks={meetup.talks}/>
-                  <MediaQuery maxWidth={767}>
+                  <div className={styles.showOnMobile}>
                     <div className={styles.meetup__date}>
                       <p>{meetup.date}</p>
                     </div>
-                  </MediaQuery>
+                  </div>
                 </div>
               </div>
             </Fragment>
