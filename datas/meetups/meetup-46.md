@@ -51,3 +51,7 @@ Passons en revue les différentes techniques de synchronisation avec leurs avant
           id: eGnhzQUxcnR1V3RjyaMSxLD0udH2
           name: 'Nordwin Hoff'
           link: 'https://twitter.com/dedalusium'
+      -
+          id: 5v01cNWaigVEwBblxWdlnvGFDPQ2
+          name: 'Nicolas Lelong'
+          link: 'https://twitter.com/rotoglup'
