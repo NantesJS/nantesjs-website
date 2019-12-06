@@ -6,8 +6,9 @@ import { MeetupsLink } from './MeetupsLink'
 import { Logo } from './Logo'
 import { LargeContainer } from '../../components/LargeContainer'
 import { SocialIcons } from '../SocialIcons'
-
+import { ConnexionLink } from './ConnexionLink'
 import styles from './Header.module.css'
+import UserLogo from '../../../static/images/user-silhouette.png';
 
 export function Header () {
   // eslint-disable-next-line max-len
@@ -17,12 +18,12 @@ export function Header () {
       <LargeContainer>
         <nav className={styles.header__container}>
           <Logo className={styles.header__logo} />
-          <div className={styles.header__links}>
-            <SocialIcons className={styles.menu__socialIcons} />
-            <Menu>
-              <MeetupsLink />
-              <ContributorsLink />
-              <AboutLink />
+          <div className={styles.header__menu}>
+          <Menu>
+            <MeetupsLink />
+            <ContributorsLink />
+            <AboutLink />
+            <div>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -31,7 +32,15 @@ export function Header () {
               >
                           Proposer un sujet
               </a>
-            </Menu>
+            </div>
+          </Menu>
+          <div className={styles.socialMenu}>
+            <SocialIcons className={styles.menu__socialIcons} />
+            <div>
+              <img src={UserLogo}/>
+              <ConnexionLink />
+            </div>
+          </div>
           </div>
         </nav>
       </LargeContainer>

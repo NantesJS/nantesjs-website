@@ -1,0 +1,148 @@
+.profilPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profilImage{
+  width: 15%;
+  border-radius: 100%;
+}
+
+.ImageAndName{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.ImageAndName h1{
+  margin-left: 10px;
+}
+
+.profilPage>p{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.signOut{
+  padding: 10px;
+  background-color: #f3e049;
+  width: 30%;
+  margin: 20px auto;
+}
+.QRCodeDiv{
+  background-color: gainsboro;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.QRCodeButton{
+  background-color: #f3e049;
+  padding: 10px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.QRCodeImage{
+  margin-top: 20px;
+  width: 50%;
+}
+
+.fusee{
+  display: none;
+}
+
+.smiley{
+  display: none;
+}
+
+.badgesAndProfil{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.profilButton{
+  background-color: #f3e049;
+  padding: 4px;
+  width: 150px;
+}
+
+.badgesButton{
+  background-color: #f3e049;
+  padding: 4px;
+  width: 150px;
+}
+
+@media screen and (min-width: 991px){
+  .QRCodeDiv{
+    flex-direction: row;
+    height: 200px;
+  }
+
+  .badgesAndProfil{
+    display: none;
+  }
+
+  .QRCodeButton{
+    display: none;
+  }
+  
+  .QRCodeImage{
+    display: none;
+  }
+
+  .ImageAndName{
+    justify-content: flex-start;
+  }
+
+  .profilPage>p{
+    text-align: left;
+  }
+
+  .profilImage{
+    width: 10%;
+    border-radius: 100%;
+  }
+
+  .fusee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fuseeImage{
+    width: 30%;
+  }
+
+  .badgesButton{
+    background-color: #f3e049;
+    padding: 4px;
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .smiley{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smileyImage{
+    width: 30%;
+  }
+
+  .profilButton{
+    background-color: #f3e049;
+    padding: 4px;
+    width: 150px;
+    margin-top: 20px;
+  }
+
+}

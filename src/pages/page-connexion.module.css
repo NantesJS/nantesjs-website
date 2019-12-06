@@ -1,0 +1,26 @@
+.allPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 350%;
+}
+
+.picture{
+  height: 250px;
+}
+
+.iconAndSignIn{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 991px) {
+  .iconAndSignIn{
+    flex-direction: row;
+    align-items: center;
+  }
+}

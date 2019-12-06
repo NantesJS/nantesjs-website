@@ -13,6 +13,7 @@
 
 .menu__icon {
   color: #f3e049;
+  margin-left: 20px;
 }
 
 .menu__icon:hover {
@@ -43,6 +44,10 @@
 
 .menu__content--responsive > * {
   margin-bottom: 10px;
+}
+
+.showOnDesktop {
+  flex: 1;
 }
 
 @media screen and (min-width: 992px) {
