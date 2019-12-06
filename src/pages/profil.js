@@ -9,28 +9,28 @@ import Smiley from '../../static/images/Smiley.png';
 export default function Profil() {
   return (
     <div className={styles.profilPage}>
-      <div className={styles.ImageAndName}>
-        <img src={firebase.auth().currentUser.photoURL} alt="" className={styles.profilImage} />
+      <div className={styles.profilPage__ImageAndName}>
+        <img src={firebase.auth().currentUser.photoURL} alt="" className={styles.ImageAndName__profilImage} />
         <h1>Bonjour {firebase.auth().currentUser.displayName}</h1>
       </div>
       <p>J'ai participé a N NantesJS au cours de l'année 2019</p>
-      <div className={styles.badgesAndProfil}>
-        <button className={styles.badgesButton} >Voir mes badges</button>
-        <button className={styles.profilButton} >Mon Profil Public</button>
+      <div className={styles.profilPage__badgesAndProfil}>
+        <button className={styles.badgesAndProfil__badgesButton} >Voir mes badges</button>
+        <button className={styles.badgesAndProfil__profilButton} >Mon Profil Public</button>
       </div>
-      <div className={styles.QRCodeDiv}>
-        <img src={QRCode} alt="QRCode" className={styles.QRCodeImage} />
-        <button className={styles.QRCodeButton}>Scanner un QRCode</button>
-        <div className={styles.fusee}>
-          <img src={Fusee} alt="Fusee" className={styles.fuseeImage} />
-          <button className={styles.badgesButton} >Voir mes badges</button>
+      <div className={styles.profilPage__QRCodeDiv}>
+        <img src={QRCode} alt="QRCode" className={styles.QRCodeDiv__QRCodeImage} />
+        <button className={styles.QRCodeDiv__QRCodeButton}>Scanner un QRCode</button>
+        <div className={styles.QRCodeDiv__fusee}>
+          <img src={Fusee} alt="Fusee" className={styles.fusee__fuseeImage} />
+          <button className={styles.fusee__badgesButton} >Voir mes badges</button>
         </div>
-        <div className={styles.smiley}>
-          <img src={Smiley} alt="Smiley" className={styles.smileyImage} />
-          <button className={styles.profilButton} >Mon profil public</button>
+        <div className={styles.QRCodeDiv__smiley}>
+          <img src={Smiley} alt="Smiley" className={styles.smiley__smileyImage} />
+          <button className={styles.smiley__profilButton} >Mon profil public</button>
         </div>
       </div>
-      <button className={styles.signOut} onClick={() => firebase.auth().signOut()}>Sign out</button>
+      <button className={styles.profilPage__signOut} onClick={() => firebase.auth().signOut()}>Sign out</button>
     </div>
   )
 }

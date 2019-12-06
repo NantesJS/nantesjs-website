@@ -34,7 +34,7 @@ export function Header () {
               </a>
             </div>
           </Menu>
-          <div className={styles.socialMenu}>
+          <div className={styles.header__socialMenu}>
             <SocialIcons className={styles.menu__socialIcons} />
             <div>
               <img src={UserLogo}/>

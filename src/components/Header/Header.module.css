@@ -10,19 +10,19 @@
   flex: 1;
 }
 
-.socialMenu{
+.header__socialMenu{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.socialMenu img{
+.header__socialMenu img{
   width: 10%;
   margin-right: 5%;
   align-items: center;
 }
 
-.socialMenu div{
+.header__socialMenu div{
   align-items: center;
   justify-content: flex-end;
   display: flex;
@@ -46,7 +46,7 @@
   max-height: 6.5rem;
 }
 
-.menu__social-icons {
+.socialMenu__social-icons {
   margin-bottom: 10px;
 }
 

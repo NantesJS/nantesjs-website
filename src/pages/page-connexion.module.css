@@ -5,21 +5,21 @@
   flex-direction: column;
 }
 
-.title{
+.allPage__title{
   font-size: 350%;
 }
 
-.picture{
+.allPage__picture{
   height: 250px;
 }
 
-.iconAndSignIn{
+.allPage__iconAndSignIn{
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 991px) {
-  .iconAndSignIn{
+  .allPage__iconAndSignIn{
     flex-direction: row;
     align-items: center;
   }
