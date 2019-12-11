@@ -1,3 +1,7 @@
+a{
+  text-decoration: none;
+}
+
 .menu__link {
   font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
@@ -15,4 +19,28 @@
 
 .menu__link--selected {
   border-bottom: 3px solid #f3e049;
+}
+
+.connexion{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.connexion img{
+  width: 15px;
+  margin-right: 3px;
+}
+
+
+
+@media screen and (min-width: 991px){
+  .connexion{
+    display : none;
+  }
+  .test{
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    width: 100%;
+  }
 }

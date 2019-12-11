@@ -10,8 +10,7 @@ export default function Profil() {
   return (
     <div className={styles.profilPage}>
       <div className={styles.profilPage__ImageAndName}>
-        <img src={firebase.auth().currentUser.photoURL} alt="" className={styles.ImageAndName__profilImage} />
-        <h1>Bonjour {firebase.auth().currentUser.displayName}</h1>
+        <h1>Mon Profil</h1>
       </div>
       <p>J'ai participé a N NantesJS au cours de l'année 2019</p>
       <div className={styles.profilPage__badgesAndProfil}>

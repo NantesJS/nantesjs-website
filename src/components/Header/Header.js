@@ -8,7 +8,6 @@ import { LargeContainer } from '../../components/LargeContainer'
 import { SocialIcons } from '../SocialIcons'
 import { ConnexionLink } from './ConnexionLink'
 import styles from './Header.module.css'
-import UserLogo from '../../../static/images/user-silhouette.png';
 
 export function Header () {
   // eslint-disable-next-line max-len
@@ -20,24 +19,28 @@ export function Header () {
           <Logo className={styles.header__logo} />
           <div className={styles.header__menu}>
           <Menu>
-            <MeetupsLink />
-            <ContributorsLink />
-            <AboutLink />
-            <div>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={proposalLink}
-                className={styles.menu__button}
-              >
-                          Proposer un sujet
-              </a>
+            <div className={styles.header__link}>
+              <MeetupsLink />
+              <ContributorsLink />
+              <AboutLink />
+            </div>
+            <div className={styles.header__subject}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={proposalLink}
+                  className={styles.menu__button}
+                >
+                            Proposer un sujet
+                </a>
+              </div>
+            <div className={styles.header__connexion}>
+              <ConnexionLink/>
             </div>
           </Menu>
           <div className={styles.header__socialMenu}>
             <SocialIcons className={styles.menu__socialIcons} />
-            <div>
-              <img src={UserLogo}/>
+            <div className={styles.socialMenu__connexion}>
               <ConnexionLink />
             </div>
           </div>
