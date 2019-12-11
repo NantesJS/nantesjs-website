@@ -6,6 +6,7 @@ import UserLogo from '../../../../static/images/user-silhouette.png';
 import styles from '../MenuLink/MenuLink.module.css'
 
 export function ConnexionLink () {
+  
 
   const verifyConnexion = () => {
     if(firebase.auth().currentUser){
@@ -24,7 +25,7 @@ export function ConnexionLink () {
           <div>
             <Link 
               className={styles.menu__link}
-              to='/page-connexion/'
+              onClick={() => firebase.auth().signOut()}
               >
               <img src={UserLogo}/> Déconnexion
             </Link>

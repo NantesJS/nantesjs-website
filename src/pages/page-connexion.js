@@ -50,6 +50,7 @@ export default function PageConnexion() {
                     className={styles.allPage__picture}
                   />
                   <StyledFirebaseAuth
+                    className={styles.iconAndSignIn__auth}
                     uiConfig={uiConfig}
                     firebaseAuth={firebase.auth()}
                   />

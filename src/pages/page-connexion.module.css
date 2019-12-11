@@ -25,10 +25,14 @@
   flex-direction: column;
 }
 
-.firebase-idp-button{
+.iconAndSignIn__auth button{
   max-width: unset !important;
 }
 
+.iconAndSignIn__auth div{
+  max-width: unset !important;
+  width: 500px;
+}
 
 
 @media screen and (min-width: 991px) {

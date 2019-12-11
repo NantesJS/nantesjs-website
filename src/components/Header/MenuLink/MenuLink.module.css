@@ -11,6 +11,7 @@ a{
   border-bottom: 3px solid #333;
   line-height: 2em;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .menu__link, .menu__link:visited {
@@ -42,5 +43,9 @@ a{
     border: none;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .test>div{
+    margin-right: 15px;
   }
 }

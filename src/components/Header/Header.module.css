@@ -18,7 +18,7 @@
 }
 
 .header__socialMenu img{
-  width: 20px;
+  width: 15px;
   margin-right: 10px;
   align-items: center;
 }
@@ -27,7 +27,6 @@
   align-items: center;
   justify-content: flex-end;
   display: flex;
-  width: 90%;
 }
 
 .header__menu{

@@ -4,21 +4,20 @@
   justify-content: center;
 }
 
-.profilPage>p{
-  width: 80%;
-  margin: auto;
-  text-align: center;
+.profilPage p{
+  margin: 0px;
 }
 
 .profilPage__ImageAndName{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   margin: 20px 0px;
 }
 
 .profilPage__ImageAndName h1{
-  margin-left: 10px;
+  font-size: 300%;
+  font-weight: bold;
+  padding: 0px;
 }
 
 .ImageAndName__profilImage{
@@ -28,13 +27,10 @@
 
 
 .profilPage__QRCodeDiv{
-  background-color: gainsboro;
-  padding: 10px;
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .QRCodeDiv__QRCodeImage{
@@ -44,29 +40,11 @@
 
 .QRCodeDiv__QRCodeButton{
   background-color: #f3e049;
-  padding: 10px;
-  width: 200px;
   margin: 20px auto;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-
-.profilPage__badgesAndProfil{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-}
-
-.badgesAndProfil__profilButton, .smiley__profilButton{
-  background-color: #f3e049;
-  padding: 4px;
-  width: 150px;
-}
-
-.badgesAndProfil__badgesButton, .fusee__badgesButton{
-  background-color: #f3e049;
-  padding: 4px;
-  width: 150px;
-}
 .QRCodeDiv__fusee{
   display: none;
 }
@@ -75,21 +53,18 @@
   display: none;
 }
 
-
-.profilPage__signOut{
-  padding: 10px;
-  background-color: #f3e049;
-  width: 30%;
-  margin: 20px auto;
-}
-
 @media screen and (min-width: 991px){
   .profilPage__ImageAndName{
     justify-content: flex-start;
   }
 
-  .profilPage>p{
+  .profilPage__ImageAndName h1{
+    font-size: 450%;
+  }
+
+  .profilPage p{
     text-align: left;
+    font-size: 200%;
   }
 
   .ImageAndName__profilImage{
@@ -103,7 +78,8 @@
 
   .profilPage__QRCodeDiv{
     flex-direction: row;
-    height: 200px;
+    justify-content: flex-start;
+    width: 60%;
   }
 
   .QRCodeDiv__QRCodeButton{
@@ -114,38 +90,23 @@
     display: none;
   }
 
-  .QRCodeDiv__fusee{
+  .QRCodeDiv__fusee, .QRCodeDiv__smiley{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
-  .fusee__fuseeImage{
-    width: 30%;
+  .fusee__fuseeImage, .smiley__smileyImage{
+    width: 60%;
   }
 
-  .fusee__badgesButton, .badgesAndProfil__badgesButton{
+  .fusee__badgesButton,  .smiley__badgesButton{
     background-color: #f3e049;
-    padding: 4px;
-    width: 150px;
     margin-top: 20px;
-  }
-
-  .QRCodeDiv__smiley{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .smiley__smileyImage{
-    width: 30%;
-  }
-
-  .smiley__profilButton, .badgesAndProfil__profilButton{
-    background-color: #f3e049;
-    padding: 4px;
-    width: 150px;
-    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
   }
 
 }
