@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { MenuLink } from '../MenuLink';
 import firebase from 'firebase';
-import UserLogo from '../../../../static/images/user-silhouette.png';
+
+import UserLogo from '../../../../static/images/user-silhouette.svg';
+import PowerSettingLogo from '../../../../static/images/power-setting.svg';
 import styles from '../MenuLink/MenuLink.module.css'
 
 export function ConnexionLink () {
@@ -12,7 +14,7 @@ export function ConnexionLink () {
     if(firebase.auth().currentUser){
       return (
         <React.Fragment>
-          <div>
+          <div className={styles.profilSetting}>
             <Link 
               id={styles.profil}
               activeClassName={styles.menu__linkSelected} 
@@ -22,12 +24,12 @@ export function ConnexionLink () {
               <img src={UserLogo}/> Mon Profil
             </Link>
           </div>
-          <div>
+          <div className={styles.powerSetting}>
             <Link 
               className={styles.menu__link}
               onClick={() => firebase.auth().signOut()}
               >
-              <img src={UserLogo}/> Déconnexion
+              <img src={PowerSettingLogo} /> Déconnexion
             </Link>
           </div>
         </React.Fragment>

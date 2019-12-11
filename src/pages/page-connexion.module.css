@@ -29,12 +29,6 @@
   max-width: unset !important;
 }
 
-.iconAndSignIn__auth div{
-  max-width: unset !important;
-  width: 500px;
-}
-
-
 @media screen and (min-width: 991px) {
   .allPage__iconAndSignIn{
     flex-direction: row;
@@ -59,5 +53,10 @@
     margin-right: 30px;
     width: inherit;
     margin: unset;
+  }
+
+  .iconAndSignIn__auth div{
+    max-width: unset !important;
+    width: 500px;
   }
 }
