@@ -1,0 +1,112 @@
+.profilPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profilPage p{
+  margin: 0px;
+}
+
+.profilPage__ImageAndName{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.profilPage__ImageAndName h1{
+  font-size: 300%;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.ImageAndName__profilImage{
+  width: 15%;
+  border-radius: 100%;
+}
+
+
+.profilPage__QRCodeDiv{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.QRCodeDiv__QRCodeImage{
+  margin-top: 20px;
+  width: 50%;
+}
+
+.QRCodeDiv__QRCodeButton{
+  background-color: #f3e049;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.QRCodeDiv__fusee{
+  display: none;
+}
+
+.QRCodeDiv__smiley{
+  display: none;
+}
+
+@media screen and (min-width: 991px){
+  .profilPage__ImageAndName{
+    justify-content: flex-start;
+  }
+
+  .profilPage__ImageAndName h1{
+    font-size: 450%;
+  }
+
+  .profilPage p{
+    text-align: left;
+    font-size: 200%;
+  }
+
+  .ImageAndName__profilImage{
+    width: 10%;
+    border-radius: 100%;
+  }
+  
+  .profilPage__badgesAndProfil{
+    display: none;
+  }
+
+  .profilPage__QRCodeDiv{
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 60%;
+  }
+
+  .QRCodeDiv__QRCodeButton{
+    display: none;
+  }
+  
+  .QRCodeDiv__QRCodeImage{
+    display: none;
+  }
+
+  .QRCodeDiv__fusee, .QRCodeDiv__smiley{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .fusee__fuseeImage, .smiley__smileyImage{
+    width: 60%;
+  }
+
+  .fusee__badgesButton,  .smiley__badgesButton{
+    background-color: #f3e049;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+}

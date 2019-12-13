@@ -13,6 +13,7 @@
 
 .menu__icon {
   color: #f3e049;
+  margin-left: 20px;
 }
 
 .menu__icon:hover {
@@ -22,14 +23,11 @@
 .menu__content {
   align-items: center;
   display: flex;
-}
-
-.menu__content > * {
-  margin-right: 20px;
+  justify-content: space-evenly;
 }
 
 .menu__content--responsive {
-  align-items: center;
+  align-items: flex-start;
   background-color: #333;
   display: flex;
   flex-direction: column;
@@ -39,10 +37,16 @@
   top: 7.5rem;
   width: 100%;
   z-index: 1;
+  padding-top: 20px;
+  border-top: 2px solid #f3e049;
 }
 
 .menu__content--responsive > * {
   margin-bottom: 10px;
+}
+
+.showOnDesktop {
+  flex: 3; 
 }
 
 @media screen and (min-width: 992px) {
@@ -54,5 +58,10 @@
 @media screen and (max-width: 991px) {
   .showOnDesktop {
     display: none;
+  }
+
+  .menu__icon {
+    color: #f3e049;
+    margin-left: 0px;
   }
 }
