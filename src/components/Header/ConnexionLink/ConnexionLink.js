@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'gatsby';
 import { MenuLink } from '../MenuLink';
 import firebase from 'firebase';
@@ -9,9 +9,16 @@ import styles from '../MenuLink/MenuLink.module.css'
 
 export function ConnexionLink () {
   
+  const [auth, setAuth] = useState(false);
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(user => {
+      setAuth(!!user)
+    })
+  }, []);
 
   const verifyConnexion = () => {
-    if(firebase.auth().currentUser){
+    if(auth === true){
       return (
         <React.Fragment>
           <div className={styles.profilSetting}>
