@@ -19,7 +19,7 @@ export default function PageConnexion() {
       firebase.auth.GithubAuthProvider.PROVIDER_ID,
     ],
     callbacks: {
-      signInSuccess: () => false
+      signInSuccessWithAuthResult: () => false
     }
   }
 
@@ -27,7 +27,6 @@ export default function PageConnexion() {
   useEffect(() => {
     firebase.auth().onAuthStateChanged(user => {
       setConnect(!!user)
-      console.log(user)
     })
   }, []);
 
