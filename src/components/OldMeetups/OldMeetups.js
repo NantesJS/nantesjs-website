@@ -18,7 +18,7 @@ Talks.propTypes = {
 }
 
 function Talks ({ talks }) {
-  const regexHTTP = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/
+  const regexHTTP = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_.~#?&//=]*)/
   return (
     <ul className={styles.talks}>
       {talks.map(talk => (
@@ -28,24 +28,24 @@ function Talks ({ talks }) {
             {talk.speakers && talk.speakers
               .map(speaker => speaker.link ? (
                 speaker.link.match(regexHTTP) ? (
-                <a
-                  className={styles.talk__speaker}
-                  key={speaker.id}
-                  href={speaker.link}
-                >
-                  {
-                    speaker.name
-                  }
-                </a> ) : (
-                <a
-                  className={styles.talk__speaker}
-                  key={speaker.id}
-                  href={"https://twitter.com/"+speaker.link}
-                >
-                {
-                  `@${ speaker.link}`
-                }
-                </a>
+                  <a
+                    className={styles.talk__speaker}
+                    key={speaker.id}
+                    href={speaker.link}
+                  >
+                    {
+                      speaker.name
+                    }
+                  </a> ) : (
+                  <a
+                    className={styles.talk__speaker}
+                    key={speaker.id}
+                    href={"https://twitter.com/"+speaker.link}
+                  >
+                    {
+                      `@${ speaker.link }`
+                    }
+                  </a>
                 )
               ) : speaker.name)
               .reduce((prev, curr) => [prev, ', ', curr])}
