@@ -21,7 +21,7 @@ const formatContent = ({
       <p>${t.description}</p>
       <p>Par:</p>
       <ul>
-        ${t.speakers.reduce((b, s) => speaker.link.match(regexHTTP) ? (`${b}<li><a href="${s.link}">${s.name}</a></li>`) : 
+        ${t.speakers.reduce((b, s) => s.link.match(regexHTTP) ? (`${b}<li><a href="${s.link}">${s.name}</a></li>`) : 
         `${b}<li><a href="${"https://twitter.com/"+s.link}">${s.name}</a></li>`, '')}
       </ul>
     `, '');
