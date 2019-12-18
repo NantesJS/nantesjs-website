@@ -28,7 +28,7 @@ talks:
             -
                 id: ded7a100-4739-4b25-81c7-14202b4248d0
                 name: 'Alexandre Morgaut'
-                link: 'https://twitter.com/amorgaut'
+                link: 'amorgaut'
     -
         id: ef12593c-7a30-4abb-a13e-97bee0c0da49
         title: DotJS 2017 - rétrospective
@@ -37,4 +37,4 @@ talks:
             -
                 id: 6e17d7bb-d42a-48c8-ba4d-a406b4d2ae7c
                 name: 'Yvonnick FRIN'
-                link: 'https://twitter.com/YvonnickFrin'
+                link: 'YvonnickFrin'

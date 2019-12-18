@@ -15,11 +15,11 @@ talks:
             -
                 id: ded7a100-4739-4b25-81c7-14202b4248d0
                 name: 'Alexandre Morgaut'
-                link: 'https://twitter.com/amorgaut'
+                link: 'amorgaut'
             -
                 id: 6b6497c6-1490-49c9-95ac-cc5f0d301359
                 name: 'Thomas Moyse'
-                link: 'https://twitter.com/t8g'
+                link: 't8g'
     -
         id: b21abc13-beb0-430d-8fce-1e26958d7619
         title: AngularJS
@@ -28,7 +28,7 @@ talks:
             -
                 id: 6b6497c6-1490-49c9-95ac-cc5f0d301359
                 name: 'Thomas Moyse'
-                link: 'https://twitter.com/t8g'
+                link: 't8g'
     -
         id: 127f9767-31bb-455e-9c2b-48f2892b607b
         title: 'JS Remote Debugging'
@@ -37,5 +37,5 @@ talks:
             -
                 id: 799011a8-8392-4a3b-8fff-7e2a057fa9ca
                 name: 'Thomas Gratier'
-                link: 'https://twitter.com/thomasg77'
+                link: 'thomasg77'
 image: /images/meetup/fnb-national-center-computer.jpg

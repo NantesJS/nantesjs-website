@@ -22,7 +22,7 @@ talks:
             -
                 id: 1ca0c4e7-079a-4445-ab9d-17237d3a131b
                 name: 'Aleth Gueguen'
-                link: 'https://twitter.com/pl4n3th'
+                link: 'pl4n3th'
     -
         id: 3193c174-cb57-4de4-8616-09df4a7c8935
         title: 'Purescript: des sensations pures'
@@ -31,7 +31,7 @@ talks:
             -
                 id: d17e7a79-2da2-4ef3-a941-2c58dbade30e
                 name: 'Clément Delafargue'
-                link: 'https://twitter.com/clementd'
+                link: 'clementd'
     -
         id: 1db7f28d-ca1b-4fca-950b-399f66d18a4a
         title: 'Les tests en JavaScript®'
@@ -40,4 +40,4 @@ talks:
             -
                 id: 6f92da5d-6b48-4374-9f3c-eaeda7d7edac
                 name: 'Alvin Berthelot'
-                link: 'https://twitter.com/alvinberthelot'
+                link: 'alvinberthelot'

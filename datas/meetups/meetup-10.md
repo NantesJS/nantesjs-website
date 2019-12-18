@@ -15,5 +15,5 @@ talks:
             -
                 id: 186455bb-3541-4776-80c0-f24d2cbf6f76
                 name: 'Alexis Jacomy'
-                link: 'https://twitter.com/jacomyal'
+                link: 'jacomyal'
 image: /images/meetup/sigmajs.png

@@ -35,11 +35,11 @@ Nous vous proposons un tour d'horizon de ce que nous avons pu voir durant ces 3 
       -
           id: AwWi3KyoGYSJeGZ1XzJf5jUaFBE2
           name: 'Bruno Bonnin'
-          link: 'https://twitter.com/_bruno_b_'
+          link: '_bruno_b_'
       -
           id: oaYEqMySGafwsp9LayTFKiZQx3n1
           name: 'Franck Abgrall'
-          link: 'https://twitter.com/FranckAbgrall'
+          link: 'FranckAbgrall'
   -
     id: RuuwO2ROIvqJtGBehalm
     title: 'Typescript et les types opaques'
@@ -58,4 +58,4 @@ Cette présentation ne nécessite qu'une connaissance superficielle de typescrip
       -
           id: dOAigFIvyuM2UXJ5PmpkfNwyt6n1
           name: 'Axel Cateland'
-          link: 'https://twitter.com/catelandaxel'
+          link: 'catelandaxel'

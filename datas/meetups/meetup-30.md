@@ -22,11 +22,11 @@ talks:
             -
                 id: 5dc5572e-0036-486f-83cb-3f18a5ffc3de
                 name: 'Paul Girard'
-                link: 'https://twitter.com/paulanomalie'
+                link: 'paulanomalie'
             -
                 id: e2dbe289-29a4-4f23-b320-10b30cf7b62b
                 name: 'Guillaume Plique'
-                link: 'https://twitter.com/yomguithereal'
+                link: 'yomguithereal'
     -
         id: a903f7ff-d63f-483c-9390-f36fb31a012d
         title: "La galaxie RxJS"
@@ -35,4 +35,4 @@ talks:
             -
                 id: 065811f4-617b-4205-b40e-3635bd4b13b5
                 name: 'Cédric Soulas'
-                link: 'https://twitter.com/cedricsoulas'
+                link: 'cedricsoulas'

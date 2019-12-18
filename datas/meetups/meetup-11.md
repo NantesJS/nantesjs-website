@@ -14,7 +14,7 @@ talks:
             -
                 id: c9f92b3e-c172-4803-bac9-f5900bc4ba37
                 name: 'Jean-Baptiste Musso'
-                link: 'https://twitter.com/jbmusso'
+                link: 'jbmusso'
 sponsor:
     name: La Cantine
     id: e5159fe8-17a3-4834-aa63-5493c604711a

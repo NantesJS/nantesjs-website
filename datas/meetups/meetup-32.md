@@ -26,11 +26,11 @@ Nous allons voir ensemble les concepts et faire un tour d’horizon de l’écos
             -
                 id: 4c4bb0d7-c346-4230-bc4a-0b807a07c80c
                 name: 'Nicolas Lepage'
-                link: 'https://twitter.com/njblepage'
+                link: 'njblepage'
             -
                 id: 623af3ae-8da8-4aed-bb7c-486708213ba1
                 name: 'Yvonnick Frin'
-                link: 'https://twitter.com/YvonnickFrin'
+                link: 'YvonnickFrin'
     -
         id: 6776b2c8-c6dd-4f16-bf2f-7c3861733e7f
         title: "Reselect et données immuables"
@@ -39,4 +39,4 @@ Nous allons voir ensemble les concepts et faire un tour d’horizon de l’écos
             -
                 id: 3ac6df81-7112-4690-b7c4-a157c6601326
                 name: 'Samuel Bouchet'
-                link: 'https://twitter.com/lythom'
+                link: 'lythom'

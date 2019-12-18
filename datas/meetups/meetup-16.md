@@ -16,7 +16,7 @@ talks:
             -
                 id: d17e7a79-2da2-4ef3-a941-2c58dbade30e
                 name: 'Clément Delafargue'
-                link: 'https://twitter.com/clementd'
+                link: 'clementd'
     -
         id: 15f5aec5-8440-4490-87fd-bffc9c4d42da
         title: 'Lightning talk : Beyond flash ;)'
@@ -25,7 +25,7 @@ talks:
             -
                 id: 921ff022-b3bc-4960-9803-93e1ae6b4742
                 name: 'Pierre Chabiland'
-                link: 'https://twitter.com/pierrechabiland'
+                link: 'pierrechabiland'
 sponsor: 
     name: Akeneo
     id: 98991a48-2d2c-43d2-aa5e-8acea2c54947

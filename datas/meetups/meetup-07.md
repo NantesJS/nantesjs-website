@@ -15,9 +15,9 @@ talks:
             -
                 id: 24bff0b1-9c59-4077-8aab-a12ededeffe0
                 name: 'Xavier Seignard'
-                link: 'https://twitter.com/xavier_seignard'
+                link: 'xavier_seignard'
             -
                 id: 6b6497c6-1490-49c9-95ac-cc5f0d301359
                 name: 'Thomas Moyse'
-                link: 'https://twitter.com/t8g'
+                link: 't8g'
 image: /images/meetup/gruntjs.png

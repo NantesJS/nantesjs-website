@@ -23,7 +23,7 @@ talks:
             -
                 id: 721175f9-772d-45e0-b1d2-4d12bcbc6db7
                 name: 'Benoît Simard'
-                link: 'https://twitter.com/logisima'
+                link: 'logisima'
     -
         id: a2921313-16d7-4d68-9066-fbee90ff8b36
         title: "My journey into Clojure"
@@ -32,4 +32,4 @@ talks:
             -
                 id: 62b4dbf6-6137-4151-8211-6525362e7195
                 name: 'Alexis Jacomy'
-                link: 'https://twitter.com/jacomyal'
+                link: 'jacomyal'

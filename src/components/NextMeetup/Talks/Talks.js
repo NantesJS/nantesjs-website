@@ -59,7 +59,7 @@ function Avatars ({ speakers }) {
               }
             )}
             src={
-              `https://avatars.io/twitter/${ speaker.link.split('/').pop() }`
+              `https://avatars.io/twitter/${ speaker.link }`
             }
           />
         )
@@ -92,9 +92,9 @@ export function Talks ({ talks = [] }) {
                 .map(speaker => speaker.link ? (
                   <a
                     key={speaker.id}
-                    href={speaker.link}
+                    href={"https://twitter.com/"+speaker.link}
                   >
-                    {speaker.link.split('/').pop()}
+                    {speaker.link}
                   </a>
                 ) : speaker.name)
                 .reduce((prev, curr) => [prev, ', ', curr])}

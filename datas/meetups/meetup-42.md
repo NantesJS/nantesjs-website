@@ -32,7 +32,7 @@ De la génération à la mise en production JHipster est l&#x27;outil qu&#x27;il
       -
           id: ZxvFGOeMe5ekTQNDwoXbL1B2mlm1
           name: 'Anthony Viard'
-          link: 'https://twitter.com/avdev4j'
+          link: 'avdev4j'
   -
     id: rfwIp0x8Q5rLCRj3O78z
     title: 'JHipster et Vue.js'
@@ -44,8 +44,8 @@ La NASA a besoin de nous, après le live youtube en continu depuis l&#x27;ISS, l
       -
           id: 0glK7bQ4GRhK9mAwT9n7FQCgQBO2
           name: 'Hippolyte Durix'
-          link: 'https://twitter.com/hdurix'
+          link: 'hdurix'
       -
           id: ZxvFGOeMe5ekTQNDwoXbL1B2mlm1
           name: 'Anthony Viard'
-          link: 'https://twitter.com/avdev4j'
+          link: 'avdev4j'

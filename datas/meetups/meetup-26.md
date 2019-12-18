@@ -30,7 +30,7 @@ talks:
             -
                 id: 7f851b41-b88d-43aa-9b81-f757ae95542a
                 name: 'Thomas Belin'
-                link: 'https://twitter.com/atomrc'
+                link: 'atomrc'
     -
         id: c641e297-ff86-4973-aed0-9b8b996ffc16
         title: Introduction à React Native
@@ -40,4 +40,4 @@ talks:
             -
                 id: 63574bff-912c-47c0-927b-6e3442fd8535
                 name: 'Nicolas Kerdelhué'
-                link: 'https://twitter.com/zakarby'
+                link: 'zakarby'

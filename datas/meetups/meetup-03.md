@@ -15,7 +15,7 @@ talks:
             -
                 id: ded7a100-4739-4b25-81c7-14202b4248d0
                 name: 'Alexandre Morgaut'
-                link: 'https://twitter.com/amorgaut'
+                link: 'amorgaut'
             -
                 id: 292cf745-203e-488d-b6e7-79cb8a586781
                 name: 'Yoann Digue'
@@ -27,5 +27,5 @@ talks:
             -
                 id: ded7a100-4739-4b25-81c7-14202b4248d0
                 name: 'Alexandre Morgaut'
-                link: 'https://twitter.com/amorgaut'
+                link: 'amorgaut'
 image: /images/meetup/avidac-computer.jpg

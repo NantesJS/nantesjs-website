@@ -22,7 +22,7 @@ talks:
             -
                 id: 186455bb-3541-4776-80c0-f24d2cbf6f76
                 name: 'Alexis Jacomy'
-                link: 'https://twitter.com/jacomyal'
+                link: 'jacomyal'
     -
         id: 8759c000-c1a0-4927-8554-c587262b9fdd
         title: Un bon Brunch dans une bonne auberge
@@ -31,4 +31,4 @@ talks:
             -
                 id: 921ff022-b3bc-4960-9803-93e1ae6b4742
                 name: 'Pierre Chabiland'
-                link: 'https://twitter.com/PierreChabiland'
+                link: 'PierreChabiland'

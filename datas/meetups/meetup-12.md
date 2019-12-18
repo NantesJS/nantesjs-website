@@ -15,7 +15,7 @@ talks:
             -
                 id: 0837e20e-f77b-4f26-92c6-0f0452d6f049
                 name: 'Alain Boudard'
-                link: 'https://twitter.com/aboudard'
+                link: 'aboudard'
     -
         id: 3bcdee53-e8f5-40f0-876d-7671bf59a6e8
         title: 'Lightning talk : React'

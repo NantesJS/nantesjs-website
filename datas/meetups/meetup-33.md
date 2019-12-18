@@ -26,7 +26,7 @@ Et bien c’est un peu la version TL;DR; de Houdini CSS. Venez à ce talk pour v
             -
                 id: 69523033-ffbe-4a8f-bbb6-77a48fba387b
                 name: 'Jean-François Garreau'
-                link: 'https://twitter.com/jefbinomed'
+                link: 'jefbinomed'
     -
         id: 49206966-cd39-456f-b73b-2932c7a8c88c
         title: "La gestion des erreurs dans une appli web (React) ou mobile (React Native)"
@@ -35,4 +35,4 @@ Et bien c’est un peu la version TL;DR; de Houdini CSS. Venez à ce talk pour v
             -
                 id: d50710fb-b95e-4582-920d-5a928b3ac372
                 name: 'Pierre Pinard'
-                link: 'https://twitter.com/pierrepinard_2'
+                link: 'pierrepinard_2'

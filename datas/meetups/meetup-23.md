@@ -26,7 +26,7 @@ talks:
             -
                 id: 44e269d4-d488-4366-bdad-a8f9c2e2785c
                 name: 'Hugo Wood'
-                link: 'https://twitter.com/mercury_wood'
+                link: 'mercury_wood'
     -
         id: b01947c1-0f96-4963-be2a-d77260c2ac13
         title: Gérer ses dépendances avec Webpack
@@ -35,7 +35,7 @@ talks:
             -
                 id: f3986b42-fc21-428f-a286-7f28aa216b54
                 name: 'Julien Tanguy'
-                link: 'https://twitter.com/jutanguy'
+                link: 'jutanguy'
     -
         id: 78a57fe8-7ddc-4629-a690-3ef03b42f474
         title: Code splitting d'une Single Page App 2016/2017
@@ -44,4 +44,4 @@ talks:
             -
                 id: 0d850b3a-b444-46c3-b3c2-d4de616736c1
                 name: 'David Epely'
-                link: 'https://twitter.com/AllTheDey'
+                link: 'AllTheDey'

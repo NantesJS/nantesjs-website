@@ -22,4 +22,4 @@ talks:
             -
                 id: 7138c9f2-86a7-4d66-8742-a766da34c342
                 name: 'Xavier Detant'
-                link: 'https://twitter.com/xdetant'
+                link: 'xdetant'

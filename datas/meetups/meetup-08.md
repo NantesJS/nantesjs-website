@@ -15,5 +15,5 @@ talks:
             -
                 id: 7f851b41-b88d-43aa-9b81-f757ae95542a
                 name: 'Thomas Belin'
-                link: 'https://twitter.com/atomrc'
+                link: 'atomrc'
 image: /images/meetup/hologram-man.jpg

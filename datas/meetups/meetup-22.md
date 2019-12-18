@@ -22,7 +22,7 @@ talks:
             -
                 id: daabff2e-8fde-46eb-ae3e-8cefdf0c45de
                 name: 'Samuel Bouchet'
-                link: 'https://twitter.com/Lythom'
+                link: 'Lythom'
     -
         id: ba4849bb-8a86-432d-9120-dec3f9dc5176
         title: Npm vs Yarn
@@ -31,7 +31,7 @@ talks:
             -
                 id: e365a404-e02d-49e1-b593-42a8bcc9dc38
                 name: 'Frank Abgrall'
-                link: 'https://twitter.com/FranckAbgrall'
+                link: 'FranckAbgrall'
     -
         id: 0fadc4a3-27c0-44e0-800f-181434d237e3
         title: Étendre word et excel avec javascript c'est possible
@@ -40,4 +40,4 @@ talks:
             -
                 id: 80a7a393-6207-4d9a-8d7e-64bbabc29c2f
                 name: 'Pierre-Alban Dewitte'
-                link: 'https://twitter.com/padewitte'
+                link: 'padewitte'

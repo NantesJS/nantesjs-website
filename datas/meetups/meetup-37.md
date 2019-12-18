@@ -34,7 +34,7 @@ Pas besoin d'expertise en machine learning! Juste de quelques connaissances Java
             -
                 id: aeef1f0e-8727-4c51-a8a0-58f8500cb9d0
                 name: 'NOΞL MACÉ'
-                link: 'https://twitter.com/noel_mace'
+                link: 'noel_mace'
     -
         id: 89249187-d924-461d-9169-194e7d89a736
         title: "Images Responsives"
@@ -45,4 +45,4 @@ Pas besoin d'expertise en machine learning! Juste de quelques connaissances Java
             -
                 id: a3f2543b-6402-4896-bf2b-1fd578c2889f
                 name: 'Vincent Valentin'
-                link: 'https://twitter.com/htmlvv'
+                link: 'htmlvv'

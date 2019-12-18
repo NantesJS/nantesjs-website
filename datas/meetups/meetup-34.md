@@ -24,7 +24,7 @@ talks:
             -
                 id: 432f6f03-3af5-4625-8cf4-6b65e55ce4c8
                 name: 'Samuel Hurel'
-                link: 'https://twitter.com/IcanDivideBy0'
+                link: 'IcanDivideBy0'
     -
         id: ff35ea35-b8e4-461f-8e0d-5f7e7618085f
         title: "Du JS et des LEGO"
@@ -37,4 +37,4 @@ On y causera donc hardware, Physical Web et CycleJS client side comme server sid
             -
                 id: a9125e0e-86f7-464f-aa6e-b811ed4f9015
                 name: 'Pierre Chabiland'
-                link: 'https://twitter.com/pierrechabiland'
+                link: 'pierrechabiland'
