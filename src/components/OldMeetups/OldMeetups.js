@@ -33,7 +33,6 @@ function Talks ({ talks }) {
                   key={speaker.id}
                   href={speaker.link}
                 >
-                  {console.log("match")}
                   {
                     speaker.name
                   }
@@ -43,9 +42,6 @@ function Talks ({ talks }) {
                   key={speaker.id}
                   href={"https://twitter.com/"+speaker.link}
                 >
-                  {console.log(
-                    speaker.link.match("(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)")
-                  )}
                 {
                   `@${ speaker.link}`
                 }

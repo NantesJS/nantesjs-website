@@ -14,13 +14,15 @@ const formatContent = ({
     venue,
     ticketsUrl
   }) => {
+    const regexHTTP = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/
     const talkList = talks.reduce((acc, t) => `
       ${acc}
       <h3>${t.title}</h3>
       <p>${t.description}</p>
       <p>Par:</p>
       <ul>
-        ${t.speakers.reduce((b, s) => `${b}<li><a href="${s.link}">${s.name}</a></li>`, '')}
+        ${t.speakers.reduce((b, s) => speaker.link.match(regexHTTP) ? (`${b}<li><a href="${s.link}">${s.name}</a></li>`) : 
+        `${b}<li><a href="${"https://twitter.com/"+s.link}">${s.name}</a></li>`, '')}
       </ul>
     `, '');
     const sponsorLink = (sponsor && sponsor.link && sponsor.name) ? `<h2>Sponsor</h2><a href="${sponsor.link}">${sponsor.name}</a>` : '';
