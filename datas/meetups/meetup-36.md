@@ -27,11 +27,11 @@ talks:
             -
                 id: 544ee986-98fe-4dcf-9034-6600fc026aea
                 name: 'Mireille Campourcy '
-                link: 'https://twitter.com/mireille_cmpcy'
+                link: 'mireille_cmpcy'
             -
                 id: 1b2fb6c4-96b1-411f-9756-37315d4a3d5d
                 name: 'Benoît Deglane'
-                link: 'https://twitter.com/BenoitDecline'
+                link: 'BenoitDecline'
     -
         id: c29fd8aa-92f0-46ad-b4c6-cf18537e0507
         title: "LA NOUVELLE API CONTEXT DE REACT"
@@ -44,8 +44,8 @@ Dans ce talk nous allons donc voir comment mettre en place plusieurs contextes e
             -
                 id: 11506afc-7e1b-412c-adf6-a57b4da8e0bd
                 name: 'Antoine Cellier '
-                link: 'https://twitter.com/AntoineCellier3'
+                link: 'AntoineCellier3'
             -
                 id: 08ea7040-f397-4263-a141-945d71d0bc19
                 name: 'Julien Tanguy'
-                link: 'https://twitter.com/jutanguy'
+                link: 'jutanguy'

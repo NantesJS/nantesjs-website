@@ -15,5 +15,5 @@ talks:
             -
                 id: 3abad518-63fb-4537-9b7e-d219eff2a44a
                 name: 'Nicolas Perriault (aka CasperJS)'
-                link: 'https://twitter.com/n1k0'
+                link: 'n1k0'
 image: /images/meetup/casperjs.png

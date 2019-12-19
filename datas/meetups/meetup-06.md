@@ -14,7 +14,7 @@ talks:
             -
                 id: a6e17615-fbc7-43a7-a6c1-9b82d4a10810
                 name: 'Bruno Heridet'
-                link: 'https://twitter.com/delapouite'
+                link: 'delapouite'
     -
         id: ce5b7f58-5a8e-4838-b6bf-366118bf9cce
         title: 'Les stars du JS et les personnes à surveiller'
@@ -22,7 +22,7 @@ talks:
             -
                 id: a6e17615-fbc7-43a7-a6c1-9b82d4a10810
                 name: 'Bruno Heridet'
-                link: 'https://twitter.com/delapouite'
+                link: 'delapouite'
     -
         id: a866e307-3a11-4802-bd82-147c4ba19ac7
         title: 'Les rivalités et autres potins'
@@ -30,5 +30,5 @@ talks:
             -
                 id: a6e17615-fbc7-43a7-a6c1-9b82d4a10810
                 name: 'Bruno Heridet'
-                link: 'https://twitter.com/delapouite'
+                link: 'delapouite'
 image: /images/meetup/dec-pdp-computer.jpg

@@ -29,4 +29,4 @@ Il est maintenant temps de découvrir ce que Yarn 2 nous réserve, et vous dévo
       -
           id: p83AbNmpQjcnG3UgpW85nC8Kzir2
           name: 'Maël Nison'
-          link: 'https://twitter.com/arcanis'
+          link: 'arcanis'

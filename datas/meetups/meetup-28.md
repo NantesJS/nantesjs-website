@@ -23,11 +23,11 @@ Venez confronter votre compréhension des Observables à la dure réalité du ba
             -
                 id: 366025b6-eee7-49ef-a70c-898b82c71902
                 name: 'Thomas Moyse'
-                link: 'https://twitter.com/t8g'
+                link: 't8g'
             -
                 id: 5da44081-c860-402a-a546-47c673dca587
                 name: 'Alvin Berthelot'
-                link: 'https://twitter.com/alvinberthelot'
+                link: 'alvinberthelot'
     -
         id: 6f926193-5ef5-4306-b191-27bda9835691
         title: "Vim + Js : parce que pourquoi pas !"
@@ -36,4 +36,4 @@ Venez confronter votre compréhension des Observables à la dure réalité du ba
             -
                 id: 54157258-eaca-433e-a870-e42908705d47
                 name: 'Sylvain Bannier'
-                link: 'https://twitter.com/bannier'
+                link: 'bannier'

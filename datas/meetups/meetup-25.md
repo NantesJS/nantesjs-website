@@ -22,7 +22,7 @@ talks:
             -
                 id: 20b73458-1f41-43c5-a4a3-b46185301f9e
                 name: 'Jérémy Lesceau'
-                link: 'https://twitter.com/JLesceau'
+                link: 'JLesceau'
     -
         id: 5d62fdbf-2da1-410e-8475-8d99a9df7063
         title: Promenade au pays de la cartographie
@@ -31,4 +31,4 @@ talks:
             -
                 id: b6085f0d-a54b-4b66-8288-649f5e71c1e6
                 name: 'Nicolas Lelong'
-                link: 'https://twitter.com/rotoglup'
+                link: 'rotoglup'

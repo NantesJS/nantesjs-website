@@ -15,7 +15,7 @@ talks:
             -
                 id: 44ecb2f3-386a-49d0-82a1-3ec8bdde41a0
                 name: 'Axel Cateland'
-                link: 'https://twitter.com/catelandaxel'
+                link: 'catelandaxel'
     -
         id: 60b9367e-6fe6-4c47-a317-a171776c745b
         title: 'Lightning talk : Bacon.js'
@@ -24,7 +24,7 @@ talks:
             -
                 id: a44a0331-c3d0-4a5c-a254-5a194cd43f6d
                 name: 'Rodolphe Belouin'
-                link: 'https://twitter.com/rbelouin'
+                link: 'rbelouin'
     -
         id: c4e84928-3c21-4ed6-9ccb-c75fd6d73f2f
         title: 'Lightning talk : Webpack (Slides)'
@@ -33,7 +33,7 @@ talks:
             -
                 id: 6b6497c6-1490-49c9-95ac-cc5f0d301359
                 name: 'Thomas Moyse'
-                link: 'https://twitter.com/t8g'
+                link: 't8g'
 sponsor:
     name: 'Conserto'
     id: 6c6a636e-8079-4b86-8ea2-06c998ee3270

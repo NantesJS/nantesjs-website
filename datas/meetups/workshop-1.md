@@ -15,9 +15,9 @@ talks:
             -
                 id: 6f92da5d-6b48-4374-9f3c-eaeda7d7edac
                 name: 'Alvin Berthelot'
-                link: 'https://twitter.com/alvinberthelot'
+                link: 'alvinberthelot'
             -
                 id: 921ff022-b3bc-4960-9803-93e1ae6b4742
                 name: 'Pierre Chabiland'
-                link: 'https://twitter.com/pierrechabiland'
+                link: 'pierrechabiland'
 image: /images/meetup/phaser.png

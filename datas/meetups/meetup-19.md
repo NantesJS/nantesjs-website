@@ -20,7 +20,7 @@ talks:
             -
                 id: 33530598-56be-4059-962d-ef0338b1360b
                 name: 'Loïc Guillois'
-                link: 'https://twitter.com/loic_guillois'
+                link: 'loic_guillois'
     -
         id: 8fbeefbe-49fd-46e2-aa62-5c9573a56517
         title: 'Reconnaissance d''écriture'

@@ -29,7 +29,7 @@ Afin que vous puissiez peut-être, vous aussi, organiser ce genre d’événemen
             -
                 id: 5ab13e18-cd7f-4b6b-80c1-dd6ab224a9a1
                 name: 'Vincent Voyer'
-                link: 'https://twitter.com/vvoyer'
+                link: 'vvoyer'
     -
         id: 659abd77-1633-441a-9e33-94f768b9a2e7
         title: "REX dotJS 2018"
@@ -38,24 +38,24 @@ Afin que vous puissiez peut-être, vous aussi, organiser ce genre d’événemen
             -
                 id: 4b953f6a-ea3e-43c3-bdc3-4296c46f25ac
                 name: 'Thomas Moyse'
-                link: 'https://twitter.com/t8g'
+                link: 't8g'
             -
                 id: acb5a73b-ca8f-46f5-8991-5fadb88a3b74
                 name: 'Yvonnick Frin'
-                link: 'https://twitter.com/YvonnickFrin'
+                link: 'YvonnickFrin'
             -
                 id: 7f3d414e-e8ce-43a5-90b6-725aad69359a
                 name: 'Kseniia Saevich'
-                link: 'https://twitter.com/Kseniya_Saevich'
+                link: 'Kseniya_Saevich'
             -
                 id: 4a14efed-1516-4fcb-a7cf-2d65ed6c5a03
                 name: 'Olivia Bruce'
-                link: 'https://twitter.com/OliJBruce'
+                link: 'OliJBruce'
             -
                 id: a33340c6-0826-4dd3-8ae5-bbee1de527af
                 name: 'Delphine Millet'
-                link: 'https://twitter.com/MilletDelphine'
+                link: 'MilletDelphine'
             -
                 id: e9624115-2b24-46c8-930c-5d38b35a9131
                 name: 'Fabien JUIF'
-                link: 'https://twitter.com/fabienjuif'
+                link: 'fabienjuif'

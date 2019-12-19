@@ -37,7 +37,7 @@ Pour finir, nous aborderons également les nouveaux venus WebXR et WebGPU.'
       -
           id: 5v01cNWaigVEwBblxWdlnvGFDPQ2
           name: 'Nicolas Lelong'
-          link: 'https://twitter.com/rotoglup'
+          link: 'rotoglup'
   -
     id: 7JzF8egOpRjFacfRU32F
     title: 'Micro-Frontend: Toutes les techniques de synchronisation de scripts'
@@ -52,4 +52,4 @@ Passons en revue les différentes techniques de synchronisation avec leurs avant
       -
           id: eGnhzQUxcnR1V3RjyaMSxLD0udH2
           name: 'Nordwin Hoff'
-          link: 'https://twitter.com/dedalusium'
+          link: 'dedalusium'

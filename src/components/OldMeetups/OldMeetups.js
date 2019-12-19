@@ -4,6 +4,8 @@ import classNames from 'classnames'
 import { withPrefix } from 'gatsby'
 import he from 'he'
 
+import isUrl from 'is-url'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/fontawesome-free-brands'
 
@@ -26,15 +28,26 @@ function Talks ({ talks }) {
             <p className={styles.talk__title}>{he.decode(talk.title)}</p>
             {talk.speakers && talk.speakers
               .map(speaker => speaker.link ? (
-                <a
-                  className={styles.talk__speaker}
-                  key={speaker.id}
-                  href={speaker.link}
-                >
-                  {speaker.link.includes('twitter') ?
-                    `@${ speaker.link.split('/').pop() }` :
-                    speaker.name}
-                </a>
+                isUrl(speaker.link) ? (
+                  <a
+                    className={styles.talk__speaker}
+                    key={speaker.id}
+                    href={speaker.link}
+                  >
+                    {
+                      speaker.name
+                    }
+                  </a> ) : (
+                  <a
+                    className={styles.talk__speaker}
+                    key={speaker.id}
+                    href={"https://twitter.com/"+speaker.link}
+                  >
+                    {
+                      `@${ speaker.link }`
+                    }
+                  </a>
+                )
               ) : speaker.name)
               .reduce((prev, curr) => [prev, ', ', curr])}
           </div>

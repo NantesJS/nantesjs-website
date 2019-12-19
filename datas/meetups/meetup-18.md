@@ -16,7 +16,7 @@ talks:
             -
                 id: 2c4d342e-c21e-42de-9272-c064c0ead764
                 name: 'FG Ribreau'
-                link: 'https://twitter.com/FGRibreau'
+                link: 'FGRibreau'
     -
         id: c19d1f73-e317-48ff-8cff-0bf8f411b478
         title: 'Présentation de elm'
@@ -25,7 +25,7 @@ talks:
             -
                 id: f3986b42-fc21-428f-a286-7f28aa216b54
                 name: 'Julien Tanguy'
-                link: 'https://twitter.com/jutanguy'
+                link: 'jutanguy'
 sponsor: 
     name: ByteClub
     id: a8d0f8e7-f02a-4bc4-abcd-98bb35f45888

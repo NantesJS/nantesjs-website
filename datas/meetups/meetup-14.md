@@ -15,7 +15,7 @@ talks:
             -
                 id: 7f851b41-b88d-43aa-9b81-f757ae95542a
                 name: 'Thomas Belin'
-                link: 'https://twitter.com/atomrc'
+                link: 'atomrc'
     -
         id: 0dfb4d0d-694b-4ece-a5b2-9b8954509dfc
         title: 'Lightning talk : Meteor'
@@ -24,7 +24,7 @@ talks:
             -
                 id: 721a11a5-add9-4087-8fe9-d334c7b99a8f
                 name: 'Yann Danthu'
-                link: 'https://twitter.com/YannDanthu'
+                link: 'YannDanthu'
 sponsor:
     name: Seyos
     id: d62eba5e-4529-48d5-97df-f86f071bf981

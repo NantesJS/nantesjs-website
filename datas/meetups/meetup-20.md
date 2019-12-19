@@ -21,7 +21,7 @@ talks:
             -
                 id: 1d3d2b61-3686-46f2-8168-35398bb98f58
                 name: 'PeekMo'
-                link: 'https://twitter.com/PeekMo'
+                link: 'PeekMo'
     -
         id: dab10135-fc02-4885-a8b5-bc1e5c21377c
         title: 'Introduction à D3'
@@ -30,7 +30,7 @@ talks:
             -
                 id: ce583d28-82ab-4b0f-b651-b0ec57f74c86
                 name: 'François Robichet'
-                link: 'https://twitter.com/calvein'
+                link: 'calvein'
     -
         id: 78b01b3c-0018-4554-8a94-5cd63091ca03
         title: 'La dataviz sans D3'
@@ -39,4 +39,4 @@ talks:
             -
                 id: 186455bb-3541-4776-80c0-f24d2cbf6f76
                 name: 'Alexis Jacomy'
-                link: 'https://twitter.com/jacomyal'
+                link: 'jacomyal'

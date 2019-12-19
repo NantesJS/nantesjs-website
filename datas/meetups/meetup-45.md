@@ -34,7 +34,7 @@ Dans le parcours qui vous amènera jusqu’à la pull request, découvrez quels 
       -
           id: I8807VKR6SgIWBpaK6ywump2Rxj1
           name: 'Gérôme Grignon'
-          link: 'https://twitter.com/GeromeGrignon'
+          link: 'GeromeGrignon'
   -
     id: 2q9vfS53KUx0U8JPRpjz
     title: 'Comment promouvoir son projet open-source ?'
@@ -48,8 +48,8 @@ Nous vous donnerons toutes les clés pour promouvoir votre projet open-source da
       -
           id: GX65dBRRCxbrPjN44BAdTYQbMIB3
           name: 'Thomas Betous'
-          link: 'https://twitter.com/tbetous'
+          link: 'tbetous'
       -
           id: oaYEqMySGafwsp9LayTFKiZQx3n1
           name: 'Franck Abgrall'
-          link: 'https://twitter.com/FranckAbgrall'
+          link: 'FranckAbgrall'

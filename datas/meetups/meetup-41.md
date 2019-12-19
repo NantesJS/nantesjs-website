@@ -28,4 +28,4 @@ Dans ce live coding interactif, Sebastien va presenter comment developper une PW
       -
           id: d50385f2-b254-4627-9fef-5db15ba0a81a
           name: 'Sébastien Chopin'
-          link: 'https://twitter.com/atinux'
+          link: 'atinux'

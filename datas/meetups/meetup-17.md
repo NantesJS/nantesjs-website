@@ -6,7 +6,7 @@ date: 18/02/2016
 venue:
     name: 'Zenika Nantes'
     id: b2193157-5fb5-4b53-9f67-d5fb77516184
-    link: 'https://twitter.com/ZenikaNantes'
+    link: 'ZenikaNantes'
 talks:
     -
         id: 3f3fc97b-b7b1-4219-9197-fb03b3445eae
@@ -15,7 +15,7 @@ talks:
             -
                 id: 9935c0c0-c6f5-4e4d-8b23-ad3a9a62a584
                 name: 'Laurent Maillet'
-                link: 'https://twitter.com/Nebounet'
+                link: 'Nebounet'
     -
         id: 01eb6da9-0fe8-4446-8037-fb91e9b8cc38
         title: 'Lightning talk : Pourquoi le développement d''applications Web n''est pas encore résolu ?'
@@ -23,7 +23,7 @@ talks:
             -
                 id: 186455bb-3541-4776-80c0-f24d2cbf6f76
                 name: 'Alexis Jacomy'
-                link: 'https://twitter.com/jacomyal'
+                link: 'jacomyal'
     -
         id: dd3a3690-e28b-45a4-97ab-8ce4ae5e9b08
         title: 'Lightning talk : Retour d''expérience sur la stack MEAN'
@@ -34,5 +34,5 @@ talks:
 sponsor:
     name: 'Zenika Nantes'
     id: b2193157-5fb5-4b53-9f67-d5fb77516184
-    link: 'https://twitter.com/ZenikaNantes'
+    link: 'ZenikaNantes'
 image: /images/meetup/angular2.png

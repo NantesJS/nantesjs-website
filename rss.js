@@ -1,5 +1,7 @@
 'use strict';
 
+const isUrl = require('is-url')
+
 const convertDate = (date) => {
   const split = date.split('/');
   return [split[2], split[1], split[0]].join('-');
@@ -20,7 +22,8 @@ const formatContent = ({
       <p>${t.description}</p>
       <p>Par:</p>
       <ul>
-        ${t.speakers.reduce((b, s) => `${b}<li><a href="${s.link}">${s.name}</a></li>`, '')}
+        ${t.speakers.reduce((b, s) => isUrl(s.link) ? (`${b}<li><a href="${s.link}">${s.name}</a></li>`) : 
+        `${b}<li><a href="${"https://twitter.com/"+s.link}">${s.name}</a></li>`, '')}
       </ul>
     `, '');
     const sponsorLink = (sponsor && sponsor.link && sponsor.name) ? `<h2>Sponsor</h2><a href="${sponsor.link}">${sponsor.name}</a>` : '';

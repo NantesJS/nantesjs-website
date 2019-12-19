@@ -15,7 +15,7 @@ talks:
             -
                 id: 4cb5f960-c645-48cb-82db-cd6118b6e35e
                 name: 'David Sferruzza'
-                link: 'https://twitter.com/d_sferruzza'
+                link: 'd_sferruzza'
     -
         id: 8273d5cc-4aae-41e6-8781-99d3c6cd3f11
         title: 'Lightning talk : Grid Stylesheet'
@@ -24,7 +24,7 @@ talks:
             -
                 id: 84c2cbb6-59b6-4e28-8c6d-758aeda85d67
                 name: 'Antoine Banctel-Chevrel'
-                link: 'http://twitter.com/chevreuil'
+                link: 'chevreuil'
 sponsor:
     name: DoYouBuzz
     id: d356c496-0a01-4bd4-9765-69b75926b9be

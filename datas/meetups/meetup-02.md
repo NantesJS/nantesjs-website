@@ -15,7 +15,7 @@ talks:
             -
                 id: 6b6497c6-1490-49c9-95ac-cc5f0d301359
                 name: 'Thomas Moyse'
-                link: 'https://twitter.com/t8g'
+                link: 't8g'
     -
         id: f5c51b80-63b6-4d47-ac42-5d71326266c5
         title: 'Pattern objet JavaScript : le pouvoir des closures et du prototype'
@@ -24,7 +24,7 @@ talks:
             -
                 id: ded7a100-4739-4b25-81c7-14202b4248d0
                 name: 'Alexandre Morgaut'
-                link: 'https://twitter.com/amorgaut'
+                link: 'amorgaut'
     -
         id: bd842846-d191-4ee9-a328-14bf3f71b90a
         title: 'JS everywhere with Wakanda (version courte)'
@@ -33,5 +33,5 @@ talks:
             -
                 id: ded7a100-4739-4b25-81c7-14202b4248d0
                 name: 'Alexandre Morgaut'
-                link: 'https://twitter.com/amorgaut'
+                link: 'amorgaut'
 image: /images/meetup/harwell-witch-computer.jpg
