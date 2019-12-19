@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Thu, 19 Dec 2019 12:21:49 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Thu, 19 Dec 2019 21:52:13 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -203,7 +203,7 @@ Cette présentation ne nécessite qu&apos;une connaissance superficielle de type
       &lt;p&gt;null&lt;/p&gt;
       &lt;p&gt;Par:&lt;/p&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;null&quot;&gt;Yoann Digue&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/amorgaut&quot;&gt;Alexandre Morgaut&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/null&quot;&gt;Yoann Digue&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     
       &lt;h3&gt;Analyse d&apos;un test de recrutement de développeur Front-end&lt;/h3&gt;
@@ -321,7 +321,7 @@ Et bien c’est un peu la version TL;DR; de Houdini CSS. Venez à ce talk pour v
       &lt;p&gt; &lt;ul style=&apos;margin-left:0;&apos;&gt; &lt;li&gt;1. &lt;strong&gt;Réunissez votre tribu&lt;/strong&gt; - Constituez votre équipe sur place ou amenez des amis.&lt;/li&gt; &lt;li&gt;2. &lt;strong&gt;Le choix des armes&lt;/strong&gt; - Choisissez un des sujets proposés (vous pouvez aussi amener le vôtre).&lt;/li&gt; &lt;li&gt;3. &lt;strong&gt;Peaufinez votre stratégie&lt;/strong&gt; - Vous avez 1h30 pour mettre sur pied quelques slides.&lt;/li&gt; &lt;li&gt;4. &lt;strong&gt;Entrez dans l&apos;arène&lt;/strong&gt; - Vous avez 5 à 10 minutes pour présenter votre oeuvre aux autres groupes.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Et finalement racontez vos aventures autour d&apos;une bonne flambée et d&apos;un godet&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
       &lt;p&gt;Par:&lt;/p&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Vous&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/null&quot;&gt;Vous&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     
   &lt;h2&gt;Lieu&lt;/h2&gt;
@@ -485,7 +485,7 @@ La NASA a besoin de nous, après le live youtube en continu depuis l&amp;#x27;IS
       &lt;p&gt;null&lt;/p&gt;
       &lt;p&gt;Par:&lt;/p&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;http://twitter.com/chevreuil&quot;&gt;Antoine Banctel-Chevrel&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/chevreuil&quot;&gt;Antoine Banctel-Chevrel&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     
   &lt;h2&gt;Lieu&lt;/h2&gt;
@@ -615,7 +615,7 @@ Il est maintenant temps de découvrir ce que Yarn 2 nous réserve, et vous dévo
       &lt;p&gt; &lt;ul style=&apos;margin-left:0;&apos;&gt; &lt;li&gt;1. &lt;strong&gt;Réunissez votre tribu&lt;/strong&gt; - Constituez votre équipe sur place ou amenez des amis.&lt;/li&gt; &lt;li&gt;2. &lt;strong&gt;Le choix des armes&lt;/strong&gt; - Choisissez un des sujets proposés (vous pouvez aussi amener le vôtre).&lt;/li&gt; &lt;li&gt;3. &lt;strong&gt;Peaufinez votre stratégie&lt;/strong&gt; - Vous avez 1h30 pour mettre sur pied quelques slides.&lt;/li&gt; &lt;li&gt;4. &lt;strong&gt;Entrez dans l&apos;arène&lt;/strong&gt; - Vous avez 5 à 10 minutes pour présenter votre oeuvre aux autres groupes.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Et finalement racontez vos aventures autour d&apos;une bonne flambée et d&apos;un godet&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
       &lt;p&gt;Par:&lt;/p&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Vous&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/null&quot;&gt;Vous&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     
   &lt;h2&gt;Lieu&lt;/h2&gt;
@@ -757,16 +757,16 @@ Now the fun part... It is in fact quite simple to understand., and today&amp;#x2
       &lt;p&gt;null&lt;/p&gt;
       &lt;p&gt;Par:&lt;/p&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Pierre Medard&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/null&quot;&gt;Pierre Medard&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     
   &lt;h2&gt;Lieu&lt;/h2&gt;
   
-  &lt;a href=&quot;https://twitter.com/ZenikaNantes&quot;&gt;Zenika Nantes&lt;/a&gt;&lt;br/&gt;
+  &lt;a href=&quot;ZenikaNantes&quot;&gt;Zenika Nantes&lt;/a&gt;&lt;br/&gt;
   null null null
   
   &lt;br/&gt;
-  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://twitter.com/ZenikaNantes&quot;&gt;Zenika Nantes&lt;/a&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;ZenikaNantes&quot;&gt;Zenika Nantes&lt;/a&gt;
   &lt;br/&gt;
   
   </content:encoded></item><item><title><![CDATA[MEETUP 27]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">d18bc624-580c-4ab7-a6cd-c57c3711e356</guid><pubDate>Thu, 18 Jan 2018 00:00:00 GMT</pubDate><content:encoded>
@@ -847,14 +847,14 @@ Nous vous donnerons toutes les clés pour promouvoir votre projet open-source da
       &lt;p&gt;null&lt;/p&gt;
       &lt;p&gt;Par:&lt;/p&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Antoine Cellier&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/null&quot;&gt;Antoine Cellier&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     
       &lt;h3&gt;Lightning talk : Déploiement de projet front avec Lidlet&lt;/h3&gt;
       &lt;p&gt;null&lt;/p&gt;
       &lt;p&gt;Par:&lt;/p&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Jonathan Redoute&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/null&quot;&gt;Jonathan Redoute&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     
   &lt;h2&gt;Lieu&lt;/h2&gt;
@@ -1450,7 +1450,7 @@ Afin que vous puissiez peut-être, vous aussi, organiser ce genre d’événemen
       &lt;p&gt; &lt;ul style=&apos;margin-left:0;&apos;&gt; &lt;li&gt;1. &lt;strong&gt;Réunissez votre tribu&lt;/strong&gt; - Constituez votre équipe sur place ou amenez des amis.&lt;/li&gt; &lt;li&gt;2. &lt;strong&gt;Le choix des armes&lt;/strong&gt; - Choisissez un des sujets proposés (vous pouvez aussi amener le vôtre).&lt;/li&gt; &lt;li&gt;3. &lt;strong&gt;Peaufinez votre stratégie&lt;/strong&gt; - Vous avez 1h30 pour mettre sur pied quelques slides.&lt;/li&gt; &lt;li&gt;4. &lt;strong&gt;Entrez dans l&apos;arène&lt;/strong&gt; - Vous avez 5 à 10 minutes pour présenter votre oeuvre aux autres groupes.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Et finalement racontez vos aventures autour d&apos;une bonne flambée et d&apos;un godet&lt;/strong&gt;&lt;/p&gt;&lt;/p&gt;
       &lt;p&gt;Par:&lt;/p&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;null&quot;&gt;Vous&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/null&quot;&gt;Vous&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     
   &lt;h2&gt;Lieu&lt;/h2&gt;
