@@ -24,6 +24,7 @@
     "gatsby-transformer-remark": "^2.1.19",
     "gatsby-transformer-sharp": "^2.1.4",
     "he": "^1.2.0",
+    "is-url": "^1.2.4",
     "leaflet": "^1.5.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

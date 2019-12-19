@@ -1,5 +1,7 @@
 'use strict';
 
+const isUrl = require('is-url')
+
 const convertDate = (date) => {
   const split = date.split('/');
   return [split[2], split[1], split[0]].join('-');
@@ -14,14 +16,13 @@ const formatContent = ({
     venue,
     ticketsUrl
   }) => {
-    const regexHTTP = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/
     const talkList = talks.reduce((acc, t) => `
       ${acc}
       <h3>${t.title}</h3>
       <p>${t.description}</p>
       <p>Par:</p>
       <ul>
-        ${t.speakers.reduce((b, s) => (s.link || '').match(regexHTTP) ? (`${b}<li><a href="${s.link}">${s.name}</a></li>`) : 
+        ${t.speakers.reduce((b, s) => isUrl(s.link) ? (`${b}<li><a href="${s.link}">${s.name}</a></li>`) : 
         `${b}<li><a href="${"https://twitter.com/"+s.link}">${s.name}</a></li>`, '')}
       </ul>
     `, '');

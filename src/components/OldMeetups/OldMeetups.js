@@ -4,6 +4,8 @@ import classNames from 'classnames'
 import { withPrefix } from 'gatsby'
 import he from 'he'
 
+import isUrl from 'is-url'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/fontawesome-free-brands'
 
@@ -18,7 +20,6 @@ Talks.propTypes = {
 }
 
 function Talks ({ talks }) {
-  const regexHTTP = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_.~#?&//=]*)/
   return (
     <ul className={styles.talks}>
       {talks.map(talk => (
@@ -27,7 +28,7 @@ function Talks ({ talks }) {
             <p className={styles.talk__title}>{he.decode(talk.title)}</p>
             {talk.speakers && talk.speakers
               .map(speaker => speaker.link ? (
-                speaker.link.match(regexHTTP) ? (
+                isUrl(speaker.link) ? (
                   <a
                     className={styles.talk__speaker}
                     key={speaker.id}
