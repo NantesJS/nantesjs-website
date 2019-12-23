@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Sun, 22 Dec 2019 12:24:24 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Mon, 23 Dec 2019 12:25:27 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -439,35 +439,6 @@ La NASA a besoin de nous, après le live youtube en continu depuis l&amp;#x27;IS
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://seyos.fr/&quot;&gt;Seyos&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-21-33110196489&quot;&gt;Réserver votre place&lt;/a&gt;
-  </content:encoded></item><item><title><![CDATA[MEETUP 15]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">2bbde6a3-4c70-40a4-adf1-dce339acc675</guid><pubDate>Thu, 19 Nov 2015 00:00:00 GMT</pubDate><content:encoded>
-  &lt;h1&gt;MEETUP 15 - 19/11/2015&lt;/h1&gt;
-  &lt;h2&gt;Talks&lt;/h2&gt;
-  
-      
-      
-      &lt;h3&gt;Un peu de programmation fonctionnelle en JS&lt;/h3&gt;
-      &lt;p&gt;null&lt;/p&gt;
-      &lt;p&gt;Par:&lt;/p&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;https://twitter.com/d_sferruzza&quot;&gt;David Sferruzza&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    
-      &lt;h3&gt;Lightning talk : Grid Stylesheet&lt;/h3&gt;
-      &lt;p&gt;null&lt;/p&gt;
-      &lt;p&gt;Par:&lt;/p&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;https://twitter.com/chevreuil&quot;&gt;Antoine Banctel-Chevrel&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    
-  &lt;h2&gt;Lieu&lt;/h2&gt;
-  
-  Startup Palace&lt;br/&gt;
-  null null null
-  
-  &lt;br/&gt;
-  
-  &lt;br/&gt;
-  
   </content:encoded></item><item><title><![CDATA[MEETUP 14]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">c4431f93-a473-48c0-92f7-4ddb6a7e833b</guid><pubDate>Thu, 19 Nov 2015 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 14 - 19/11/2015&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
@@ -491,6 +462,35 @@ La NASA a besoin de nous, après le live youtube en continu depuis l&amp;#x27;IS
   &lt;h2&gt;Lieu&lt;/h2&gt;
   
   iAdvize&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  
+  &lt;br/&gt;
+  
+  </content:encoded></item><item><title><![CDATA[MEETUP 15]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">2bbde6a3-4c70-40a4-adf1-dce339acc675</guid><pubDate>Thu, 19 Nov 2015 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;MEETUP 15 - 19/11/2015&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Un peu de programmation fonctionnelle en JS&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/d_sferruzza&quot;&gt;David Sferruzza&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Lightning talk : Grid Stylesheet&lt;/h3&gt;
+      &lt;p&gt;null&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/chevreuil&quot;&gt;Antoine Banctel-Chevrel&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  Startup Palace&lt;br/&gt;
   null null null
   
   &lt;br/&gt;
