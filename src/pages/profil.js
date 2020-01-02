@@ -4,10 +4,10 @@ import styles from './profil.module.css';
 import QRCode from '../../static/images/QRCode.png';
 import Fusee from '../../static/images/Fusee.png';
 import Smiley from '../../static/images/Smiley.png';
-import VotingOK from '../../static/images/VotingOK.png';
-import VotingNO from '../../static/images/VotingNO.png';
 import { FullWidthContainer } from '../components/FullWidthContainer';
 import QrReader from 'react-qr-reader';
+import { ParticipationOK } from './ParticipationOK/';
+import { ParticipationNON } from './ParticipationNON/';
 
 export default function Profil() {
 
@@ -60,35 +60,9 @@ export default function Profil() {
         :
         <div>
           {result == "MEETUP" ?
-            <div>
-              <div className={styles.profilPage__ImageAndName}>
-                <h1>Mon profil</h1>
-                <p>Votre participation au NantesJS XX a bien été enregistrée !</p>
-              </div>
-              <FullWidthContainer>
-                <div className={styles.profilPage__QRCodeDiv}>
-                  <div className={styles.QRCodeDiv__QRCodeImageOn}>
-                    <img src={VotingOK} alt="QRCode" className={styles.QRCodeDiv__QRCodeImage} />
-                    <button className={styles.QRCodeDiv__QRCodeButton} onClick={handleClick}>Revenir à mon profil</button>
-                  </div>
-                </div>
-              </FullWidthContainer>
-            </div>
+            <ParticipationOK />
             :
-            <div>
-              <div className={styles.profilPage__ImageAndName}>
-                <h1>Mon profil</h1>
-                <p>Vous avez déjà enregistré votre participation pour ce NantesJS...</p>
-              </div>
-              <FullWidthContainer>
-                <div className={styles.profilPage__QRCodeDiv}>
-                  <div className={styles.QRCodeDiv__QRCodeImageOn}>
-                    <img src={VotingNO} alt="QRCode" className={styles.QRCodeDiv__QRCodeImage} />
-                    <button className={styles.QRCodeDiv__QRCodeButton} onClick={handleClick}>Revenir à mon profil</button>
-                  </div>
-                </div>
-              </FullWidthContainer>
-            </div>
+            <ParticipationNON/>
             }
         </div>
       }
