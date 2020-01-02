@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Generate QRCode</title>
+  <style>
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 100px auto;
+    }
+
+    #qrcode{
+      margin-top: 50px;
+    }
+
+    input{
+      border: 1px solid black;
+    }
+  </style> 
+</head>
+
+<body>
+  <p>Name your QRCode</p>
+  <input type="text" id="qr-data" onchange="generateQR()"/>
+  <div id="qrcode"></div>
+</body>
+
+<script src="qrcode.min.js"></script>
+<script type="text/javascript">
+  let qrdata = document.getElementById('qr-data');
+  let qrcode = new QRCode(document.getElementById("qrcode"));
+
+  function generateQR(){
+    let data = qrdata.value;
+
+    qrcode.makeCode(data);
+  }
+</script>
+
+
+</html>
