@@ -41,6 +41,7 @@ export default function Profil() {
               onError={(error) => {console.log(error)}}
               onScan={handleScan}
             />
+            <p>{result}</p>
           </div>
           <div className={styles.QRCodeDiv__fusee}>
             <img src={Fusee} alt="Fusee" className={styles.fusee__fuseeImage} />
