@@ -53,6 +53,32 @@
   display: none;
 }
 
+.QRCodeDiv__cameraOff{
+  display: none !important;
+}
+
+.QRCodeDiv__cameraOn{
+  display: block;
+  height: auto;
+  width: 100%;
+  z-index: 0;
+}
+
+.QRCodeDiv__QRCodeImageOff{
+  display: none;
+}
+
+.QRCodeDiv__QRCodeImageOn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilPage div:nth-child(2)>div:nth-child(2){
+  display: block !important;
+}
+
 @media screen and (min-width: 991px){
   .profilPage__ImageAndName{
     justify-content: flex-start;

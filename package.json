@@ -33,6 +33,7 @@
     "react-firebaseui": "^4.0.0",
     "react-helmet": "^5.2.0",
     "react-leaflet": "^2.3.0",
+    "react-qr-reader": "^2.2.1",
     "react-responsive": "^6.0.1"
   },
   "keywords": [

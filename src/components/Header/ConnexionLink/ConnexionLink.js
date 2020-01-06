@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import { MenuLink } from '../MenuLink';
 import firebase from 'firebase';
@@ -7,41 +7,48 @@ import UserLogo from '../../../../static/images/user-silhouette.svg';
 import PowerSettingLogo from '../../../../static/images/power-setting.svg';
 import styles from '../MenuLink/MenuLink.module.css'
 
-export function ConnexionLink () {
-  
+export function ConnexionLink() {
+
+  const [auth, setAuth] = useState(false);
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(user => {
+      setAuth(!!user)
+    })
+  }, []);
 
   const verifyConnexion = () => {
-    if(firebase.auth().currentUser){
+    if (auth === true) {
       return (
         <React.Fragment>
           <div className={styles.profilSetting}>
-            <Link 
+            <Link
               id={styles.profil}
-              activeClassName={styles.menu__linkSelected} 
+              activeClassName={styles.menu__linkSelected}
               className={styles.menu__link}
               to='/page-connexion/'
-              >
-              <img src={UserLogo}/> Mon Profil
+            >
+              <img src={UserLogo} /> Mon Profil
             </Link>
           </div>
           <div className={styles.powerSetting}>
-            <Link 
+            <Link
               className={styles.menu__link}
               onClick={() => firebase.auth().signOut()}
-              >
+            >
               <img src={PowerSettingLogo} /> Déconnexion
             </Link>
           </div>
         </React.Fragment>
       )
-    }else{
+    } else {
       return (
-        <Link 
-        activeClassName={styles.menu__linkSelected} 
-        className={styles.menu__link}
-        to='/page-connexion/'
+        <Link
+          activeClassName={styles.menu__linkSelected}
+          className={styles.menu__link}
+          to='/page-connexion/'
         >
-          <img src={UserLogo}/> Se connecter
+          <img src={UserLogo} /> Se connecter
         </Link>
       )
     }
