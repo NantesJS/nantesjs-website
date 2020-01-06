@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import styles from '../profil.module.css';
 import VotingOK from '../../../static/images/VotingOK.png';
 import { FullWidthContainer } from '../../components/FullWidthContainer';
+import CtxCounter from '../CtxCounter.js';
 
 
 export function ParticipationOK() {
 
+  const [counter, setCounter] = useContext(CtxCounter)
+
   function refreshPage() {
-    window.location.reload(true);
+    window.location.reload();
+    setCounter(counter + 1)
   }
 
   return (

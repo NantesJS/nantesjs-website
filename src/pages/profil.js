@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 
 import styles from './profil.module.css';
 import QRCode from '../../static/images/QRCode.png';
@@ -8,11 +8,15 @@ import { FullWidthContainer } from '../components/FullWidthContainer';
 import QrReader from 'react-qr-reader';
 import { ParticipationOK } from './ParticipationOK/';
 import { ParticipationNON } from './ParticipationNON/';
+import CtxCounter from './CtxCounter';
 
 export default function Profil() {
 
   const [isHere, setIsHere] = useState(false);
-  const [result, setResult] = useState('Nothing')
+  const [result, setResult] = useState('Nothing');
+  const [counter, setCounter] = useContext(CtxCounter);
+
+  console.log(counter)
 
   const handleClick = () => {
     setIsHere(!isHere);
@@ -30,7 +34,7 @@ export default function Profil() {
         <div>
           <div className={styles.profilPage__ImageAndName}>
             <h1>Mon profil</h1>
-            <p>J'ai participé à XX NantesJS au cours de l'année 2020</p>
+            <p>J'ai participé à {counter} NantesJS au cours de l'année 2020</p>
           </div>
           <FullWidthContainer>
             <div className={styles.profilPage__QRCodeDiv}>
