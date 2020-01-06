@@ -10,6 +10,8 @@
     "classnames": "^2.2.6",
     "cross-env": "^5.2.0",
     "date-fns": "2.0.0-alpha.25",
+    "firebase": "^7.5.0",
+    "firebaseui": "^4.3.0",
     "gatsby": "^2.0.19",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-feed": "^2.2.0",
@@ -28,6 +30,7 @@
     "leaflet": "^1.5.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-firebaseui": "^4.0.0",
     "react-helmet": "^5.2.0",
     "react-leaflet": "^2.3.0",
     "react-responsive": "^6.0.1"
