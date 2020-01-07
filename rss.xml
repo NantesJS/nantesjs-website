@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Tue, 07 Jan 2020 12:34:44 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Tue, 07 Jan 2020 14:32:39 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -1088,6 +1088,35 @@ Et parce qu&amp;#x27;on aime tous les librairie expérimentales, pourquoi ne pas
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.lafourchette.com/&quot;&gt;LaFourchette&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-40-tickets-61638504426&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #47]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">31f3f22e-da62-4040-8416-52057587c79c</guid><pubDate>Thu, 16 Jan 2020 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #47 - 16/01/2020&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Accessibilité, utiliser  un &amp;quot;screen reader&amp;quot; pour le développement Web&lt;/h3&gt;
+      &lt;p&gt;Le lecteur d’écran ou &amp;quot;screen reader&amp;quot; est un logiciel d’assistance technique destiné aux personnes &amp;quot; empêchées de lire &amp;quot; pour retranscrire par synthèse vocale ce qui est affiché sur l&amp;#x27;écran.  Quand on doit gérer l&amp;#x27;accessibilité d&amp;#x27;une appli web, il est important d’utiliser un “ screen reader “ car l’être humain est indispensable pour la validation fonctionnelle de l&amp;#x27;expérience utilisateur. &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/BenoitDecline&quot;&gt;Benoît Deglane&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;REXP DotJs 2020&lt;/h3&gt;
+      &lt;p&gt;Nous vous proposons un retour sur notre participation à DotJs 2019 à Paris. Au programme : * présentation de l’événement * retour sur les conférences * points d&amp;#x27;attentions sur nos coup de cœur &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/_Anthony_Pena&quot;&gt;Anthony PENA&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/AdrienLASSELLE&quot;&gt;Adrien LASSELLE&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.groupe-sii.com/fr&quot;&gt;SII&lt;/a&gt;&lt;br/&gt;
+  10 Rue Magdeleine 44200 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://www.lucca.fr/&quot;&gt;Lucca&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-47-tickets-88659810881&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[MEETUP 35]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">ab36d815-3e69-4722-b1e2-9c42f5fb9144</guid><pubDate>Thu, 15 Nov 2018 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 35 - 15/11/2018&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
