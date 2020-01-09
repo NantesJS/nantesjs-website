@@ -69,3 +69,6 @@ yarn-error.log
 .yarn-integrity
 
 .firebase
+
+nantesjs-website.iml
+.idea
