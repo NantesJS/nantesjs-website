@@ -23,6 +23,7 @@ const format = str => flow(
 const formatDay = format('d')
 const formatMonth = format('MMM')
 const formatYear = format('yyyy')
+const formatRaw = format('yyyy-MM-dd')
 
 export function FullDate ({ date, fontSize }) {
   const dayStyle = {
@@ -32,8 +33,8 @@ export function FullDate ({ date, fontSize }) {
   const yearAndMonthStyle = { fontSize: `${ fontSize * 2 }rem` }
 
   return (
-    <div className={styles.date}>
-      <div className={styles.date__column}>
+    <time dateTime={formatRaw(date)} className={styles.date}>
+      <span className={styles.date__column}>
         <span
           style={dayStyle}
           className={styles.date__day}
@@ -46,13 +47,13 @@ export function FullDate ({ date, fontSize }) {
         >
           {formatMonth(date)}
         </span>
-      </div>
+      </span>
       <span
         style={yearAndMonthStyle}
         className={styles.date__year}
       >
         {formatYear(date)}
       </span>
-    </div>
+    </time>
   )
 }
