@@ -20,11 +20,12 @@ export default function About () {
         <Picture
           className={styles.gallery__frame}
           source={grue}
-          portrait
+          alt="La grue titan jaune, vue du quai de la Fosse, à nantes"
         />
         <Picture
           className={styles.gallery__frame}
           source={elephant}
+          alt="Le Grand éléphant des machines de l'île à nantes"
         />
       </div>
       <h2>Les rencontres js nantaises</h2>
@@ -34,7 +35,15 @@ export default function About () {
         les rencontres se sont faites sur une base irrégulomadaire.
         Les rencontres seront programmées 1 fois par mois, le 3e jeudi
         du mois !
+        `}
+      </p>
+      <p>
+        {`
         Les collations sont toujours les bienvenues.
+        `}
+      </p>
+      <p>
+        {`
         Sponsors et autres donateurs anonymes, n'hésitez pas à vous
         manifester 😄
         `}
