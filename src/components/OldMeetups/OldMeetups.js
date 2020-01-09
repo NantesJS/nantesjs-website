@@ -10,6 +10,7 @@ import { faYoutube } from '@fortawesome/fontawesome-free-brands'
 
 
 import { FullDate } from '../FullDate'
+import { formatRaw } from '../../helper/date.helper'
 import { FullWidthContainer } from '../FullWidthContainer'
 
 import styles from './OldMeetups.module.css'
@@ -127,7 +128,11 @@ export function OldMeetups ({ meetups }) {
                 <Talks talks={meetup.talks} />
                 <div className={styles.showOnMobile}>
                   <div className={styles.meetup__date}>
-                    <p>{meetup.date}</p>
+                    <p>
+                      <time dateTime={formatRaw(meetup.date)}>
+                        {meetup.date}
+                      </time>
+                    </p>
                   </div>
                 </div>
               </div>
