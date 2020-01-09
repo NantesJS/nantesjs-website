@@ -21,7 +21,7 @@
   border-radius: 75px;
   width: 100px;
   height: 100px;
-  padding: 12px;
+  padding: 20px;
   background-color: #272727;
   overflow: hidden;
   position: absolute;
@@ -41,10 +41,11 @@
 @media screen and (max-width: 767px) {
   .footer__logo {
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    box-shadow: #272727 0px -1px 0 7.5px;
+    width: 75px;
+    height: 75px;
+    padding: 15px;
     right: 20px;
+    top: -35px;
   }
 
   .footer__logo img {
