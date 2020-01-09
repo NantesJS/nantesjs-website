@@ -19,14 +19,14 @@
 
 .footer__logo {
   border-radius: 75px;
-  width: 75px;
-  height: 75px;
-  box-shadow: #272727 0px -1px 0 15px;
-  background-color: #f1f1f1;
+  width: 100px;
+  height: 100px;
+  padding: 12px;
+  background-color: #272727;
   overflow: hidden;
   position: absolute;
   right: 40px;
-  top: -20px;
+  top: -45px;
 }
 
 .footer__image {
