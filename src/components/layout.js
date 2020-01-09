@@ -6,7 +6,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Header } from './Header'
 import { LargeContainer } from './LargeContainer'
 import { Footer } from './Footer'
-import './layout.module.css'
+import styles from './layout.module.css'
+import './base.module.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -37,21 +38,23 @@ const Layout = ({ children }) => (
         >
           <html lang="fr" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <main>
-          <LargeContainer relative >
-            <div
-              style={{
-                margin: '0 auto',
-                maxWidth: '1020px',
-                padding: '0 20px',
-              }}
-            >
-              {children}
-            </div>
-          </LargeContainer>
-        </main>
-        <Footer />
+        <section className={styles.layout}>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <main className={styles.layout__main}>
+            <LargeContainer relative >
+              <div
+                style={{
+                  margin: '0 auto',
+                  maxWidth: '1020px',
+                  padding: '0 20px',
+                }}
+              >
+                {children}
+              </div>
+            </LargeContainer>
+          </main>
+          <Footer />
+        </section>
       </Fragment>
     )}
   />

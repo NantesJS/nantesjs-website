@@ -1,36 +1,10 @@
-body {
-  background-color: #f1f1f1;
-  margin: 0;
-  padding: 0;
+.layout {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-* {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  line-height: 1.6em;
-  box-sizing: border-box;
+.layout__main {
+  flex-grow: 1;
 }
-
-b {
-  font-weight: 700;
-}
-
-p {
-  text-align: justify;
-}
-
-p, a, a:visited {
-  color: #444;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 400;
-}
-
-h1 {
-  margin: 0;
-  padding: 20px 0;
-}
-
