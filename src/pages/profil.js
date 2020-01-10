@@ -1,4 +1,6 @@
 import React, { useState, useContext } from 'react';
+import firebase from 'firebase';
+import Config from './Config/config';
 
 import styles from './profil.module.css';
 import QRCode from '../../static/images/QRCode.png';
@@ -13,10 +15,9 @@ import CtxCounter from './CtxCounter';
 export default function Profil() {
 
   const [isHere, setIsHere] = useState(false);
-  const [result, setResult] = useState('Nothing');
+  const [result, setResult] = useState('');
   const [counter, setCounter] = useContext(CtxCounter);
-
-  console.log(counter)
+  const [test, setTest] = useState('')
 
   const handleClick = () => {
     setIsHere(!isHere);
@@ -28,9 +29,21 @@ export default function Profil() {
     }
   };
 
+  let db = firebase.firestore(Config);
+  let app = db.collection('nantesjs').doc('meetup');
+
+  app.get().then(function(doc) {
+    if (doc.exists) {
+        setTest(doc.data().QrCode)
+    } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+    }
+})
+
   return (
     <div className={styles.profilPage}>
-      {result == "Nothing" ?
+      {result !== test ?
         <div>
           <div className={styles.profilPage__ImageAndName}>
             <h1>Mon profil</h1>
@@ -63,7 +76,7 @@ export default function Profil() {
         </div>
         :
         <div>
-          {result == "MEETUP" ?
+          {result === test ?
             <ParticipationOK />
             :
             <ParticipationNON/>

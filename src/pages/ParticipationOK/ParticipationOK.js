@@ -1,4 +1,6 @@
 import React, { useContext, useEffect } from 'react';
+import firebase from 'firebase';
+import Config from '../Config/config';
 import styles from '../profil.module.css';
 import VotingOK from '../../../static/images/VotingOK.png';
 import { FullWidthContainer } from '../../components/FullWidthContainer';
@@ -13,6 +15,13 @@ export function ParticipationOK() {
     window.location.reload();
     setCounter(counter + 1)
   }
+
+  let user = firebase.auth().currentUser
+  let db = firebase.firestore(Config)
+
+  let app = db.collection('nantesjs').doc('meetup')
+
+  app.update({Participants : firebase.firestore.FieldValue.arrayUnion(`${user.uid}`)})
 
   return (
     <div>
