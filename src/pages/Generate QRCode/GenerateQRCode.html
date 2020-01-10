@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,20 +27,44 @@
 </head>
 
 <body>
+  <p>Name your Document / Meetup</p>
+  <input type="text" id="doc" />
   <p>Name your QRCode</p>
   <input type="text" id="qr-data" onchange="generateQR()"/>
   <div id="qrcode"></div>
 </body>
 
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+  
 <script src="qrcode.min.js"></script>
 <script type="text/javascript">
+// let config = {
+//     apiKey: "[YOUR_API_KEY]",
+//     authDomain: "[YOUR_AUTH_DOMAIN].firebaseapp.com",
+//     projectId: "[YOUR_PROJECT_ID]",
+//   };
+  //Initialize Firebase
+  let app = firebase.initializeApp(config);
+  let db = firebase.firestore(app);
+
   let qrdata = document.getElementById('qr-data');
+  let docID = document.getElementById('doc');
   let qrcode = new QRCode(document.getElementById("qrcode"));
+  let time = new Date 
 
   function generateQR(){
     let data = qrdata.value;
-
-    qrcode.makeCode(data);
+    let chiffre = sha256(data)
+    qrcode.makeCode(chiffre);
+    
+    db.collection('nantesjs').doc(`${docID.value}`).set({
+      Date: time,
+      QrCode: data,
+      Participants: [],
+    });
+    console.log('send')
   }
 </script>
 
