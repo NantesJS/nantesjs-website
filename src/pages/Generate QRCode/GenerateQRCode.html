@@ -7,37 +7,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Generate QRCode</title>
   <style>
-
-    body{
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       margin: 100px auto;
     }
-
-    #qrcode{
+    #qrcode {
       margin-top: 50px;
     }
-
-    input{
+    input {
       border: 1px solid black;
     }
-  </style> 
+  </style>
 </head>
 
 <body>
   <p>Name your Document / Meetup</p>
   <input type="text" id="doc" />
   <p>Name your QRCode</p>
-  <input type="text" id="qr-data" onchange="generateQR()"/>
+  <input type="text" id="qr-data" onchange="generateQR()" />
   <div id="qrcode"></div>
+  <button id="gagnant"> Je veux un gagnant </button>
+  <p id='gagnantchoosen'></p>
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
-  
+
 <script src="qrcode.min.js"></script>
 <script type="text/javascript">
 // let config = {
@@ -50,17 +49,23 @@
   let app = firebase.initializeApp(config);
   let db = firebase.firestore(app);
 
+  let winner = db.collection('nantesjs').doc('meetup 4');
+  let gagnant = document.getElementById('gagnant');
   let qrdata = document.getElementById('qr-data');
   let docID = document.getElementById('doc');
   let qrcode = new QRCode(document.getElementById("qrcode"));
   let time = new Date 
   let time2 = time.getTime();
+  let test = document.getElementById('gagnantchoosen');
+  let winnerchoosen;
 
-  function generateQR(){
+
+// Generate a QRcode and send it to firebase in a new document
+  function generateQR() {
     let data = qrdata.value;
     let chiffre = sha256(data)
     qrcode.makeCode(chiffre);
-    
+
     db.collection('nantesjs').doc(`${docID.value}`).set({
       Date: time2,
       QrCode: data,
@@ -68,7 +73,18 @@
     });
     console.log('send')
   }
-</script>
 
+//Get a ramdom winner with the button
+  gagnant.addEventListener('click', function () {
+    winner.get().then(function (doc) {
+      if (doc.exists) {
+        let Participants = (doc.data().Participants);
+        let winnerchoosen = Participants[Math.floor(Math.random() * Participants.length)]
+        test.innerHTML = winnerchoosen;
+      }
+    })
+  });
+
+</script>
 
 </html>
