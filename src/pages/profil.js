@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import firebase from 'firebase';
 import Config from './Config/config';
+import { sha256 } from 'js-sha256';
 
 import styles from './profil.module.css';
 import QRCode from '../../static/images/QRCode.png';
@@ -15,9 +16,9 @@ import CtxCounter from './CtxCounter';
 export default function Profil() {
 
   const [isHere, setIsHere] = useState(false);
-  const [result, setResult] = useState('');
+  const [result, setResult] = useState(''); //ce qui est scanné
   const [counter, setCounter] = useContext(CtxCounter);
-  const [test, setTest] = useState('')
+  const [test, setTest] = useState('') //ce qui est dans la base de données
 
   const handleClick = () => {
     setIsHere(!isHere);
@@ -26,24 +27,29 @@ export default function Profil() {
   const handleScan = data => {
     if (data) {
       setResult(data)
+      console.log(result + "C'est ce QRcode scanné")
     }
   };
 
   let db = firebase.firestore(Config);
-  let app = db.collection('nantesjs').doc('meetup');
+  let app = db.collection('nantesjs').doc('meetup12');
 
   app.get().then(function(doc) {
     if (doc.exists) {
         setTest(doc.data().QrCode)
+        console.log(test + "c'est ce qu'il y a dans la DB")
+        console.log(chiffretest + "chiffre test")
     } else {
         // doc.data() will be undefined in this case
         console.log("No such document!");
     }
 })
 
+  let chiffretest = sha256(test)
+
   return (
     <div className={styles.profilPage}>
-      {result !== test ?
+      {result !== chiffretest ?
         <div>
           <div className={styles.profilPage__ImageAndName}>
             <h1>Mon profil</h1>
@@ -76,7 +82,7 @@ export default function Profil() {
         </div>
         :
         <div>
-          {result === test ?
+          {result === chiffretest ?
             <ParticipationOK />
             :
             <ParticipationNON/>

@@ -19,8 +19,9 @@ export function ParticipationOK() {
   let user = firebase.auth().currentUser
   let db = firebase.firestore(Config)
 
-  let app = db.collection('nantesjs').doc('meetup')
+  let app = db.collection('nantesjs').doc('meetup12')
 
+  //Ajoute l'ID de l'user dans l'array participants
   app.update({Participants : firebase.firestore.FieldValue.arrayUnion(`${user.uid}`)})
 
   return (
