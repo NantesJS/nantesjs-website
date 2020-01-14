@@ -1,12 +1,7 @@
 import React, { useState, useContext } from 'react';
 import firebase from 'firebase';
 import Config from './Config/config';
-<<<<<<< HEAD
 import {sha256} from 'js-sha256';
-=======
-import { sha256 } from 'js-sha256';
-
->>>>>>> origin/send-qrcode-tofirebase-jordan
 import styles from './profil.module.css';
 import QRCode from '../../static/images/QRCode.png';
 import Fusee from '../../static/images/Fusee.png';
@@ -20,11 +15,7 @@ import CtxCounter from './CtxCounter';
 export default function Profil() {
 
   const [isHere, setIsHere] = useState(false);
-<<<<<<< HEAD
   const [result, setResult] = useState('Nothing');
-=======
-  const [result, setResult] = useState(''); //ce qui est scanné
->>>>>>> origin/send-qrcode-tofirebase-jordan
   const [counter, setCounter] = useContext(CtxCounter);
   const [test, setTest] = useState('') //ce qui est dans la base de données
 
@@ -41,7 +32,6 @@ export default function Profil() {
 
 
   let db = firebase.firestore(Config);
-<<<<<<< HEAD
   let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
 
   // RECUPERE L'ID DU MEETUP SUR FIREBASE
@@ -50,30 +40,12 @@ export default function Profil() {
       let array = lastElement.doc.data() 
       setTest(array.QrCode)
   });
-=======
-  let app = db.collection('nantesjs').doc('meetup12');
-
-  app.get().then(function(doc) {
-    if (doc.exists) {
-        setTest(doc.data().QrCode)
-        console.log(test + "c'est ce qu'il y a dans la DB")
-        console.log(chiffretest + "chiffre test")
-    } else {
-        // doc.data() will be undefined in this case
-        console.log("No such document!");
-    }
-})
->>>>>>> origin/send-qrcode-tofirebase-jordan
 
   let chiffretest = sha256(test)
 
   return (
     <div className={styles.profilPage}>
-<<<<<<< HEAD
       {result !== sha256(test) ?
-=======
-      {result !== chiffretest ?
->>>>>>> origin/send-qrcode-tofirebase-jordan
         <div>
           <div className={styles.profilPage__ImageAndName}>
             <h1>Mon profil</h1>
@@ -106,11 +78,7 @@ export default function Profil() {
         </div>
         :
         <div>
-<<<<<<< HEAD
           {result === sha256(test) ?
-=======
-          {result === chiffretest ?
->>>>>>> origin/send-qrcode-tofirebase-jordan
             <ParticipationOK />
             :
             <ParticipationNON/>
