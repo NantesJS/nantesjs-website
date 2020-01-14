@@ -45,6 +45,7 @@
 //     authDomain: "[YOUR_AUTH_DOMAIN].firebaseapp.com",
 //     projectId: "[YOUR_PROJECT_ID]",
 //   };
+
   //Initialize Firebase
   let app = firebase.initializeApp(config);
   let db = firebase.firestore(app);
@@ -53,6 +54,7 @@
   let docID = document.getElementById('doc');
   let qrcode = new QRCode(document.getElementById("qrcode"));
   let time = new Date 
+  let time2 = time.getTime();
 
   function generateQR(){
     let data = qrdata.value;
@@ -60,7 +62,7 @@
     qrcode.makeCode(chiffre);
     
     db.collection('nantesjs').doc(`${docID.value}`).set({
-      Date: time,
+      Date: time2,
       QrCode: data,
       Participants: [],
     });

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import firebase from 'firebase';
 import Config from '../Config/config';
 import styles from '../profil.module.css';
@@ -15,13 +15,23 @@ export function ParticipationOK() {
     window.location.reload();
     setCounter(counter + 1)
   }
-
+  
   let user = firebase.auth().currentUser
   let db = firebase.firestore(Config)
 
-  let app = db.collection('nantesjs').doc('meetup')
+  // UPDATE LE TABLEAU DES INSCRITS SUR FIREBASE
+  let update = (props)=> {
+    console.log(props)
+    db.collection('nantesjs').doc(props).update({Participants: firebase.firestore.FieldValue.arrayUnion(`${user.uid}`)})
+  }
 
-  app.update({Participants : firebase.firestore.FieldValue.arrayUnion(`${user.uid}`)})
+  // RECUPERE L'ID DU DERNIER MEETUP SUR FIREBASE
+  let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
+  app.get().then(doc=>{
+    let lastElement = doc.docChanges()[doc._snapshot.docChanges.length-1]
+    let array = lastElement.doc.id
+    update(array);
+  })
 
   return (
     <div>
