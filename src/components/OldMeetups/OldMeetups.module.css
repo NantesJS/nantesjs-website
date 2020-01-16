@@ -20,6 +20,11 @@
   flex-direction: row;
   margin-top: 2rem;
   padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.meetup:last-of-type {
+  border: none;
 }
 
 .meetup__header {
@@ -107,10 +112,6 @@
   white-space: nowrap;
 }
 
-.meetup--bordered {
-  border-bottom: 1px solid #ccc;
-}
-
 .meetup__image {
   height: 4.5rem;
   width: 4.5rem;
@@ -158,16 +159,16 @@
   }
 
   .hideOnMobile {
-      display: none;
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hideOnMobile {
-      display: block;
+    display: block;
   }
 
   .showOnMobile {
-      display: none;
+    display: none;
   }
 }

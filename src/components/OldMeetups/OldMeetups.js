@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import { array } from 'prop-types'
-import classNames from 'classnames'
 import { withPrefix } from 'gatsby'
 import he from 'he'
 
@@ -11,6 +10,7 @@ import { faYoutube } from '@fortawesome/fontawesome-free-brands'
 
 
 import { FullDate } from '../FullDate'
+import { formatRaw } from '../../helper/date.helper'
 import { FullWidthContainer } from '../FullWidthContainer'
 
 import styles from './OldMeetups.module.css'
@@ -69,9 +69,8 @@ OldMeetups.propTypes = {
 }
 
 export function OldMeetups ({ meetups }) {
-  const lastIndex = meetups.length - 1
   return (
-    <Fragment>
+    <section>
       <FullWidthContainer className={styles.oldMeetups__hero}>
         <div>
           <h3 className={styles.oldMeetups__title}>Évènements passés</h3>
@@ -80,67 +79,67 @@ export function OldMeetups ({ meetups }) {
           </p>
         </div>
       </FullWidthContainer>
-      <div>
-        {meetups.map((meetup, index) => {
-          const backgroundImage = `url(${ withPrefix(meetup.image) })`
-          return (
-            <Fragment key={meetup.id}>
-              <div className={classNames(styles.meetup, {
-                [styles.meetupBordered]: lastIndex !== index,
-              })}>
-                {/*
+      {meetups.map(meetup => {
+        const backgroundImage = `url(${ withPrefix(meetup.image) })`
+        return (
+          <Fragment key={meetup.id}>
+            <article className={styles.meetup}>
+              {/*
                   Bug with MediaQuery and mixing class names
                   https://github.com/gatsbyjs/gatsby/pull/8092
                   <MediaQuery minWidth={768}/>
                     <div className={styles.meetup__date}>
                 */}
-                <div className={styles.hideOnMobile}>
-                  <div className={styles.meetup__date}>
-                    <FullDate date={meetup.date} fontSize={.5} />
-                    <div
-                      className={styles.meetup__image}
-                      role="img"
-                      aria-label="image relative au sujet du meetup"
-                      style={{ backgroundImage }}
-                    />
-                  </div>
+              <div className={styles.hideOnMobile}>
+                <div className={styles.meetup__date}>
+                  <FullDate date={meetup.date} fontSize={.5} />
+                  <div
+                    className={styles.meetup__image}
+                    role="img"
+                    aria-label="image relative au sujet du meetup"
+                    style={{ backgroundImage }}
+                  />
                 </div>
-                <div className={styles.meetup__content}>
-                  <div className={styles.meetup__header}>
-                    <h4
-                      className={styles.meetup__title}
-                      title={meetup.title}
-                    >
-                      {meetup.title}
-                    </h4>
-                    <div className={styles.meetup__sponsors}>
-                      <p>
-                        {meetup.sponsor && (
-                          <Fragment>
-                            <span>
-                              Sponsorisé par <b>{meetup.sponsor.name}</b>
-                            </span>
-                            <br />
-                          </Fragment>
-                        )}
-                        {meetup.venue && (
-                          <span>Hébergé par <b>{meetup.venue.name}</b></span>
-                        )}
-                      </p>
-                    </div>
+              </div>
+              <div className={styles.meetup__content}>
+                <header className={styles.meetup__header}>
+                  <h4
+                    className={styles.meetup__title}
+                    title={meetup.title}
+                  >
+                    {meetup.title}
+                  </h4>
+                  <div className={styles.meetup__sponsors}>
+                    <p>
+                      {meetup.sponsor && (
+                        <Fragment>
+                          <span>
+                            Sponsorisé par <b>{meetup.sponsor.name}</b>
+                          </span>
+                          <br />
+                        </Fragment>
+                      )}
+                      {meetup.venue && (
+                        <span>Hébergé par <b>{meetup.venue.name}</b></span>
+                      )}
+                    </p>
                   </div>
-                  <Talks talks={meetup.talks}/>
-                  <div className={styles.showOnMobile}>
-                    <div className={styles.meetup__date}>
-                      <p>{meetup.date}</p>
-                    </div>
+                </header>
+                <Talks talks={meetup.talks} />
+                <div className={styles.showOnMobile}>
+                  <div className={styles.meetup__date}>
+                    <p>
+                      <time dateTime={formatRaw(meetup.date)}>
+                        {meetup.date}
+                      </time>
+                    </p>
                   </div>
                 </div>
               </div>
-            </Fragment>
-          )
-        })}
-      </div>
-    </Fragment>
+            </article>
+          </Fragment>
+        )
+      })}
+    </section>
   )
 }

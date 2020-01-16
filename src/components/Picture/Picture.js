@@ -10,16 +10,28 @@ Picture.propTypes = {
   source: string,
   className: string,
   portrait: bool,
+  alt: string.isRequired,
+  caption: bool,
+}
+
+Picture.defaultProps = {
+  caption: false,
 }
 
 export function Picture ({
   source,
   className,
+  alt,
+  caption,
 }) {
   return (
-    <div
-      style={{ backgroundImage: `url(${ source })` }}
-      className={classNames(styles.picture__frame, className)}
-    />
+    <figure className={classNames(styles.picture, className)}>
+      <img
+        src={source}
+        className={styles.picture__frame}
+        alt={alt}
+      />
+      {caption && <figcaption>{alt}</figcaption>}
+    </figure>
   )
 }

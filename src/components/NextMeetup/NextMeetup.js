@@ -5,15 +5,15 @@ import { Place } from './Place'
 import { Talks } from './Talks'
 import { Buttons } from './Buttons'
 
-import './NextMeetup.module.css'
+import styles from './NextMeetup.module.css'
 
 export function NextMeetup () {
   return (
-    <div>
+    <article className={styles.nextMeetup}>
       <TitleBar/>
       <Place/>
       <Talks/>
       <Buttons/>
-    </div>
+    </article>
   )
 }

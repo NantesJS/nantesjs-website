@@ -1,8 +1,11 @@
 import React from 'react'
 import { string, number } from 'prop-types'
-import { flow } from 'lodash/fp'
-import fr from 'date-fns/locale/fr'
-import { parse, formatWithOptions } from 'date-fns/fp'
+import {
+  formatDay,
+  formatMonth,
+  formatRaw,
+  formatYear
+} from '../../helper/date.helper'
 
 import styles from './FullDate.module.css'
 
@@ -15,15 +18,6 @@ FullDate.defaultProps = {
   fontSize: 1,
 }
 
-const format = str => flow(
-  parse(new Date(), 'dd/MM/yyyy'),
-  formatWithOptions({ locale: fr }, str)
-)
-
-const formatDay = format('d')
-const formatMonth = format('MMM')
-const formatYear = format('yyyy')
-
 export function FullDate ({ date, fontSize }) {
   const dayStyle = {
     fontSize: `${ fontSize * 5.8 }rem`,
@@ -32,8 +26,8 @@ export function FullDate ({ date, fontSize }) {
   const yearAndMonthStyle = { fontSize: `${ fontSize * 2 }rem` }
 
   return (
-    <div className={styles.date}>
-      <div className={styles.date__column}>
+    <time dateTime={formatRaw(date)} className={styles.date}>
+      <span className={styles.date__column}>
         <span
           style={dayStyle}
           className={styles.date__day}
@@ -46,13 +40,13 @@ export function FullDate ({ date, fontSize }) {
         >
           {formatMonth(date)}
         </span>
-      </div>
+      </span>
       <span
         style={yearAndMonthStyle}
         className={styles.date__year}
       >
         {formatYear(date)}
       </span>
-    </div>
+    </time>
   )
 }
