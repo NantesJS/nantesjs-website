@@ -2,6 +2,7 @@
   width: 1160px;
   margin: auto;
   max-width: 100%;
+  overflow: hidden;
 }
 
 .large-container--relative {

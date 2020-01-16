@@ -34,6 +34,12 @@
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 400px) {
+  .menu__social-icons > div {
+    justify-content: inherit;
+  }
+}
+
 .menu__social-icons a {
   color: #f3e049 !important;
 }
