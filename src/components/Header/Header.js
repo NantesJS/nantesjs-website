@@ -14,7 +14,7 @@ export function Header () {
   const proposalLink = 'https://conference-hall.io/public/event/DWIXMKeUnghfgJHerwEh'
   return (
     <header className={styles.header}>
-      <LargeContainer>
+      <LargeContainer style={{ overflow: 'hidden' }}>
         <nav className={styles.header__container}>
           <Logo className={styles.header__logo} />
           <div className={styles.header__links}>
