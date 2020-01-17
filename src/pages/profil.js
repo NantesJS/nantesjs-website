@@ -41,7 +41,7 @@ export default function Profil() {
 
   return (
     <div className={styles.profilPage}>
-      {result !== sha256(test) ?
+      {result === 'Nothing' ?
         <div>
           <div className={styles.profilPage__ImageAndName}>
             <h1>Mon profil</h1>
