@@ -14,11 +14,17 @@
       flex-direction: column;
       margin: 100px auto;
     }
+
     #qrcode {
       margin-top: 50px;
     }
+
     input {
       border: 1px solid black;
+    }
+
+    #gagnant{
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -39,28 +45,54 @@
 
 <script src="qrcode.min.js"></script>
 <script type="text/javascript">
-// let config = {
-//     apiKey: "[YOUR_API_KEY]",
-//     authDomain: "[YOUR_AUTH_DOMAIN].firebaseapp.com",
-//     projectId: "[YOUR_PROJECT_ID]",
-//   };
+  // Initialize Firebase Config
+  
+  // let config = {
+  //     apiKey: "[YOUR_API_KEY]",
+  //     authDomain: "[YOUR_AUTH_DOMAIN].firebaseapp.com",
+  //     projectId: "[YOUR_PROJECT_ID]",
+  //   };
 
   //Initialize Firebase
   let app = firebase.initializeApp(config);
   let db = firebase.firestore(app);
 
-  let winner = db.collection('nantesjs').doc('meetup 4');
   let gagnant = document.getElementById('gagnant');
   let qrdata = document.getElementById('qr-data');
   let docID = document.getElementById('doc');
   let qrcode = new QRCode(document.getElementById("qrcode"));
-  let time = new Date 
+  let time = new Date
   let time2 = time.getTime();
-  let test = document.getElementById('gagnantchoosen');
+  let winnerText = document.getElementById('gagnantchoosen');
+  let winner;
+
+  // UPDATE LE TABLEAU DES INSCRITS SUR FIREBASE
+  let update = (props) => {
+    let winner = db.collection('nantesjs').doc(props);
+
+    //Get a ramdom winner with the button
+    gagnant.addEventListener('click', function () {
+      winner.get().then(function (doc) {
+        if (doc.exists) {
+          let Participants = (doc.data().Participants);
+          let winnerchoosen = Participants[Math.floor(Math.random() * Participants.length)]
+          winnerText.innerHTML = winnerchoosen;
+        }
+      })
+    });
+  }
+
+  // RECUPERE L'ID DU DERNIER MEETUP SUR FIREBASE
+  let last = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
+  last.get().then(doc => {
+    let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
+    let array = lastElement.doc.id
+    update(array);
+  })
+
   let winnerchoosen;
 
-
-// Generate a QRcode and send it to firebase in a new document
+  // Generate a QRcode and send it to firebase in a new document
   function generateQR() {
     let data = qrdata.value;
     let chiffre = sha256(data)
@@ -71,19 +103,9 @@
       QrCode: data,
       Participants: [],
     });
-    console.log('send')
   }
 
-//Get a ramdom winner with the button
-  gagnant.addEventListener('click', function () {
-    winner.get().then(function (doc) {
-      if (doc.exists) {
-        let Participants = (doc.data().Participants);
-        let winnerchoosen = Participants[Math.floor(Math.random() * Participants.length)]
-        test.innerHTML = winnerchoosen;
-      }
-    })
-  });
+
 
 </script>
 

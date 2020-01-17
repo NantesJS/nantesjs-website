@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import firebase from 'firebase';
 import Config from './Config/config';
-import {sha256} from 'js-sha256';
+import { sha256 } from 'js-sha256';
 import styles from './profil.module.css';
 import QRCode from '../../static/images/QRCode.png';
 import Fusee from '../../static/images/Fusee.png';
@@ -26,22 +26,18 @@ export default function Profil() {
   const handleScan = data => {
     if (data) {
       setResult(data)
-      console.log(result + "C'est ce QRcode scanné")
     }
   };
-
 
   let db = firebase.firestore(Config);
   let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
 
   // RECUPERE L'ID DU MEETUP SUR FIREBASE
   app.get().then((doc) => {
-      let lastElement = doc.docChanges()[doc._snapshot.docChanges.length-1]
-      let array = lastElement.doc.data() 
-      setTest(array.QrCode)
+    let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
+    let array = lastElement.doc.data()
+    setTest(array.QrCode)
   });
-
-  let chiffretest = sha256(test)
 
   return (
     <div className={styles.profilPage}>
@@ -81,8 +77,8 @@ export default function Profil() {
           {result === sha256(test) ?
             <ParticipationOK />
             :
-            <ParticipationNON/>
-            }
+            <ParticipationNON />
+          }
         </div>
       }
     </div>
