@@ -21,8 +21,12 @@ export function ParticipationOK() {
 
   // UPDATE LE TABLEAU DES INSCRITS SUR FIREBASE
   let update = (props) => {
-    db.collection('nantesjs').doc(props).update({ Participants: firebase.firestore.FieldValue.arrayUnion(`Name : ${user.displayName} & Email : ${user.email}`)})
-  }
+    let app = db.collection('nantesjs').doc(props)
+    app.get().then((doc) => {
+      console.log(doc.data().Participants.map(item => item.Email))
+    });
+    // db.collection('nantesjs').doc(props).update({ Participants: firebase.firestore.FieldValue.arrayUnion({Name : `${user.displayName}`, Email : `${user.email}`})})
+  };
 
   // RECUPERE L'ID DU DERNIER MEETUP SUR FIREBASE
   let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)

@@ -17,7 +17,7 @@ export default function Profil() {
   const [isHere, setIsHere] = useState(false);
   const [result, setResult] = useState('Nothing');
   const [counter, setCounter] = useContext(CtxCounter);
-  const [test, setTest] = useState('') //ce qui est dans la base de données
+  const [test, setTest] = useState('ok') //ce qui est dans la base de données
 
   const handleClick = () => {
     setIsHere(!isHere);
@@ -29,6 +29,7 @@ export default function Profil() {
     }
   };
 
+  let user = firebase.auth().currentUser
   let db = firebase.firestore(Config);
   let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
 
@@ -39,9 +40,31 @@ export default function Profil() {
     setTest(array.QrCode)
   });
 
+  // Verify User in Firebase
+  const Verify = () => {
+    let coucou;
+    app.get().then((doc) => {
+      let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
+      let array = lastElement.doc.data()
+      coucou = array.Participants
+      console.log(coucou)
+    });
+    if (result === sha256(test)) {
+      console.log(coucou)
+      if (coucou.filter(item => item.email === user.email) > coucou.length) {
+        console.log(coucou)
+        return true
+      } else {
+        return false
+      }
+    } else {
+      return false
+    }
+  }
+
   return (
     <div className={styles.profilPage}>
-      {result !== sha256(test) ?
+      {result === 'Nothing' ?
         <div>
           <div className={styles.profilPage__ImageAndName}>
             <h1>Mon profil</h1>
@@ -74,10 +97,12 @@ export default function Profil() {
         </div>
         :
         <div>
-          {result === sha256(test) ?
+          {Verify() ?
             <ParticipationOK />
+            // <div>true</div>
             :
             <ParticipationNON />
+            // <div>false</div>
           }
         </div>
       }

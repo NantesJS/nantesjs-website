@@ -46,6 +46,12 @@
 <script src="qrcode.min.js"></script>
 <script type="text/javascript">
   // Initialize Firebase Config
+
+  let config = {
+    apiKey: "AIzaSyCTL2M4Lj2AmywmH4aO3IQkDTOONKENQio",
+    authDomain: "nantesjs-website.firebaseapp.com",
+    projectId: "nantesjs-website",
+  };
   
   // let config = {
   //     apiKey: "[YOUR_API_KEY]",
@@ -75,8 +81,9 @@
       winner.get().then(function (doc) {
         if (doc.exists) {
           let Participants = (doc.data().Participants);
-          let winnerchoosen = Participants[Math.floor(Math.random() * Participants.length)]
-          winnerText.innerHTML = winnerchoosen;
+          let winnerchoosen2 = Participants[Math.floor(Math.random() * Participants.length)].Name
+          let winnerchoosen = Participants[Math.floor(Math.random() * Participants.length)].Email
+          winnerText.innerHTML = `Name : ${winnerchoosen2} & Email : ${winnerchoosen}`
         }
       })
     });
