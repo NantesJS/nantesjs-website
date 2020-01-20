@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import firebase from 'firebase';
 import Config from './Config/config';
 import { sha256 } from 'js-sha256';
@@ -15,8 +15,8 @@ export default function Profil() {
 
   const [isHere, setIsHere] = useState(false);
   const [result, setResult] = useState('Nothing');
-  const [test, setTest] = useState('ok') //ce qui est dans la base de données
-  const [register, setRegister] = useState(null)
+  const [test, setTest] = useState('ok'); //ce qui est dans la base de données
+  const [register, setRegister] = useState(null);
   const [userCounter, setUserCounter] = useState(0);
 
   const handleClick = () => {
@@ -26,18 +26,18 @@ export default function Profil() {
   const handleScan = data => {
     if (data) {
       setResult(data)
-    }
+    };
   };
 
-  let user = firebase.auth().currentUser
+  let user = firebase.auth().currentUser;
   let db = firebase.firestore(Config);
-  let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
+  let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1);
 
   // ICI A TRAVAILLER => VERIFIER SI L USER EXISTE
   const Utilisateurs = () => {
     db.collection('user').doc(user.displayName).get().then(function (doc) {
       if (doc.exists) {
-        Counter() 
+        Counter()
       } else {
         db.collection('user').doc(user.displayName).set({
           counter: 0,
@@ -55,14 +55,14 @@ export default function Profil() {
       let test = db.collection('user').doc(user.displayName).get()
       await test.then(function (doc) {
         counterUser = doc.data().counter
-      })
+      });
       setUserCounter(counterUser)
     } else {
       null
     }
   };
 
-  useEffect( () => {
+  useEffect(() => {
     Utilisateurs()
   }, []);
 
@@ -81,7 +81,7 @@ export default function Profil() {
       let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
       let array = lastElement.doc.data()
       coucou = array.Participants
-    });
+    })
     if (result === sha256(test)) {
       if (coucou.map(item => item.Email).includes(user.email) === true) {
         setRegister(false)
@@ -143,4 +143,4 @@ export default function Profil() {
       }
     </div>
   )
-}
+};

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import firebase from 'firebase';
 import Config from '../Config/config';
 import styles from '../profil.module.css';
@@ -11,10 +11,11 @@ export function ParticipationOK() {
 
   function refreshPage() {
     window.location.reload();
-  }
+  };
 
-  let user = firebase.auth().currentUser
-  let db = firebase.firestore(Config)
+  // Initialise Firebase
+  let user = firebase.auth().currentUser;
+  let db = firebase.firestore(Config);
 
   // UPDATE LE TABLEAU DES INSCRITS SUR FIREBASE
   let update = (props) => {
@@ -22,7 +23,7 @@ export function ParticipationOK() {
   };
 
   // RECUPERE L'ID DU DERNIER MEETUP SUR FIREBASE
-  let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
+  let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1);
   app.get().then(doc => {
     let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
     let array = lastElement.doc.id
@@ -32,7 +33,7 @@ export function ParticipationOK() {
 
   useEffect(()=>{
     db.collection('user').doc(user.displayName).update({ counter: firebase.firestore.FieldValue.increment(1) })
-  }, [])
+  }, []);
 
   return (
     <div>
@@ -50,4 +51,4 @@ export function ParticipationOK() {
       </FullWidthContainer>
     </div>
   )
-}
+};
