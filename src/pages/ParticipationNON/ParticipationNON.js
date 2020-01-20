@@ -9,7 +9,7 @@ export function ParticipationNON() {
 
   function refreshPage() {
     window.location.reload(true);
-  }
+  };
 
   return (
     <div>
@@ -29,4 +29,4 @@ export function ParticipationNON() {
       </FullWidthContainer>
     </div>
   )
-}
+};
