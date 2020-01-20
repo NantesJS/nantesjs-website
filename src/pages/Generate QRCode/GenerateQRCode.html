@@ -43,7 +43,7 @@
 <script src="qrcode.min.js"></script>
 <script type="text/javascript">
   // Initialize Firebase Config
-  
+
   // let config = {
   //     apiKey: "[YOUR_API_KEY]",
   //     authDomain: "[YOUR_AUTH_DOMAIN].firebaseapp.com",
@@ -72,9 +72,12 @@
       winner.get().then(function (doc) {
         if (doc.exists) {
           let Participants = (doc.data().Participants);
-          let winnerchoosen2 = Participants[Math.floor(Math.random() * Participants.length)].Name
-          let winnerchoosen = Participants[Math.floor(Math.random() * Participants.length)].Email
-          winnerText.innerHTML = `Name : ${winnerchoosen2} & Email : ${winnerchoosen}`
+          let winnerchoosen = Participants[Math.floor(Math.random() * Participants.length)]
+          if(winnerchoosen.Email){
+            winnerText.innerHTML = `Name : ${winnerchoosen.Name} & Email : ${winnerchoosen.Email}` 
+          }else{
+            winnerText.innerHTML = winnerchoosen 
+          }
         }
       })
     });
