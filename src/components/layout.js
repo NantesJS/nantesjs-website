@@ -6,15 +6,12 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Header } from './Header'
 import { LargeContainer } from './LargeContainer'
 import { Footer } from './Footer'
-import CtxCounter from '../pages/CtxCounter.js'
 
 import './layout.module.css'
 
 const Layout = ({ children }) => {
   
-  const [counter, setCounter] = useState(0);
   return (
-  <CtxCounter.Provider value={[counter, setCounter]}>
     <StaticQuery
       query={graphql`
       query SiteTitleQuery {
@@ -62,7 +59,6 @@ const Layout = ({ children }) => {
 
       )}
     />
-  </CtxCounter.Provider>
   )
               }
 

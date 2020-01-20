@@ -4,16 +4,13 @@ import Config from '../Config/config';
 import styles from '../profil.module.css';
 import VotingOK from '../../../static/images/VotingOK.png';
 import { FullWidthContainer } from '../../components/FullWidthContainer';
-import CtxCounter from '../CtxCounter.js';
-
 
 export function ParticipationOK() {
 
-  const [counter, setCounter] = useContext(CtxCounter)
+  const [meetup, setMeetup] = useState(null);
 
   function refreshPage() {
     window.location.reload();
-    setCounter(counter + 1)
   }
 
   let user = firebase.auth().currentUser
@@ -21,11 +18,7 @@ export function ParticipationOK() {
 
   // UPDATE LE TABLEAU DES INSCRITS SUR FIREBASE
   let update = (props) => {
-    let app = db.collection('nantesjs').doc(props)
-    app.get().then((doc) => {
-      console.log(doc.data().Participants.map(item => item.Email))
-    });
-    // db.collection('nantesjs').doc(props).update({ Participants: firebase.firestore.FieldValue.arrayUnion({Name : `${user.displayName}`, Email : `${user.email}`})})
+    db.collection('nantesjs').doc(props).update({ Participants: firebase.firestore.FieldValue.arrayUnion({Name : `${user.displayName}`, Email : `${user.email}`})})
   };
 
   // RECUPERE L'ID DU DERNIER MEETUP SUR FIREBASE
@@ -34,13 +27,18 @@ export function ParticipationOK() {
     let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
     let array = lastElement.doc.id
     update(array);
-  })
+    setMeetup(array)
+  });
+
+  useEffect(()=>{
+    db.collection('user').doc(user.displayName).update({ counter: firebase.firestore.FieldValue.increment(1) })
+  }, [])
 
   return (
     <div>
       <div className={styles.profilPage__ImageAndName}>
         <h1>Mon profil</h1>
-        <p>Votre participation au NantesJS XX a bien été enregistrée !</p>
+        <p>Votre participation au NantesJS {meetup} a bien été enregistrée !</p>
       </div>
       <FullWidthContainer>
         <div className={styles.profilPage__QRCodeDiv}>

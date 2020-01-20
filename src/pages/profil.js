@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import firebase from 'firebase';
 import Config from './Config/config';
 import { sha256 } from 'js-sha256';
@@ -10,14 +10,14 @@ import { FullWidthContainer } from '../components/FullWidthContainer';
 import QrReader from 'react-qr-reader';
 import { ParticipationOK } from './ParticipationOK/';
 import { ParticipationNON } from './ParticipationNON/';
-import CtxCounter from './CtxCounter';
 
 export default function Profil() {
 
   const [isHere, setIsHere] = useState(false);
   const [result, setResult] = useState('Nothing');
-  const [counter, setCounter] = useContext(CtxCounter);
   const [test, setTest] = useState('ok') //ce qui est dans la base de données
+  const [register, setRegister] = useState(null)
+  const [userCounter, setUserCounter] = useState(0);
 
   const handleClick = () => {
     setIsHere(!isHere);
@@ -33,6 +33,39 @@ export default function Profil() {
   let db = firebase.firestore(Config);
   let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
 
+  // ICI A TRAVAILLER => VERIFIER SI L USER EXISTE
+  const Utilisateurs = () => {
+    db.collection('user').doc(user.displayName).get().then(function (doc) {
+      if (doc.exists) {
+        Counter() 
+      } else {
+        db.collection('user').doc(user.displayName).set({
+          counter: 0,
+          id: user.uid,
+          name: user.displayName,
+          email: user.email
+        })
+      }
+    })
+  };
+
+  async function Counter() {
+    let counterUser;
+    if (db.collection('user').doc(user.displayName).get()) {
+      let test = db.collection('user').doc(user.displayName).get()
+      await test.then(function (doc) {
+        counterUser = doc.data().counter
+      })
+      setUserCounter(counterUser)
+    } else {
+      null
+    }
+  };
+
+  useEffect( () => {
+    Utilisateurs()
+  }, []);
+
   // RECUPERE L'ID DU MEETUP SUR FIREBASE
   app.get().then((doc) => {
     let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
@@ -40,27 +73,25 @@ export default function Profil() {
     setTest(array.QrCode)
   });
 
+
   // Verify User in Firebase
-  const Verify = () => {
+  const Verify = async () => {
     let coucou;
-    app.get().then((doc) => {
+    await app.get().then((doc) => {
       let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
       let array = lastElement.doc.data()
       coucou = array.Participants
-      console.log(coucou)
     });
     if (result === sha256(test)) {
-      console.log(coucou)
-      if (coucou.filter(item => item.email === user.email) > coucou.length) {
-        console.log(coucou)
-        return true
+      if (coucou.map(item => item.Email).includes(user.email) === true) {
+        setRegister(false)
       } else {
-        return false
+        setRegister(true)
       }
     } else {
-      return false
+      setRegister(false)
     }
-  }
+  };
 
   return (
     <div className={styles.profilPage}>
@@ -68,7 +99,7 @@ export default function Profil() {
         <div>
           <div className={styles.profilPage__ImageAndName}>
             <h1>Mon profil</h1>
-            <p>J'ai participé à {counter} NantesJS au cours de l'année 2020</p>
+            <p>J'ai participé à {userCounter} NantesJS au cours de l'année 2020</p>
           </div>
           <FullWidthContainer>
             <div className={styles.profilPage__QRCodeDiv}>
@@ -97,12 +128,16 @@ export default function Profil() {
         </div>
         :
         <div>
-          {Verify() ?
-            <ParticipationOK />
-            // <div>true</div>
+          {Verify() | register === null ?
+            <div>WAIT</div>
             :
-            <ParticipationNON />
-            // <div>false</div>
+            <div>
+              {register === true ?
+                <ParticipationOK />
+                :
+                <ParticipationNON />
+              }
+            </div>
           }
         </div>
       }
