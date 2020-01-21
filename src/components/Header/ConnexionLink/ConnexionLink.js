@@ -1,30 +1,32 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'gatsby';
 import { MenuLink } from '../MenuLink';
-import firebase from 'firebase';
+import { useFirebase } from '../../../firebase'
 
 import UserLogo from '../../../../static/images/user-silhouette.svg';
 import PowerSettingLogo from '../../../../static/images/power-setting.svg';
 import styles from '../MenuLink/MenuLink.module.css'
 
 export function ConnexionLink () {
-  
+  const firebase = useFirebase()
+
   const [auth, setAuth] = useState(false);
 
   useEffect(() => {
+    if (!firebase) return
     firebase.auth().onAuthStateChanged(user => {
       setAuth(!!user)
     })
-  }, []);
+  }, [firebase]);
 
   const verifyConnexion = () => {
     if(auth === true){
       return (
         <React.Fragment>
           <div className={styles.profilSetting}>
-            <Link 
+            <Link
               id={styles.profil}
-              activeClassName={styles.menu__linkSelected} 
+              activeClassName={styles.menu__linkSelected}
               className={styles.menu__link}
               to='/page-connexion/'
               >
@@ -32,19 +34,21 @@ export function ConnexionLink () {
             </Link>
           </div>
           <div className={styles.powerSetting}>
-            <Link 
-              className={styles.menu__link}
-              onClick={() => firebase.auth().signOut()}
-              >
-              <img src={PowerSettingLogo} /> Déconnexion
-            </Link>
+            {firebase && (
+              <Link
+                className={styles.menu__link}
+                onClick={() => firebase.auth().signOut()}
+                >
+                <img src={PowerSettingLogo} /> Déconnexion
+              </Link>
+            )}
           </div>
         </React.Fragment>
       )
     }else{
       return (
-        <Link 
-        activeClassName={styles.menu__linkSelected} 
+        <Link
+        activeClassName={styles.menu__linkSelected}
         className={styles.menu__link}
         to='/page-connexion/'
         >
