@@ -1,23 +1,23 @@
-import React, {useState, useEffect} from 'react';
-import { Link } from 'gatsby';
-import { MenuLink } from '../MenuLink';
+import React, {useState, useEffect} from 'react'
+import { Link } from 'gatsby'
+import { MenuLink } from '../MenuLink'
 import { useFirebase } from '../../../firebase'
 
-import UserLogo from '../../../../static/images/user-silhouette.svg';
-import PowerSettingLogo from '../../../../static/images/power-setting.svg';
+import UserLogo from '../../../../static/images/user-silhouette.svg'
+import PowerSettingLogo from '../../../../static/images/power-setting.svg'
 import styles from '../MenuLink/MenuLink.module.css'
 
 export function ConnexionLink () {
   const firebase = useFirebase()
 
-  const [auth, setAuth] = useState(false);
+  const [auth, setAuth] = useState(false)
 
   useEffect(() => {
     if (!firebase) return
     firebase.auth().onAuthStateChanged(user => {
       setAuth(!!user)
     })
-  }, [firebase]);
+  }, [firebase])
 
   const verifyConnexion = () => {
     if(auth === true){
@@ -29,7 +29,7 @@ export function ConnexionLink () {
               activeClassName={styles.menu__linkSelected}
               className={styles.menu__link}
               to='/page-connexion/'
-              >
+            >
               <img src={UserLogo}/> Mon Profil
             </Link>
           </div>
@@ -38,7 +38,7 @@ export function ConnexionLink () {
               <Link
                 className={styles.menu__link}
                 onClick={() => firebase.auth().signOut()}
-                >
+              >
                 <img src={PowerSettingLogo} /> Déconnexion
               </Link>
             )}
@@ -48,15 +48,15 @@ export function ConnexionLink () {
     }else{
       return (
         <Link
-        activeClassName={styles.menu__linkSelected}
-        className={styles.menu__link}
-        to='/page-connexion/'
+          activeClassName={styles.menu__linkSelected}
+          className={styles.menu__link}
+          to='/page-connexion/'
         >
           <img src={UserLogo}/> Se connecter
         </Link>
       )
     }
-  };
+  }
 
   return (
     <div className={styles.connexion}>

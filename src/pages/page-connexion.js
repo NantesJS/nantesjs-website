@@ -1,15 +1,15 @@
 import React, { useEffect, useState, Fragment } from 'react'
 import { useFirebase } from '../firebase'
 import Layout from '../components/layout'
-import styles from './page-connexion.module.css';
-import Profil from './profil';
-import iconConnexion from './iconConnexion.png';
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import styles from './page-connexion.module.css'
+import Profil from './profil'
+import iconConnexion from './iconConnexion.png'
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
 
-export default function PageConnexion() {
+export default function PageConnexion () {
   const firebase = useFirebase()
   const [uiConfig, setUiConfig] = useState()
-  const [connect, setConnect] = useState(false);
+  const [connect, setConnect] = useState(false)
 
 
   // Verifier si l'uilisateur est deja connecter
@@ -31,7 +31,7 @@ export default function PageConnexion() {
     firebase.auth().onAuthStateChanged(user => {
       setConnect(!!user)
     })
-  }, [firebase]);
+  }, [firebase])
 
   return (
     <Layout>
@@ -40,27 +40,30 @@ export default function PageConnexion() {
           connect ? (
             <Profil />
           ) : (
-              <Fragment>
-                <div className={styles.allPage__title}>
-                  <h1 className={styles.title__titleHeader}>Connexion</h1>
-                  <p className={styles.title__titleText}>Connectez-vous pour participer au tirage au sort à chaque Meetup !</p>
-                </div>
-                <div className={styles.allPage__iconAndSignIn}>
-                  <img
-                    src={iconConnexion}
-                    alt='icon for illustrate a connexion'
-                    className={styles.allPage__picture}
+            <Fragment>
+              <div className={styles.allPage__title}>
+                <h1 className={styles.title__titleHeader}>Connexion</h1>
+                <p className={styles.title__titleText}>
+                  Connectez-vous pour participer&nbsp;
+                  au tirage au sort à chaque Meetup !
+                </p>
+              </div>
+              <div className={styles.allPage__iconAndSignIn}>
+                <img
+                  src={iconConnexion}
+                  alt='icon for illustrate a connexion'
+                  className={styles.allPage__picture}
+                />
+                {(firebase && uiConfig) && (
+                  <StyledFirebaseAuth
+                    className={styles.iconAndSignIn__auth}
+                    uiConfig={uiConfig}
+                    firebaseAuth={firebase.auth()}
                   />
-                  {(firebase && uiConfig) && (
-                    <StyledFirebaseAuth
-                      className={styles.iconAndSignIn__auth}
-                      uiConfig={uiConfig}
-                      firebaseAuth={firebase.auth()}
-                    />
-                  )}
-                </div>
-              </Fragment>
-            )
+                )}
+              </div>
+            </Fragment>
+          )
         }
       </div>
     </Layout>

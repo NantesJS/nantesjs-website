@@ -18,13 +18,13 @@ export function Header () {
         <nav className={styles.header__container}>
           <Logo className={styles.header__logo} />
           <div className={styles.header__menu}>
-          <Menu>
-            <div className={styles.header__link}>
-              <MeetupsLink />
-              <ContributorsLink />
-              <AboutLink />
-            </div>
-            <div className={styles.header__subject}>
+            <Menu>
+              <div className={styles.header__link}>
+                <MeetupsLink />
+                <ContributorsLink />
+                <AboutLink />
+              </div>
+              <div className={styles.header__subject}>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -34,16 +34,16 @@ export function Header () {
                             Proposer un sujet
                 </a>
               </div>
-            <div className={styles.header__connexion}>
-              <ConnexionLink/>
+              <div className={styles.header__connexion}>
+                <ConnexionLink/>
+              </div>
+            </Menu>
+            <div className={styles.header__socialMenu}>
+              <SocialIcons className={styles.menu__socialIcons} />
+              <div className={styles.socialMenu__connexion}>
+                <ConnexionLink />
+              </div>
             </div>
-          </Menu>
-          <div className={styles.header__socialMenu}>
-            <SocialIcons className={styles.menu__socialIcons} />
-            <div className={styles.socialMenu__connexion}>
-              <ConnexionLink />
-            </div>
-          </div>
           </div>
         </nav>
       </LargeContainer>

@@ -1,1 +1,1 @@
-export {ConnexionLink} from './ConnexionLink';
+export {ConnexionLink} from './ConnexionLink'
