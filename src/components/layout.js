@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
@@ -10,7 +10,7 @@ import { Footer } from './Footer'
 import './layout.module.css'
 
 const Layout = ({ children }) => {
-  
+
   return (
     <StaticQuery
       query={graphql`
@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
       )}
     />
   )
-              }
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

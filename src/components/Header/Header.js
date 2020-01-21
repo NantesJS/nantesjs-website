@@ -9,7 +9,7 @@ import { SocialIcons } from '../SocialIcons'
 import { ConnexionLink } from './ConnexionLink'
 import styles from './Header.module.css'
 
-export function Header() {
+export function Header () {
   // eslint-disable-next-line max-len
   const proposalLink = 'https://conference-hall.io/public/event/DWIXMKeUnghfgJHerwEh'
   return (
@@ -24,14 +24,14 @@ export function Header() {
                 <ContributorsLink />
                 <AboutLink />
               </div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={proposalLink}
-                  className={styles.menu__button}
-                >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={proposalLink}
+                className={styles.menu__button}
+              >
                   Proposer un sujet
-                </a>
+              </a>
               <div className={styles.header__connexion}>
                 <ConnexionLink />
               </div>

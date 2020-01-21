@@ -6,14 +6,14 @@ import { OldMeetups } from '../components/OldMeetups'
 import { Sponsors } from '../components/Sponsors'
 
 
-function IndexPage() {
+function IndexPage () {
 
   return (
-      <Layout>
-        <NextMeetup />
-        <Sponsors />
-        <OldMeetups />
-      </Layout>
+    <Layout>
+      <NextMeetup />
+      <Sponsors />
+      <OldMeetups />
+    </Layout>
 
   )
 }

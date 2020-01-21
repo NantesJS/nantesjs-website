@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'gatsby';
-import { MenuLink } from '../MenuLink';
-import firebase from 'firebase';
+import React, { useEffect, useState } from 'react'
+import { Link } from 'gatsby'
+import { MenuLink } from '../MenuLink'
+import firebase from 'firebase'
 
-import UserLogo from '../../../../static/images/user-silhouette.svg';
-import PowerSettingLogo from '../../../../static/images/power-setting.svg';
+import UserLogo from '../../../../static/images/user-silhouette.svg'
+import PowerSettingLogo from '../../../../static/images/power-setting.svg'
 import styles from '../MenuLink/MenuLink.module.css'
 
-export function ConnexionLink() {
+export function ConnexionLink () {
 
-  const [auth, setAuth] = useState(false);
+  const [auth, setAuth] = useState(false)
 
   useEffect(() => {
     firebase.auth().onAuthStateChanged(user => {
       setAuth(!!user)
     })
-  }, []);
+  }, [])
 
   const verifyConnexion = () => {
     if (auth === true) {
@@ -52,7 +52,7 @@ export function ConnexionLink() {
         </Link>
       )
     }
-  };
+  }
 
   return (
     <div className={styles.connexion}>

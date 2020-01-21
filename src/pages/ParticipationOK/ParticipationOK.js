@@ -1,39 +1,46 @@
-import React, { useEffect, useState } from 'react';
-import firebase from 'firebase';
-import Config from '../Config/config';
-import styles from '../profil.module.css';
-import VotingOK from '../../../static/images/VotingOK.png';
-import { FullWidthContainer } from '../../components/FullWidthContainer';
+import React, { useEffect, useState } from 'react'
+import firebase from 'firebase'
+import Config from '../Config/config'
+import styles from '../profil.module.css'
+import VotingOK from '../../../static/images/VotingOK.png'
+import { FullWidthContainer } from '../../components/FullWidthContainer'
 
-export function ParticipationOK() {
+export function ParticipationOK () {
 
-  const [meetup, setMeetup] = useState(null);
+  const [meetup, setMeetup] = useState(null)
 
-  function refreshPage() {
-    window.location.reload();
-  };
+  function refreshPage () {
+    window.location.reload()
+  }
 
   // Initialise Firebase
-  let user = firebase.auth().currentUser;
-  let db = firebase.firestore(Config);
+  let user = firebase.auth().currentUser
+  let db = firebase.firestore(Config)
 
   // UPDATE LE TABLEAU DES INSCRITS SUR FIREBASE
-  let update = (props) => {
-    db.collection('nantesjs').doc(props).update({ Participants: firebase.firestore.FieldValue.arrayUnion({Name : `${user.displayName}`, Email : `${user.email}`})})
-  };
+  let update = props => {
+    db.collection('nantesjs')
+      .doc(props)
+      .update({
+        Participants: firebase.firestore.FieldValue.arrayUnion({
+          Name : `${ user.displayName }`,
+          Email : `${ user.email }`,
+        })
+      })
+  }
 
   // RECUPERE L'ID DU DERNIER MEETUP SUR FIREBASE
-  let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1);
+  let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
   app.get().then(doc => {
     let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
     let array = lastElement.doc.id
-    update(array);
+    update(array)
     setMeetup(array)
-  });
+  })
 
-  useEffect(()=>{
+  useEffect(() => {
     db.collection('user').doc(user.displayName).update({ counter: firebase.firestore.FieldValue.increment(1) })
-  }, []);
+  }, [])
 
   return (
     <div>
@@ -51,4 +58,4 @@ export function ParticipationOK() {
       </FullWidthContainer>
     </div>
   )
-};
+}
