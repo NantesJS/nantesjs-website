@@ -28,7 +28,7 @@ export function ConnexionLink() {
               className={styles.menu__link}
               to='/page-connexion/'
             >
-              <img src={UserLogo} /> Mon Profil
+              <img src={UserLogo} alt="User Icon" className={styles.marginRightImage} /> Mon Profil
             </Link>
           </div>
           <div className={styles.powerSetting}>
@@ -36,7 +36,7 @@ export function ConnexionLink() {
               className={styles.menu__link}
               onClick={() => firebase.auth().signOut()}
             >
-              <img src={PowerSettingLogo} /> Déconnexion
+              <img src={PowerSettingLogo} alt="Power Icon" className={styles.marginRightImage} /> Déconnexion
             </Link>
           </div>
         </React.Fragment>
@@ -48,7 +48,7 @@ export function ConnexionLink() {
           className={styles.menu__link}
           to='/page-connexion/'
         >
-          <img src={UserLogo} /> Se connecter
+          <img src={UserLogo} alt="User icon" className={styles.marginRightImage} /> Se connecter
         </Link>
       )
     }

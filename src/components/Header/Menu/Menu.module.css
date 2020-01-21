@@ -64,4 +64,8 @@
     color: #f3e049;
     margin-left: 0px;
   }
+
+  .menu__content--responsive > a{
+    margin-left: 20px
+  }
 }
