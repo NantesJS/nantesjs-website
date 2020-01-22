@@ -14,13 +14,16 @@
       flex-direction: column;
       margin: 100px auto;
     }
+
     #qrcode {
       margin-top: 50px;
     }
+
     input {
       border: 1px solid black;
     }
-    #qr-data{
+
+    #qr-data {
       margin-top: 50px;
     }
   </style>
@@ -45,16 +48,16 @@
   //     authDomain: "[YOUR_AUTH_DOMAIN].firebaseapp.com",
   //     projectId: "[YOUR_PROJECT_ID]",
   //   };
-  
-  //Initialize Firebase
-  let app = firebase.initializeApp(config);
-  let db = firebase.firestore(app);
 
-  let gagnant = document.getElementById('gagnant');
-  let docID = document.getElementById('doc');
-  let qrcode = new QRCode(document.getElementById("qrcode"));
+  //Initialize Firebase
+  let app = firebase.initializeApp(config)
+  let db = firebase.firestore(app)
+
+  let gagnant = document.getElementById('gagnant')
+  let docID = document.getElementById('doc')
+  let qrcode = new QRCode(document.getElementById("qrcode"))
   let time = new Date
-  let time2 = time.getTime();
+  let time2 = time.getTime()
   let random;
 
   // Get a random ID
@@ -72,8 +75,8 @@
       Date: time2,
       QrCode: random,
       Participants: [],
-    });
-  };
+    })
+  }
 </script>
 
 </html>
