@@ -20,17 +20,16 @@
     input {
       border: 1px solid black;
     }
-    #gagnant{
+    #qr-data{
       margin-top: 50px;
     }
   </style>
 </head>
 
 <body>
-  <p>Name your Document / Meetup</p>
+  <p>Nom du Meetup</p>
   <input type="text" id="doc" />
-  <p>Name your QRCode</p>
-  <input type="text" id="qr-data" onchange="generateQR()" />
+  <button id="qr-data" onclick="generateQR()">QRCODE</button>
   <div id="qrcode"></div>
 </body>
 
@@ -46,26 +45,32 @@
   //     authDomain: "[YOUR_AUTH_DOMAIN].firebaseapp.com",
   //     projectId: "[YOUR_PROJECT_ID]",
   //   };
+  
   //Initialize Firebase
   let app = firebase.initializeApp(config);
   let db = firebase.firestore(app);
 
   let gagnant = document.getElementById('gagnant');
-  let qrdata = document.getElementById('qr-data');
   let docID = document.getElementById('doc');
   let qrcode = new QRCode(document.getElementById("qrcode"));
   let time = new Date
   let time2 = time.getTime();
+  let random;
+
+  // Get a random ID
+  const RandomID = () => {
+    random = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  }
 
   // Generate a QRcode and send it to firebase in a new document
   function generateQR() {
-    let data = qrdata.value;
-    let chiffre = sha256(data)
+    RandomID()
+    let chiffre = sha256(random)
     qrcode.makeCode(chiffre);
 
     db.collection('nantesjs').doc(`${docID.value}`).set({
       Date: time2,
-      QrCode: data,
+      QrCode: random,
       Participants: [],
     });
   };
