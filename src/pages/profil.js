@@ -11,7 +11,7 @@ import QrReader from 'react-qr-reader'
 import { ParticipationOK } from './ParticipationOK/'
 import { ParticipationNON } from './ParticipationNON/'
 
-export default function Profil () {
+export default function Profil() {
 
   const [isHere, setIsHere] = useState(false)
   const [result, setResult] = useState('Nothing')
@@ -49,7 +49,7 @@ export default function Profil () {
     })
   }
 
-  async function Counter () {
+  async function Counter() {
     let counterUser
     if (db.collection('user').doc(user.uid).get()) {
       let test = db.collection('user').doc(user.uid).get()
