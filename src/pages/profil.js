@@ -35,11 +35,11 @@ export default function Profil () {
 
   // ICI A TRAVAILLER => VERIFIER SI L USER EXISTE
   const Utilisateurs = () => {
-    db.collection('user').doc(user.displayName).get().then(function (doc) {
+    db.collection('user').doc(user.uid).get().then(function (doc) {
       if (doc.exists) {
         Counter()
       } else {
-        db.collection('user').doc(user.displayName).set({
+        db.collection('user').doc(user.uid).set({
           counter: 0,
           id: user.uid,
           name: user.displayName,
@@ -51,8 +51,8 @@ export default function Profil () {
 
   async function Counter () {
     let counterUser
-    if (db.collection('user').doc(user.displayName).get()) {
-      let test = db.collection('user').doc(user.displayName).get()
+    if (db.collection('user').doc(user.uid).get()) {
+      let test = db.collection('user').doc(user.uid).get()
       await test.then(function (doc) {
         counterUser = doc.data().counter
       })
