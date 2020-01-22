@@ -1,1 +1,1 @@
-export {ParticipationNON} from './ParticipationNON';
+export {ParticipationNON} from './ParticipationNON'

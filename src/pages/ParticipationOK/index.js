@@ -1,1 +1,1 @@
-export {ParticipationOK} from './ParticipationOK';
+export {ParticipationOK} from './ParticipationOK'

@@ -1,15 +1,15 @@
-import React from 'react';
-import styles from '../profil.module.css';
-import VotingNO from '../../../static/images/VotingNO.png';
-import { FullWidthContainer } from '../../components/FullWidthContainer';
-import { Link } from 'gatsby';
+import React from 'react'
+import styles from '../profil.module.css'
+import VotingNO from '../../../static/images/VotingNO.png'
+import { FullWidthContainer } from '../../components/FullWidthContainer'
+import { Link } from 'gatsby'
 
 
-export function ParticipationNON() {
+export function ParticipationNON () {
 
-  function refreshPage() {
-    window.location.reload(true);
-  };
+  function refreshPage () {
+    window.location.reload(true)
+  }
 
   return (
     <div>
@@ -29,4 +29,4 @@ export function ParticipationNON() {
       </FullWidthContainer>
     </div>
   )
-};
+}
