@@ -39,7 +39,7 @@ export function ParticipationOK () {
   })
 
   useEffect(() => {
-    db.collection('user').doc(user.displayName).update({ counter: firebase.firestore.FieldValue.increment(1) })
+    db.collection('user').doc(user.uid).update({ counter: firebase.firestore.FieldValue.increment(1) })
   }, [])
 
   return (

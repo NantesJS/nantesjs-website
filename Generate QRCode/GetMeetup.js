@@ -46,7 +46,6 @@ const test = () => {
 
 api.get('/', (req, res) => {
   res.send({ title: titleMeetup.title })
-  console.log(titleMeetup.title)
 })
 
 api.listen(port, function (err) {
