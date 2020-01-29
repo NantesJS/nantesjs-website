@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import { withPrefix } from 'gatsby'
 
 import { FullWidthContainer } from '../FullWidthContainer'
-import { MyMoneyBank } from './MyMoneyBank'
 
 import styles from './Sponsors.module.css'
 
@@ -15,18 +14,12 @@ export function Sponsors () {
       <div className={styles.sponsors__logos}>
         <a
           className={styles.sponsors__logo}
-          href="https://alakarte.io/"
+          href="https://unirakun.fr/"
         >
           <img
-            alt="alakarte io"
-            src={withPrefix('/images/sponsor/alakarteio.png')}
+            alt="unirakun"
+            src={withPrefix('/images/sponsor/big_unirakun.png')}
           />
-        </a>
-        <a
-          className={styles.sponsors__logo}
-          href="https://www.mymoneybank.fr/"
-        >
-          <MyMoneyBank />
         </a>
         <a
           className={styles.sponsors__logo}
@@ -75,11 +68,20 @@ export function Sponsors () {
         </a>
         <a
           className={styles.sponsors__logo}
-          href="https://www.lafourchette.com/"
+          href="https://eleven-labs.com/"
         >
           <img
-            alt="lafourchette"
-            src={withPrefix('/images/sponsor/lafourchette.png')}
+            alt="eleven labs"
+            src={withPrefix('/images/sponsor/eleven-labs.png')}
+          />
+        </a>
+        <a
+          className={styles.sponsors__logo}
+          href="https://www.lucca.fr/"
+        >
+          <img
+            alt="lucca"
+            src={withPrefix('/images/sponsor/logo-lucca.svg')}
           />
         </a>
       </div>
