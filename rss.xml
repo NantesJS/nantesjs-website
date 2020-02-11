@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Mon, 10 Feb 2020 12:53:20 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Tue, 11 Feb 2020 12:13:38 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -606,6 +606,38 @@ Il est maintenant temps de découvrir ce que Yarn 2 nous réserve, et vous dévo
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://seyos.fr/&quot;&gt;Seyos&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://bit.ly/2H8nIYH&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #48]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">033a0248-66e8-4078-a88d-f75943f4a577</guid><pubDate>Wed, 19 Feb 2020 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #48 - 19/02/2020&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Le futur de la gestion des dépendances Node&lt;/h3&gt;
+      &lt;p&gt;# Présentation Le 13 septembre 2018 un thread twitter a été partagé par **Maël Nison** : yarn ne va plus avoir besoin de node_modules ! La déferlante de réponses, likes et retweet confirment une chose : les node_modules ne sont pas appréciés par la communauté.
+**Kat Marchán** (développeuse npm) n&amp;#x27;a pas tardé à répondre, elle aussi a eu la même idée mais sa solution est différente !
+Creusons ensemble les raisons de cet engouement, et voyons quels sont les grandes stratégies mises en place par les grands ! &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/fabienjuif&quot;&gt;Fabien JUIF&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Duniter : la blockchain écolo&lt;/h3&gt;
+      &lt;p&gt;Aujourd’hui, le bitcoin est le premier cas d’usage connu de blockchain mais il est controversé pour sa consommation électrique et sa volatilité. Duniter peut se présenter comme une technologie blockchain alternative pour les crypto-monnaies d’échange. Au travers de ce talk vous découvrirez le fonctionnement de la technologie Duniter et pourquoi nous avons choisi de nous intéresser et nous engager dans cette blockchain avec la monnaie libre Ğ1 (“June”).
+Technos: NodeJS, Typescript, SQLite, LevelDB...&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/bpresles&quot;&gt;Bertrand Presles&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;http://www.lucca.fr/&quot;&gt;Lucca&lt;/a&gt;&lt;br/&gt;
+  1-3 Rue Michel Columb 44000 Nantes
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://nantesjs.org/&quot;&gt;NantesJS&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-48-tickets-94133324307&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[Le meetup dont vous êtes le héros]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">39c9ed32-b796-4ae8-b1a4-42e8c0fbbabb</guid><pubDate>Thu, 18 Jul 2019 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;Le meetup dont vous êtes le héros - 18/07/2019&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
