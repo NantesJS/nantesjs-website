@@ -3,17 +3,17 @@ id: 033a0248-66e8-4078-a88d-f75943f4a577
 status: next
 title: 'Meetup #48'
 date: '19/02/2020'
-image: NOT_IMPLEMENTED_YET
+image: /images/meetup/node.png
 ticketsUrl: https://www.eventbrite.fr/e/meetup-48-tickets-94133324307
 venue:
   id: '47713559'
   name: 'Lucca'
   link: 'http://www.lucca.fr/'
   postal_code: 44000
-  address: 1-3 Rue Michel Columb
+  address: 18 rue Scribe
   city: Nantes
-  latitude: 47.2070237
-  longitude: -1.5532846
+  latitude: 47.2144486 
+  longitude: -1.5647551
 sponsor:
     id: 1b0a062c-c656-47ad-a31b-f64e53159f70
     name: 'NantesJS'
@@ -22,11 +22,10 @@ talks:
   -
     id: uNGtKqNgZZ7ImmVxF6lS
     title: 'Le futur de la gestion des dépendances Node'
-    description: '# Présentation
-Le 13 septembre 2018 un thread twitter a été partagé par **Maël Nison** : yarn ne va plus avoir besoin de node_modules !
+    description: 'Le 13 septembre 2018 un thread twitter a été partagé par Maël Nison : yarn ne va plus avoir besoin de node_modules !
 La déferlante de réponses, likes et retweet confirment une chose : les node_modules ne sont pas appréciés par la communauté.
 
-**Kat Marchán** (développeuse npm) n&#x27;a pas tardé à répondre, elle aussi a eu la même idée mais sa solution est différente !
+Kat Marchán (développeuse npm) n&#x27;a pas tardé à répondre, elle aussi a eu la même idée mais sa solution est différente !
 
 Creusons ensemble les raisons de cet engouement, et voyons quels sont les grandes stratégies mises en place par les grands !
 '
