@@ -12,8 +12,8 @@ venue:
   postal_code: 44000
   address: 18 rue Scribe
   city: Nantes
-  latitude: 47.2144486 
-  longitude: -1.5647551
+  latitude: 47.21403
+  longitude: -1.56215
 sponsor:
     id: 1b0a062c-c656-47ad-a31b-f64e53159f70
     name: 'NantesJS'
