@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import firebase from 'firebase'
-import Config from './Config/config'
 import { sha256 } from 'js-sha256'
+import QrReader from 'react-qr-reader'
+import Config from './Config/config'
 import styles from './profil.module.css'
 import QRCode from '../../static/images/QRCode.png'
 import Fusee from '../../static/images/Fusee.png'
 import Smiley from '../../static/images/Smiley.png'
 import { FullWidthContainer } from '../components/FullWidthContainer'
-import QrReader from 'react-qr-reader'
-import { ParticipationOK } from './ParticipationOK/'
-import { ParticipationNON } from './ParticipationNON/'
+import { ParticipationOK } from '../components/ParticipationOK/'
+import { ParticipationNON } from '../components/ParticipationNON/'
 
 export default function Profil () {
 
