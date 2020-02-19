@@ -72,3 +72,9 @@ yarn-error.log
 
 nantesjs-website.iml
 .idea
+
+# Config Firebase
+config.js
+
+#GenerateQRCode
+GenerateQRCode.html
