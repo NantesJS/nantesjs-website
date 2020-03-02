@@ -2,7 +2,7 @@ import React, { useEffect, useState, Fragment } from 'react'
 import Layout from '../components/layout'
 import styles from './page-connexion.module.css'
 import firebase from 'firebase'
-import Profil from './profil'
+import Profil from '../components/Profil/profil'
 import iconConnexion from './iconConnexion.png'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import firebase from 'firebase'
-import Config from '../Config/config'
-import styles from '../../pages/profil.module.css'
+import Config from '../../Config/config.default'
+import styles from '../Profil/profil.module.css'
 import VotingOK from '../../../static/images/VotingOK.png'
 import { FullWidthContainer } from '../FullWidthContainer'
 

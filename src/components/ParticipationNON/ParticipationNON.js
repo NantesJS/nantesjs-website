@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../pages/profil.module.css'
+import styles from '../Profil/profil.module.css'
 import VotingNO from '../../../static/images/VotingNO.png'
 import { FullWidthContainer } from '../FullWidthContainer'
 import { Link } from 'gatsby'
