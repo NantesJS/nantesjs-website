@@ -6,7 +6,6 @@ import { MeetupsLink } from './MeetupsLink'
 import { Logo } from './Logo'
 import { LargeContainer } from '../../components/LargeContainer'
 import { SocialIcons } from '../SocialIcons'
-import { ConnexionLink } from './ConnexionLink'
 import styles from './Header.module.css'
 
 export function Header () {
@@ -33,13 +32,11 @@ export function Header () {
                   Proposer un sujet
               </a>
               <div className={styles.header__connexion}>
-                <ConnexionLink />
               </div>
             </Menu>
             <div className={styles.header__socialMenu}>
               <SocialIcons className={styles.menu__socialIcons} />
               <div className={styles.socialMenu__connexion}>
-                <ConnexionLink />
               </div>
             </div>
           </div>
