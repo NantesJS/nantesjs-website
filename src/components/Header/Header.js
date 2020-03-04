@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '@reach/router'
 import { Menu } from './Menu'
 import { AboutLink } from './AboutLink'
 import { ContributorsLink } from './ContributorsLink'
@@ -32,11 +33,13 @@ export function Header () {
                   Proposer un sujet
               </a>
               <div className={styles.header__connexion}>
+                <Link to="/profil">Profil</Link>
               </div>
             </Menu>
             <div className={styles.header__socialMenu}>
               <SocialIcons className={styles.menu__socialIcons} />
               <div className={styles.socialMenu__connexion}>
+                <Link to="/profil">Profil</Link>
               </div>
             </div>
           </div>
