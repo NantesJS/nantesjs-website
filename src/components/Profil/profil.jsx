@@ -1,35 +1,38 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { sha256 } from 'js-sha256'
-import QrReader from 'react-qr-reader'
+// import QrReader from 'react-qr-reader'
 import { getFirebase } from '../../Config/config.default'
 import styles from './profil.module.css'
 import QRCode from '../../../static/images/QRCode.png'
 import Fusee from '../../../static/images/Fusee.png'
 import Smiley from '../../../static/images/Smiley.png'
 import { FullWidthContainer } from '../FullWidthContainer'
-import { ParticipationOK } from '../ParticipationOK/'
+// import { ParticipationOK } from '../ParticipationOK/'
 import { ParticipationNON } from '../ParticipationNON/'
 
-export default function Profil() {
+import { FirebaseContext } from '../firebase.context.js'
+
+export default function Profil({ navigate }) {
 
   const [isHere, setIsHere] = useState(false)
   const [result, setResult] = useState('Nothing')
   const [test, setTest] = useState('ok') //ce qui est dans la base de données
   const [register, setRegister] = useState(null)
   const [userCounter, setUserCounter] = useState(0)
+  const firebase = useContext(FirebaseContext)
 
   useEffect(() => {
-    const lazyApp = import('firebase/app')
-    const lazyDatabase = import('firebase/database')
+    if (!firebase) return
 
-    Promise.all([lazyApp, lazyDatabase]).then(([firebase]) => {
-      const database = getFirebase(firebase).database()
-      // do something with `database` here,
-      // or store it as an instance variable or in state
-      // to do stuff with it later
-    })
-  }, [])
+    const user = firebase.auth().currentUser
 
+    if (!user) {
+      navigate('/profil/connexion')
+    }
+  }, [firebase])
+
+  return (<div />)
+    /*
   const handleClick = () => {
     setIsHere(!isHere)
   }
@@ -157,4 +160,5 @@ export default function Profil() {
       }
     </div>
   )
+  */
 }

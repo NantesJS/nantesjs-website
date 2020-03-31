@@ -1,34 +1,39 @@
-import React, { useEffect, useState, Fragment } from 'react'
-import Layout from '../components/layout'
+import React, { useEffect, useContext, useState, Fragment } from 'react'
+import Layout from '../layout'
 import styles from './page-connexion.module.css'
-import firebase from 'firebase'
-import Profil from '../components/Profil/profil'
-import iconConnexion from './iconConnexion.png'
+//import firebase from 'firebase'
+import Profil from '../Profil/profil'
+import iconConnexion from '../../pages/iconConnexion.png'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
+import { FirebaseContext } from '../firebase.context.js'
 
 export default function PageConnexion () {
 
   const [connect, setConnect] = useState(false)
+  const [config, setConfig] = useState(null)
+  const firebase = useContext(FirebaseContext)
 
-  // Config d'authentification
-  let uiConfig = {
-    signInFlow: 'popup',
-    signInOptions: [
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-      firebase.auth.GithubAuthProvider.PROVIDER_ID,
-    ],
-    callbacks: {
-      signInSuccessWithAuthResult: () => false
-    }
-  }
-
-  // Verifier si l'uilisateur est deja connecter
+  // Verifier si l'utilisateur est déjà connecté
   useEffect(() => {
+    if (!firebase) return
+
+    // Config d'authentification
+    setConfig({
+      signInFlow: 'popup',
+      signInOptions: [
+        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+        firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+        firebase.auth.GithubAuthProvider.PROVIDER_ID,
+      ],
+      callbacks: {
+        signInSuccessWithAuthResult: () => false
+      }
+    })
+
     firebase.auth().onAuthStateChanged(user => {
       setConnect(!!user)
     })
-  }, [])
+  }, [firebase])
 
   return (
     <Layout>
@@ -50,11 +55,13 @@ export default function PageConnexion () {
                   alt='icon for illustrate a connexion'
                   className={styles.allPage__picture}
                 />
-                <StyledFirebaseAuth
-                  className={styles.iconAndSignIn__auth}
-                  uiConfig={uiConfig}
-                  firebaseAuth={firebase.auth()}
-                />
+                {config && (
+                  <StyledFirebaseAuth
+                    className={styles.iconAndSignIn__auth}
+                    uiConfig={config}
+                    firebaseAuth={firebase.auth()}
+                  />
+                )}
               </div>
             </Fragment>
           )
