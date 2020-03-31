@@ -8,7 +8,7 @@ export default function () {
   return (
     <Layout>
       <Router>
-        <Profil path="/" />
+        <Profil path="/profil" />
       </Router>
     </Layout>
   )
