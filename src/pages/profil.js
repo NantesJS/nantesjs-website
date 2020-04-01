@@ -33,13 +33,10 @@ export default function () {
   }, [])
 
   return (
-    <Layout>
-      <FirebaseContext.Provider value={firebase}>
-        <Router>
-          <PageConnexion path="/profil/connexion" />
-          <Profil exact path="/profil" />
-        </Router>
-      </FirebaseContext.Provider>
-    </Layout>
+    <FirebaseContext.Provider value={firebase}>
+      <Router>
+        <PageConnexion path="/profil" />
+      </Router>
+    </FirebaseContext.Provider>
   )
 }
