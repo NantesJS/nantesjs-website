@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { sha256 } from 'js-sha256'
+const QrReader = React.lazy(() => import('react-qr-reader'))
 // import QrReader from 'react-qr-reader'
 import { getFirebase } from '../../Config/config.default'
 import styles from './profil.module.css'
@@ -7,13 +8,14 @@ import QRCode from '../../../static/images/QRCode.png'
 import Fusee from '../../../static/images/Fusee.png'
 import Smiley from '../../../static/images/Smiley.png'
 import { FullWidthContainer } from '../FullWidthContainer'
-// import { ParticipationOK } from '../ParticipationOK/'
+import { ParticipationOK } from '../ParticipationOK/'
 import { ParticipationNON } from '../ParticipationNON/'
 
 import { FirebaseContext } from '../firebase.context.js'
 
-export default function Profil({ navigate }) {
+export default function Profil() {
 
+  const [user, setUser] = useState(null)
   const [isHere, setIsHere] = useState(false)
   const [result, setResult] = useState('Nothing')
   const [test, setTest] = useState('ok') //ce qui est dans la base de données
@@ -24,15 +26,23 @@ export default function Profil({ navigate }) {
   useEffect(() => {
     if (!firebase) return
 
-    const user = firebase.auth().currentUser
-
-    if (!user) {
-      navigate('/profil/connexion')
+    const authenticatedUser = firebase.auth().currentUser
+    if (authenticatedUser) {
+      setUser(authenticatedUser)
     }
+
+    const db = firebase.firestore()
+    let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
+    // RECUPERE L'ID DU MEETUP SUR FIREBASE
+    app.get().then(doc => {
+      let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
+      let array = lastElement.doc.data()
+      setTest(array.QrCode)
+    })
+
+    Utilisateurs(db)
   }, [firebase])
 
-  return (<div />)
-    /*
   const handleClick = () => {
     setIsHere(!isHere)
   }
@@ -43,15 +53,11 @@ export default function Profil({ navigate }) {
     }
   }
 
-  // let user = firebase.auth().currentUser
-  // let db = firebase.firestore(Config)
-  // let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
-
   // ICI A TRAVAILLER => VERIFIER SI L USER EXISTE
-  const Utilisateurs = () => {
+  function Utilisateurs (db) {
     db.collection('user').doc(user.uid).get().then(function (doc) {
       if (doc.exists) {
-        Counter()
+        Counter(db)
       } else {
         db.collection('user').doc(user.uid).set({
           counter: 0,
@@ -63,7 +69,7 @@ export default function Profil({ navigate }) {
     })
   }
 
-  async function Counter() {
+  async function Counter (db) {
     let counterUser
     if (db.collection('user').doc(user.uid).get()) {
       let test = db.collection('user').doc(user.uid).get()
@@ -71,26 +77,13 @@ export default function Profil({ navigate }) {
         counterUser = doc.data().counter
       })
       setUserCounter(counterUser)
-    } else {
-      null
     }
   }
 
-  useEffect(() => {
-    Utilisateurs()
-  }, [])
-
-  // RECUPERE L'ID DU MEETUP SUR FIREBASE
-  app.get().then(doc => {
-    let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
-    let array = lastElement.doc.data()
-    setTest(array.QrCode)
-  })
-
-
   // Verify User in Firebase
-  const Verify = async () => {
+  const Verify = async db => {
     let coucou
+    let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
     await app.get().then(doc => {
       let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
       let array = lastElement.doc.data()
@@ -107,6 +100,14 @@ export default function Profil({ navigate }) {
     }
   }
 
+  useEffect(() => {
+    if (!firebase) return
+    if (result === 'Nothing') return
+
+    const db = firebase.firestore()
+    Verify(db)
+  }, [result, firebase])
+
   return (
     <div className={styles.profilPage}>
       {result === 'Nothing' ?
@@ -121,17 +122,19 @@ export default function Profil({ navigate }) {
                 <img src={QRCode} alt="QRCode" className={styles.QRCodeDiv__QRCodeImage} />
                 <button className={styles.QRCodeDiv__QRCodeButton} onClick={handleClick}>Scanner un QRCode</button>
               </div>
-              <div className={isHere ? styles.QRCodeDiv__cameraOn : styles.QRCodeDiv__cameraOff}>
-                <QrReader
-                  delay={300}
-                  onError={error => {
-                    // eslint-disable-next-line no-console
-                    console.log(error)
-                  }}
-                  onScan={handleScan}
-                />
-                <button onClick={handleClick} className={styles.QRCodeDiv__QRCodeButton}>Retour</button>
-              </div>
+              <React.Suspense fallback="On est sur node">
+                <div className={isHere ? styles.QRCodeDiv__cameraOn : styles.QRCodeDiv__cameraOff}>
+                  <QrReader
+                    delay={300}
+                    onError={error => {
+                      // eslint-disable-next-line no-console
+                      console.log(error)
+                    }}
+                    onScan={handleScan}
+                  />
+                  <button onClick={handleClick} className={styles.QRCodeDiv__QRCodeButton}>Retour</button>
+                </div>
+              </React.Suspense>
               <div className={styles.QRCodeDiv__fusee}>
                 <img src={Fusee} alt="Fusee" className={styles.fusee__fuseeImage} />
                 <button className={styles.fusee__badgesButton}>Voir mes badges</button>
@@ -144,21 +147,23 @@ export default function Profil({ navigate }) {
           </FullWidthContainer>
         </div>
         :
-        <div>
-          {Verify() | register === null ?
-            <div>WAIT</div>
-            :
-            <div>
-              {register === true ?
-                <ParticipationOK />
-                :
-                <ParticipationNON />
-              }
-            </div>
-          }
-        </div>
+        <>
+          <div>Toto</div>
+          <div>
+            {register === null ?
+              <div>WAIT</div>
+              :
+              <div>
+                {register === true ?
+                  <ParticipationOK />
+                  :
+                  <ParticipationNON />
+                }
+              </div>
+            }
+          </div>
+        </>
       }
     </div>
   )
-  */
 }

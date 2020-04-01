@@ -1,46 +1,53 @@
-import React, { useEffect, useState } from 'react'
-import firebase from 'firebase'
+import React, { useEffect, useState, useContext } from 'react'
 import Config from '../../Config/config.default'
 import styles from '../Profil/profil.module.css'
 import VotingOK from '../../../static/images/VotingOK.png'
 import { FullWidthContainer } from '../FullWidthContainer'
+import { FirebaseContext } from '../firebase.context.js'
 
 export function ParticipationOK () {
 
+  const [user, setUser] = useState(null)
   const [meetup, setMeetup] = useState(null)
+  const firebase = useContext(FirebaseContext)
+
+  useEffect(() => {
+    if (!firebase) return
+
+    const authenticatedUser = firebase.auth().currentUser
+    if (authenticatedUser) {
+      setUser(authenticatedUser)
+    }
+
+    const db = firebase.firestore()
+
+    // UPDATE LE TABLEAU DES INSCRITS SUR FIREBASE
+    let update = props => {
+      db.collection('nantesjs')
+        .doc(props)
+        .update({
+          Participants: firebase.firestore.FieldValue.arrayUnion({
+            Name : `${ user.displayName }`,
+            Email : `${ user.email }`,
+          })
+        })
+    }
+
+    // RECUPERE L'ID DU DERNIER MEETUP SUR FIREBASE
+    let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
+    app.get().then(doc => {
+      let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
+      let array = lastElement.doc.id
+      update(array)
+      setMeetup(array)
+    })
+
+    db.collection('user').doc(user.uid).update({ counter: firebase.firestore.FieldValue.increment(1) })
+  }, [firebase])
 
   function refreshPage () {
     window.location.reload()
   }
-
-  // Initialise Firebase
-  let user = firebase.auth().currentUser
-  let db = firebase.firestore(Config)
-
-  // UPDATE LE TABLEAU DES INSCRITS SUR FIREBASE
-  let update = props => {
-    db.collection('nantesjs')
-      .doc(props)
-      .update({
-        Participants: firebase.firestore.FieldValue.arrayUnion({
-          Name : `${ user.displayName }`,
-          Email : `${ user.email }`,
-        })
-      })
-  }
-
-  // RECUPERE L'ID DU DERNIER MEETUP SUR FIREBASE
-  let app = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
-  app.get().then(doc => {
-    let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
-    let array = lastElement.doc.id
-    update(array)
-    setMeetup(array)
-  })
-
-  useEffect(() => {
-    db.collection('user').doc(user.uid).update({ counter: firebase.firestore.FieldValue.increment(1) })
-  }, [])
 
   return (
     <div>
