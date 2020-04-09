@@ -22,7 +22,7 @@ talks:
       -
           id: lrg9Y9uTtBaDBBhdpkVbkiVZWK73
           name: 'Antoine Bluchet'
-          link: 'https://twitter.com/s0yuka'
+          link: 's0yuka'
   -
     id: uysQZYW8DM2lZF8v1WZt
     title: 'Démistifier l&#x27;utilisation du cache d&#x27;Apollo Graphql'
@@ -33,4 +33,4 @@ Beaucoup d&#x27;entres nous ont déjà entendu cette citation. Pour nommer les c
       -
           id: 3jAixvFWDwMpoISHbnkL3IqGNjP2
           name: 'Jimmy Kasprzak'
-          link: 'https://twitter.com/JimmyKasprzak'
+          link: 'JimmyKasprzak'
