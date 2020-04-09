@@ -3,7 +3,7 @@ id: 721d1a34-097a-46dc-8f60-6a46edde2383
 status: next
 title: 'Meetup #49'
 date: '16/04/2020'
-image: NOT_IMPLEMENTED_YET
+image: /images/meetup/react-graphql.png
 ticketsUrl: https://www.youtube.com/c/NantesJS
 venue:
   id: '50201588'
