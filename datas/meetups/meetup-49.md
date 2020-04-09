@@ -6,7 +6,7 @@ date: '16/04/2020'
 image: NOT_IMPLEMENTED_YET
 ticketsUrl: https://www.youtube.com/c/NantesJS
 venue:
-  id: 50201588
+  id: '50201588'
   name: 'NantesJS'
   link: 'https://www.youtube.com/c/NantesJS'
 sponsor:
