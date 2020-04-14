@@ -4,7 +4,7 @@ status: next
 title: 'Meetup #49'
 date: '16/04/2020'
 image: /images/meetup/react-graphql.png
-ticketsUrl: https://www.youtube.com/c/NantesJS
+ticketsUrl: https://youtu.be/rb_bdhoxY1I
 venue:
   id: '50201588'
   name: 'NantesJS'
