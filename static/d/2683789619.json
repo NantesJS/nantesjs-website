@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"venue":{"latitude":47.21403,"longitude":-1.56215,"name":"Lucca","link":"http://www.lucca.fr/","address":"18 rue Scribe","postal_code":44000,"city":"Nantes"}}}}]}}}
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"venue":{"latitude":null,"longitude":null,"name":"NantesJS","link":"https://www.youtube.com/c/NantesJS","address":null,"postal_code":null,"city":null}}}}]}}}
