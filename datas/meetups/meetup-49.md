@@ -1,6 +1,6 @@
 ---
 id: 721d1a34-097a-46dc-8f60-6a46edde2383
-status: next
+status: done
 title: 'Meetup #49'
 date: '16/04/2020'
 image: /images/meetup/react-graphql.png
