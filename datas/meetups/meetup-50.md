@@ -4,7 +4,7 @@ status: next
 title: 'Meetup #50'
 date: '19/05/2020'
 image: /images/meetup/container.png
-ticketsUrl: https://www.eventbrite.fr/e/meetup-50-tickets-105237897384
+ticketsUrl: https://youtu.be/xuzlD95v2Gk
 venue:
   id: '50201588'
   name: 'NantesJS'
