@@ -35,5 +35,5 @@ Venez dans cette session pour découvrir quelles APIs vous allez pouvoir utilise
     speakers:
       -
           id: 'bAkrQrssjgU1zb5V2y2QpVnuCmf1'
-          name: 'jean-francois garreau'
+          name: 'Jean-francois Garreau'
           link: 'jefbinomed'
