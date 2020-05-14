@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Wed, 13 May 2020 13:53:06 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Thu, 14 May 2020 12:12:33 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -540,6 +540,37 @@ Il est maintenant temps de découvrir ce que Yarn 2 nous réserve, et vous dévo
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.oxiane.bzh/&quot;&gt;Oxiane&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-44-tickets-72080752471&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #50]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">998d0e89-b871-4389-85fe-bc91332f47dd</guid><pubDate>Tue, 19 May 2020 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #50 - 19/05/2020&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Conteneurisation Pour Les Développeurs Logiciels&lt;/h3&gt;
+      &lt;p&gt;La fin est proche. Votre application est presque prête et il faudra bientôt la déployer. Et avec le déploiement viendra inévitablement les ajustements sans fin afin de finalement avoir une application qui fonctionne dans un environement de production. Si seulement il y avait un moyen de s&amp;#x27;assurer que tout fonctionne plus tôt... C&amp;#x27;est là que les conteneurs viennent en jeu. Avec les conteneurs, non seulement vous pourrez tester dans un environement similaire, vous pourrez rouler votre code dans l&amp;#x27;environment de production. Dans cette présentation, les participants apprendront comment créer des applications conteneur-friendly, comment les utiliser pour partager leur code et finalement comment s&amp;#x27;en servir pour déployer dans un serveur de production avec peu d&amp;#x27;efforts.
+&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/joel__lord&quot;&gt;Joel Lord&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Le web Natif débarque&lt;/h3&gt;
+      &lt;p&gt;Toujours dans la continuité du web manifesto visant à mettre à disposition plus d’API bas niveau sur le web. Le “projet FUGU” (non ce n’est pas le nouveau nom du Yaourt de Dan…) est le nom de code du projet permettant de mettre à disposition des APIs web qui complètent l’intégration avec l’OS (Explorateur de fichier, Accès aux contacts, Bluetooth, …).
+Venez dans cette session pour découvrir quelles APIs vous allez pouvoir utiliser demain dans vos applications web. &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jefbinomed&quot;&gt;Jean-francois Garreau&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.youtube.com/c/NantesJS&quot;&gt;NantesJS&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://nantesjs.org/&quot;&gt;NantesJS&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://youtu.be/et0Ip1Fd9_s&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[MEETUP 19]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">385ee451-50dd-4887-976c-9eb84cb45b31</guid><pubDate>Thu, 19 May 2016 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 19 - 19/05/2016&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
