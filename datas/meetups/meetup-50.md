@@ -1,6 +1,6 @@
 ---
 id: 998d0e89-b871-4389-85fe-bc91332f47dd
-status: next
+status: done
 title: 'Meetup #50'
 date: '19/05/2020'
 image: /images/meetup/container.png
