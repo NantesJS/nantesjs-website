@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Thu, 11 Jun 2020 14:14:47 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Fri, 12 Jun 2020 11:36:28 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -690,6 +690,35 @@ Technos: NodeJS, Typescript, SQLite, LevelDB...&lt;/p&gt;
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.sfeir.com/&quot;&gt;Sfeir&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-le-meetup-dont-vous-etes-le-heros-64661933584&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #51]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">7695d52d-698d-4362-90e7-47b2cd61bdcf</guid><pubDate>Thu, 18 Jun 2020 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #51 - 18/06/2020&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;WebRTC: déployer du P2P dans le navigateur&lt;/h3&gt;
+      &lt;p&gt;WebRTC permet de créer des applications multimédia temps réel (voix, vidéo, chat, …) et de réaliser du transfert de données, le tout en mode P2P. Nous nous intéresserons à sa mise en oeuvre dans le navigateur et à l’infrastructure qui permet de la supporter.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/&quot;&gt;Stéphane Alnet&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Svelte : votre partenaire minceur JavaScript ?&lt;/h3&gt;
+      &lt;p&gt;Svelte n&amp;#x27;est pas une librairie, ni un framework mais un compilateur générant du VanillaJS à partir d&amp;#x27;un fichier &amp;#x60;.svelte&amp;#x60;. Cette approche apporte plusieurs intérêts donc principalement : Meilleurs performances (le JS est optimal), Sucre syntaxique (des raccourcis permettent d&amp;#x27;écrire moins de code et donc produire plus) et l&amp;#x27;encapsulation CSS native.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/Cantin_Al&quot;&gt;Alexandre CANTIN&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.youtube.com/c/NantesJS&quot;&gt;NantesJS&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://nantesjs.org/&quot;&gt;NantesJS&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://youtu.be/iX8bsvS6s5c&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[MEETUP 22]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">8ae1f422-02c6-45bc-a54c-8f1cf45ee486</guid><pubDate>Thu, 18 May 2017 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 22 - 18/05/2017&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
