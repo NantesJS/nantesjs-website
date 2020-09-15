@@ -1,6 +1,6 @@
 ---
 id: 7695d52d-698d-4362-90e7-47b2cd61bdcf
-status: next
+status: done
 title: 'Meetup #51'
 date: '18/06/2020'
 image: /images/meetup/svelte.png

@@ -59,7 +59,7 @@ function Avatars ({ speakers }) {
               }
             )}
             src={
-              `https://avatars.io/twitter/${ speaker.link }`
+              `https://avatars.charlyx.dev/twitter?username=${ speaker.link }&size=bigger`
             }
           />
         )
