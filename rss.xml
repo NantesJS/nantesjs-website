@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 Sep 2020 15:15:56 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Tue, 15 Sep 2020 11:49:31 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -921,6 +921,40 @@ Nous vous donnerons toutes les clés pour promouvoir votre projet open-source da
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;http://nantesjs.org&quot;&gt;NantesJS&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/meetup-45-tickets-76005882641&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #52]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">e7a118d3-33b6-4b38-8232-c39473b72f3e</guid><pubDate>Thu, 17 Sep 2020 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #52 - 17/09/2020&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;The Sound of Silence: Des APIs Web pour l&apos;accessibilité des déficiences visuelles et auditives&lt;/h3&gt;
+      &lt;p&gt;Selon l&apos;OMS, il y a dans le monde 253 millions de personnes présentant une déficience visuelle et 360 millions présentant une déficience auditive. Soit entre 2 à 3 fois plus que d&apos;utilisateurs d&apos;Internet Explorer.
+Et pourtant, on préfère optimiser pour Internet Explorer plutôt que pour les déficiences visuelles et auditives.
+Pour changer, regardons ensemble ce que les navigateurs ont mis en place ces dernières années pour nous aider à construire des applications web inclusives. Des outils (Google&apos;s Lighthouse, Microsoft&apos;s Accessibility Insights, ...) aux APIs (Text-to-speech, aria-live, ...), ce tour d&apos;horizon vous donnera toutes les ressources nécessaires pour vous accompagner dans l&apos;évolution vers un web plus accessible. 👐
+Note: Ce talk sera accessible aux personnes présentant des déficiences visuelles et auditives.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/errorname_&quot;&gt;Thibaud Courtoison&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;101 - Self-Marketing for Developers&lt;/h3&gt;
+      &lt;p&gt;Nous sommes tous curieux et passionnés dans les communautés de dev. Nous aimons partager nos connaissances, présenter nos idées et challenger l&apos;existant avec notre ouverture d&apos;esprit.
+Comment diffuser cela plus largement à l&apos;extérieur ? Quelles sont les bases pour créer &quot;sa&quot; marque ? Comment initier cette démarche ?
+L&apos;idée est de présenter quelques concepts du Self-Marketing et d&apos;imaginer ensemble une déclinaison pour nous développeur.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/jlandure&quot;&gt;Julien Landuré&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.youtube.com/c/NantesJS&quot;&gt;NantesJS&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://nantesjs.org/&quot;&gt;NantesJS&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://youtu.be/diJAyifTaSc&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[MEETUP 12]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">9a48e4ae-8824-49e4-bb21-b35ec21c31ea</guid><pubDate>Thu, 17 Sep 2015 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 12 - 17/09/2015&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
