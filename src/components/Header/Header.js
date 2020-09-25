@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '@reach/router'
 import { Menu } from './Menu'
 import { AboutLink } from './AboutLink'
 import { ContributorsLink } from './ContributorsLink'
@@ -6,7 +7,6 @@ import { MeetupsLink } from './MeetupsLink'
 import { Logo } from './Logo'
 import { LargeContainer } from '../../components/LargeContainer'
 import { SocialIcons } from '../SocialIcons'
-
 import styles from './Header.module.css'
 
 export function Header () {
@@ -17,21 +17,31 @@ export function Header () {
       <LargeContainer style={{ overflow: 'hidden' }}>
         <nav className={styles.header__container}>
           <Logo className={styles.header__logo} />
-          <div className={styles.header__links}>
-            <SocialIcons className={styles.menu__socialIcons} />
+          <div className={styles.header__menu}>
             <Menu>
-              <MeetupsLink />
-              <ContributorsLink />
-              <AboutLink />
+              <div className={styles.header__link}>
+                <MeetupsLink />
+                <ContributorsLink />
+                <AboutLink />
+              </div>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={proposalLink}
                 className={styles.menu__button}
               >
-                          Proposer un sujet
+                  Proposer un sujet
               </a>
+              <div className={styles.header__connexion}>
+                <Link to="/profil">Profil</Link>
+              </div>
             </Menu>
+            <div className={styles.header__socialMenu}>
+              <SocialIcons className={styles.menu__socialIcons} />
+              <div className={styles.socialMenu__connexion}>
+                <Link to="/profil">Profil</Link>
+              </div>
+            </div>
           </div>
         </nav>
       </LargeContainer>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Generate a Winner</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 100px auto;
+    }
+
+    #qrcode {
+      margin-top: 50px;
+    }
+
+    input {
+      border: 1px solid black;
+    }
+
+    #gagnant {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="gagnant"> Je veux un gagnant </button>
+  <p id='gagnantchoosen'></p>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+
+<script type="text/javascript">
+  // Initialize Firebase Config
+  // let config = {
+  //     apiKey: "[YOUR_API_KEY]",
+  //     authDomain: "[YOUR_AUTH_DOMAIN].firebaseapp.com",
+  //     projectId: "[YOUR_PROJECT_ID]",
+  //   };
+  //Initialize Firebase
+  let app = firebase.initializeApp(config);
+  let db = firebase.firestore(app);
+
+  let winnerText = document.getElementById('gagnantchoosen');
+  let winnerButton = document.getElementById('gagnant');
+  let winner;
+  let winnerchoosen;
+  let alreadyChoose = [];
+
+  // RECUPERE L'ID DU DERNIER MEETUP SUR FIREBASE
+  let last = db.collection('nantesjs').orderBy('Date', 'desc').limit(1)
+  last.get().then(doc => {
+    let lastElement = doc.docChanges()[doc._snapshot.docChanges.length - 1]
+    let array = lastElement.doc.id
+    update(array);
+  })
+
+  // UPDATE LE TABLEAU DES INSCRITS SUR FIREBASE
+  let update = (props) => {
+    let winner = db.collection('nantesjs').doc(props);
+    //Get a ramdom winner with the button
+    winnerButton.addEventListener('click', function () {
+      winnerButton.innerText = 'Choose another winner'
+      winner.get().then(function (doc) {
+        if (doc.exists) {
+          let Participants = (doc.data().Participants);
+          let winnerchoosen = Participants[Math.floor(Math.random() * Participants.length)]
+
+          if (alreadyChoose.includes(winnerchoosen.Email || winnerchoosen) == true) {
+            winnerText.innerHTML = 'Déjà tiré au sort'
+          } else if (winnerchoosen.Email) {
+            winnerText.innerHTML = `Name : ${winnerchoosen.Name} & Email : ${winnerchoosen.Email}`
+            alreadyChoose = [...alreadyChoose, winnerchoosen.Email]
+          } else {
+            winnerText.innerHTML = winnerchoosen
+            alreadyChoose = [...alreadyChoose, winnerchoosen]
+          }
+        }
+      })
+    });
+  };
+
+</script>
+
+</html>

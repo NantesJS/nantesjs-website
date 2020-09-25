@@ -43,7 +43,7 @@ const options = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: `contributors`, 
+        name: `contributors`,
         path:`${ __dirname }/datas/contributors`,
       },
     }, {
@@ -111,6 +111,9 @@ const options = {
           title: "NantesJS RSS Feed",
         } ]
       },
+    }, {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/profil/*`] },
     },
   ]
 }

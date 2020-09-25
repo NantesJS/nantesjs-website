@@ -6,6 +6,37 @@
   padding: 0 20px;
 }
 
+.Menu-module--showOnDesktop--2c96Otop{
+  flex: 1;
+}
+
+.header__socialMenu{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 2;
+}
+
+.header__socialMenu img{
+  width: 25px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.header__socialMenu div{
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.header__menu{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
 .header__container {
   align-items: center;
   display: flex;
@@ -16,17 +47,32 @@
   max-height: 6.5rem;
 }
 
-.menu__social-icons {
+.socialMenu__social-icons {
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 991px) {
-  .menu__social-icons {
-    padding: 0;
-    margin-bottom: 0;
-    display: flex;
+  .header {
     align-items: center;
-    margin-right: 20px
+    background-color: #333;
+    display: flex;
+    height: 7.5rem;
+    padding: 0px;
+  }
+
+  .header__menu{
+    flex-direction: row-reverse;
+  }
+
+  .header__socialMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: none;
+  }
+
+  .socialMenu__connexion{
+    display: none !important;
   }
 }
 
@@ -42,16 +88,32 @@
 
 .menu__social-icons a {
   color: #f3e049 !important;
+  padding: 0px !important;
 }
 
-.header__links {
-  display: flex;
-  flex-direction: column;
+.header__link a{
+  margin-right: 30px;
 }
 
 @media screen and (max-width: 991px) {
-  .header__links {
-    flex-direction: row;
+  .header__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  .menu__content>a{
+    margin-left: 20px;
+  }
+
+  .header__connexion{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 2px solid #f3e049;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -66,6 +128,15 @@
   font-size: 18px;
   height: 40px;
   justify-content: center;
-  margin: 0;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 991px){
+  .connection-link{
+    margin-right: 10%;
+  }
+
+  .SocialIcons-module--social-icons--Q0Ivs{
+    padding: 0px !important;
+  }
 }
