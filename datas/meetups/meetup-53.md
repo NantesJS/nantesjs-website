@@ -19,17 +19,6 @@ talks:
     title: "Canvas pixels transformation : beauty comes slowly"
     description: "How to turn maps or any image into beautiful mosaics with the javascript Canvas api ? I will share my experience on my (React + Typescript + Worker) project maposaic.com.
 
-I have a passion for maps and their aesthetics. With maposaic, I transform the canvas of a Mapbox map into a color mosaic.
-
-However, my algorithm runs through all the pixels of the canvas, which takes a long time: more than 2 seconds to render a map on a fullHD screen. I started exploring the WebGL API to speed up rendering.
-
-The learnings that I would like to share with you during this talk:
-
-- how to transform a canvas via the ImageData interface : rendering performance on a canvas vs. an SVG rendering
-- how to improve the user experience with a Worker (on a webpack + react + typescript project)
-- how I could improve the performance with WebAssembly
-- OpenGL / WebGL: How to improve the performance with the WebGL API
-
 At the end of this talk you will know the basics that allow you to modify a canvas in a web project. You will know why WebGL renderings perform much better than an algorithm that iterates over all pixels.
 "
     speakers:
