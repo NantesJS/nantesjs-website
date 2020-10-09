@@ -39,7 +39,7 @@ At the end of this talk you will know the basics that allow you to modify a canv
           link: 'viconnex'
   -
     id: '9cd7298c-babd-4b86-9cdd-8e5ef44a8321'
-    title: 'Comment j'ai réussi à parler devant 400 personnes'
+    title: "Comment j'ai réussi à parler devant 400 personnes"
     description: "Pouvoir prendre la parole en public est de plus en plus demandé sur le marché du travail. On parle de soft skills clé pour un développeur : présenter à un meetup, à son équipe, à des clients...
                   
 Je vous partage ici les tips que j'ai mis en place pour réussir à parler devant 400 personnes.
