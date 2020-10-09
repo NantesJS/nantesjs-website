@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Thu, 08 Oct 2020 15:39:48 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Fri, 09 Oct 2020 14:39:34 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -1303,6 +1303,37 @@ Afin que vous puissiez peut-être, vous aussi, organiser ce genre d’événemen
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.a5sys.com/&quot;&gt;A5Sys&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-35-52305278496&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #53]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">a48e8142-0a30-11eb-adc1-0242ac120002</guid><pubDate>Thu, 15 Oct 2020 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #53 - 15/10/2020&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Canvas pixels transformation : beauty comes slowly&lt;/h3&gt;
+      &lt;p&gt;How to turn maps or any image into beautiful mosaics with the javascript Canvas api ? I will share my experience on my (React + Typescript + Worker) project maposaic.com.
+At the end of this talk you will know the basics that allow you to modify a canvas in a web project. You will know why WebGL renderings perform much better than an algorithm that iterates over all pixels. &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/viconnex&quot;&gt;Victor Lebrun&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Comment j&apos;ai réussi à parler devant 400 personnes&lt;/h3&gt;
+      &lt;p&gt;Pouvoir prendre la parole en public est de plus en plus demandé sur le marché du travail. On parle de soft skills clé pour un développeur : présenter à un meetup, à son équipe, à des clients...
+Je vous partage ici les tips que j&apos;ai mis en place pour réussir à parler devant 400 personnes. &lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/bcasseron&quot;&gt;Benjamin Casseron&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.youtube.com/c/NantesJS&quot;&gt;NantesJS&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://nantesjs.org/&quot;&gt;NantesJS&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://youtu.be/IsRPxvxL9a0&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[MEETUP 13]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">0c4d540c-e1e5-4b49-8217-42c4ff81f3e5</guid><pubDate>Thu, 15 Oct 2015 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 13 - 15/10/2015&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
