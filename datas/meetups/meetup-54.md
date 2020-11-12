@@ -22,7 +22,7 @@ talks:
       -
           id: 'gK1Ua3sCQuPc46SyKan5cYK2wAk2'
           name: 'Loïc Goyet'
-          link: 'https://twitter.com/loicgoyet'
+          link: 'loicgoyet'
   -
     id: 'nXyCNdbCgJyqzwAv9JQv'
     title: 'Les tests unitaires Javascript, vers l&#x27;infini et au-delà'
@@ -39,4 +39,4 @@ En sortant de notre atelier vous serez capable de diviser et réaliser vos tests
       -
           id: '7TTU2GNH3fOu76Q5MrxNkV3ry7l1'
           name: 'Mathilde Rigabert Lemée'
-          link: 'https://twitter.com/MathildeLemee'
+          link: 'MathildeLemee'
