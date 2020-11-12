@@ -1,6 +1,6 @@
 ---
 id: 'a48e8142-0a30-11eb-adc1-0242ac120002'
-status: next
+status: done
 title: 'Meetup #53'
 date: '15/10/2020'
 image: /images/meetup/maposaic.png
