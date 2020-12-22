@@ -1,8 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { arrayOf, shape, string } from "prop-types"
+import { array, arrayOf, shape, string } from "prop-types"
 import Layout from '../components/layout'
 import { TitleBar } from '../components/NextMeetup/TitleBar/TitleBar'
+import { Talks } from '../components/NextMeetup/Talks/Talks'
 
 Component.propTypes = {
   data: shape({
@@ -10,6 +11,15 @@ Component.propTypes = {
       nodes: arrayOf(shape({
         frontmatter: shape({
           title: string.isRequired,
+          image: string.isRequired,
+          sponsor: shape({
+            name: string.isRequired,
+          }),
+          venue: shape({
+            name: string.isRequired,
+          }),
+          date: string.isRequired,
+          talks: array.isRequired,
         })
       }))
     })
@@ -18,7 +28,7 @@ Component.propTypes = {
 
 export default function Component ({ data }) {
   const [markdownData] = data.allMarkdownRemark.nodes
-  const { title, image, sponsor, venue, date } = markdownData.frontmatter
+  const { title, image, sponsor, venue, date, talks } = markdownData.frontmatter
 
   return (
     <Layout>
@@ -29,6 +39,7 @@ export default function Component ({ data }) {
         venue={venue.name}
         date={date}
       />
+      <Talks talks={talks} />
     </Layout>
   )
 }
@@ -50,6 +61,16 @@ export const query = graphql`
             name
           }
           date
+          talks {
+            id
+            title
+            description
+            speakers {
+              id
+              name
+              link
+            }
+          }
         }
       }
     }
