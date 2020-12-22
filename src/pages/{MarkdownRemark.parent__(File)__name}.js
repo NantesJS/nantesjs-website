@@ -1,9 +1,29 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { arrayOf, shape, string } from "prop-types"
+import Layout from '../components/layout'
 
-export default function Component(props) {
-  console.log(props.data)
-  return "Hello"
+Component.propTypes = {
+  data: shape({
+    allMarkdownRemark: shape({
+      nodes: arrayOf(shape({
+        frontmatter: shape({
+          title: string.isRequired,
+        })
+      }))
+    })
+  })
+}
+
+export default function Component ({ data }) {
+  const [markdownData] = data.allMarkdownRemark.nodes
+  const { title } = markdownData.frontmatter
+
+  return (
+    <Layout>
+      <h1>{title}</h1>
+    </Layout>
+  )
 }
 
 export const query = graphql`
