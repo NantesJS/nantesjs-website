@@ -40,6 +40,17 @@ export default function Component ({ data }) {
         date={date}
       />
       <Talks talks={talks} />
+      {talks.map(({ video, id }) => (
+        <iframe
+          key={id}
+          src={`https://www.youtube.com/embed/${ video }`}
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          frameBorder="0"
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+          allowFullScreen
+        />
+      ))}
     </Layout>
   )
 }
@@ -65,6 +76,7 @@ export const query = graphql`
             id
             title
             description
+            video
             speakers {
               id
               name
