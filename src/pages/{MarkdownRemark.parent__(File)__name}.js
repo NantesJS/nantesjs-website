@@ -1,10 +1,11 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { graphql } from "gatsby"
 import { array, arrayOf, shape, string } from "prop-types"
 import Layout from '../components/layout'
 import { TitleBar } from '../components/NextMeetup/TitleBar/TitleBar'
-import { Talks } from '../components/NextMeetup/Talks/Talks'
-import styles from "../components/NextMeetup/Talks/Talks.module.css";
+import { Talk } from '../components/Talk'
+import { FullWidthContainer } from '../components/FullWidthContainer'
+import styles from './meetup.module.css'
 
 Component.propTypes = {
   data: shape({
@@ -41,17 +42,29 @@ export default function Component ({ data }) {
         date={date}
       />
       <div className={styles.talks}>
-        {talks.map(({ video, id }) => (
-          <iframe
-            key={id}
-            src={`https://www.youtube.com/embed/${ video }`}
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            frameBorder="0"
-            webkitallowfullscreen="true"
-            mozallowfullscreen="true"
-            allowFullScreen
-          />
-        ))}
+        {talks.map(talk => {
+          const { id, video } = talk
+          return (
+            <Fragment key={id}>
+              <Talk talk={talk} />
+              <FullWidthContainer className={styles.video}>
+                <h3 className={styles.video__title}>Revoir ce talk</h3>
+                <div className={styles.video__wrapper}>
+                  <iframe
+                    key={id}
+                    className={styles.video__iframe}
+                    src={`https://www.youtube.com/embed/${ video }`}
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameBorder="0"
+                    webkitallowfullscreen="true"
+                    mozallowfullscreen="true"
+                    allowFullScreen
+                  />
+                </div>
+              </FullWidthContainer>
+            </Fragment>
+          )
+        })}
       </div>
     </Layout>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import he from 'he'
-import { array, shape, string } from 'prop-types'
+import { arrayOf, shape, string } from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter'
 import { Avatars } from '../Avatars'
@@ -9,7 +9,7 @@ import styles from './Talk.module.css'
 
 Talk.propTypes = {
   talk: shape({
-    speakers: array(shape({
+    speakers: arrayOf(shape({
       id: string.isRequired,
       name: string.isRequired,
       link: string,
