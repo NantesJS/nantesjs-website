@@ -4,6 +4,7 @@ import { array, arrayOf, shape, string } from "prop-types"
 import Layout from '../components/layout'
 import { TitleBar } from '../components/NextMeetup/TitleBar/TitleBar'
 import { Talks } from '../components/NextMeetup/Talks/Talks'
+import styles from "../components/NextMeetup/Talks/Talks.module.css";
 
 Component.propTypes = {
   data: shape({
@@ -39,18 +40,19 @@ export default function Component ({ data }) {
         venue={venue.name}
         date={date}
       />
-      <Talks talks={talks} />
-      {talks.map(({ video, id }) => (
-        <iframe
-          key={id}
-          src={`https://www.youtube.com/embed/${ video }`}
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          frameBorder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowFullScreen
-        />
-      ))}
+      <div className={styles.talks}>
+        {talks.map(({ video, id }) => (
+          <iframe
+            key={id}
+            src={`https://www.youtube.com/embed/${ video }`}
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            frameBorder="0"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            allowFullScreen
+          />
+        ))}
+      </div>
     </Layout>
   )
 }
