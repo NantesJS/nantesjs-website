@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Wed, 20 Jan 2021 17:22:09 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></title><description><![CDATA[NantesJS - Communauté nantaise des utilisateurs de JavaScript]]></description><link>https://nantesjs.org</link><generator>RSS for Node</generator><lastBuildDate>Thu, 21 Jan 2021 17:02:01 GMT</lastBuildDate><item><title><![CDATA[MEETUP 08]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">1fc40bf8-7850-458b-b403-15d861784f74</guid><pubDate>Tue, 28 Jan 2014 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 08 - 28/01/2014&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
   
@@ -252,6 +252,41 @@ Pas besoin d&apos;expertise en machine learning! Juste de quelques connaissances
   &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://www.mymoneybank.fr/&quot;&gt;My Money Bank&lt;/a&gt;
   &lt;br/&gt;
   &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.eventbrite.fr/e/billets-nantesjs-meetup-37-56359512820&quot;&gt;Réserver votre place&lt;/a&gt;
+  </content:encoded></item><item><title><![CDATA[Meetup #55]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">4d8a3fca-d85b-4694-b230-b34d70096a56</guid><pubDate>Thu, 21 Jan 2021 00:00:00 GMT</pubDate><content:encoded>
+  &lt;h1&gt;Meetup #55 - 21/01/2021&lt;/h1&gt;
+  &lt;h2&gt;Talks&lt;/h2&gt;
+  
+      
+      
+      &lt;h3&gt;Concevoir, développer et gérer un catalogue de composants web&lt;/h3&gt;
+      &lt;p&gt;Le monde du développement web est fortement fragmenté, avec de nombreux frameworks incompatibles: React, Angular, Vue...
+Il est tellement fragmenté que certains développeurs ne se décrivent plus comme des développeurs Web mais comme des développeurs React ou des développeurs Angular. Le code créé pour l&apos;un de ces frameworks ne fonctionnera pas dans d&apos;autres, obligeant les développeurs à réécrire leur code à chaque fois qu&apos;ils changent de framework.
+Dans ce contexte, les Web Components (ou Composants Web en français) représentent une des seules solutions multi-framework pour le Web. Avec les Composants Web, vous pouvez enfin écrire vos composants une fois pour toutes, et les utiliser partout : dans React, dans Angular, dans Vue, mais aussi dans de bonnes vieilles pages HTML sans framework.
+Ça c&apos;est la théorie, mais comment faire ça en pratique ? Comment construit-on son catalogue de composants, comment on le structure, comment distribue-t-on ces composants ?
+Dans ce talk on donnera des pistes, des retour d&apos;expériences et des bonne pratiques pour concevoir, développer et gérer un catalogue de composants web, et comment les utiliser dans les différents frameworks web.&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/LostInBrittany&quot;&gt;Horacio Gonzalez&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;h3&gt;Nuxt 2021&lt;/h3&gt;
+      &lt;p&gt;Nuxt est un framework Vue.js pour construire des applications front-end universelles (qui peuvent aussi se construire côté serveur). Nuxt offre énormément de confort de développement notamment en pré-configurant le tooling essentiel dans les projets d&apos;aujourd&apos;hui. Faisons le point sur les nombreux avantages de Nuxt et son état aujourd&apos;hui.
+Aussi, et en avant première, intéressons nous au futur de Nuxt en abordant quelques nouveautés prévues pour la version 3 !
+&lt;/p&gt;
+      &lt;p&gt;Par:&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://twitter.com/_YannBertrand&quot;&gt;Yann Bertrand&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    
+  &lt;h2&gt;Lieu&lt;/h2&gt;
+  
+  &lt;a href=&quot;https://www.youtube.com/c/NantesJS&quot;&gt;NantesJS&lt;/a&gt;&lt;br/&gt;
+  null null null
+  
+  &lt;br/&gt;
+  &lt;h2&gt;Sponsor&lt;/h2&gt;&lt;a href=&quot;https://nantesjs.org&quot;&gt;NantesJS&lt;/a&gt;
+  &lt;br/&gt;
+  &lt;h2&gt;Ticket&lt;/h2&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=JnV8xtnGzok&quot;&gt;Réserver votre place&lt;/a&gt;
   </content:encoded></item><item><title><![CDATA[MEETUP 16]]></title><link>https://nantesjs.org</link><guid isPermaLink="false">fd3aabba-2e39-40bd-b996-d1e300128fc9</guid><pubDate>Thu, 21 Jan 2016 00:00:00 GMT</pubDate><content:encoded>
   &lt;h1&gt;MEETUP 16 - 21/01/2016&lt;/h1&gt;
   &lt;h2&gt;Talks&lt;/h2&gt;
