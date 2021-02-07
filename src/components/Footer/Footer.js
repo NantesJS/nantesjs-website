@@ -20,7 +20,10 @@ export function Footer () {
           icon={faHeart}
         />&nbsp;
         <Link className={styles.footer__link} to="/">NantesJS</Link>&nbsp;
-              - © 2011-2019
+              - © 2011-2021
+        <a href="https://www.netlify.com" style={{ marginLeft: '1rem' }}>
+          <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
+        </a>
       </p>
     </footer>
   )
