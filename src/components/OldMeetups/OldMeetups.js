@@ -54,7 +54,7 @@ function Talks ({ talks }) {
           {talk.video && (
             <a className={styles.talk__video}
               title="Voir la video"
-              href={talk.video}>
+              href={`https://youtu.be/${ talk.video }`}>
               <FontAwesomeIcon icon={faYoutube} aria-hidden="true"/>
             </a>
           )}
