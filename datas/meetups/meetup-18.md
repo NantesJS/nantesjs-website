@@ -11,7 +11,7 @@ talks:
     -
         id: bc1e6b5e-c080-4d9f-aaf6-d097a7501059
         title: 'Implémentation de Pattern Matching en JavaScript'
-        video: 'https://youtu.be/B1QltudEeds' 
+        video: 'B1QltudEeds' 
         speakers:
             -
                 id: 2c4d342e-c21e-42de-9272-c064c0ead764
@@ -20,7 +20,7 @@ talks:
     -
         id: c19d1f73-e317-48ff-8cff-0bf8f411b478
         title: 'Présentation de elm'
-        video: 'https://youtu.be/WjrXxJv7En8' 
+        video: 'WjrXxJv7En8' 
         speakers:
             -
                 id: f3986b42-fc21-428f-a286-7f28aa216b54

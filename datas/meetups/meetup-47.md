@@ -24,7 +24,7 @@ talks:
     title: 'Accessibilité, utiliser  un &quot;screen reader&quot; pour le développement Web'
     description: 'Le lecteur d’écran ou &quot;screen reader&quot; est un logiciel d’assistance technique destiné aux personnes &quot; empêchées de lire &quot; pour retranscrire par synthèse vocale ce qui est affiché sur l&#x27;écran.  Quand on doit gérer l&#x27;accessibilité d&#x27;une appli web, il est important d’utiliser un “ screen reader “ car l’être humain est indispensable pour la validation fonctionnelle de l&#x27;expérience utilisateur.
 '
-    video: 'https://youtu.be/zQG7HPHVyMU'
+    video: 'zQG7HPHVyMU'
     speakers:
       -
           id: 8Ygt6cyVRTNWeL7gvAauvHNf5V52
@@ -39,7 +39,7 @@ Au programme :
 * retour sur les conférences
 * points d&#x27;attentions sur nos coup de cœur
 '
-    video: 'https://youtu.be/KD7rj2puboc'
+    video: 'KD7rj2puboc'
     speakers:
       -
           id: j8jeenJ4PhVKLMvNIlQehGkiy2Y2

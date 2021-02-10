@@ -37,8 +37,8 @@ export default function Component ({ data }) {
       <TitleBar
         title={title}
         image={image}
-        sponsor={sponsor.name}
-        venue={venue.name}
+        sponsor={sponsor?.name}
+        venue={venue?.name}
         date={date}
       />
       <div className={styles.talks}>
@@ -47,21 +47,23 @@ export default function Component ({ data }) {
           return (
             <Fragment key={id}>
               <Talk talk={talk} />
-              <FullWidthContainer className={styles.video}>
-                <h3 className={styles.video__title}>Revoir ce talk</h3>
-                <div className={styles.video__wrapper}>
-                  <iframe
-                    key={id}
-                    className={styles.video__iframe}
-                    src={`https://www.youtube.com/embed/${ video }`}
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    frameBorder="0"
-                    webkitallowfullscreen="true"
-                    mozallowfullscreen="true"
-                    allowFullScreen
-                  />
-                </div>
-              </FullWidthContainer>
+              {video && (
+                <FullWidthContainer className={styles.video}>
+                  <h3 className={styles.video__title}>Revoir ce talk</h3>
+                  <div className={styles.video__wrapper}>
+                    <iframe
+                      key={id}
+                      className={styles.video__iframe}
+                      src={`https://www.youtube.com/embed/${ video }`}
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      frameBorder="0"
+                      webkitallowfullscreen="true"
+                      mozallowfullscreen="true"
+                      allowFullScreen
+                    />
+                  </div>
+                </FullWidthContainer>
+              )}
             </Fragment>
           )
         })}

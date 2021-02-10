@@ -11,35 +11,49 @@ export function OldMeetupsContainer () {
   return (
     <StaticQuery
       query={graphql`
-            {
-              allMarkdownRemark(
-                filter: { frontmatter: { status: { eq: "done" } } }
-              ) {
-                edges { node { frontmatter {
-                  id
-                  status
-                  date
-                  image
-                  title
-                  sponsor { name }
-                  venue { name }
-                  talks {
-                      id
-                      title
-                      video
-                      speakers {
-                          id
-                          name
-                          link
-                      }
-                  }
-                }
-              } } }
+{
+  allMarkdownRemark(filter: { frontmatter: { status: { eq: "done" } } }) {
+    edges {
+      node {
+        parent {
+          ... on File {
+            name
+          }
+        }
+        frontmatter {
+          id
+          status
+          date
+          image
+          title
+          sponsor {
+            name
+          }
+          venue {
+            name
+          }
+          talks {
+            id
+            title
+            video
+            speakers {
+              id
+              name
+              link
             }
+          }
+        }
+      }
+    }
+  }
+}
             `}
       render={({ allMarkdownRemark: { edges } }) => {
         const meetups = edges
-          .map(edge => edge.node.frontmatter)
+          .map(edge => ({
+            ...edge.node.frontmatter,
+            filename: edge.node.parent.name
+          }))
           .sort((a, b) => {
             const aDate = parseDate(a.date)
             const bDate = parseDate(b.date)

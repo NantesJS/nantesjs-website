@@ -15,7 +15,7 @@ Talk.propTypes = {
       link: string,
     })),
     title: string.isRequired,
-    description: string.isRequired,
+    description: string,
   })
 }
 
@@ -27,7 +27,7 @@ export function Talk ({ talk }) {
         <h2 className={styles.talk__title}>{he.decode(talk.title)}</h2>
         <div
           className={styles.talk__description}
-          dangerouslySetInnerHTML={{ __html: he.decode(talk.description) }}
+          dangerouslySetInnerHTML={{ __html: he.decode(talk.description ?? "") }}
         />
         <div className={styles.talk__speakers}>
           <FontAwesomeIcon

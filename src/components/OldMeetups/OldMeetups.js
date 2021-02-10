@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { array } from 'prop-types'
-import { withPrefix } from 'gatsby'
+import { withPrefix, Link } from 'gatsby'
 import he from 'he'
 
 import isUrl from 'is-url'
@@ -103,12 +103,14 @@ export function OldMeetups ({ meetups }) {
               </div>
               <div className={styles.meetup__content}>
                 <header className={styles.meetup__header}>
-                  <h4
-                    className={styles.meetup__title}
-                    title={meetup.title}
-                  >
-                    {meetup.title}
-                  </h4>
+                  <Link to={meetup.filename}>
+                    <h4
+                      className={styles.meetup__title}
+                      title={meetup.title}
+                    >
+                      {meetup.title}
+                    </h4>
+                  </Link>
                   <div className={styles.meetup__sponsors}>
                     <p>
                       {meetup.sponsor && (
