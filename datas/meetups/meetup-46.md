@@ -32,7 +32,7 @@ Je vous invite à en faire un tour d&#x27;horizon :
 - comment on l&#x27;utilise *concrètement* ?
 
 Pour finir, nous aborderons également les nouveaux venus WebXR et WebGPU.'
-    video: 'https://youtu.be/0Z0yMeqzJdQ'
+    video: '0Z0yMeqzJdQ'
     speakers:
       -
           id: 5v01cNWaigVEwBblxWdlnvGFDPQ2
@@ -47,7 +47,7 @@ Il arrive aussi parfois qu&#x27;on soit dans le cas d&#x27;une architecture micr
 Au travers d&#x27;un REX, voyons comment des technologies comme rxjs, redux ou encore les custom events peuvent nous aider. 
 Passons en revue les différentes techniques de synchronisation avec leurs avantage et leurs inconvénients.
 '
-    video: 'https://youtu.be/5jA_DS177U0'
+    video: '5jA_DS177U0'
     speakers:
       -
           id: eGnhzQUxcnR1V3RjyaMSxLD0udH2

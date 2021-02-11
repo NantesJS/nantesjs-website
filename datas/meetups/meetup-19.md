@@ -28,7 +28,7 @@ talks:
             -
                 id: ca47363a-a28d-49df-af9d-99d851f68814
                 name: 'Pierre Alban Dewitte'
-                link: 'http://padewitte.tumblr.com/'
+                link: 'padewitte'
     -
         id: 053863e6-aa10-46af-8db5-9a51a2ad23e0
         title: 'Transducers en transat'
@@ -36,5 +36,5 @@ talks:
             -
                 id: a6e17615-fbc7-43a7-a6c1-9b82d4a10810
                 name: 'Bruno Heridet'
-                link: 'http://delapouite.com/'
+                link: 'delapouite'
 image: /images/meetup/ionic.png
