@@ -20,6 +20,7 @@ talks:
     description: 'La fin est proche. Votre application est presque prête et il faudra bientôt la déployer. Et avec le déploiement viendra inévitablement les ajustements sans fin afin de finalement avoir une application qui fonctionne dans un environement de production. Si seulement il y avait un moyen de s&#x27;assurer que tout fonctionne plus tôt... C&#x27;est là que les conteneurs viennent en jeu. Avec les conteneurs, non seulement vous pourrez tester dans un environement similaire, vous pourrez rouler votre code dans l&#x27;environment de production. Dans cette présentation, les participants apprendront comment créer des applications conteneur-friendly, comment les utiliser pour partager leur code et finalement comment s&#x27;en servir pour déployer dans un serveur de production avec peu d&#x27;efforts.
 
 '
+    video: 'et0Ip1Fd9_s?t=813'
     speakers:
       -
           id: '81dq3650yCQgJC0msNePh3alIDs2'
@@ -32,6 +33,7 @@ talks:
 
 Venez dans cette session pour découvrir quelles APIs vous allez pouvoir utiliser demain dans vos applications web.
 '
+    video: 'et0Ip1Fd9_s?t=3072'
     speakers:
       -
           id: 'bAkrQrssjgU1zb5V2y2QpVnuCmf1'
