@@ -24,6 +24,7 @@ Et pourtant, on préfère optimiser pour Internet Explorer plutôt que pour les 
 Pour changer, regardons ensemble ce que les navigateurs ont mis en place ces dernières années pour nous aider à construire des applications web inclusives. Des outils (Google's Lighthouse, Microsoft's Accessibility Insights, ...) aux APIs (Text-to-speech, aria-live, ...), ce tour d'horizon vous donnera toutes les ressources nécessaires pour vous accompagner dans l'évolution vers un web plus accessible. 👐
 
 Note: Ce talk sera accessible aux personnes présentant des déficiences visuelles et auditives."
+    video: 'diJAyifTaSc?t=866'
     speakers:
       -
           id: 'f8fc33c9-ac04-43e5-835c-e71bfb8469b7'
@@ -37,6 +38,7 @@ Note: Ce talk sera accessible aux personnes présentant des déficiences visuell
 Comment diffuser cela plus largement à l'extérieur ? Quelles sont les bases pour créer \"sa\" marque ? Comment initier cette démarche ?
 
 L'idée est de présenter quelques concepts du Self-Marketing et d'imaginer ensemble une déclinaison pour nous développeur."
+    video: 'diJAyifTaSc?t=3085'
     speakers:
       -
           id: 'e2c55863-a770-43d0-bacd-d4a8e878828e'
