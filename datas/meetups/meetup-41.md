@@ -24,6 +24,7 @@ talks:
     title: 'Nuxt.js, ou comment faire des applications universelles avec des fichiers'
     description: 'Nuxt.js est un framework JavaScript basé sur Vue.js. Au départ, il a commencé simple, un fichier = une route, comme en PHP. Au fil du temps, nous avons ajouté cette logique de fichiers pour d’autres fonctionnalités, donnant la possibilité à n’importe quel développeur, connaissant simplement le nom des dossiers et la syntaxe des fichiers, de créer des applications universelles hautement performantes sans compromettre l’experience utilisateur. 
 Dans ce live coding interactif, Sebastien va presenter comment developper une PWA en 20 minutes à partir de zéro avec Nuxt.js.'
+    video: '0G3W6RN1VAY'
     speakers:
       -
           id: d50385f2-b254-4627-9fef-5db15ba0a81a
