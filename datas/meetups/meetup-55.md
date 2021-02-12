@@ -3,7 +3,7 @@ id: 4d8a3fca-d85b-4694-b230-b34d70096a56
 status: next
 title: 'Meetup #55'
 date: '21/01/2021'
-image: /images/meetup/nuxt.svg
+image: /images/meetup/webcomponent.svg
 ticketsUrl: https://www.youtube.com/watch?v=JnV8xtnGzok 
 venue:
   id: '54608799'
