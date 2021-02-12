@@ -1,6 +1,6 @@
 ---
 id: 4d8a3fca-d85b-4694-b230-b34d70096a56
-status: next
+status: done
 title: 'Meetup #55'
 date: '21/01/2021'
 image: /images/meetup/vue.svg
