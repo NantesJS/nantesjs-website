@@ -29,6 +29,7 @@ Kat Marchán (développeuse npm) n&#x27;a pas tardé à répondre, elle aussi a 
 
 Creusons ensemble les raisons de cet engouement, et voyons quels sont les grandes stratégies mises en place par les grands !
 '
+    video: 'zoLXX0X0QNc'
     speakers:
       -
           id: HhHiAo4fknXntX5IU2yZqDKoyFI2
@@ -40,6 +41,7 @@ Creusons ensemble les raisons de cet engouement, et voyons quels sont les grande
     description: 'Aujourd’hui, le bitcoin est le premier cas d’usage connu de blockchain mais il est controversé pour sa consommation électrique et sa volatilité. Duniter peut se présenter comme une technologie blockchain alternative pour les crypto-monnaies d’échange. Au travers de ce talk vous découvrirez le fonctionnement de la technologie Duniter et pourquoi nous avons choisi de nous intéresser et nous engager dans cette blockchain avec la monnaie libre Ğ1 (“June”).
 
 Technos: NodeJS, Typescript, SQLite, LevelDB...'
+    video: 'yyC-T7T4Sc4'
     speakers:
       -
           id: wevl1x1RdPVYZMU602k55NzrN7A2
