@@ -25,6 +25,7 @@ talks:
     description: 'Introduit il y a bientôt trois ans, Yarn s&#x27;est depuis lors taillé une place solide dans l&#x27;écosystème JavaScript grâce à sa mise au premier plan des problèmes de stabilité et de consistance.
 
 Il est maintenant temps de découvrir ce que Yarn 2 nous réserve, et vous dévoiler les prochaines étapes de notre plan pour rendre vos applications plus stables, et vos cycles de développement plus simples.'
+    video: 'WfnoyRWcf-U'
     speakers:
       -
           id: p83AbNmpQjcnG3UgpW85nC8Kzir2
