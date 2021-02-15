@@ -4,6 +4,7 @@ status: next
 title: 'Meetup #56'
 date: '18/02/2021'
 image: /images/meetup/Typescript.svg
+ticketsUrl: https://youtu.be/5AWtVMdCFFo
 venue:
   id: '54608799'
   name: 'NantesJS'
