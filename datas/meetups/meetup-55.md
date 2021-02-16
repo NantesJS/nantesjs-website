@@ -5,6 +5,7 @@ title: 'Meetup #55'
 date: '21/01/2021'
 image: /images/meetup/webcomponent.svg
 ticketsUrl: https://www.youtube.com/watch?v=JnV8xtnGzok 
+remote: true
 venue:
   id: '54608799'
   name: 'NantesJS'

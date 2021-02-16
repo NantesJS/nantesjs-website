@@ -5,6 +5,7 @@ title: 'Meetup #51'
 date: '18/06/2020'
 image: /images/meetup/svelte.png
 ticketsUrl: https://youtu.be/iX8bsvS6s5c
+remote: true
 venue:
   id: '50201588'
   name: 'NantesJS'

@@ -5,6 +5,7 @@ title: 'Meetup #53'
 date: '15/10/2020'
 image: /images/meetup/maposaic.png
 ticketsUrl: https://youtu.be/IsRPxvxL9a0
+remote: true
 venue:
   id: '50201588'
   name: 'NantesJS'

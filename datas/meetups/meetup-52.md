@@ -5,6 +5,7 @@ title: 'Meetup #52'
 date: '17/09/2020'
 image: /images/meetup/accessibility-blue.png
 ticketsUrl: https://youtu.be/diJAyifTaSc
+remote: true
 venue:
   id: '50201588'
   name: 'NantesJS'

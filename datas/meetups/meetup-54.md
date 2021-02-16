@@ -5,6 +5,7 @@ title: 'Meetup #54'
 date: '19/11/2020'
 image: /images/meetup/react.svg
 ticketsUrl: https://youtu.be/_cxNZCiCepo
+remote: true
 venue:
   id: '54608799'
   name: 'NantesJS'
