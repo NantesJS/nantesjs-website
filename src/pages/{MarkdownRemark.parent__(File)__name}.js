@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import { TitleBar } from '../components/NextMeetup/TitleBar/TitleBar'
 import { Talk } from '../components/Talk'
 import { FullWidthContainer } from '../components/FullWidthContainer'
+import { Buttons } from '../components/NextMeetup/Buttons/Buttons'
 import styles from './meetup.module.css'
 
 Component.propTypes = {
@@ -30,7 +31,7 @@ Component.propTypes = {
 
 export default function Component ({ data }) {
   const [markdownData] = data.allMarkdownRemark.nodes
-  const { title, image, sponsor, venue, date, talks } = markdownData.frontmatter
+  const { title, image, sponsor, venue, date, talks, remote, ticketsUrl, status } = markdownData.frontmatter
 
   return (
     <Layout>
@@ -68,6 +69,9 @@ export default function Component ({ data }) {
           )
         })}
       </div>
+      { status === 'next' && remote && (
+        <Buttons ticketsUrl={ticketsUrl} remote={remote} />
+      )}
     </Layout>
   )
 }
@@ -100,6 +104,9 @@ export const query = graphql`
               link
             }
           }
+          status
+          ticketsUrl
+          remote
         }
       }
     }
