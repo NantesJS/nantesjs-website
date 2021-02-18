@@ -5,6 +5,7 @@ title: 'Meetup #50'
 date: '19/05/2020'
 image: /images/meetup/container.png
 ticketsUrl: https://youtu.be/et0Ip1Fd9_s
+remote: true
 venue:
   id: '50201588'
   name: 'NantesJS'

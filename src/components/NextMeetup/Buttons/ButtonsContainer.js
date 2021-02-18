@@ -15,15 +15,17 @@ export function ButtonsContainer () {
                 edges { node { frontmatter {
                   id
                   ticketsUrl
+                  remote
                 }
               } } }
             }
             `}
       render={({ allMarkdownRemark: { edges } }) => {
-        const { ticketsUrl } = edges[0].node.frontmatter
+        const { ticketsUrl, remote } = edges[0].node.frontmatter
         return (
           <Buttons
             ticketsUrl={ticketsUrl}
+            remote={remote}
           />
         )
       }}
