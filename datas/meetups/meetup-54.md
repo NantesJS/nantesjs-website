@@ -19,7 +19,7 @@ talks:
     id: 'Q317YQmAU1Z0PeA8LYn9'
     title: 'What is React&#x27;s concurrent mode?'
     description: 'This talk aims to introduce developers to the future React&#x27;s concurrent mode which will be soon available. Together we will see how a render works today and how concurrent mode improves its workflow. We also will see how this new way to render components can quickly improve the user experience and the developer experience through several concrete UI patterns. Finally, we will see how to get ready today for this incoming feature.'
-    video: '_cxNZCiCepo?t=3519'
+    video: '_cxNZCiCepo?start=3519'
     speakers:
       -
           id: 'gK1Ua3sCQuPc46SyKan5cYK2wAk2'
