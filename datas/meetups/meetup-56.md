@@ -25,6 +25,7 @@ JavaScript est un langage flexible à l&#x27;extrême, et les développeurs ne s
 TypeScript 4.2 est sur le point de sortir. Faisons une récapitulatif !
 
 Dans ce talk je vous présenterai une sélection de types insolites ainsi que les nouveautés 2021 de TypeScript. L&#x27;objectif est de s&#x27;ouvrir l&#x27;esprit sur ce qu&#x27;un système de type est capable d&#x27;exprimer."
+    video: '5AWtVMdCFFo?t=680'
     speakers:
       -
           id: '7hX4q2nlIWTY770efZKTMIqWRSr2'
@@ -41,6 +42,7 @@ Vous avez essayé de comprendre les licences Open Source mais vous vous êtes se
 Si oui, alors je vous propose de mettre votre tenue d'aventurier et de partir à la découverte des Licences Open Source. 🤠 Nous explorerons la jungle des licences (GPL, LGPL, MIT, BSD, Apache,...), gravirons les monts Copyright et Copyleft, découvrirons les plaines des outils de détection de licences, et franchirons des rivières à l’aide de nos guides de l’Open Source… et avec de la chance nous obtiendrons les réponses à nos questions.
 
 Alors si vous êtes prêt pour partir à l'aventure, rejoignez-moi ! 😀"
+    video: '5AWtVMdCFFo?t=2511'
     speakers:
       -
           id: 'oaYEqMySGafwsp9LayTFKiZQx3n1'
