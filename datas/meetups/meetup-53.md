@@ -22,7 +22,7 @@ talks:
 
 At the end of this talk you will know the basics that allow you to modify a canvas in a web project. You will know why WebGL renderings perform much better than an algorithm that iterates over all pixels.
 "
-    video: 'IsRPxvxL9a0?t=682'
+    video: 'IsRPxvxL9a0?start=682'
     speakers:
       -
           id: '1c109338-5490-4a68-ade4-707dd17cfa44'
@@ -35,7 +35,7 @@ At the end of this talk you will know the basics that allow you to modify a canv
                   
 Je vous partage ici les tips que j'ai mis en place pour réussir à parler devant 400 personnes.
 "
-    video: 'IsRPxvxL9a0?t=2457'
+    video: 'IsRPxvxL9a0?start=2457'
     speakers:
       -
           id: '934e92af-7a5e-420d-b25e-d0395113d265'

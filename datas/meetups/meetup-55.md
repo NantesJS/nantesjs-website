@@ -27,7 +27,7 @@ Dans ce contexte, les Web Components (ou Composants Web en français) représent
 Ça c'est la théorie, mais comment faire ça en pratique ? Comment construit-on son catalogue de composants, comment on le structure, comment distribue-t-on ces composants ?
 
 Dans ce talk on donnera des pistes, des retour d'expériences et des bonne pratiques pour concevoir, développer et gérer un catalogue de composants web, et comment les utiliser dans les différents frameworks web."
-    video: 'JnV8xtnGzok?t=815'
+    video: 'JnV8xtnGzok?start=815'
     speakers:
       -
           id: 'gK1Ua3sCQuPc46SyKan5cYK2wAk2'
@@ -41,7 +41,7 @@ Dans ce talk on donnera des pistes, des retour d'expériences et des bonne prati
 Aussi, et en avant première, intéressons nous au futur de Nuxt en abordant quelques nouveautés prévues pour la version 3 !
 
 "
-    video: 'JnV8xtnGzok?t=2252'
+    video: 'JnV8xtnGzok?start=2252'
     speakers:
       -
           id: 'sFPqcm3bkdcnJgLRZ9h2Wh81TRw2'
