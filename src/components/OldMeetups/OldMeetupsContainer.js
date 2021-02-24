@@ -11,56 +11,48 @@ export function OldMeetupsContainer () {
   return (
     <StaticQuery
       query={graphql`
-{
-  allMarkdownRemark(filter: { frontmatter: { status: { eq: "done" } } }) {
-    edges {
-      node {
-        parent {
-          ... on File {
-            name
-          }
-        }
-        frontmatter {
-          id
-          status
-          date
-          image
-          title
-          sponsor {
-            name
-          }
-          venue {
-            name
-          }
-          talks {
-            id
-            title
-            video
-            speakers {
-              id
-              name
-              link
+            {
+              allMarkdownRemark(
+                filter: { frontmatter: { status: { eq: "done" } } }
+              ) {
+                nodes { frontmatter {
+                  id
+                  status
+                  date
+                  image
+                  title
+                  sponsor { name }
+                  venue { name }
+                  talks {
+                      id
+                      title
+                      video
+                      speakers {
+                          id
+                          name
+                          link
+                      }
+                  }
+                }
+              } }
             }
-          }
-        }
-      }
-    }
-  }
-}
             `}
-      render={({ allMarkdownRemark: { edges } }) => {
-        const meetups = edges
-          .map(edge => ({
-            ...edge.node.frontmatter,
-            filename: edge.node.parent.name
-          }))
+      render={({ allMarkdownRemark: { nodes } }) => {
+        const years = [...new Set(nodes.map(node => {
+          return parseDate(node.frontmatter.date).getFullYear()
+        }))]
+        years.pop() // remove current year (lazy ass)
+
+        const meetups = nodes
+          .filter(node => node.frontmatter.date.includes(new Date().getFullYear()))
+          .map(node => node.frontmatter)
           .sort((a, b) => {
             const aDate = parseDate(a.date)
             const bDate = parseDate(b.date)
 
             return compareDesc(aDate, bDate)
           })
-        return <OldMeetups meetups={meetups} />
+        return <OldMeetups meetups={meetups} years={years} />
       }}
     />
   )

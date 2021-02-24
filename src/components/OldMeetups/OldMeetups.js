@@ -68,15 +68,13 @@ OldMeetups.propTypes = {
   meetups: array,
 }
 
-export function OldMeetups ({ meetups }) {
+export function OldMeetups ({ meetups, years }) {
   return (
+    <>
     <section>
       <FullWidthContainer className={styles.oldMeetups__hero}>
         <div>
           <h3 className={styles.oldMeetups__title}>Évènements passés</h3>
-          <p className={styles.oldMeetups__description}>
-            {meetups.length} meetups depuis janvier 2012
-          </p>
         </div>
       </FullWidthContainer>
       {meetups.map(meetup => {
@@ -143,5 +141,20 @@ export function OldMeetups ({ meetups }) {
         )
       })}
     </section>
+    <section>
+      <FullWidthContainer className={styles.oldMeetups__hero}>
+        <div>
+          <h3 className={styles.oldMeetups__title}>Consulter les événements des autres années</h3>
+        </div>
+      </FullWidthContainer>
+        <nav><ul>{
+          years.sort((a, b) => b - a).map(year => {
+          return <li>
+            <Link to={`/${year}`}>{year}</Link>
+              </li>
+        })
+        }</ul></nav>
+    </section>
+    </>
   )
 }
