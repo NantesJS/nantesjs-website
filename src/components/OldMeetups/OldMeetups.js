@@ -66,6 +66,7 @@ function Talks ({ talks }) {
 
 OldMeetups.propTypes = {
   meetups: array,
+  years: array,
 }
 
 export function OldMeetups ({ meetups, years }) {
@@ -147,13 +148,17 @@ export function OldMeetups ({ meetups, years }) {
           <h3 className={styles.oldMeetups__title}>Consulter les événements des autres années</h3>
         </div>
       </FullWidthContainer>
-        <nav><ul>{
+      <nav>
+        <ul>{
           years.sort((a, b) => b - a).map(year => {
-          return <li>
-            <Link to={`/${year}`}>{year}</Link>
+            return (
+              <li key={year}>
+                <Link to={`/${ year }`}>{year}</Link>
               </li>
-        })
-        }</ul></nav>
+            )
+          })
+        }</ul>
+      </nav>
     </section>
     </>
   )
