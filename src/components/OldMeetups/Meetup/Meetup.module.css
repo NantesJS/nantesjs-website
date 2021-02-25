@@ -1,20 +1,3 @@
-.old-meetups__hero {
-  height: 8rem;
-  margin: 2rem 0;
-}
-
-.old-meetups__title {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: 300;
-}
-
-.old-meetups__description {
-  margin-top: 0;
-  font-size: 1.1rem;
-  line-height: 1rem;
-}
-
 .meetup {
   display: flex;
   flex-direction: row;
@@ -32,6 +15,16 @@
   align-items: center;
 }
 
+.meetup__header h4 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
 .meetup__date {
   height: 100%;
   margin-right: 1rem;
@@ -39,17 +32,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.meetup__header h4 {
-  margin: 0;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 2rem;
-  overflow: hidden;
-  text-align: center;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
 }
 
 .meetup__date > div:first-child {
@@ -65,37 +47,6 @@
 
 .meetup__content {
   width: calc(100% - 100px);
-}
-
-.talk {
-  display: flex;
-  justify-content: space-between;
-}
-
-.talk__title {
-  margin-top: 1rem;
-  margin-bottom: 0;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
-.talk__speaker {
-  font-weight: 300;
-}
-
-.talk__video {
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-.talk__video svg {
-  width: 1.125em;
-}
-
-.talks {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .meetup__sponsors {
@@ -164,13 +115,12 @@
   }
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
+@media screen and (min-width: 768px) {
+  .hideOnMobile {
+    display: block;
+  }
 
-nav li + li {
-  padding-left: 15px;
+  .showOnMobile {
+    display: none;
+  }
 }

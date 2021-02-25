@@ -87,6 +87,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         meetups: meetups.map(meetup => meetup.frontmatter),
         years,
+        year,
       },
     })
   })
