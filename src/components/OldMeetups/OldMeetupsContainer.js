@@ -38,20 +38,28 @@ export function OldMeetupsContainer () {
             }
             `}
       render={({ allMarkdownRemark: { nodes } }) => {
-        const years = [...new Set(nodes.map(node => {
-          return parseDate(node.frontmatter.date).getFullYear()
-        }))]
-        years.pop() // remove current year (lazy ass)
+        const currentYear = new Date().getFullYear()
 
-        const meetups = nodes
-          .filter(node => node.frontmatter.date.includes(new Date().getFullYear()))
-          .map(node => node.frontmatter)
-          .sort((a, b) => {
-            const aDate = parseDate(a.date)
-            const bDate = parseDate(b.date)
+        const allMeetups = nodes
+          .map(node => {
+            const parsedDate = parseDate(node.frontmatter.date)
 
-            return compareDesc(aDate, bDate)
+            return {
+              ...node.frontmatter,
+              parsedDate,
+              year: parsedDate.getFullYear(),
+            }
           })
+
+        const meetups = allMeetups
+          .filter(meetup => meetup.year === currentYear)
+          .sort((a, b) => {
+            return compareDesc(a.parsedDate, b.parsedDate)
+          })
+
+        const pastYearsMeetups = allMeetups.filter(meetup => meetup.year != currentYear)
+        const years = [...new Set(pastYearsMeetups.map(meetup => meetup.year))]
+
         return <OldMeetups meetups={meetups} years={years} />
       }}
     />
