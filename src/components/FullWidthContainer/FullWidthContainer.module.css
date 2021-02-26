@@ -1,7 +1,3 @@
-.wrapper-full-width {
-  /*position: relative;*/
-}
-
 .wrapper-full-width__background:first-child {
   position: absolute;
   left: 0;
