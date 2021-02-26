@@ -13,7 +13,6 @@ require("dotenv").config({
   path: `.env.${ process.env.NODE_ENV }`,
 })
 
-const groupBy = require('lodash.groupby')
 const path = require('path')
 const { parse } = require('date-fns/fp')
 
@@ -39,6 +38,7 @@ exports.onCreateNode = ({
     })
   }
 }
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
@@ -73,16 +73,27 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  const meetupsByYear = groupBy(result.data.allMarkdownRemark.nodes, node => {
-    return parseDate(node.frontmatter.date).getFullYear()
-  })
-
   const currentYear = new Date().getFullYear()
-  const years = Object.keys(meetupsByYear).filter(year => year != currentYear)
 
-  Object.entries(meetupsByYear).forEach(([year, meetups]) => {
+  const meetupsByYear = result.data.allMarkdownRemark.nodes.reduce((acc, node) => {
+    const year = parseDate(node.frontmatter.date).getFullYear()
+
+    if (year === currentYear) return acc
+
+    if (acc.has(year)) {
+      acc.get(year).push(node)
+    } else {
+      acc.set(year, [node])
+    }
+
+    return acc
+  }, new Map())
+
+  const years = Array.from(meetupsByYear.keys())
+
+  meetupsByYear.forEach((meetups, year) => {
     createPage({
-      path: year,
+      path: `/${ year }`,
       component: path.resolve(`./src/templates/meetups-per-year.js`),
       context: {
         meetups: meetups.map(meetup => meetup.frontmatter),
