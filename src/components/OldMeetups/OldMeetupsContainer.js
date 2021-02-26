@@ -15,39 +15,47 @@ export function OldMeetupsContainer () {
               allMarkdownRemark(
                 filter: { frontmatter: { status: { eq: "done" } } }
               ) {
-                nodes { frontmatter {
-                  id
-                  status
-                  date
-                  image
-                  title
-                  sponsor { name }
-                  venue { name }
-                  talks {
-                      id
-                      title
-                      video
-                      speakers {
-                          id
-                          name
-                          link
+                edges {
+                  node {
+                    parent  {
+                      ... on File {
+                        name
                       }
-                  }
-                }
-              } }
+                    }
+                    frontmatter {
+                      id
+                      status
+                      date
+                      image
+                      title
+                      sponsor { name }
+                      venue { name }
+                      talks {
+                          id
+                          title
+                          video
+                          speakers {
+                              id
+                              name
+                              link
+                          }
+                      }
+                    }
+              } } }
             }
             `}
-      render={({ allMarkdownRemark: { nodes } }) => {
+      render={({ allMarkdownRemark: { edges } }) => {
         const currentYear = new Date().getFullYear()
 
-        const allMeetups = nodes
-          .map(node => {
+        const allMeetups = edges
+          .map(({ node }) => {
             const parsedDate = parseDate(node.frontmatter.date)
 
             return {
               ...node.frontmatter,
               parsedDate,
               year: parsedDate.getFullYear(),
+              filename: node.parent.name,
             }
           })
 

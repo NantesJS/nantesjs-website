@@ -36,7 +36,7 @@ export function Meetup ({ date, filename, image, sponsor, talks, title, venue })
       </div>
       <div className={styles.meetup__content}>
         <header className={styles.meetup__header}>
-          <Link to={filename}>
+          <Link to={`/${ filename }`}>
             <h4
               className={styles.meetup__title}
               title={title}

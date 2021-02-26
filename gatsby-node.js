@@ -44,7 +44,13 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
     query {
       allMarkdownRemark(filter: { frontmatter: { status: { eq: "done" } } }) {
-          nodes {
+        edges {
+          node {
+            parent  {
+              ... on File {
+                name
+              }
+            }
             frontmatter {
               id
               status
@@ -69,14 +75,19 @@ exports.createPages = async ({ graphql, actions }) => {
               }
             }
           }
+        }
       }
     }
   `)
 
   const currentYear = new Date().getFullYear()
 
-  const meetupsByYear = result.data.allMarkdownRemark.nodes.reduce((acc, node) => {
-    const meetup = node.frontmatter
+  const meetupsByYear = result.data.allMarkdownRemark.edges.reduce((acc, { node }) => {
+    const meetup = {
+      ...node.frontmatter,
+      filename: node.parent.name,
+    }
+
     const year = parseDate(meetup.date).getFullYear()
 
     if (year === currentYear) return acc
