@@ -76,14 +76,15 @@ exports.createPages = async ({ graphql, actions }) => {
   const currentYear = new Date().getFullYear()
 
   const meetupsByYear = result.data.allMarkdownRemark.nodes.reduce((acc, node) => {
-    const year = parseDate(node.frontmatter.date).getFullYear()
+    const meetup = node.frontmatter
+    const year = parseDate(meetup.date).getFullYear()
 
     if (year === currentYear) return acc
 
     if (acc.has(year)) {
-      acc.get(year).push(node)
+      acc.get(year).push(meetup)
     } else {
-      acc.set(year, [node])
+      acc.set(year, [meetup])
     }
 
     return acc
@@ -96,7 +97,7 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/${ year }`,
       component: path.resolve(`./src/templates/meetups-per-year.js`),
       context: {
-        meetups: meetups.map(meetup => meetup.frontmatter),
+        meetups,
         years,
         year,
       },
