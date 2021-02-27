@@ -1,0 +1,1 @@
+export { CodeOfConduct } from './CodeOfConduct'

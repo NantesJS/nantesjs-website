@@ -1,6 +1,7 @@
 import React from 'react'
 import { Menu } from './Menu'
 import { AboutLink } from './AboutLink'
+import { CodeOfConduct } from './CodeOfConductLink'
 import { ContributorsLink } from './ContributorsLink'
 import { MeetupsLink } from './MeetupsLink'
 import { Logo } from './Logo'
@@ -22,6 +23,7 @@ export function Header () {
             <Menu>
               <MeetupsLink />
               <ContributorsLink />
+              <CodeOfConduct />
               <AboutLink />
               <a
                 target="_blank"

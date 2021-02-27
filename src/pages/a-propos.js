@@ -58,10 +58,6 @@ export default function About () {
         `}
       </p>
       <SocialLinks/>
-      <h2>Code de conduite</h2>
-
-      <a href="/code-de-conduite">Voir le code de conduite du NantesJS</a>
-
     </Layout>
   )
 }
