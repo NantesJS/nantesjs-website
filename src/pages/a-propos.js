@@ -12,7 +12,7 @@ export default function About () {
       <h1>Communauté nantaise des utilisateurs de javascript</h1>
       <p>
         NantesJS est un groupe nantais informel entre utilisateurs et
-        passionnés de JavaScript/ECMAScript. Son but est de favoriser 
+        passionnés de JavaScript/ECMAScript. Son but est de favoriser
         les échanges et rencontres des utilisateurs/développeurs autour
         de cette technologie, de ses possibilités, de son avenir...
       </p>
