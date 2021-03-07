@@ -19,8 +19,9 @@
   margin: 0;
   font-size: 1.6rem;
   font-weight: 600;
-  white-space: nowrap;
+  line-height: 2rem;
   overflow: hidden;
+  text-align: center;
   text-overflow: ellipsis;
   text-transform: uppercase;
 }
