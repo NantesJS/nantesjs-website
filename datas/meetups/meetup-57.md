@@ -4,7 +4,7 @@ status: next
 title: 'Meetup #57'
 date: '18/03/2021'
 image: /images/meetup/css3.svg
-ticketsUrl: https://youtu.be/5AWtVMdCFFo
+ticketsUrl: https://youtu.be/tc0EUTB6Ov8
 remote: true
 venue:
   id: '54608799'
