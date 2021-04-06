@@ -4,7 +4,8 @@ status: next
 title: 'Meetup #58'
 date: '15/04/2021'
 image: NOT_IMPLEMENTED_YET
-ticketsUrl: https://www.youtube.com/c/NantesJS
+ticketsUrl: https://youtu.be/fTZNIHIV9qw
+remote: true
 venue:
   id: '54608799'
   name: 'NantesJS'
