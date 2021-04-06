@@ -22,7 +22,7 @@ talks:
       -
           id: 'mgaHfTteB0VlvHg0kEK8J4XUm5G2'
           name: 'Stéphanie w'
-          link: 'https://twitter.com/walterstephanie'
+          link: 'walterstephanie'
   -
     id: 'mnNeefOAmqyKHdfbZSQW'
     title: 'Mon application en Serverless'
@@ -33,4 +33,4 @@ talks:
       -
           id: 'X2rcvFSHBTQJTxL5IHsgRWrtPUK2'
           name: 'Marie Minasyan'
-          link: 'https://twitter.com/marie_minasyan'
+          link: 'marie_minasyan'
