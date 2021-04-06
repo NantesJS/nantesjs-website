@@ -33,4 +33,4 @@ talks:
       -
           id: 'X2rcvFSHBTQJTxL5IHsgRWrtPUK2'
           name: 'Marie Minasyan'
-          link: 'marie_minasyan'
+          link: 'MarieMinasyan'
