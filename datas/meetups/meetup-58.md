@@ -3,7 +3,7 @@ id: 6a30b895-6a69-4403-af28-d633895fba12
 status: next
 title: 'Meetup #58'
 date: '15/04/2021'
-image: NOT_IMPLEMENTED_YET
+image: /images/logotype.png
 ticketsUrl: https://youtu.be/fTZNIHIV9qw
 remote: true
 venue:
