@@ -1,6 +1,6 @@
 ---
 id: 6a30b895-6a69-4403-af28-d633895fba12
-status: next
+status: done
 title: 'Meetup #58'
 date: '15/04/2021'
 image: /images/logotype.png
