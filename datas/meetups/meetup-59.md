@@ -1,6 +1,6 @@
 ---
 id: 46d28c6c-f783-4091-94b6-c31d68affdd9 
-status: next
+status: done
 title: 'Meetup #59'
 date: '20/05/2021'
 image: /images/meetup/codepush.png
