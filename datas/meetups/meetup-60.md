@@ -3,21 +3,17 @@ id: db74ce68-29ef-4981-8880-306c51962e78
 status: next
 title: 'Meetup #60'
 date: '17/06/2021'
-image: NOT_IMPLEMENTED_YET
-ticketsUrl: https://www.eventbrite.fr/e/meetup-60-tickets-158578890731
+image: /images/meetup/chaosmonkey.png
+ticketsUrl: "https://youtu.be/KdlFYaDceak"
+remote: true
 venue:
-  id: '60870351'
-  name: 'Zenika Nantes'
-  link: 'http://nantes.zenika.com/'
-  postal_code: '44200'
-  address: 2ter Quai François Mitterrand
-  city: Nantes
-  latitude: 47.20740110000001
-  longitude: -1.5560268
+  id: '54608799'
+  name: 'NantesJS'
+  link: 'https://www.youtube.com/c/NantesJS'
 sponsor:
     id: '1b0a062c-c656-47ad-a31b-f64e53159f70'
-    name: 'Zenika Nantes'
-    link: 'http://nantes.zenika.com/'
+    name: 'NantesJS'
+    link: 'https://nantesjs.org'
 talks:
   -
     id: '1JCDNDDJZVMVPHgLqWap'
@@ -33,7 +29,7 @@ Mais étrangement, tous les livres, talks, tutoriels parlant de Chaos Engineerin
       -
           id: 'n18EtaJ86jR0lL3Sh2t10PIzTB52'
           name: 'Thibaud Courtoison'
-          link: 'https://twitter.com/Errorname_'
+          link: 'Errorname_'
   -
     id: 'sJFJA69H98KgPBNcwBIC'
     title: 'Recoder Paint en 2021 ? Rien de plus simple avec React et Canvas !'
@@ -53,4 +49,4 @@ A la fin du talk, vous saurez comment créer une librairie de dessin en front et
       -
           id: 'tRijnINDSrO6SSQRlwRb675jXSI2'
           name: 'Quentin Somerville'
-          link: 'https://twitter.com/https://twitter.com/QuentinSomervi1'
+          link: 'QuentinSomervi1'
