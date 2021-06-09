@@ -22,7 +22,7 @@ const formatContent = ({
       <p>${t.description}</p>
       <p>Par:</p>
       <ul>
-        ${t.speakers.reduce((b, s) => isUrl(s.link) ? (`${b}<li><a href="${s.link}">${s.name}</a></li>`) : 
+        ${t.speakers.reduce((b, s) => isUrl(s.link) ? (`${b}<li><a href="${s.link}">${s.name}</a></li>`) :
         `${b}<li><a href="${"https://twitter.com/"+s.link}">${s.name}</a></li>`, '')}
       </ul>
     `, '');
@@ -37,7 +37,7 @@ const formatContent = ({
     } = venue;
     const location = `
   ${link ? `<a href="${link}">${name}</a>`: name}<br/>
-  ${address} ${postal_code} ${city}
+  ${address ? `${address}` : ""} ${postal_code ? `${postal_code}` : ""} ${city ? `${city}` : ""}
   `;
 
   return `
