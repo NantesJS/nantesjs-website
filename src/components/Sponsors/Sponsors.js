@@ -9,7 +9,7 @@ export function Sponsors () {
   return (
     <Fragment>
       <FullWidthContainer className={styles.sponsors__hero}>
-        <h3 className={styles.sponsors__title}>Sponsors 2020</h3>
+        <h3 className={styles.sponsors__title}>Sponsors</h3>
       </FullWidthContainer>
       <div className={styles.sponsors__logos}>
         <a
