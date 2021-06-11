@@ -37,7 +37,7 @@ const formatContent = ({
     } = venue;
     const location = `
   ${link ? `<a href="${link}">${name}</a>`: name}<br/>
-  ${address ? `${address}` : ""} ${postal_code ? `${postal_code}` : ""} ${city ? `${city}` : ""}
+  ${address ?? ""} ${postal_code ?? ""} ${city ?? ""}
   `;
 
   return `
