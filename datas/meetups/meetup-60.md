@@ -1,6 +1,6 @@
 ---
 id: db74ce68-29ef-4981-8880-306c51962e78
-status: next
+status: done
 title: 'Meetup #60'
 date: '17/06/2021'
 image: /images/meetup/chaosmonkey.png
