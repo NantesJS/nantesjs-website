@@ -37,7 +37,7 @@ Les machines à états sont reconnues comme des modèles computationnel et des a
       -
           id: 'HPoPLdLqcPZNGJchqgCJVd0sHPX2'
           name: 'Aurélien Meunier'
-          link: ''
+          link: 'aumeunier'
   -
     id: 'g4tqKCRaLZJaOkIArCLB'
     title: 'Angular, Vue, React ... et si au final on s&#x27;en fichait ?'
