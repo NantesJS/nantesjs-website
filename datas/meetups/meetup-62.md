@@ -4,20 +4,16 @@ status: next
 title: 'Meetup #62'
 date: '28/10/2021'
 image: NOT_IMPLEMENTED_YET
+remote: true
 ticketsUrl: https://www.eventbrite.fr/e/meetup-62-tickets-195742359667
 venue:
-  id: '68900119'
-  name: 'Zenika Nantes'
-  link: 'http://nantes.zenika.com/'
-  postal_code: '44200'
-  address: 2ter Quai François Mitterrand
-  city: Nantes
-  latitude: 47.20740110000001
-  longitude: -1.5560268
+  id: '54608799'
+  name: 'NantesJS'
+  link: 'https://www.youtube.com/c/NantesJS'
 sponsor:
     id: '1b0a062c-c656-47ad-a31b-f64e53159f70'
-    name: 'Zenika Nantes'
-    link: 'http://nantes.zenika.com/'
+    name: 'NantesJS'
+    link: 'https://nantesjs.org'
 talks:
   -
     id: 'AuweTbtBSGAXTLXXGtkm'
@@ -39,7 +35,7 @@ Venez découvrir comment écrire de meilleurs types, comprendre clairement le fo
       -
           id: 'gcfwodh0NyZ2paisR1FQqGHUi7D3'
           name: 'Hadrien Lucas'
-          link: ''
+          link: 'LucasHadrien'
   -
     id: 'vl8XjeKBx24Ux5K3RN0A'
     title: 'Bien démarrer avec les expressions régulières'
@@ -57,4 +53,4 @@ Le but de cette présentation n’est pas de faire de vous un(e) expert(e) du su
       -
           id: '7CcuflNyCWYZSaLwg3fBPN7jpH52'
           name: 'Yann Picard de Muller'
-          link: 'https://twitter.com/YannPdeM'
+          link: 'YannPdeM'
