@@ -1,6 +1,6 @@
 ---
 id: 7b59d093-d611-46a1-b817-61713e67f4d0
-status: next
+status: done
 title: 'Meetup #62'
 date: '28/10/2021'
 image: NOT_IMPLEMENTED_YET
