@@ -18,7 +18,7 @@ export function Sponsors () {
         >
           <img
             alt="unirakun"
-            src={withPrefix('/images/sponsor/big_unirakun.png')}
+            src={withPrefix('/images/sponsor/unirakun.svg')}
           />
         </a>
         <a
@@ -27,7 +27,7 @@ export function Sponsors () {
         >
           <img
             alt="seyos"
-            src={withPrefix('/images/sponsor/seyos.png')}
+            src={withPrefix('/images/sponsor/seyos.svg')}
           />
         </a>
         <a
@@ -36,7 +36,7 @@ export function Sponsors () {
         >
           <img
             alt="zenika"
-            src={withPrefix('/images/sponsor/zenika.png')}
+            src={withPrefix('/images/sponsor/zenika.svg')}
           />
         </a>
         <a
@@ -72,7 +72,7 @@ export function Sponsors () {
         >
           <img
             alt="eleven labs"
-            src={withPrefix('/images/sponsor/eleven-labs.png')}
+            src={withPrefix('/images/sponsor/eleven-labs.svg')}
           />
         </a>
         <a
