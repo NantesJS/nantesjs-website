@@ -81,7 +81,7 @@ export function Sponsors () {
         >
           <img
             alt="lucca"
-            src={withPrefix('/images/sponsor/logo-lucca.svg')}
+            src={withPrefix('/images/sponsor/lucca.svg')}
           />
         </a>
       </div>
