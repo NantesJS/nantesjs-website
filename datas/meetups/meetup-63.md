@@ -1,6 +1,6 @@
 ---
 id: 7b59d093-d611-46a1-b817-61713e67f4d0
-status: next
+status: done
 title: 'Meetup #63'
 date: '20/01/2022'
 image: images/meetup/nuxt.png
