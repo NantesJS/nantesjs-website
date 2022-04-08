@@ -1,6 +1,6 @@
 ---
 id: 72426da8-9a48-11ec-b909-0242ac120002
-status: next
+status: done
 title: 'Meetup #64'
 date: '17/03/2022'
 image: images/meetup/cadenas.png

@@ -17,7 +17,7 @@ sponsor:
 talks:
   -
     id: 'AuweTbtBSGAXTLXXGtkm'
-    title: 'Explorons les stratégies de caches offertent sur les PWA'
+    title: 'Explorons les stratégies de caches offertes sur les PWA'
     description: "Quand on parle de PWA, il est question de Service Workers, c'est un fait. Etant donné que ce dernier nous permet de servir des fichiers hors-ligne, il est donc pertinent de se pencher sur les mécanismes de mises en cache proposés par ce dernier.
 
 A travers cette sessions, nous vous proposons de balayer les différentes et plus connues stratégies de mises en cache d'une PWA. Nous tacherons pour chacune de ces stratégies de vous proposer un exemple d'implémentation.
