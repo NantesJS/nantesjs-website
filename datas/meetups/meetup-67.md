@@ -4,7 +4,7 @@ status: next
 title: 'Meetup #67'
 date: '16/06/2022'
 image: images/meetup/angular2.png
-ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-66-338095702347
+ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-67-356230283367
 venue:
   id: 'b2c5e4ab-3ad2-40f4-8607-d34bc8b57c70'
   name: 'Lucca'
