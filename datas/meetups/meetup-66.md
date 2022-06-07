@@ -1,6 +1,6 @@
 ---
 id: 999fe1b0-6a7f-4205-9a5d-02a88b369a97
-status: next
+status: done
 title: 'Meetup #66'
 date: '19/06/2022'
 image: images/meetup/graphile.png
