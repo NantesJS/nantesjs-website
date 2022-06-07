@@ -35,9 +35,9 @@ En bref, on part à la découverte des Angular Standalone component 😁"
   -
     id: 'af072d73-0c11-41d2-8d9d-0f0f6eb0e5e3'
     title: "REX: [no & low & yes] code pour lancer notre nouveau projet"
-    description: "En novembre dernier je me suis associé à David pour lancer Clapclap avec l'ambition de faciliter l'organisation de commandes groupées aurprès de producteurs locaux et de marques engagées. On est 2, mais je suis seul 'à la tech'. 4 projets web / applications à lancer le plus vite possible pour pouvoir tester le marché, comment faire?
+    description: "En novembre dernier je me suis associé à David pour lancer Clapclap avec l'ambition de faciliter l'organisation de commandes groupées auprès de producteurs locaux et de marques engagées. On est 2, mais je suis seul 'à la tech'. 4 projets web / applications à lancer le plus vite possible pour pouvoir tester le marché, comment faire?
 
-Petit tour d'horizon de l'archi mise en place (et qui évolue quasiment toutes les semaines 😅) avec du JS notamment alors que mon parcours est plutôt orienté PHP 😱."
+Petit tour d'horizon de l'archi mis en place (et qui évolue quasiment toutes les semaines 😅) avec du JS notamment alors que mon parcours est plutôt orienté PHP 😱."
     speakers:
       -
           id: '45018db8-3a34-41b9-85ec-7f0f70f90c55'
