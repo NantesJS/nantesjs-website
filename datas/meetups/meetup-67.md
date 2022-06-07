@@ -10,10 +10,10 @@ venue:
   name: 'Lucca'
   link: 'https://lucca.fr'
   postal_code: 44000
-  address: 18 rue scribe
+  address: 3 Rue Michel Columb
   city: Nantes
-  latitude: 47.21418981367544
-  longitude: -1.5611433195786988
+  latitude: 47.20695
+  longitude: -1.5534403
 sponsor:
     id: 'af237b7d-3d7e-44ab-b26c-87b762db5889'
     name: 'NantesJS'
