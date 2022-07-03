@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Affiche</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+      body {
+        margin: 0
+      }
+      @page {
+        size: 21cm 29.7cm;
+        margin: 0;
+      }
+      div.page {
+        width: 21cm;
+        height: 29.7cm;
+        overflow: hidden;
+        background-color: #fbfbfb;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      #affiche {
+        position: relative;
+      }
+      .header {
+        position: relative;
+        height: 8.80cm;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header img {
+        height: 7.5cm;
+      }
+      .date {
+        width: 3cm;
+        height: 3cm;
+        border-radius: 3cm;
+        background-color: #2d2d2b;
+        position: absolute;
+        right: 0.5cm;
+        top: 0.5cm;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fbfbfb;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+      }
+      #day {
+        font-size: 16.08mm;
+        line-height: 16.08mm;
+      }
+      #month {
+        font-size: 8.04mm;
+        line-height: 8.04mm;
+      }
+      #title {
+        height: 25.4mm;
+        font-size: 13.5mm;
+        line-height: 14mm;
+        margin-bottom: 10mm;
+        font-family: 'Open Sans', sans-serif;
+        color: #2d2d2b;
+        text-align: center;
+        font-weight: 900;
+      }
+      #sponsors {
+        height: 1.5cm;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.63mm;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+      }
+      #sponsors span {
+        margin-left: 1.5mm;
+      }
+      #sponsors i {
+        color: #e8d432;
+      }
+      #rules {
+        height: 13cm;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        list-style: none;
+      }
+      #rules ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        text-align: center;
+        margin: 0;
+      }
+      #rules li {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 4mm;
+      }
+      #rules h3 {
+        margin-top: 2mm;
+        font-family: 'Open Sans', sans-serif;
+      }
+      #rules li h2 {
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 1mm;
+      }
+      #rules li div {
+        flex: 1;
+      }
+      #footer {
+        width: 100%;
+        background-color: #2d2d2b;
+        height: 3.15cm;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #footer .accroche {
+        font-size: 8.47mm;
+        color: #fbfbfb;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+      }
+      #footer #link {
+        font-size: 6.35mm;
+        color: #fbfbfb;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="affiche" class="page">
+      <div class="header">
+        <div class="date">
+          <span id="day">{{day}}</span>
+          <span id="month">{{month}}</span>
+        </div>
+        <img src="https://nantesjs.org/images/logotype.png" alt="Logo de NantesJS">
+      </div>
+      <div id="title">{{title}}</div>
+      <div id="sponsors">
+        <div><i class="fa fa-beer fa-lg" aria-hidden="true"></i><span id="eat">{{sponsor}}</span></div>
+        <div><i class="fa fa-home fa-lg" aria-hidden="true"></i><span id="place">{{venue}}</span></div>
+      </div>
+      <div id="rules">
+        <ul>
+          <li>{{{crossedSwordsIcon}}}<div><h2>Réunissez votre tribu</h2>Constituez votre équipe sur place ou amenez des amis.</div>{{{crossedSwordsIcon}}}</li>
+          <li>{{{crossedSwordsIcon}}}<div><h2>Le choix des armes</h2>Choisissez un des sujets proposés (vous pouvez aussi amener le vôtre).</div>{{{crossedSwordsIcon}}}</li>
+          <li>{{{crossedSwordsIcon}}}<div><h2>Peaufinez votre stratégie</h2>Vous avez 1h30 pour mettre sur pied quelques slides.</div>{{{crossedSwordsIcon}}}</li>
+          <li>{{{crossedSwordsIcon}}}<div><h2>Entrez dans l'arène</h2>Vous avez 5 à 10 minutes pour présenter votre oeuvre aux autres groupes.</div>{{{crossedSwordsIcon}}}</li>
+        </ul>
+        <h3><strong>Et finalement racontez vos aventures autour d'une bonne flambée et d'un godet</strong></h3>
+      </div>
+      <div id="footer">
+        <span class="accroche">Réservez votre place dès maintenant</span>
+        <span id="link">{{ticketsUrl}}</span>
+      </div>
+    </div>
+  </body>
+</html>
+

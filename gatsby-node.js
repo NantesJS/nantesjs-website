@@ -14,7 +14,7 @@ const nodeHtmlToImage = require('node-html-to-image')
 const { parse } = require('date-fns/fp')
 const { format } = require('date-fns')
 const { fr } = require('date-fns/locale')
-const smartTruncate = require('smart-truncate');
+const smartTruncate = require('smart-truncate')
 const he = require('he')
 const parseDate = parse(new Date(), 'dd/MM/yyyy')
 
@@ -53,6 +53,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             frontmatter {
               id
+              type
               status
               date
               image
@@ -86,11 +87,17 @@ exports.createPages = async ({ graphql, actions }) => {
   await createMeetupPosters(result)
 }
 
+const dataMappersByType = {
+  'meetup': prepareDataForMeetupTemplate,
+  'meetup-hero': prepareDataForMeetupHeroTemplate,
+}
+
 async function createMeetupPosters (result) {
   console.log('⏳ Start creating posters')
   const meetups = result.data.allMarkdownRemark.edges.map(({ node }) => {
     return {
       ...node.frontmatter,
+      type: node.frontmatter.type ? node.frontmatter.type : 'meetup',
       filename: node.parent.name
     }
   })
@@ -99,46 +106,77 @@ async function createMeetupPosters (result) {
     return !fs.existsSync(path.join(__dirname, 'static', 'posters', `${ filename }-poster.jpg`))
   })
   console.log('🚀 Posters to create :', postersToCreate.length)
-  
-  await nodeHtmlToImage({
-    html: fs.readFileSync(path.join(__dirname, 'src', 'templates', 'meetup-poster.html')).toString('utf8'),
-    content: postersToCreate.map(meetup => ({
-      output: path.join(__dirname, 'static', 'posters', `${ meetup.filename }-poster.jpg`),
-      title: meetup.title,
-      day: format(parseDate(meetup.date), 'dd', { locale: fr }),
-      month: format(parseDate(meetup.date), 'MMM', { locale: fr }),
-      sponsor: meetup.sponsor ? meetup.sponsor.name : 'NantesJS',
-      venue: meetup.venue ? meetup.venue.name : '',
-      ticketsUrl: meetup.ticketsUrl,
-      talks: meetup.talks.map(talk => {
-        talk.description = talk.description ? smartTruncate(he.decode(talk.description), 300) : ''
-        talk.title = he.decode(talk.title)
-        talk.speakers = talk.speakers.map((speaker, index) => {
-          // Gérer pas de link
-          if (speaker.link) {
-            const linkParts = speaker.link.split('/')
-            speaker.handle = linkParts.pop()
-          } 
 
-          if (talk.speakers.length > 1) {
-            const minSize = 25
-            const variableSize = 75 / talk.speakers.length
-            const percent = `${ minSize + variableSize }%`
-            // Problème de positionnement en hauteur
-            const position = `${ index * variableSize }%`
-
-            // eslint-disable-next-line max-len
-            speaker.style = `width: ${ percent }; padding-top: ${ percent }; border-radius: ${ percent }; position: absolute; top: ${ position }; left: ${ position }`
-          }
-
-          return speaker
-        })
-        talk.twitterHandles = talk.speakers.map(s => s.handle).join(', ')
-        return talk
-      }),
-    }))
-  })
+  const postersGroupByType = groupBy(postersToCreate, 'type')
+  const types = Object.keys(postersGroupByType)
+ 
+  await Promise.all(types.map(type => {
+    return nodeHtmlToImage({
+      html: fs.readFileSync(path.join(__dirname, 'src', 'templates', `${ type }-poster.html`)).toString('utf8'),
+      content: postersGroupByType[type].map(dataMappersByType[type])
+    })
+  }))
   console.log('✅ Posters successfully created')
+}
+
+const groupBy = (arr, fn) =>
+  arr
+    .map(typeof fn === 'function' ? fn : val => val[fn])
+    .reduce((acc, val, i) => {
+      acc[val] = (acc[val] || []).concat(arr[i])
+      return acc
+    }, {})
+
+function prepareDataForMeetupHeroTemplate (meetup) {
+  const crossedSwordsIcon = fs.readFileSync(path.join(__dirname, 'static', 'images', 'assets', 'swords.svg')).toString('utf8')
+
+  return {
+    output: path.join(__dirname, 'static', 'posters', `${ meetup.filename }-poster.jpg`),
+    title: meetup.title,
+    day: format(parseDate(meetup.date), 'dd', { locale: fr }),
+    month: format(parseDate(meetup.date), 'MMM', { locale: fr }),
+    sponsor: meetup.sponsor ? meetup.sponsor.name : 'NantesJS',
+    crossedSwordsIcon,
+    venue: meetup.venue ? meetup.venue.name : '',
+    ticketsUrl: meetup.ticketsUrl,
+  }
+}
+
+function prepareDataForMeetupTemplate (meetup) {
+  return {
+    output: path.join(__dirname, 'static', 'posters', `${ meetup.filename }-poster.jpg`),
+    title: meetup.title,
+    day: format(parseDate(meetup.date), 'dd', { locale: fr }),
+    month: format(parseDate(meetup.date), 'MMM', { locale: fr }),
+    sponsor: meetup.sponsor ? meetup.sponsor.name : 'NantesJS',
+    venue: meetup.venue ? meetup.venue.name : '',
+    ticketsUrl: meetup.ticketsUrl,
+    talks: meetup.talks.map(talk => {
+      talk.description = talk.description ? smartTruncate(he.decode(talk.description), 300) : ''
+      talk.title = he.decode(talk.title)
+      talk.speakers = talk.speakers.map((speaker, index) => {
+        if (speaker.link) {
+          const linkParts = speaker.link.split('/')
+          speaker.handle = linkParts.pop()
+        } 
+
+        if (talk.speakers.length > 1) {
+          const minSize = 25
+          const variableSize = 75 / talk.speakers.length
+          const percent = `${ minSize + variableSize }%`
+          // Problème de positionnement en hauteur
+          const position = `${ index * variableSize }%`
+
+          // eslint-disable-next-line max-len
+          speaker.style = `width: ${ percent }; padding-top: ${ percent }; border-radius: ${ percent }; position: absolute; top: ${ position }; left: ${ position }`
+        }
+
+        return speaker
+      })
+      talk.twitterHandles = talk.speakers.map(s => s.handle).join(', ')
+      return talk
+    }),
+  }
 }
 
 function createMeetupsByYearPage (result, { createPage }) {
