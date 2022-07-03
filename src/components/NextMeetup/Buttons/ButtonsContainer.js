@@ -12,20 +12,28 @@ export function ButtonsContainer () {
                 filter: { frontmatter: { status: { eq: "next" } } }
                 limit: 1
               ) {
-                edges { node { frontmatter {
-                  id
-                  ticketsUrl
-                  remote
-                }
+                edges { node {
+                  parent  {
+                    ... on File {
+                      name
+                    }
+                  }
+                  frontmatter {
+                    id
+                    ticketsUrl
+                    remote
+                  }
               } } }
             }
             `}
       render={({ allMarkdownRemark: { edges } }) => {
         const { ticketsUrl, remote } = edges[0].node.frontmatter
+        const { name: filename } = edges[0].node.parent
         return (
           <Buttons
             ticketsUrl={ticketsUrl}
             remote={remote}
+            filename={filename}
           />
         )
       }}
