@@ -15,6 +15,20 @@
   align-items: center;
 }
 
+.meetup__poster {
+  font-size: .8rem;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.meetup__poster:hover {
+  background-color: #333;
+  color: white;
+}
+
 .meetup__header h4 {
   margin: 0;
   font-size: 1.6rem;
