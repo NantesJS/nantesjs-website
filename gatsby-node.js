@@ -127,7 +127,14 @@ const groupBy = (arr, fn) =>
       return acc
     }, {})
 
+function loadImage (imagePath) {
+  const image = fs.readFileSync(imagePath)
+  const base64Image = new Buffer.from(image).toString('base64')
+  return 'data:image/jpeg;base64,' + base64Image
+}
+
 function prepareDataForMeetupHeroTemplate (meetup) {
+  const logo = loadImage(path.join(__dirname, 'static', 'images', 'hero-logotype.png'))
   const crossedSwordsIcon = fs.readFileSync(path.join(__dirname, 'static', 'images', 'assets', 'swords.svg')).toString('utf8')
 
   return {
@@ -137,18 +144,21 @@ function prepareDataForMeetupHeroTemplate (meetup) {
     month: format(parseDate(meetup.date), 'MMM', { locale: fr }),
     sponsor: meetup.sponsor ? meetup.sponsor.name : 'NantesJS',
     crossedSwordsIcon,
+    logo,
     venue: meetup.venue ? meetup.venue.name : '',
     ticketsUrl: meetup.ticketsUrl,
   }
 }
 
 function prepareDataForMeetupTemplate (meetup) {
+  const logo = loadImage(path.join(__dirname, 'static', 'images', 'hero-logotype.png'))
   return {
     output: path.join(__dirname, 'static', 'posters', `${ meetup.filename }-poster.jpg`),
     title: meetup.title,
     day: format(parseDate(meetup.date), 'dd', { locale: fr }),
     month: format(parseDate(meetup.date), 'MMM', { locale: fr }),
     sponsor: meetup.sponsor ? meetup.sponsor.name : 'NantesJS',
+    logo,
     venue: meetup.venue ? meetup.venue.name : '',
     ticketsUrl: meetup.ticketsUrl,
     talks: meetup.talks.map(talk => {
