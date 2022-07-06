@@ -38,27 +38,49 @@
       }
       .date {
         width: 3cm;
-        height: 3cm;
-        border-radius: 3cm;
+        height: 1.5cm;
         background-color: #2d2d2b;
         position: absolute;
         right: 0.5cm;
-        top: 0.5cm;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        top: 2cm;
         color: #fbfbfb;
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 700;
       }
+      .date::before {
+        content: ' ';
+        border-left: 1.5cm solid transparent;
+        border-right: 1.5cm solid transparent;
+        border-bottom: 1cm solid #2d2d2b;
+        position: absolute;
+        top: -1cm;
+      }
+      .date::after {
+        content: ' ';
+        border-left: 1.5cm solid transparent;
+        border-right: 1.5cm solid transparent;
+        border-top: 1cm solid #2d2d2b;
+        position: absolute;
+        top: 1.5cm;
+      }
+      .date .content {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+      }
       #day {
-        font-size: 16.08mm;
-        line-height: 16.08mm;
+        font-size: 13.08mm;
+        line-height: 13.08mm;
       }
       #month {
-        font-size: 8.04mm;
-        line-height: 8.04mm;
+        font-size: 6.04mm;
+        line-height: 6.04mm;
       }
       h1 {
         height: 25.4mm;
@@ -153,8 +175,10 @@
     <main id="affiche" class="page">
       <header>
         <div class="date">
-          <span id="day">{{day}}</span>
-          <span id="month">{{month}}</span>
+          <div class="content">
+            <span id="day">{{day}}</span>
+            <span id="month">{{month}}</span>
+          </div>
         </div>
         <img src={{logo}} alt="Logo de NantesJS">
       </header>
