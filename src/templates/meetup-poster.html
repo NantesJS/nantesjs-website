@@ -175,20 +175,20 @@
     </style>
   </head>
   <body>
-    <div id="affiche" class="page">
-      <div class="header">
+    <main class="page">
+      <header>
         <div class="date">
           <span id="day">{{day}}</span>
           <span id="month">{{month}}</span>
         </div>
         <img src={{logo}} alt="Logo de NantesJS">
-      </div>
-      <div id="title">{{title}}</div>
-      <div id="sponsors">
+      </header>
+      <h1>{{title}}</h1>
+      <section id="sponsors">
         <div><i class="fa fa-beer fa-lg" aria-hidden="true"></i><span id="eat">{{sponsor}}</span></div>
         <div><i class="fa fa-home fa-lg" aria-hidden="true"></i><span id="place">{{venue}}</span></div>
-      </div>
-      <div id="talks">
+      </section>
+      <section id="talks">
         {{#each talks}}
           <div class="talk">
             <div class="left-part">
@@ -209,11 +209,11 @@
             </div>
           </div>
         {{/each}}
-      </div>
-      <div id="footer">
+      </section>
+      <footer>
         <span class="accroche">Réservez votre place dès maintenant</span>
         <span id="link">{{ticketsUrl}}</span>
-      </div>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>
