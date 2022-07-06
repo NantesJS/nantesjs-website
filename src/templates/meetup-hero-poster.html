@@ -149,33 +149,35 @@
     </style>
   </head>
   <body>
-    <div id="affiche" class="page">
-      <div class="header">
+    <main id="affiche" class="page">
+      <header>
         <div class="date">
           <span id="day">{{day}}</span>
           <span id="month">{{month}}</span>
         </div>
         <img src={{logo}} alt="Logo de NantesJS">
-      </div>
-      <div id="title">{{title}}</div>
-      <div id="sponsors">
+      </header>
+      <h1>{{title}}</h1>
+      <section id="sponsors">
         <div><i class="fa fa-beer fa-lg" aria-hidden="true"></i><span id="eat">{{sponsor}}</span></div>
         <div><i class="fa fa-home fa-lg" aria-hidden="true"></i><span id="place">{{venue}}</span></div>
-      </div>
-      <div id="rules">
+      </section>
+      <section id="rules">
         <ul>
           <li>{{{crossedSwordsIcon}}}<div><h2>Réunissez votre tribu</h2>Constituez votre équipe sur place ou amenez des amis.</div>{{{crossedSwordsIcon}}}</li>
           <li>{{{crossedSwordsIcon}}}<div><h2>Le choix des armes</h2>Choisissez un des sujets proposés (vous pouvez aussi amener le vôtre).</div>{{{crossedSwordsIcon}}}</li>
           <li>{{{crossedSwordsIcon}}}<div><h2>Peaufinez votre stratégie</h2>Vous avez 1h30 pour mettre sur pied quelques slides.</div>{{{crossedSwordsIcon}}}</li>
           <li>{{{crossedSwordsIcon}}}<div><h2>Entrez dans l'arène</h2>Vous avez 5 à 10 minutes pour présenter votre oeuvre aux autres groupes.</div>{{{crossedSwordsIcon}}}</li>
         </ul>
-        <h3><strong>Et finalement racontez vos aventures autour d'une bonne flambée et d'un godet</strong></h3>
-      </div>
-      <div id="footer">
+        /** le strong sur le h3... autant le mettre sur son style, non ?**/
+        /** et aussi : un h3 sans h2 ou h1 (ou je l'ai loupé ?)... je t'ai mis un h1 + haut, on peut le passer en h2 **/
+        <h2>Et finalement racontez vos aventures autour d'une bonne flambée et d'un godet</h2>
+      </section>
+      <footer>
         <span class="accroche">Réservez votre place dès maintenant</span>
         <span id="link">{{ticketsUrl}}</span>
-      </div>
-    </div>
+      </footer>
+  </main>
   </body>
 </html>
 
