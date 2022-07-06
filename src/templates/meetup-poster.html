@@ -13,7 +13,7 @@
         size: 21cm 29.7cm;
         margin: 0;
       }
-      div.page {
+      main.page {
         width: 21cm;
         height: 29.7cm;
         overflow: hidden;
@@ -26,14 +26,14 @@
       #affiche {
         position: relative;
       }
-      .header {
+      header {
         position: relative;
         height: 8.80cm;
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .header img {
+      header img {
         height: 7.5cm;
       }
       .date {
@@ -60,7 +60,7 @@
         font-size: 8.04mm;
         line-height: 8.04mm;
       }
-      #title {
+      h1 {
         height: 25.4mm;
         font-size: 25.4mm;
         line-height: 25.4mm;
@@ -68,6 +68,7 @@
         color: #2d2d2b;
         text-align: center;
         font-weight: 900;
+        margin: 0;
       }
       #sponsors {
         height: 2.5cm;
@@ -148,7 +149,7 @@
       #talks .twitter {
         font-style: italic;
       }
-      #footer {
+      footer {
         width: 100%;
         background-color: #2d2d2b;
         height: 3.15cm;
@@ -159,13 +160,13 @@
         justify-content: center;
         align-items: center;
       }
-      #footer .accroche {
+      footer .accroche {
         font-size: 8.47mm;
         color: #fbfbfb;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
       }
-      #footer #link {
+      footer #link {
         font-size: 6.35mm;
         color: #fbfbfb;
         font-family: 'Open Sans', sans-serif;
@@ -175,7 +176,7 @@
     </style>
   </head>
   <body>
-    <main class="page">
+    <main id="affiche" class="page">
       <header>
         <div class="date">
           <span id="day">{{day}}</span>

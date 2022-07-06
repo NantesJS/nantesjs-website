@@ -151,7 +151,7 @@ function prepareDataForMeetupHeroTemplate (meetup) {
 }
 
 function prepareDataForMeetupTemplate (meetup) {
-  const logo = loadImage(path.join(__dirname, 'static', 'images', 'hero-logotype.png'))
+  const logo = loadImage(path.join(__dirname, 'static', 'images', 'logotype.png'))
   return {
     output: path.join(__dirname, 'static', 'posters', `${ meetup.filename }-poster.jpg`),
     title: meetup.title,

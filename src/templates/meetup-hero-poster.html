@@ -13,7 +13,7 @@
         size: 21cm 29.7cm;
         margin: 0;
       }
-      div.page {
+      main.page {
         width: 21cm;
         height: 29.7cm;
         overflow: hidden;
@@ -26,14 +26,14 @@
       #affiche {
         position: relative;
       }
-      .header {
+      header {
         position: relative;
         height: 8.80cm;
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .header img {
+      header img {
         height: 7.5cm;
       }
       .date {
@@ -60,10 +60,11 @@
         font-size: 8.04mm;
         line-height: 8.04mm;
       }
-      #title {
+      h1 {
         height: 25.4mm;
         font-size: 13.5mm;
         line-height: 14mm;
+        margin: 0;
         margin-bottom: 10mm;
         font-family: 'Open Sans', sans-serif;
         color: #2d2d2b;
@@ -122,7 +123,7 @@
         flex: 1;
         margin: 0 1cm;
       }
-      #footer {
+      footer {
         width: 100%;
         background-color: #2d2d2b;
         height: 3.15cm;
@@ -133,13 +134,13 @@
         justify-content: center;
         align-items: center;
       }
-      #footer .accroche {
+      footer .accroche {
         font-size: 8.47mm;
         color: #fbfbfb;
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
       }
-      #footer #link {
+      footer #link {
         font-size: 6.35mm;
         color: #fbfbfb;
         font-family: 'Open Sans', sans-serif;
@@ -169,9 +170,7 @@
           <li>{{{crossedSwordsIcon}}}<div><h2>Peaufinez votre stratégie</h2>Vous avez 1h30 pour mettre sur pied quelques slides.</div>{{{crossedSwordsIcon}}}</li>
           <li>{{{crossedSwordsIcon}}}<div><h2>Entrez dans l'arène</h2>Vous avez 5 à 10 minutes pour présenter votre oeuvre aux autres groupes.</div>{{{crossedSwordsIcon}}}</li>
         </ul>
-        /** le strong sur le h3... autant le mettre sur son style, non ?**/
-        /** et aussi : un h3 sans h2 ou h1 (ou je l'ai loupé ?)... je t'ai mis un h1 + haut, on peut le passer en h2 **/
-        <h2>Et finalement racontez vos aventures autour d'une bonne flambée et d'un godet</h2>
+        <h3>Et finalement racontez vos aventures autour d'une bonne flambée et d'un godet</h3>
       </section>
       <footer>
         <span class="accroche">Réservez votre place dès maintenant</span>
