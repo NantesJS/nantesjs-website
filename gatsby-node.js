@@ -97,7 +97,7 @@ async function createMeetupPosters (result) {
   const meetups = result.data.allMarkdownRemark.edges.map(({ node }) => {
     return {
       ...node.frontmatter,
-      type: node.frontmatter.type ? node.frontmatter.type : 'meetup',
+      type: node.frontmatter.type || 'meetup',
       filename: node.parent.name
     }
   })
