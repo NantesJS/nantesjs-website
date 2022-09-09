@@ -3,9 +3,9 @@ id: 8b0dd406-0b04-44dd-8cb7-41b12149a6cd
 type: meetup-hero
 status: next
 title: 'Le meetup dont vous êtes le héros'
-date: '28/07/2022'
+date: '22/09/2022'
 image: /images/meetup/casque.png
-ticketsUrl: https://www.eventbrite.fr/e/billets-le-meetup-dont-vous-etes-le-heros-4-381650796807
+ticketsUrl: https://www.eventbrite.fr/e/billets-le-meetup-dont-vous-etes-le-heros-4-416828714907
 venue:
     id: 2a8bf286-0930-486c-850b-7dca3e47978a
     name: 'Akeneo'
