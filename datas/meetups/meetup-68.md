@@ -1,6 +1,6 @@
 ---
 id: badf23e8-4808-4987-9f27-1942cd6e0cdf
-status: next
+status: done
 title: 'Meetup #68'
 date: '17/11/2022'
 image: images/meetup/angular2.png
