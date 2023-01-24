@@ -183,7 +183,7 @@ function prepareDataForMeetupTemplate (meetup) {
 
         return speaker
       })
-      talk.twitterHandles = talk.speakers.map(s => s.handle).join(', ')
+      talk.twitterHandles = talk.speakers.map(s => s.handle || s.name).join(', ')
       return talk
     }),
   }

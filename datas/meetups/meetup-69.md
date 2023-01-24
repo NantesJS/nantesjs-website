@@ -35,6 +35,7 @@ talks:
       -
           id: '2db847ff-266d-4cbb-acd6-1345757cf5c0'
           name: 'Anthony Pena'
+          link: '_Anthony_Pena'
       -
           id: 'a1616468-1112-4187-bfea-16ebf02a259c'
           name: 'Adrien Lasselle'
