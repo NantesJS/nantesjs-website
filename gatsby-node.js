@@ -58,6 +58,7 @@ exports.createPages = async ({ graphql, actions }) => {
               date
               image
               title
+              ticketsUrl
               sponsor {
                 name
               }
