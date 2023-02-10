@@ -76,11 +76,21 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "mcampourcy",
+      "name": "mcampourcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11388201?v=4",
+      "profile": "https://github.com/mcampourcy",
+      "contributions": [
+        "eventOrganizing"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "nantesjs-website",
   "projectOwner": "NantesJS",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "commitConvention": "angular"
 }
