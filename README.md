@@ -53,6 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/bdeglane"><img src="https://avatars1.githubusercontent.com/u/11388230?v=4?s=100" width="100px;" alt="Benoît Deglane"/><br /><sub><b>Benoît Deglane</b></sub></a><br /><a href="https://github.com/NantesJS/nantesjs-website/commits?author=bdeglane" title="Code">💻</a></td>
     </tr>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/marionnousvalentin"><img src="https://avatars.githubusercontent.com/u/43779561?v=4?s=100" width="100px;" alt="Marion Valentin"/><br /><sub><b>Marion Valentin</b></sub></a><br /><a href="#eventOrganizing-marionnousvalentin" title="Event Organizing">📋</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mcampourcy"><img src="https://avatars.githubusercontent.com/u/11388201?v=4?s=100" width="100px;" alt="mcampourcy"/><br /><sub><b>mcampourcy</b></sub></a><br /><a href="#eventOrganizing-mcampourcy" title="Event Organizing">📋</a></td>
     </tr>
   </tbody>
