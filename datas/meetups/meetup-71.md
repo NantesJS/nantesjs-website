@@ -25,20 +25,11 @@ talks:
     speakers:
       -
           id: '528610f2-2627-4e6d-b146-4af2ff10592c'
-          name: 'Quentin Lerebours'
-          link: 'qlerebours_'
-      -
-          id: '528610f2-2627-4e6d-b146-4af2ff10592c'
-          name: 'Ivan Dalmet'
-          link: 'ivandalmet'
-      -
-          id: '528610f2-2627-4e6d-b146-4af2ff10592c'
           name: 'Yoann Fleury'
           link: 'yoannfleurydev'
       -
           id: '528610f2-2627-4e6d-b146-4af2ff10592c'
-          name: 'Nicolas Torion'
-          link: 'NicoTotor'
+          name: 'Hugo Pérard'
   -
     id: '6e58e109-b6b3-44ea-ac62-f2945bb4413c'
     title: "Faites entrer le BDD"
