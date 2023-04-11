@@ -28,8 +28,18 @@ Ici, tout l'objet de cette conférence !"
           link: 'helvira_g'
   -
     id: '508986f3-97b6-4b75-9769-f469db1e6e39'
-    title: "Faites entrer le BDD"
-    description: "Le Behavior Driven Development est une pratique encore mal comprise et trop souvent abordée à l’envers. Les équipes, obnubilées par l’aspect technique en oublie que le BDD est d‘abord une histoire de communication et de partage. A travers ce meetup, nous retracerons son histoire et ses pratiques afin de mieux comprendre son cadre d’utilisation et son intérêt."
+    title: "Typesafe all the things: typage fort de la base de données jusqu'au client gràce à TypeScript, tRPC & prisma"
+    description: "Vous maintenez des interfaces synchronisées entre votre back et votre front ? c'est lourd non ?
+
+Peut-être avez vous besoin d'une étape de génération lors d'un changement de modèle de données de vos API's ?
+
+Le saviez-vous ? : on peut aujourd'hui se passer de tout cela.
+
+Découvrez une stack technique utilisant la puissance de typescript au service de l'expérience développeur et de la simplicité:
+
+- tRPC pour une API et son client sans schémas ni génération de code.
+
+- prisma pour un ORM supportant de nombreuses bases de données et orienté typescript first."
     speakers:
       -
           id: 'e3f3c4e7-51a3-450b-afee-028bc4eb1336'
