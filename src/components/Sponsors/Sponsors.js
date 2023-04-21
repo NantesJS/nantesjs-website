@@ -47,6 +47,9 @@ export function Sponsors () {
         <a className={styles.sponsors__logo} href="https://www.bam.tech/">
           <img alt="BAM" src={withPrefix("/images/sponsor/bam.png")} />
         </a>
+        <a className={styles.sponsors__logo} href="https://www.malt.fr/">
+          <img alt="Malt" src={withPrefix("/images/sponsor/malt.svg")} />
+        </a>
       </div>
     </Fragment>
   )
