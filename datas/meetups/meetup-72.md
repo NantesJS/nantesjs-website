@@ -1,6 +1,6 @@
 ---
 id: ebc6b158-e294-439e-895d-3ffe0ca5acf2
-status: next
+status: done
 title: 'Meetup #72'
 date: '20/04/2023'
 image: /images/meetup/typescript.svg
