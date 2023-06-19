@@ -30,8 +30,8 @@ Ce talk est à destination des techs qui veulent tester OpenAI mais également a
     speakers:
       -
           id: 'f500b58d-34a8-4cc6-82f2-cc619a6e83d6'
-          name: 'Maxime Thoonsen'
-          link: 'maxthoon'
+          name: 'Stanislas Girard'
+          link: '_StanGirard'
   -
     id: '508986f3-97b6-4b75-9769-f469db1e6e39'
     title: "Getting Started with Angular Material in 2023"
