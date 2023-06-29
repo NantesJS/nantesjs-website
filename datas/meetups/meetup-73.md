@@ -1,6 +1,6 @@
 ---
 id: 3ef21f43-3a54-4c67-b025-296e5b8746e0 
-status: next
+status: done
 title: 'Meetup #73'
 date: '22/06/2023'
 image: /images/meetup/chatgpt.png
