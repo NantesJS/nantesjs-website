@@ -1,7 +1,7 @@
 ---
 id: 8b0dd406-0b04-44dd-8cb7-41b12149a6cd
 type: meetup-hero
-status: next
+status: done
 title: 'Le meetup dont vous êtes le héros'
 date: '12/07/2023'
 image: /images/meetup/casque.png
