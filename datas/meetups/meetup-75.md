@@ -1,6 +1,6 @@
 ---
 id: c0d12ffb-c70d-48b1-b67f-9cd9994afb87
-status: next
+status: done
 title: 'Meetup #75'
 date: '20/09/2023'
 image: /images/meetup/htmx.png
