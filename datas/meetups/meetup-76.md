@@ -45,4 +45,7 @@ Conclusions"
       -
           id: '57d4d9a1-6e68-4b88-8c65-ece7d56ca9d4'
           name: 'Jean Tallineau'
+      -
+          id: '7e054d3f-5c8c-478a-97da-71840efcdd1f'
+          name: 'Vincent Nourry'
 
