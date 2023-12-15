@@ -24,7 +24,7 @@ talks:
     title: 'Écosystème Javascript: du module aux outils de pré-processing'
     description: 'En quelques années. l&#x27;écosystème javascript à énormément évolué. Entre npm, yarn, webpack, babel, gulp, ecmascript etc. on peut facilement se perdre. 
 Ce talk a pour but de remettre de l&#x27;ordre dans l&#x27;esprit des développeurs junior. En rappelant l&#x27;histoire derrière chacun de ces outils, je vous présente dans quels cas et comment ils sont utilisés dans les développements d&#x27;aujourd&#x27;hui et de demain.  '
-    video: 'https://youtu.be/uF_UYiEBbCI'
+    video: 'uF_UYiEBbCI'
     speakers:
       -
           id: lrg9Y9uTtBaDBBhdpkVbkiVZWK73
@@ -38,7 +38,7 @@ Ce talk a pour but de remettre de l&#x27;ordre dans l&#x27;esprit des développe
 That&#x27;s so powerful that some people see it as a very complex magic thing. 
 
 Now the fun part... It is in fact quite simple to understand., and today&#x27;s libraries (Arcon, Esprima, Espree, Babylon) allows anyone to create their own tools, fork existing ones, or write plugins matching our own desires.'
-    video: 'https://youtu.be/F5DR6-KeDig'
+    video: 'F5DR6-KeDig'
     speakers:
       -
           id: P7GodQ7zT7ga11CdW9L1OkMbwfv2
