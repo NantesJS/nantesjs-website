@@ -19,3 +19,12 @@
 .buttons a + a {
   margin-left: 1rem;
 }
+
+.meetup__poster {
+  align-self: center;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #333;
+  margin-left: 10px;
+  text-decoration: none;
+}

@@ -7,11 +7,13 @@ import styles from './Buttons.module.css'
 
 Buttons.propTypes = {
   ticketsUrl: string,
+  filename: string,
   remote: bool,
 }
 
-export function Buttons ({ ticketsUrl, remote = false }) {
+export function Buttons ({ ticketsUrl, remote = false, filename }) {
   if (!ticketsUrl) return null
+  const posterUrl = `/posters/${ filename }-poster.jpg`
 
   return (
     <div className={styles.buttons}>
@@ -32,6 +34,7 @@ export function Buttons ({ ticketsUrl, remote = false }) {
           &nbsp;Voir sur Twitch
         </a>
       )}
+      <a className={styles.meetup__poster} href={posterUrl} target="_blank" rel="noreferrer">Affiche du meetup</a>
     </div>
   )
 }

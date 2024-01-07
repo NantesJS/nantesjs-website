@@ -1,22 +1,28 @@
 ---
-id: a38fc14d-fe47-4658-871b-4bfe5223f394
+id: 8b0dd406-0b04-44dd-8cb7-41b12149a6cd
+type: meetup-hero
 status: done
 title: 'Le meetup dont vous êtes le héros'
-date: '20/07/2017'
+date: '22/09/2022'
 image: /images/meetup/casque.png
-ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-summer-event-35686378920
+ticketsUrl: https://www.eventbrite.fr/e/billets-le-meetup-dont-vous-etes-le-heros-4-416828714907
 venue:
+    id: 2a8bf286-0930-486c-850b-7dca3e47978a
     name: 'Akeneo'
-    id: 98991a48-2d2c-43d2-aa5e-8acea2c54947
     link: 'https://www.akeneo.com/fr/'
+    postal_code: 4400
+    address: 2 Pl. Général Mellinet
+    city: Nantes
+    latitude: 47.211666
+    longitude: -1.5780146
 sponsor:
-    name: 'La fourchette'
-    id: 09670416-6d98-4ce9-9cb4-d5fbc065e3a7
-    link: 'https://www.lafourchette.com/'
+    id: 'af237b7d-3d7e-44ab-b26c-87b762db5889'
+    name: 'NantesJS'
+    link: 'https://nantesjs.org'
 talks:
     -
-        id: 8e8d742d-ed83-4fd7-95b8-bcbc827987d0
-        title: 'Votre talk'
+        id: 6cdee27c-cfb3-4f62-991a-27057a8af37c
+        title: ''
         description: "
           <ul style='margin-left:0;'>
             <li>1. <strong>Réunissez votre tribu</strong> - Constituez votre équipe sur place ou amenez des amis.</li>
@@ -27,5 +33,6 @@ talks:
           <p><strong>Et finalement racontez vos aventures autour d'une bonne flambée et d'un godet</strong></p>"
         speakers:
             -
-                id: 38eb5e9b-1a3c-42e4-b71f-950dbfed6f41
+                id: eaa2aa1e-21ea-4b1a-b931-a56165d29911
                 name: 'Vous'
+

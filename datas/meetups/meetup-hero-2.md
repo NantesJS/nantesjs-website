@@ -1,5 +1,6 @@
 ---
 id: 07b5785f-ddce-42a7-b007-163a2ea5f909
+type: meetup-hero
 status: done
 title: 'Le meetup dont vous êtes le héros'
 date: '04/07/2018'

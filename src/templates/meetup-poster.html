@@ -1,0 +1,220 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Affiche</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+      body {
+        margin: 0
+      }
+      @page {
+        size: 21cm 29.7cm;
+        margin: 0;
+      }
+      main.page {
+        width: 21cm;
+        height: 29.7cm;
+        overflow: hidden;
+        background-color: #fbfbfb;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      #affiche {
+        position: relative;
+      }
+      header {
+        position: relative;
+        height: 8.80cm;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header img {
+        height: 7.5cm;
+      }
+      .date {
+        width: 3cm;
+        height: 3cm;
+        border-radius: 3cm;
+        background-color: #2d2d2b;
+        position: absolute;
+        right: 0.5cm;
+        top: 0.5cm;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fbfbfb;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+      }
+      #day {
+        font-size: 16.08mm;
+        line-height: 16.08mm;
+      }
+      #month {
+        font-size: 8.04mm;
+        line-height: 8.04mm;
+      }
+      h1 {
+        height: 25.4mm;
+        font-size: 25.4mm;
+        line-height: 25.4mm;
+        font-family: 'Open Sans', sans-serif;
+        color: #2d2d2b;
+        text-align: center;
+        font-weight: 900;
+        margin: 0;
+      }
+      #sponsors {
+        height: 2.5cm;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.63mm;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+      }
+      #sponsors span {
+        margin-left: 1.5mm;
+      }
+      #sponsors i {
+        color: #e8d432;
+      }
+      #talks {
+        height: 13cm;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #talks > * {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+      }
+      #talks .talk {
+        margin-bottom: 0.5cm;
+      }
+      #talks .left-part {
+        position: relative;
+        flex: 0 0 20%;
+        overflow: hidden;
+      }
+      #talks .image {
+        overflow: hidden;
+        border-radius: 100%;
+        width: 100%;
+        padding-top: 100%; /* 1:1 Aspect Ratio */
+        position: relative; /* If you want text inside of it */
+      }
+      #talks img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      #talks .right-part {
+        padding-left: 0.5cm;
+        flex: 0 0 80%;
+        display: flex;
+        flex-direction: column;
+      }
+      #talks .title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4.93mm;
+        font-weight: 900;
+      }
+      #talks .description {
+        font-family: 'Open Sans', sans-serif;
+        text-align: justify;
+        font-size: 3.66mm;
+        line-height: 1.6em;
+        font-weight: 400;
+        margin-bottom: 1mm;
+      }
+      #talks .twitter-container {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4mm;
+        font-weight: 400;
+      }
+      #talks .twitter-container i {
+        color: #e8d432;
+      }
+      #talks .twitter {
+        font-style: italic;
+      }
+      footer {
+        width: 100%;
+        background-color: #2d2d2b;
+        height: 3.15cm;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      footer .accroche {
+        font-size: 8.47mm;
+        color: #fbfbfb;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+      }
+      footer #link {
+        font-size: 6.35mm;
+        color: #fbfbfb;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="affiche" class="page">
+      <header>
+        <div class="date">
+          <span id="day">{{day}}</span>
+          <span id="month">{{month}}</span>
+        </div>
+        <img src={{logo}} alt="Logo de NantesJS">
+      </header>
+      <h1>{{title}}</h1>
+      <section id="sponsors">
+        <div><i class="fa fa-beer fa-lg" aria-hidden="true"></i><span id="eat">{{sponsor}}</span></div>
+        <div><i class="fa fa-home fa-lg" aria-hidden="true"></i><span id="place">{{venue}}</span></div>
+      </section>
+      <section id="talks">
+        {{#each talks}}
+          <div class="talk">
+            <div class="left-part">
+              {{#each speakers}}
+                {{#if handle}}
+                  <div class="image" style="{{style}}"><img src="https://avatars.charlyx.dev/twitter?username={{handle}}&size=original" /></div>
+                {{/if}}
+              {{/each}}
+            </div>
+            <div class="right-part">
+              <span class="title">{{title}}</span>
+              {{#if description}}
+                <p class="description">{{description}}</p>
+              {{/if}}
+              {{#if twitterHandles}}
+                <div class="twitter-container"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i><span class="twitter">{{twitterHandles}}</span></div>
+              {{/if}}
+            </div>
+          </div>
+        {{/each}}
+      </section>
+      <footer>
+        <span class="accroche">Réservez votre place dès maintenant</span>
+        <span id="link">{{ticketsUrl}}</span>
+      </footer>
+    </main>
+  </body>
+</html>

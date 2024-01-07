@@ -19,6 +19,7 @@ Meetup.propTypes = {
 
 export function Meetup ({ date, filename, image, sponsor, talks, title, venue }) {
   const backgroundImage = `url(${ withPrefix(image) })`
+  const posterUrl = `/posters/${ filename }-poster.jpg`
 
   return (
     <>
@@ -44,6 +45,7 @@ export function Meetup ({ date, filename, image, sponsor, talks, title, venue })
               {title}
             </h4>
           </Link>
+          <a className={styles.meetup__poster} href={posterUrl} target="_blank" rel="noreferrer">Affiche</a>
           <div className={styles.meetup__sponsors}>
             <p>
               {sponsor && (
