@@ -12,28 +12,11 @@ export function Sponsors () {
         <h3 className={styles.sponsors__title}>Sponsors</h3>
       </FullWidthContainer>
       <div className={styles.sponsors__logos}>
-        {/*
-        <a className={styles.sponsors__logo} href="https://seyos.fr/">
-          <img alt="seyos" src={withPrefix("/images/sponsor/seyos.png")} />
-        </a>
-        <a className={styles.sponsors__logo} href="https://www.oxiane.bzh/">
-          <img alt="oxiane" src={withPrefix("/images/sponsor/oxiane.png")} />
-        </a>
-        <a className={styles.sponsors__logo} href="https://eleven-labs.com/">
+        <a className={styles.sponsors__logo} href="https://nantes.zenika.com/#/">
           <img
-            alt="eleven labs"
-            src={withPrefix("/images/sponsor/eleven-labs.png")}
+            alt="zenika"
+            src={withPrefix('/images/sponsor/zenika.svg')}
           />
-        </a>
-        <a className={styles.sponsors__logo} href="https://www.lucca.fr/">
-          <img alt="lucca" src={withPrefix("/images/sponsor/logo-lucca.svg")} />
-        </a>
-        */}
-        <a
-          className={styles.sponsors__logo}
-          href="https://nantes.zenika.com/#/"
-        >
-          <img alt="zenika" src={withPrefix("/images/sponsor/zenika.png")} />
         </a>
         <a className={styles.sponsors__logo} href="https://www.externatic.fr/">
           <img
