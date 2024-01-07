@@ -72,7 +72,7 @@ export function Sponsors () {
         >
           <img
             alt="eleven labs"
-            src={withPrefix('/images/sponsor/eleven-labs.svg')}
+            src={withPrefix('/images/sponsor/eleven-labs.png')}
           />
         </a>
         <a
