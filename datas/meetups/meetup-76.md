@@ -1,6 +1,6 @@
 ---
 id: 840766e6-493a-4d7a-8be4-77db8bd713ea
-status: next
+status: done
 title: 'Meetup #76'
 date: '16/11/2023'
 image: /images/meetup/angular2.png
