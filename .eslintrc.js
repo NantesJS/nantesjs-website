@@ -1,6 +1,6 @@
 module.exports = {
-  extends: ["standard", "eslint:recommended", "plugin:react/recommended", "plugin:jest/recommended"],
-  plugins: ["standard", "react", "jest"],
+  extends: ["eslint:recommended", "plugin:react/recommended", "plugin:jest/recommended"],
+  plugins: ["react", "jest"],
   env: {
     "jest/globals": true,
   },
@@ -59,8 +59,9 @@ module.exports = {
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
   },
-  parser: "babel-eslint",
+  parser: "@babel/eslint-parser",
   parserOptions: {
     ecmaVersion: 8, // optional, recommended 6+
+    requireConfigFile: false
   },
 }

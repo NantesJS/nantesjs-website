@@ -1,14 +1,12 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import { TitleBar } from './TitleBar'
 
 export function TitleBarContainer () {
-  return (
-    <StaticQuery
-      query={graphql`
-            {
-              allMarkdownRemark(
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
                 filter: { frontmatter: { status: { eq: "next" } } }
                 limit: 1
               ) {
@@ -27,20 +25,19 @@ export function TitleBarContainer () {
                   }
                 }
               } } }
-            }
-            `}
-      render={({ allMarkdownRemark: { edges } }) => {
-        const { title, date, image, venue, sponsor } = edges[0].node.frontmatter
-        return (
-          <TitleBar
-            title={title}
-            date={date}
-            image={image}
-            venue={venue.name}
-            sponsor={sponsor.name}
-          />
-        )
-      }}
+    }
+  `)
+
+  const { edges } = data.allMarkdownRemark
+  const { title, date, image, venue, sponsor } = edges[0].node.frontmatter
+
+  return (
+    <TitleBar
+      title={title}
+      date={date}
+      image={image}
+      venue={venue.name}
+      sponsor={sponsor.name}
     />
   )
 }

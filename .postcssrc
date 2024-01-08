@@ -1,8 +1,0 @@
-{
-  "modules": true,
-  "plugins": {
-    "postcss-cssnext": {
-      "warnForDuplicates": false
-    }
-  }
-}

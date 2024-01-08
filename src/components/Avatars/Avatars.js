@@ -50,7 +50,7 @@ export function Avatars ({ speakers }) {
             key={speaker.id}
             style={style}
             className={classNames(
-              styles.avatars__portrait,
+              styles.avatars__portraitSingle,
               {
                 [styles.avatars__portraitSingle]: speakersWithLink.length === 1
               }

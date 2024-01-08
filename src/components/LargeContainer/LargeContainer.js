@@ -12,9 +12,7 @@ LargeContainer.propTypes = {
 
 export function LargeContainer ({ children, relative, style }) {
   return (
-    <div style={style} className={classNames(styles.largeContainer, {
-      [styles.largeContainerRelative]: relative,
-    })}>
+    <div style={style} className={styles.largeContainer}>
       {children}
     </div>
   )
