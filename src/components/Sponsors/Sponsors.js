@@ -3,7 +3,7 @@ import { withPrefix } from "gatsby"
 
 import { FullWidthContainer } from "../FullWidthContainer"
 
-import styles from "./Sponsors.module.css"
+import * as styles from "./Sponsors.module.css"
 
 export function Sponsors () {
   return (

@@ -2,7 +2,7 @@ import React from 'react'
 import { array, object, string } from 'prop-types'
 import classNames from 'classnames'
 
-import styles from './Avatars.module.css'
+import * as styles from './Avatars.module.css'
 
 Circle.propTypes = {
   src: string,

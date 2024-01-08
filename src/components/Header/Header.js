@@ -8,7 +8,7 @@ import { Logo } from './Logo'
 import { LargeContainer } from '../../components/LargeContainer'
 import { SocialIcons } from '../SocialIcons'
 
-import styles from './Header.module.css'
+import * as styles from './Header.module.css'
 
 export function Header () {
   // eslint-disable-next-line max-len

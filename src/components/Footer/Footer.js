@@ -5,7 +5,7 @@ import faHeart from '@fortawesome/fontawesome-free-solid/faHeart'
 
 import { Logo } from '../Header/Logo'
 
-import styles from './Footer.module.css'
+import * as styles from './Footer.module.css'
 
 export function Footer () {
   return (

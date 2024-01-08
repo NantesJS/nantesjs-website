@@ -2,7 +2,7 @@ import React from 'react'
 import { node, bool, object } from 'prop-types'
 import classNames from 'classnames'
 
-import styles from './LargeContainer.module.css'
+import * as styles from './LargeContainer.module.css'
 
 LargeContainer.propTypes = {
   style: object,

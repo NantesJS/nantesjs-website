@@ -5,7 +5,7 @@ import { FullDate } from '../../FullDate'
 import { Talks } from './Talks'
 import { formatRaw } from '../../../helper/date.helper'
 
-import styles from './Meetup.module.css'
+import * as styles from './Meetup.module.css'
 
 Meetup.propTypes = {
   date: string,

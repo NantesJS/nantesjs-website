@@ -3,10 +3,6 @@
   justify-content: center;
 }
 
-.social-network--inline {
-  display: inline-flex !important;
-}
-
 .social-network--vertical {
   flex-direction: column;
 }
@@ -31,24 +27,4 @@
   margin-right: 0 !important;
   margin-bottom: 10px;
   padding: 4px;
-}
-
-.social-network__link--bordered {
-  border: 1px solid #333;
-  border-radius: 1000px;
-}
-
-.social-network__link:last-child {
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
-.socialNetwork__link:not(:last-child) {
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 767px) {
-  .socialNetwork__link{
-    margin-right: .3rem;
-  }
 }

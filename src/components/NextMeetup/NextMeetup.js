@@ -5,7 +5,7 @@ import { Place } from './Place'
 import { Talks } from './Talks'
 import { Buttons } from './Buttons'
 
-import styles from './NextMeetup.module.css'
+import * as styles from './NextMeetup.module.css'
 
 export function NextMeetup () {
   return (

@@ -11,7 +11,7 @@ import faRssSquare from '@fortawesome/fontawesome-free-solid/faRssSquare'
 import faYoutube from '@fortawesome/fontawesome-free-brands/faYoutube'
 import faTwitch from '@fortawesome/fontawesome-free-brands/faTwitch'
 import { SocialLink } from '../SocialLink'
-import styles from './SocialLinks.module.css'
+import * as styles from './SocialLinks.module.css'
 
 SocialLinks.propTypes = {
   bordered: bool,
@@ -72,9 +72,7 @@ export function SocialLinks ({
       {links.map(link => (
         <SocialLink
           key={link.label}
-          className={classNames(styles.socialNetwork__link, linkClassName, {
-            [styles.socialNetwork__linkBordered]: bordered,
-          })}
+          className={classNames(linkClassName)}
           href={link.href}
           icon={link.icon}
           size={iconSize}

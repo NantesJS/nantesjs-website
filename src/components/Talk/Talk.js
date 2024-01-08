@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter'
 import { Avatars } from '../Avatars'
 
-import styles from './Talk.module.css'
+import * as styles from './Talk.module.css'
 
 Talk.propTypes = {
   talk: shape({

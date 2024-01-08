@@ -2,7 +2,7 @@ import React from 'react'
 import { node, string } from 'prop-types'
 import classNames from 'classnames'
 
-import styles from './FullWidthContainer.module.css'
+import * as styles from './FullWidthContainer.module.css'
 
 FullWidthContainer.propTypes = {
   children: node,

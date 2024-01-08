@@ -6,7 +6,7 @@ import {
   object,
   string
 } from 'prop-types'
-import styles from './SocialLink.module.css'
+import * as styles from './SocialLink.module.css'
 
 SocialLink.propTypes = {
   className: string,

@@ -3,7 +3,7 @@ import { string } from 'prop-types'
 import classNames from 'classnames'
 import { Link } from 'gatsby'
 
-import styles from './Logo.module.css'
+import * as styles from './Logo.module.css'
 import logo from './logo.svg'
 
 Logo.propTypes = {

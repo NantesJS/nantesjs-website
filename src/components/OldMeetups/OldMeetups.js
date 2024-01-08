@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { FullWidthContainer } from '../FullWidthContainer'
 import { Meetup } from './Meetup'
 
-import styles from './OldMeetups.module.css'
+import * as styles from './OldMeetups.module.css'
 
 OldMeetups.propTypes = {
   meetups: array,

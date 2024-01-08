@@ -5,7 +5,7 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import { iconNantesJS } from './Icon'
 import L from 'leaflet'
 
-import styles from './Place.module.css'
+import * as styles from './Place.module.css'
 
 Place.propTypes = {
   latitude: number,
