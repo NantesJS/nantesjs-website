@@ -10,6 +10,7 @@
     "classnames": "^2.5.1",
     "cross-env": "^7.0.3",
     "date-fns": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.15.7",
     "eslint-plugin-standard": "^5.0.0",
     "gatsby": "^5.3.3",
     "gatsby-image": "^3.11.0",
