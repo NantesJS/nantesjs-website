@@ -17,42 +17,42 @@ const Layout = ({ children }) => {
           }
       }}`)
   return (
-        <>
-          <Helmet
-            title={data.site.siteMetadata.title}
-            meta={[
-              {
-                name: 'description',
-                content: 'Communauté Nantaise des utilisateurs de JavaScript',
-              },
-              { name: 'keywords', content: 'meetup, Nantes, JavaScript' },
-              {
-                name: 'google-site-verification',
-                content: 'qlEe2-C1DYQueNyWsHnPDBC5JDDNZGLxyyz3uXynk0M',
-              },
-            ]}
-          >
-            <html lang="fr" />
-          </Helmet>
-          <section className={styles.layout}>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <main className={styles.layout__main}>
-              <LargeContainer relative >
-                <div
-                  style={{
-                    margin: '0 auto',
-                    maxWidth: '1020px',
-                    padding: '0 20px',
-                  }}
-                >
-                  {children}
-                </div>
-              </LargeContainer>
-            </main>
-            <Footer />
-          </section>
-        </>
-      )
+    <>
+      <Helmet
+        title={data.site.siteMetadata.title}
+        meta={[
+          {
+            name: 'description',
+            content: 'Communauté Nantaise des utilisateurs de JavaScript',
+          },
+          { name: 'keywords', content: 'meetup, Nantes, JavaScript' },
+          {
+            name: 'google-site-verification',
+            content: 'qlEe2-C1DYQueNyWsHnPDBC5JDDNZGLxyyz3uXynk0M',
+          },
+        ]}
+      >
+        <html lang="fr" />
+      </Helmet>
+      <section className={styles.layout}>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <main className={styles.layout__main}>
+          <LargeContainer relative >
+            <div
+              style={{
+                margin: '0 auto',
+                maxWidth: '1020px',
+                padding: '0 20px',
+              }}
+            >
+              {children}
+            </div>
+          </LargeContainer>
+        </main>
+        <Footer />
+      </section>
+    </>
+  )
 }
 
 Layout.propTypes = {

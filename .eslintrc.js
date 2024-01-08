@@ -1,16 +1,19 @@
 module.exports = {
   extends: ["eslint:recommended", "plugin:react/recommended", "plugin:jest/recommended"],
-  plugins: ["react", "jest"],
+  plugins: ["standard", "react", "jest"],
   env: {
+    browser: true,
+    es6: true,
     "jest/globals": true,
-  },
-  settings: {
-    react: {
-      version: "latest",
-    },
+    node: true,
   },
   globals: {
     fetch: false,
+  },
+  settings: {
+    react: {
+      version: "detect"
+    }
   },
   rules: {
     "jest/no-disabled-tests": "warn",
@@ -58,9 +61,16 @@ module.exports = {
     // react plugin - options
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    "react/react-in-jsx-scope": "off",
   },
   parser: "@babel/eslint-parser",
   parserOptions: {
+    babelOptions: {
+      presets: ["@babel/preset-react"]
+    },
+    ecmaFeatures: {
+      jsx: true
+    },
     ecmaVersion: 8, // optional, recommended 6+
     requireConfigFile: false
   },

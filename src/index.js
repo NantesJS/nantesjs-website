@@ -1,9 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
+import { createRoot } from 'react-dom/client'
 import { App } from './components/App'
 import registerServiceWorker from './registerServiceWorker'
+import './index.css'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const container = document.getElementById('app')
+const root = createRoot(container)
+root.render(<App />)
 
 registerServiceWorker()

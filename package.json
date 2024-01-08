@@ -10,6 +10,7 @@
     "classnames": "^2.5.1",
     "cross-env": "^7.0.3",
     "date-fns": "^3.1.0",
+    "eslint-plugin-standard": "^5.0.0",
     "gatsby": "^5.3.3",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^5.13.0",
@@ -68,6 +69,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/eslint-parser": "^7.5.4",
+    "@babel/preset-react": "^7.23.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^29.7.0",
     "babel-preset-gatsby": "^3.13.0",
