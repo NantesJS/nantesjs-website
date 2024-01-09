@@ -3,7 +3,7 @@ import { string } from 'prop-types'
 import { Link } from 'gatsby'
 import { MenuContext } from '../Menu/Menu'
 
-import styles from './MenuLink.module.css'
+import * as styles from './MenuLink.module.css'
 
 MenuLink.propTypes = {
   label: string,

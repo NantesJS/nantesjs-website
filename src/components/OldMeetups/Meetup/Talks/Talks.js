@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/fontawesome-free-brands'
 import { array } from 'prop-types'
 
-import styles from './Talks.module.css'
+import * as styles from './Talks.module.css'
 
 Talks.propTypes = {
   talks: array,

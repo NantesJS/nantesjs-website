@@ -2,7 +2,7 @@ import React from 'react'
 import { array, object, string } from 'prop-types'
 import classNames from 'classnames'
 
-import styles from './Avatars.module.css'
+import * as styles from './Avatars.module.css'
 
 Circle.propTypes = {
   src: string,
@@ -50,7 +50,7 @@ export function Avatars ({ speakers }) {
             key={speaker.id}
             style={style}
             className={classNames(
-              styles.avatars__portrait,
+              styles.avatars__portraitSingle,
               {
                 [styles.avatars__portraitSingle]: speakersWithLink.length === 1
               }

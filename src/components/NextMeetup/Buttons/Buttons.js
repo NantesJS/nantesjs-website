@@ -3,7 +3,7 @@ import { string, bool } from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faTwitch } from '@fortawesome/fontawesome-free-brands'
 
-import styles from './Buttons.module.css'
+import * as styles from './Buttons.module.css'
 
 Buttons.propTypes = {
   ticketsUrl: string,

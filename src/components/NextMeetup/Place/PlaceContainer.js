@@ -1,13 +1,10 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import { Place } from './Place'
 
 export function PlaceContainer () {
-  return (
-    <StaticQuery
-      query={graphql`
-            {
+  const data = useStaticQuery(graphql`query {
               allMarkdownRemark(
                 filter: { frontmatter: { status: { eq: "next" } } }
                 limit: 1
@@ -24,12 +21,10 @@ export function PlaceContainer () {
                   }
                 }
               } } }
-            }
-            `}
-      render={({ allMarkdownRemark: { edges } }) => {
-        const { venue } = edges[0].node.frontmatter
-        return <Place {...venue} />
-      }}
-    />
-  )
+            }`)
+
+  const { edges } = data.allMarkdownRemark
+  const { venue } = edges[0].node.frontmatter
+
+  return <Place {...venue} />
 }

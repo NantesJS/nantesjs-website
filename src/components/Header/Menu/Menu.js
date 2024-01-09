@@ -3,7 +3,7 @@ import { node } from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import faBars from '@fortawesome/fontawesome-free-solid/faBars'
 
-import styles from './Menu.module.css'
+import * as styles from './Menu.module.css'
 
 export const MenuContext = createContext({ closeMenu: () => {} })
 

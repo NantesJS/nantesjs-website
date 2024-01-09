@@ -2,7 +2,7 @@ import React from 'react'
 import { node, bool, object } from 'prop-types'
 import classNames from 'classnames'
 
-import styles from './LargeContainer.module.css'
+import * as styles from './LargeContainer.module.css'
 
 LargeContainer.propTypes = {
   style: object,
@@ -12,9 +12,7 @@ LargeContainer.propTypes = {
 
 export function LargeContainer ({ children, relative, style }) {
   return (
-    <div style={style} className={classNames(styles.largeContainer, {
-      [styles.largeContainerRelative]: relative,
-    })}>
+    <div style={style} className={styles.largeContainer}>
       {children}
     </div>
   )

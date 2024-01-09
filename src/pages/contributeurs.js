@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 
-import styles from "./contributeurs.module.css"
+import * as styles from "./contributeurs.module.css"
 
 const contributions = {
   question: {

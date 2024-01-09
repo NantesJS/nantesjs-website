@@ -4,7 +4,7 @@ import { withPrefix } from 'gatsby'
 
 import { FullDate } from '../../FullDate'
 
-import styles from './TitleBar.module.css'
+import * as styles from './TitleBar.module.css'
 
 TitleBar.propTypes = {
   title: string,

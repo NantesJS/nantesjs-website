@@ -3,7 +3,7 @@ import {
   string,
   bool
 } from 'prop-types'
-import styles from './Picture.module.css'
+import * as styles from './Picture.module.css'
 import classNames from 'classnames'
 
 Picture.propTypes = {

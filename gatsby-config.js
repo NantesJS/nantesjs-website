@@ -43,15 +43,10 @@ const options = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: `contributors`, 
+        name: `contributors`,
         path:`${ __dirname }/datas/contributors`,
       },
-    }, {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_ID,
-      },
-    }, {
+    },{
       resolve: 'gatsby-plugin-feed',
       options: {
         query: `
@@ -84,29 +79,44 @@ const options = {
               })
             })
           },
-          query: `
-              {
-                allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        id
-                        title
-                        date
-                        talks {title description speakers { name link }}
-                        sponsor { name link }
-                        venue { name link postal_code address city }
-                        ticketsUrl
-                      }
-                    }
-                  }
-                }
-              }
-            `,
+          query: `{
+  allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    edges {
+      node {
+        excerpt
+        html
+        fields {
+          slug
+        }
+        frontmatter {
+          id
+          title
+          date
+          talks {
+            title
+            description
+            speakers {
+              name
+              link
+            }
+          }
+          sponsor {
+            name
+            link
+          }
+          venue {
+            name
+            link
+            postal_code
+            address
+            city
+          }
+          ticketsUrl
+        }
+      }
+    }
+  }
+}`,
           output: "/rss.xml",
           title: "NantesJS RSS Feed",
         } ]

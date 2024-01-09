@@ -6,7 +6,7 @@ import { TitleBar } from '../components/NextMeetup/TitleBar/TitleBar'
 import { Talk } from '../components/Talk'
 import { FullWidthContainer } from '../components/FullWidthContainer'
 import { Buttons } from '../components/NextMeetup/Buttons/Buttons'
-import styles from './meetup.module.css'
+import * as styles from './meetup.module.css'
 
 Component.propTypes = {
   data: shape({

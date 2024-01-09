@@ -3,7 +3,7 @@ import { string } from 'prop-types'
 import classNames from 'classnames'
 
 import { SocialLinks } from '../SocialLinks'
-import styles from './SocialIcons.module.css'
+import * as styles from './SocialIcons.module.css'
 
 SocialIcons.propTypes = {
   className: string,

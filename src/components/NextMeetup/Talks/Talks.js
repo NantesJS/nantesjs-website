@@ -2,7 +2,7 @@ import React from 'react'
 import { array } from 'prop-types'
 import { Talk } from '../../Talk'
 
-import styles from './Talks.module.css'
+import * as styles from './Talks.module.css'
 
 Talks.propTypes = {
   talks: array,

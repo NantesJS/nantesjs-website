@@ -1,13 +1,10 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import { Buttons } from './Buttons'
 
 export function ButtonsContainer () {
-  return (
-    <StaticQuery
-      query={graphql`
-            {
+  const data = useStaticQuery(graphql`query {
               allMarkdownRemark(
                 filter: { frontmatter: { status: { eq: "next" } } }
                 limit: 1
@@ -24,19 +21,17 @@ export function ButtonsContainer () {
                     remote
                   }
               } } }
-            }
-            `}
-      render={({ allMarkdownRemark: { edges } }) => {
-        const { ticketsUrl, remote } = edges[0].node.frontmatter
-        const { name: filename } = edges[0].node.parent
-        return (
-          <Buttons
-            ticketsUrl={ticketsUrl}
-            remote={remote}
-            filename={filename}
-          />
-        )
-      }}
+            }`)
+
+  const { edges } = data.allMarkdownRemark
+  const { ticketsUrl, remote } = edges[0].node.frontmatter
+  const { name: filename } = edges[0].node.parent
+
+  return (
+    <Buttons
+      ticketsUrl={ticketsUrl}
+      remote={remote}
+      filename={filename}
     />
   )
 }

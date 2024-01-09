@@ -1,13 +1,10 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import { Talks } from './Talks'
 
 export function TalksContainer () {
-  return (
-    <StaticQuery
-      query={graphql`
-            {
+  const data = useStaticQuery(graphql`query {
               allMarkdownRemark(
                 filter: { frontmatter: { status: { eq: "next" } } }
                 limit: 1
@@ -25,12 +22,10 @@ export function TalksContainer () {
                   }
                 }
               } } }
-            }
-            `}
-      render={({ allMarkdownRemark: { edges } }) => {
-        const { talks } = edges[0].node.frontmatter
-        return <Talks talks={talks} />
-      }}
-    />
-  )
+            }`)
+
+  const { edges } = data.allMarkdownRemark
+  const { talks } = edges[0].node.frontmatter
+
+  return <Talks talks={talks} />
 }

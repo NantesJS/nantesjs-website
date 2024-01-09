@@ -2,7 +2,7 @@ import React from 'react'
 import { Picture } from '../components/Picture'
 import Layout from '../components/layout'
 import { SocialLinks } from '../components/SocialLinks'
-import styles from './a-propos.module.css'
+import * as styles from './a-propos.module.css'
 import grue from './grue.jpg'
 import elephant from './elephant.jpg'
 

@@ -7,7 +7,7 @@ import {
   formatYear
 } from '../../helper/date.helper'
 
-import styles from './FullDate.module.css'
+import * as styles from './FullDate.module.css'
 
 FullDate.propTypes = {
   date: string,
