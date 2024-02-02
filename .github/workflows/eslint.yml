@@ -1,11 +1,17 @@
-name: CI
-on: push
+name: Eslint
+
+on: [push]
+
 jobs:
-  build:
+  linting:
+
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm
-    - name: Run ESLint
-      run: eslint . --ext .js,.jsx
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - run: npm ci
+      - run: npm run lint

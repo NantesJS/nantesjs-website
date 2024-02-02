@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {getSortedPostsData} from '@/lib/posts'
+import { getSortedPostsData } from '@/lib/posts'
 
 export default async function Page() {
     const posts = await getSortedPostsData()
