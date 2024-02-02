@@ -14,12 +14,12 @@ assignees: ''
  
 ### :clipboard: Acceptance Criteria
 
-#### Acceptance Criteria 1
+_Test 1_
 **Given** precondition
 **When** action
 **Then** result
 
-#### Acceptance Criteria 2
+_Test 2_
 **Given** precondition
 **When** action
 **Then** result
