@@ -2,8 +2,17 @@ header {
     background-color: var(--color-dark-grey);
     color: var(--color-yellow-nantesjs);
 }
+
 header > section {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
     margin: auto;
     max-width: 100%;
     width: 1160px;
+}
+
+header > section .logo {
+    max-height: 6.5rem;
+    width: auto;
 }

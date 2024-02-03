@@ -1,0 +1,35 @@
+nav {
+    padding-bottom: 1rem;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav > ul > li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav > ul > li > a {
+    border-bottom: 3px solid;
+    border-color: transparent;
+    color: var(--color-yellow-nantesjs);
+    font-family: var(--font-title);
+    font-size: 18px;
+    line-height: 2em;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    transition: border-color ease 500ms;
+}
+
+nav ul > li > a.active {
+    border-bottom: 3px solid var(--color-yellow-nantesjs);
+}
+
+nav > ul > li > a.active,
+nav > ul > li > a:hover {
+    border-color: var(--color-yellow-nantesjs);
+    transition: border-color ease 500ms;
+}

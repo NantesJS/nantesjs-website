@@ -2,7 +2,6 @@
   --color-dark-grey: #333;
   --color-light-grey: #f1f1f1;
   --color-yellow-nantesjs: #f3e049;
-  --font: 'Montserrat', sans-serif;
 }
 
 /*@media (prefers-color-scheme: dark) {*/
@@ -24,7 +23,7 @@
 
 body {
   background-color: var(--color-light-grey);
-  font-family: var(--font);
+  font-family: var(--font-body);
   font-weight: 300;
 }
 

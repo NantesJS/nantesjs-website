@@ -1,12 +1,17 @@
+'use client'
+
+import { NavLink } from '@/app/components/NavLink'
+import './Navbar.css'
+
 export function Navbar() {
     return (
         <nav>
             <ul>
-                <li>Évènements</li>
-                <li>Contributeurs</li>
-                <li>Code de conduite</li>
-                <li>À propos</li>
-                <li>Proposer un sujet</li>
+                <li><NavLink>Évènements</NavLink></li>
+                <li><NavLink slug='contributeurs'>Contributeurs</NavLink></li>
+                <li><NavLink slug='code-de-conduite'>Code de conduite</NavLink></li>
+                <li><NavLink slug='a-propos'>À propos</NavLink></li>
+                <li><NavLink slug="">Proposer un sujet</NavLink></li>
             </ul>
         </nav>
     )
