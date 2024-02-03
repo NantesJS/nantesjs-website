@@ -7,6 +7,7 @@ export function Logo() {
             alt="Logo de NantesJS - Communauté nantaise des utilisateurs de JavaScript"
             height={500}
             width={500}
+            className='logo'
         />
     )
 }
