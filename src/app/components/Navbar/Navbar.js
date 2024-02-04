@@ -3,7 +3,8 @@
 import { NavLink } from '@/app/components/NavLink'
 import './Navbar.css'
 
-export function Navbar() {
+export function Navbar () {
+
     return (
         <nav>
             <ul>
@@ -15,4 +16,5 @@ export function Navbar() {
             </ul>
         </nav>
     )
+
 }
