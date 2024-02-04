@@ -1,1 +1,1 @@
-export { NavLink } from './NavLink'
+export { NavLink } from './NavLink.jsx'

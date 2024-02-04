@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export function Logo() {
+export function Logo () {
     return (
         <Image
             src="/nantesjs-logo.svg"

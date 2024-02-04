@@ -1,12 +1,14 @@
 {
   "name": "nantesjs-blog",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "lint": "next lint",
     "start": "next start",
-    "lint": "next lint"
+    "test": "vitest"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -18,7 +20,12 @@
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^1.5.4",
+    "@testing-library/jest-dom": "^6.4.1",
+    "@testing-library/react": "^14.2.1",
+    "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "jsdom": "^24.0.0",
+    "vitest": "^1.2.2"
   }
 }

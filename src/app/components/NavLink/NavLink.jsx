@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { useSelectedLayoutSegment } from 'next/navigation'
 
 export function NavLink ({ slug = null, children }) {
-
     const segment = useSelectedLayoutSegment()
     const isActive = slug === segment ?? slug === null
 
@@ -11,5 +10,4 @@ export function NavLink ({ slug = null, children }) {
             {children}
         </Link>
     )
-
 }

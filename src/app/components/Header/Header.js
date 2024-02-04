@@ -2,7 +2,7 @@ import { Logo, Navbar } from '@/app/components'
 import './Header.css'
 import Link from 'next/link'
 
-export function Header() {
+export function Header () {
     return (
         <header>
             <section>

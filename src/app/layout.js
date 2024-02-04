@@ -9,7 +9,6 @@ export const metadata = {
 }
 
 export default function RootLayout ({ children }) {
-
     return (
         <html lang="fr">
             <body className={`${montserrat.className} ${firaSans.variable}`}>
@@ -20,5 +19,4 @@ export default function RootLayout ({ children }) {
             </body>
         </html>
     )
-
 }
