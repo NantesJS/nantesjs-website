@@ -17,7 +17,7 @@
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin-js": "^1.5.4",
+    "@stylistic/eslint-plugin": "^1.5.4",
     "eslint": "^8",
     "eslint-config-next": "14.1.0"
   }

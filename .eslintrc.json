@@ -1,12 +1,13 @@
 {
   "extends": "next/core-web-vitals",
   "plugins": [
-    "@stylistic/js"
+    "@stylistic"
   ],
   "rules": {
-    "@stylistic/js/max-len": ["error", { "code": 120 }],
-    "@stylistic/js/object-curly-spacing": ["error", "always"],
-    "@stylistic/js/quotes": ["error", "single"],
-    "@stylistic/js/semi": ["error", "never"]
+    "@stylistic/max-len": ["error", { "code": 120 }],
+    "@stylistic/object-curly-spacing": ["error", "always"],
+    "@stylistic/quotes": ["error", "single"],
+    "@stylistic/semi": ["error", "never"],
+    "@stylistic/jsx-quotes": ["error", "prefer-double"]
   }
 }
