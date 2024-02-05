@@ -1,0 +1,14 @@
+.social-link {
+    align-items: center;
+    border-radius: 100%;
+    background-color: transparent;
+    display: flex;
+    padding: 0.2rem 0.4rem;
+    transition: all 500ms ease;
+}
+
+.social-link:hover {
+    background-color: var(--color-yellow-nantesjs);
+    color: var(--color-dark-grey);
+    transition: all 500ms ease;
+}

@@ -1,5 +1,5 @@
 import { firaSans, montserrat } from './fonts'
-import { Header } from '@/app/components/Header'
+import { Header } from '@/app/(layout)/Header'
 import './globals.css'
 
 export const metadata = {

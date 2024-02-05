@@ -1,0 +1,46 @@
+header {
+    background-color: var(--color-dark-grey);
+    color: var(--color-yellow-nantesjs);
+    padding-top: 1rem;
+}
+
+header a {
+    color: var(--color-yellow-nantesjs);
+    font-family: var(--font-title);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header > section {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    width: 1160px;
+}
+
+header > section .logo {
+    max-height: 6.5rem;
+    width: auto;
+}
+
+header > section .navbar-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+header > section .navbar-group > div,
+header > section .navbar-group > nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header > section .navbar-group .navbar-social a:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+header > section .navbar-group .navbar-social svg {
+    width: 20px;
+}

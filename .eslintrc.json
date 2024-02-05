@@ -8,6 +8,7 @@
     "@stylistic/jsx-first-prop-new-line": ["error", "multiline"],
     "@stylistic/max-len": ["error", { "code": 120 }],
     "@stylistic/multiline-ternary": ["error", "always-multiline"],
+    "@stylistic/no-extra-parens": ["error", "all", { "ignoreJSX":  "all" }],
     "@stylistic/object-curly-spacing": ["error", "always"],
     "@stylistic/object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true}],
     "@stylistic/padded-blocks": ["error", "never"],

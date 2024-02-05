@@ -1,0 +1,1 @@
+export { socialLinks } from './socialLinks'
