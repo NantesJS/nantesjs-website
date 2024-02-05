@@ -6,13 +6,14 @@ nav > ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    padding-bottom: 0.5rem;
 }
 
-nav > ul > li:not(:last-child) {
+nav > ul > li:not(.cfp-link) {
     margin-right: 20px;
 }
 
-nav > ul > li > a {
+nav > ul > li:not(.cfp-link) > a {
     border-bottom: 3px solid;
     border-color: transparent;
     color: var(--color-yellow-nantesjs);
@@ -24,12 +25,34 @@ nav > ul > li > a {
     transition: border-color ease 500ms;
 }
 
-nav ul > li > a.active {
+nav ul > li:not(.cfp-link) > a.active {
     border-bottom: 3px solid var(--color-yellow-nantesjs);
 }
 
-nav > ul > li > a.active,
-nav > ul > li > a:hover {
+nav > ul > li:not(.cfp-link) > a.active,
+nav > ul > li:not(.cfp-link) > a:hover {
     border-color: var(--color-yellow-nantesjs);
     transition: border-color ease 500ms;
 }
+
+nav > ul > li.cfp-link {
+    border: 3px solid var(--color-yellow-nantesjs);
+}
+
+nav > ul > li.cfp-link > a {
+    background-color: var(--color-yellow-nantesjs);
+    color: var(--color-dark-grey);
+    font-family: var(--font-title);
+    font-size: 18px;
+    line-height: 2em;
+    padding: 0.6rem 0.5rem;
+    text-decoration: none;
+    transition: all ease 500ms;
+}
+
+nav > ul > li.cfp-link > a:hover {
+    background-color: transparent;
+    color: var(--color-yellow-nantesjs);
+    transition: all ease 500ms;
+}
+
