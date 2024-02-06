@@ -7,6 +7,15 @@ nav > ul {
     justify-content: flex-end;
     list-style: none;
     padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+nav > ul > li {
+    margin-right: 20px;
+}
+
+nav > ul > li:last-child {
+    margin-right: 0;
 }
 
 nav > ul > li > a {
@@ -15,42 +24,27 @@ nav > ul > li > a {
     border-top: 3px solid transparent;
     display: flex;
     padding: 0.5rem;
+    transition: border-bottom-color 500ms ease;
 }
 
-nav > ul > li:not(.cfp-link) {
-    margin-right: 20px;
-}
-
-nav > ul > li:not(.cfp-link) > a {
-    transition: border-bottom-color ease 500ms;
-}
-
-nav ul > li:not(.cfp-link) > a.active {
-    border-bottom: 3px solid var(--color-yellow-nantesjs);
-}
-
-nav > ul > li:not(.cfp-link) > a.active,
-nav > ul > li:not(.cfp-link) > a:hover {
+/* Active and hover state for links */
+nav > ul > li > a.active,
+nav > ul > li > a:hover {
     border-bottom-color: var(--color-yellow-nantesjs);
-    transition: border-color ease 500ms;
 }
 
-/* Specific : the CFP link */
-
+/* Specific: the CFP link */
 nav > ul > li.cfp-link > a {
     background-color: var(--color-yellow-nantesjs);
-    border-bottom-color: var(--color-yellow-nantesjs);
     color: var(--color-dark-grey);
-    transition: all ease 500ms;
+    transition: background-color 500ms ease, color 500ms ease;
 }
 
 nav > ul > li.cfp-link > a:hover {
     background-color: transparent;
     color: var(--color-yellow-nantesjs);
-    transition: all ease 500ms;
 }
 
 nav > ul > li.cfp-link > a > svg {
     margin-left: 0.5rem;
 }
-

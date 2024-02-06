@@ -8,7 +8,6 @@ header a {
     color: var(--color-yellow-nantesjs);
     font-family: var(--font-title);
     font-size: 18px;
-    text-decoration: none;
 }
 
 header > section {

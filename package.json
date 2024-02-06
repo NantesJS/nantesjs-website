@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "next lint",
-    "stylelint": "stylelint **/*.{css}",
+    "stylelint": "stylelint \"**/*.css\"",
     "start": "next start",
     "test": "vitest"
   },
