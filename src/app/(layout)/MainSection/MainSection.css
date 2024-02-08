@@ -1,0 +1,6 @@
+.main-section {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    width: 1160px;
+}
