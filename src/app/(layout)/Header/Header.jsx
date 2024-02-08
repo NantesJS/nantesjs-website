@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { Logo } from '@/app/components'
-import { MainSection } from '../MainSection'
 import { Navbar } from './Navbar'
 import { socialLinksList } from './SocialLink/socialLinksList.js'
 import { SocialLink } from './SocialLink'
@@ -9,7 +8,7 @@ import './Header.css'
 export function Header () {
     return (
         <header>
-            <MainSection>
+            <section>
                 <Link href="/">
                     <Logo/>
                 </Link>
@@ -21,7 +20,7 @@ export function Header () {
                     </div>
                     <Navbar/>
                 </div>
-            </MainSection>
+            </section>
         </header>
     )
 }

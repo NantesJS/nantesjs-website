@@ -1,4 +1,4 @@
-import { MeetupDetails } from '@/app/components/index.js'
+import { MeetupDetails } from '@/app/components'
 
 export default async function Page () {
     return (

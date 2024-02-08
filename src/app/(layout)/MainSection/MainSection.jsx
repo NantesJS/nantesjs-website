@@ -1,8 +1,9 @@
+import cn from 'classnames'
 import './MainSection.css'
 
-export function MainSection ({ classname, children }) {
+export function MainSection ({ className, children }) {
     return (
-        <section className="main-section">
+        <section className={cn('main-section', className)}>
             {children}
         </section>
     )

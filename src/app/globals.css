@@ -19,10 +19,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-dark-grey);
   font-family: var(--font-title);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a {
    color: inherit;
    text-decoration: none;
+}
+
+.block-fullwith {
+  display: flex;
+  justify-content: center;
 }
