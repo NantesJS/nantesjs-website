@@ -1,6 +1,6 @@
 ---
 id: 72f12619-1f4B-4633-af60-4838579159e1
-status: next
+status: done
 title: 'Meetup #77'
 date: '18/01/2024'
 image: /images/meetup/accessibility-blue.png
