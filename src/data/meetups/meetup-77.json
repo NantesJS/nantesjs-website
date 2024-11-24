@@ -1,6 +1,6 @@
 {
   "id": "72f12619-1f4B-4633-af60-4838579159e1",
-  "status": "next",
+  "status": "done",
   "title": "Meetup #77",
   "date": "18/01/2024",
   "image": "/images/meetup/accessibility-blue.png",
@@ -9,7 +9,7 @@
     "id": "bc6ba7a1-4e6d-40cc-8c53-25aa5cfb9156",
     "name": "Epitech",
     "link": "https://www.epitech.eu/ecole-informatique-nantes/",
-    "postal_code": "44000",
+    "postalCode": "44000",
     "address": "5 rue d’Alger",
     "city": "Nantes",
     "latitude": 47.2105453,

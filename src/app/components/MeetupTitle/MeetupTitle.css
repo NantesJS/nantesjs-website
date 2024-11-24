@@ -6,7 +6,7 @@
 
 .meetup-title h1,
 .meetup-title time .day {
-    font-size: 5.8rem;
+    font-size: 4.8rem;
     font-weight: 500;
 }
 
@@ -16,6 +16,6 @@
 }
 
 .meetup-title img {
-    height: 11rem;
-    width: 11rem;
+    height: auto;
+    width: 7rem;
 }
