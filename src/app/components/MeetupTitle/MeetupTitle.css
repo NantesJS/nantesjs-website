@@ -1,0 +1,21 @@
+.meetup-title {
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.meetup-title h1,
+.meetup-title time .day {
+    font-size: 5.8rem;
+    font-weight: 500;
+}
+
+.meetup-title p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.meetup-title img {
+    height: 11rem;
+    width: 11rem;
+}

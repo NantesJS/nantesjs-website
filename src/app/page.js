@@ -1,9 +1,11 @@
-import { MeetupDetails } from '@/app/components'
+import { MeetupTitle } from '@/app/components'
+import { getSortedMeetupListByYear } from '@/lib'
 
-export default async function Page () {
+export default function Page () {
+    const [ nextMeetup, ...meetupList ] = getSortedMeetupListByYear()
+
     return (
-        <div className="block-fullwith">
-            <MeetupDetails />
-        </div>
+        <MeetupTitle meetup={nextMeetup} />
     )
 }
+

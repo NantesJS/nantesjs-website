@@ -1,8 +1,8 @@
 {
   "name": "nantesjs-blog",
   "version": "0.1.0",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,24 +13,24 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "date-fns": "^4.1.0",
     "gray-matter": "^4.0.3",
-    "next": "14.1.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-feather": "^2.0.10",
-    "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-feather": "^2.0.10"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^1.5.4",
-    "@testing-library/jest-dom": "^6.4.1",
-    "@testing-library/react": "^14.2.1",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0",
-    "jsdom": "^24.0.0",
-    "stylelint": "^16.2.1",
-    "stylelint-config-standard": "^36.0.0",
-    "vitest": "^1.2.2"
+    "@stylistic/eslint-plugin": "^2.11.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.15.0",
+    "eslint-config-next": "^15.0.3",
+    "jest-axe": "^9.0.0",
+    "jsdom": "^25.0.1",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
+    "vitest": "^2.1.5"
   }
 }

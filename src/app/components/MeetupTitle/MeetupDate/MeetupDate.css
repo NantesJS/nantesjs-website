@@ -1,0 +1,30 @@
+.meetup-date {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.meetup-date > span {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.meetup-date .day {
+    line-height: 4.8rem;
+}
+
+.meetup-date .month {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.meetup-date .year {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+}

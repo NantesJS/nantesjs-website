@@ -12,14 +12,19 @@
 
 body {
   background-color: var(--color-light-grey);
-  font-family: var(--font-body);
-  font-weight: 300;
+  color: var(--color-dark-grey);
+  font-family: var(--font-body), serif;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-dark-grey);
-  font-family: var(--font-title);
+  font-family: var(--font-title), serif;
   font-weight: 500;
+}
+
+h3, h4 {
+  margin-top: 1rem;
 }
 
 a {
@@ -27,7 +32,21 @@ a {
    text-decoration: none;
 }
 
-.block-fullwith {
+p {
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+ul {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  line-height: 1.6;
+}
+
+.block-fullwidth {
+  align-items: center;
   display: flex;
+  flex-direction: column;
+  gap: 3rem;
   justify-content: center;
 }

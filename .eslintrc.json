@@ -4,6 +4,9 @@
     "@stylistic"
   ],
   "rules": {
+    "@stylistic/array-bracket-spacing": ["error", "always", { "singleValue": false }],
+    "@stylistic/array-element-newline": ["error", "consistent"],
+    "@stylistic/dot-location": ["error", "property"],
     "@stylistic/function-call-argument-newline": ["error", "never"],
     "@stylistic/jsx-first-prop-new-line": ["error", "multiline"],
     "@stylistic/max-len": ["error", { "code": 120 }],

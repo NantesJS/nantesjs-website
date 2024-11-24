@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Logo } from '@/app/components'
+import { Logo } from './../../components'
 import { Navbar } from './Navbar'
 import { socialLinksList } from './SocialLink/socialLinksList.js'
 import { SocialLink } from './SocialLink'

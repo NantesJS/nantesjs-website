@@ -16,6 +16,7 @@ export const montserrat = Montserrat({
     variable: '--font-body',
     weight: [
         '300',
+        '400',
         '500'
     ]
 })

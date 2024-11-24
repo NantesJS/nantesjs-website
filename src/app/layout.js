@@ -1,5 +1,5 @@
+import { Header } from '@/app/(layout)'
 import { firaSans, montserrat } from './fonts'
-import { Header } from '@/app/(layout)/Header'
 import './globals.css'
 
 export const metadata = {
@@ -14,7 +14,9 @@ export default function RootLayout ({ children }) {
             <body className={`${montserrat.className} ${firaSans.variable}`}>
                 <Header />
                 <main>
-                    {children}
+                    <div className="block-fullwidth">
+                        {children}
+                    </div>
                 </main>
             </body>
         </html>
