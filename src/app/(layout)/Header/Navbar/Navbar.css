@@ -1,7 +1,3 @@
-nav {
-    padding-bottom: 1rem;
-}
-
 nav > ul {
     display: flex;
     justify-content: flex-end;
@@ -23,6 +19,7 @@ nav > ul > li > a {
     border-top: 3px solid transparent;
     display: flex;
     padding: 0.5rem;
+    text-decoration: none;
     transition: border-bottom-color 500ms ease;
 }
 

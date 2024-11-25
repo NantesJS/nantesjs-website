@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { MeetupDate } from './MeetupDate'
+import { MeetupDate } from '../MeetupDate'
 import './MeetupTitle.css'
 
 /**

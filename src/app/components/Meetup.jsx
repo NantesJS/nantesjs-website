@@ -1,4 +1,4 @@
-import { MainSection } from '@/app/(layout)/index.js'
+import { MainSection } from '@/app/(layout)'
 import { MeetupDetails, MeetupTitle } from '@/app/components'
 
 import './Meetup.css'

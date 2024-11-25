@@ -1,10 +1,10 @@
 import { MainSection } from '@/app/(layout)/index.js'
 import Image from 'next/image.js'
-import ZenikaLogo from '../../../public/images/sponsors/zenika.svg'
-import ExternaticLogo from '../../../public/images/sponsors/externatic.png'
-import SfeirLogo from '../../../public/images/sponsors/sfeir.png'
-import MaltLogo from '../../../public/images/sponsors/malt.svg'
-import BamLogo from '../../../public/images/sponsors/bam.png'
+import ZenikaLogo from '../../../../public/images/sponsors/zenika.svg'
+import ExternaticLogo from '../../../../public/images/sponsors/externatic.png'
+import SfeirLogo from '../../../../public/images/sponsors/sfeir.png'
+import MaltLogo from '../../../../public/images/sponsors/malt.svg'
+import BamLogo from '../../../../public/images/sponsors/bam.png'
 
 import './Sponsors.css'
 
