@@ -1,3 +1,5 @@
 export { Logo } from './Logo'
+export { Meetup } from './Meetup'
 export { MeetupDetails } from './MeetupDetails'
 export { MeetupTitle } from './MeetupTitle'
+export { Sponsors } from './Sponsors'

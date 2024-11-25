@@ -1,5 +1,6 @@
 import { getMeetupData } from '@/lib'
-import { MeetupDetails, MeetupTitle } from '@/app/components'
+
+import { Meetup } from '@/app/components'
 
 /*
  * Set the title of the page to be the post title, note that we no longer use
@@ -18,10 +19,5 @@ export default async function Post ({ params }) {
     const { id } = await params
     const meetup = await getMeetupData(id)
 
-    return (
-        <>
-            <MeetupTitle meetup={meetup} />
-            <MeetupDetails meetup={meetup} />
-        </>
-    )
+    return <Meetup meetup={meetup}/>
 }

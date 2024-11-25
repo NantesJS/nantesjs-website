@@ -1,5 +1,6 @@
 .meetup-title {
     align-items: center;
+    display: flex;
     gap: 2rem;
     margin-top: 2rem;
 }

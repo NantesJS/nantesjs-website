@@ -1,0 +1,13 @@
+.sponsors {
+    align-items: center;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 1rem 0;
+}
+
+.sponsors img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}

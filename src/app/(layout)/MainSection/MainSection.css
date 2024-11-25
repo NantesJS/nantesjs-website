@@ -1,9 +1,9 @@
 .main-section {
-    display: flex;
     max-width: 100%;
     width: 980px;
 }
 
 .main-section.full-text {
+    display: flex;
     flex-direction: column;
 }

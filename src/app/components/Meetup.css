@@ -1,0 +1,15 @@
+.meetup {
+    font-size: 1.1rem;
+}
+
+.meetup h2 {
+    margin-bottom: 1rem;
+}
+
+.meetup article {
+    padding: 2rem 0;
+}
+
+.meetup article:not(:last-of-type) {
+    border-bottom: 0.1rem solid #ccc;
+}

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { MainSection } from '@/app/(layout)/index.js'
 import { MeetupDate } from './MeetupDate'
 import './MeetupTitle.css'
 
@@ -12,9 +11,9 @@ export function MeetupTitle ({ meetup }) {
     const { date, image, title, sponsor, venue } = meetup
 
     return (
-        <MainSection className="meetup-title">
+        <div className="meetup-title">
             <Image
-                src={image}
+                src={`/images/meetups/${image}`}
                 alt=""
                 width={100}
                 height={100}
@@ -27,6 +26,6 @@ export function MeetupTitle ({ meetup }) {
             </section>
 
             <MeetupDate date={date} />
-        </MainSection>
+        </div>
     )
 }

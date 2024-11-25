@@ -1,12 +1,8 @@
-import { MainSection } from '@/app/(layout)'
-
-import './MeetupDetails.css'
-
 export function MeetupDetails ({ meetup }) {
     const isMeetupHero = meetup.type === 'meetup-hero'
 
     return (
-        <MainSection className="meetup-details">
+        <>
             {meetup.talks.map((talk, index) => (
                 <article key={index}>
                     {talk.title && <h2>{talk.title}</h2>}
@@ -21,7 +17,7 @@ export function MeetupDetails ({ meetup }) {
                     ))}
                 </article>
             ))}
-        </MainSection>
+        </>
     )
 }
 

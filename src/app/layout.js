@@ -14,9 +14,7 @@ export default function RootLayout ({ children }) {
             <body className={`${montserrat.className} ${firaSans.variable}`}>
                 <Header />
                 <main>
-                    <div className="block-fullwidth">
-                        {children}
-                    </div>
+                    {children}
                 </main>
             </body>
         </html>
