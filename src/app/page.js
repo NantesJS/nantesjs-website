@@ -6,14 +6,6 @@ import { getPreviousYears } from '@/lib/getSortedMeetupListByYear.js'
 
 export default function Page () {
     const [ nextMeetup, ...meetupList ] = getSortedMeetupListByYear()
-    const previousList = meetupList.map((meetup) => {
-        const talks = meetup.talks.map((talk) => ({
-            ...talk,
-            speakers: talk.speakers.map((speaker) => speaker.name).join(', ')
-        }))
-
-        return { ...meetup, talks }
-    })
 
     const previousYears = getPreviousYears()
 
@@ -24,7 +16,7 @@ export default function Page () {
             <MainSection>
                 <h2>Évènements passés</h2>
             </MainSection>
-            {previousList.map((meetup) => (
+            {meetupList.map((meetup) => (
                 <PreviousMeetup key={meetup.id} meetup={meetup} />
             ))}
             <MainSection>

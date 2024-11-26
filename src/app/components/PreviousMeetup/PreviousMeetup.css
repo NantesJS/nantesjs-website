@@ -1,6 +1,7 @@
 .previous-meetup {
     display: flex;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 .previous-meetup > section {

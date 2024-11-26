@@ -7,13 +7,15 @@ const currentYear = new Date().getFullYear()
 export function getSortedMeetupListByYear(year = currentYear) {
     const allFilesData = parseFilesInDirectory({ directory: MEETUPS_DIRECTORY })
 
-    return allFilesData
+    const sortedMeetupList = allFilesData
         .map((meetup) => ({
             ...meetup,
             date: parseMeetupDate(meetup.date),
         }))
         .filter((meetup) => meetup.date && getYear(meetup.date) === year)
         .sort((a, b) => b.date - a.date)
+
+    return sortedMeetupList
 }
 
 export function getPreviousYears() {

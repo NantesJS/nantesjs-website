@@ -6,7 +6,12 @@ import { MainSection } from '@/app/(layout)'
 import './PreviousMeetup.css'
 
 export function PreviousMeetup ({ meetup }) {
-    const { date, id, image, title, talks, sponsor, venue } = meetup
+    const { date, id, image, title, sponsor, venue } = meetup
+
+    const talks = meetup.talks.map((talk) => ({
+        ...talk,
+        speakers: talk.speakers.map((speaker) => speaker.name).join(', ')
+    }))
 
     return (
         <MainSection className="previous-meetup">
@@ -21,12 +26,12 @@ export function PreviousMeetup ({ meetup }) {
             </div>
             <section>
                 <h2>
-                    <Link href={`/meetups/${id}`}>{title}</Link>
+                    <Link href={`/meetup/${id}`}>{title}</Link>
                 </h2>
                 {talks.map((talk) => (
                     <article key={talk.id}>
                         {talk.title && <strong>{talk.title}</strong>}
-                        {talk.speakers && <p>{talk.speakers}</p>}
+                        <p>{talk.speakers}</p>
                     </article>
                 ))}
             </section>
