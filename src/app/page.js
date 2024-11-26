@@ -16,7 +16,6 @@ export default function Page () {
     })
 
     const previousYears = getPreviousYears()
-    console.log('previousYears', previousYears)
 
     return (
         <>
@@ -32,9 +31,9 @@ export default function Page () {
                 <h2>Consulter les évènements des autres années</h2>
             </MainSection>
             <MainSection className="previous-years">
-                {/* {years.map((year) => (*/}
-                {/*    <Link href={`/year/${year}`}>{year}</Link>*/}
-                {/* ))}*/}
+                {previousYears.map((year) => (
+                    <Link key={year} href={`/year/${year}`}>{year}</Link>
+                ))}
             </MainSection>
         </>
     )
