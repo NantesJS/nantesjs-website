@@ -23,7 +23,8 @@ export function getPreviousYears () {
         .map((meetup) => ({
             year: parseMeetupDate(meetup.date).getFullYear()
         }))
-        .filter((year) => year !== currentYear)
+    console.log('currentYear', currentYear)
+    console.log('parsedData', parsedData.filter((year) => year !== currentYear))
 
     return [...new Set(parsedData.map((meetup) => meetup.year))]
 }

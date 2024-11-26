@@ -15,8 +15,8 @@ export default function Page () {
         return { ...meetup, talks }
     })
 
-    const test = getPreviousYears()
-    console.log(test)
+    const previousYears = getPreviousYears()
+    console.log('previousYears', previousYears)
 
     return (
         <>
