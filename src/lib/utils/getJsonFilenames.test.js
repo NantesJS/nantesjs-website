@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 import { describe, expect, it, beforeEach, afterEach } from 'vitest'
-import { getFilenames } from './getFilenames.js'
+import { getJsonFilenames } from './getJsonFilenamesparseJsonFilesInDirectory'
 
 const testDir = path.join(process.cwd(), 'src/data/test')
 const emptyDir = path.join(process.cwd(), 'src/data/test/empty')
@@ -14,7 +14,7 @@ const mockFiles = [
     { name: '.hiddenFile', content: 'Hidden file' }
 ]
 
-describe('getFilenames', () => {
+describe('getJsonFilenames', () => {
     beforeEach(() => {
         fs.mkdirSync(testDir, { recursive: true })
         fs.mkdirSync(emptyDir)
@@ -29,17 +29,14 @@ describe('getFilenames', () => {
     })
 
     it('should return an array of json filenames', () => {
-        const result = getFilenames(testDir)
+        const result = getJsonFilenames(testDir)
 
         expect(result.length).toBe(2)
-        expect(result).toEqual([
-            'test1.json',
-            'test2.json'
-        ])
+        expect(result).toEqual([ 'test1.json', 'test2.json' ])
     })
 
     it('should return an empty array for an empty directory', () => {
-        const result = getFilenames(emptyDir)
+        const result = getJsonFilenames(emptyDir)
 
         expect(result).toEqual([])
     })

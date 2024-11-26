@@ -1,2 +1,3 @@
-export { getMeetupData } from './getMeetupData'
-export { getSortedMeetupListByYear } from './getSortedMeetupListByYear'
+export { getMeetupById } from './getMeetupById'
+export { getPastMeetupYears } from './getPastMeetupYears'
+export { getMeetupsByYear } from './getMeetupsByYear'

@@ -16,7 +16,7 @@ export function PreviousMeetup ({ meetup }) {
     return (
         <MainSection className="previous-meetup">
             <div>
-                <MeetupDate date={date}/>
+                <MeetupDate date={date} />
                 <Image
                     src={`/images/meetups/${image}`}
                     alt=""
@@ -36,8 +36,12 @@ export function PreviousMeetup ({ meetup }) {
                 ))}
             </section>
             <div>
-                <p>Sponsorisé par <strong>{sponsor.name}</strong></p>
-                <p>Hébergé par <strong>{venue.name}</strong></p>
+                <p>
+                    Sponsorisé par <strong>{sponsor.name}</strong>
+                </p>
+                <p>
+                    Hébergé par <strong>{venue.name}</strong>
+                </p>
             </div>
         </MainSection>
     )

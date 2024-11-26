@@ -3,20 +3,32 @@ export function MeetupDetails ({ meetup }) {
 
     return (
         <>
-            {meetup.talks.map((talk, index) => (
-                <article key={index}>
-                    {talk.title && <h2>{talk.title}</h2>}
-                    {isMeetupHero
-                        ? <MeetupHeroDescription description={talk.description} final={talk.final} />
-                        : <p>{talk.description}</p>
-                    }
-                    {talk.requirements && <TalkRequirements requirements={talk.requirements} />}
-                    <h4>Speakers</h4>
-                    {talk.speakers.map((speaker) => (
-                        <p key={speaker.id}>{speaker.name}</p>
-                    ))}
-                </article>
-            ))}
+            {meetup.talks.map((talk, index) => {
+                const description = isMeetupHero
+                    ? (
+                        <MeetupHeroDescription
+                            description={talk.description}
+                            final={talk.final}
+                        />
+                    )
+                    : (
+                        <p>{talk.description}</p>
+                    )
+
+                return (
+                    <article key={index}>
+                        {talk.title && <h2>{talk.title}</h2>}
+                        {description}
+                        {talk.requirements && (
+                            <TalkRequirements requirements={talk.requirements} />
+                        )}
+                        <h4>Speakers</h4>
+                        {talk.speakers.map((speaker) => (
+                            <p key={speaker.id || speaker.name}>{speaker.name}</p>
+                        ))}
+                    </article>
+                )
+            })}
         </>
     )
 }
@@ -30,7 +42,7 @@ const MeetupHeroDescription = ({ description, final }) => (
                 </li>
             ))}
         </ul>
-        <p>{final}</p>
+        {final && <p>{final}</p>}
     </>
 )
 

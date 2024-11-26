@@ -1,4 +1,4 @@
-import { getSortedMeetupListByYear } from '@/lib'
+import { getMeetupsByYear } from '@/lib'
 
 import { PreviousMeetup } from '@/app/components'
 
@@ -16,7 +16,7 @@ export async function generateMetadata ({ params }) {
 
 export default async function Post ({ params }) {
     const { year } = await params
-    const meetupList = getSortedMeetupListByYear(parseInt(year, 10))
+    const meetupList = getMeetupsByYear(parseInt(year, 10))
 
     return (
         <>

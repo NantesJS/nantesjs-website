@@ -11,7 +11,7 @@
 }
 
 .previous-meetup .meetup-date {
-    gap: 0.3rem
+    gap: 0.3rem;
 }
 
 .previous-meetup .meetup-date .day {
@@ -24,7 +24,7 @@
 .previous-meetup .meetup-date .year {
     font-size: 1rem;
     font-weight: 700;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     text-orientation: upright;
     writing-mode: vertical-rl;
 }

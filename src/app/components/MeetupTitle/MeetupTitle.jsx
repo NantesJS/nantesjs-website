@@ -21,8 +21,12 @@ export function MeetupTitle ({ meetup }) {
 
             <section>
                 <h1>{title}</h1>
-                <p>Sponsorisé par <strong>{sponsor.name}</strong></p>
-                <p>Hébergé par <strong>{venue.name}</strong></p>
+                <p>
+                    Sponsorisé par <strong>{sponsor.name}</strong>
+                </p>
+                <p>
+                    Hébergé par <strong>{venue.name}</strong>
+                </p>
             </section>
 
             <MeetupDate date={date} />

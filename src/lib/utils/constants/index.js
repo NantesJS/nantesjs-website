@@ -1,1 +1,1 @@
-export { MEETUPS_DIRECTORY } from './meetups-constants.js'
+export { MEETUPS_DIRECTORY } from './meetups-constants'

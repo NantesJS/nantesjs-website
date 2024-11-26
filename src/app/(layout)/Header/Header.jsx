@@ -10,15 +10,20 @@ export function Header () {
         <header>
             <section>
                 <Link href="/">
-                    <Logo/>
+                    <Logo />
                 </Link>
                 <div className="navbar-group">
                     <div className="navbar-social">
                         {socialLinksList.map((link) => (
-                            <SocialLink key={link.label} href={link.href} label={link.label} icon={link.icon} />
+                            <SocialLink
+                                key={link.label}
+                                href={link.href}
+                                label={link.label}
+                                icon={link.icon}
+                            />
                         ))}
                     </div>
-                    <Navbar/>
+                    <Navbar />
                 </div>
             </section>
         </header>

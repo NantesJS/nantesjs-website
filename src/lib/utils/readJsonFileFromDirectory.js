@@ -8,7 +8,7 @@ import path from 'path'
  * @param {string} filename - The name of the file to read.
  * @returns {null|string} The file's contents as a string, or null if an error occurs.
  */
-export function readFileFromDirectory ({ directory, filename }) {
+export function readJsonFileFromDirectory ({ directory, filename }) {
     if (typeof directory !== 'string' || typeof filename !== 'string') {
         console.error('Invalid directory or filename')
         return null

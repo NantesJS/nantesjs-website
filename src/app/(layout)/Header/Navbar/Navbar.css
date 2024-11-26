@@ -33,7 +33,9 @@ nav > ul > li > a:hover {
 nav > ul > li.cfp-link > a {
     background-color: var(--color-yellow-nantesjs);
     color: var(--color-dark-grey);
-    transition: background-color 500ms ease, color 500ms ease;
+    transition:
+        background-color 500ms ease,
+        color 500ms ease;
 }
 
 nav > ul > li.cfp-link > a:hover {

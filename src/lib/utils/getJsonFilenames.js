@@ -7,7 +7,7 @@ import fs from 'fs'
  * @param {string} directory - The directory to read from.
  * @returns {string[]} - An array of json filenames.
  */
-export function getFilenames (directory) {
+export function getJsonFilenames (directory) {
     if (typeof directory !== 'string') {
         console.error('Invalid type for directory')
         return []

@@ -1,13 +1,13 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { parseFilesInDirectory } from './parseFilesInDirectory'
+import { parseJsonFilesInDirectory } from './parseJsonFilesInDirectory'
 import * as utils from './'
 
-vi.mock('./getFilenames.js', () => ({
-    getFilenames: vi.fn()
+vi.mock('./getJsonFilenames.js', () => ({
+    getJsonFilenames: vi.fn()
 }))
 
-vi.mock('./readFileFromDirectory.js', () => ({
-    readFileFromDirectory: vi.fn()
+vi.mock('./readJsonFileFromDirectory.js', () => ({
+    readJsonFileFromDirectory: vi.fn()
 }))
 const mockFiles = [ 'test1.json', 'test2.json' ]
 
@@ -16,19 +16,19 @@ const mockFileContents = [
     JSON.stringify({ title: 'Test 2' })
 ]
 
-describe('parseFilesInDirectory', () => {
+describe('parseJsonFilesInDirectory', () => {
     beforeEach(() => {
         vi.resetAllMocks()
     })
 
     it('should correctly parse json files in a directory', () => {
         // given
-        utils.getFilenames.mockReturnValue(mockFiles)
-        utils.readFileFromDirectory.mockImplementation(({ filename }) => {
+        utils.getJsonFilenames.mockReturnValue(mockFiles)
+        utils.readJsonFileFromDirectory.mockImplementation(({ filename }) => {
             return mockFileContents[mockFiles.indexOf(filename)]
         })
         // when
-        const result = parseFilesInDirectory({ directory: '/test/dir' })
+        const result = parseJsonFilesInDirectory({ directory: '/test/dir' })
         console.log(result)
         // then
         expect(result).toEqual([
@@ -39,21 +39,21 @@ describe('parseFilesInDirectory', () => {
 
     it('should return an empty array for an empty directory', () => {
         // given
-        utils.getFilenames.mockReturnValue([])
+        utils.getJsonFilenames.mockReturnValue([])
         // when
-        const result = parseFilesInDirectory({ directory: '/empty/dir' })
+        const result = parseJsonFilesInDirectory({ directory: '/empty/dir' })
         // then
         expect(result).toEqual([])
     })
 
     it('should handle file read errors gracefully', () => {
         // given
-        utils.getFilenames.mockReturnValue(['test1.md'])
-        utils.readFileFromDirectory.mockImplementation(() => {
+        utils.getJsonFilenames.mockReturnValue(['test1.md'])
+        utils.readJsonFileFromDirectory.mockImplementation(() => {
             throw new Error('File read error')
         })
         // when
-        const result = parseFilesInDirectory({ directory: '/test/dir' })
+        const result = parseJsonFilesInDirectory({ directory: '/test/dir' })
         // then
         expect(result).toEqual([])
     })

@@ -6,8 +6,8 @@ import './Meetup.css'
 export async function Meetup ({ meetup }) {
     return (
         <MainSection className="meetup">
-            <MeetupTitle meetup={meetup}/>
-            <MeetupDetails meetup={meetup}/>
+            <MeetupTitle meetup={meetup} />
+            <MeetupDetails meetup={meetup} />
         </MainSection>
     )
 }
