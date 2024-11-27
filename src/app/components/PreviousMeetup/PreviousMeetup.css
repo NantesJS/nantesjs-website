@@ -1,13 +1,7 @@
 .previous-meetup {
     display: flex;
     gap: 1rem;
-    margin-top: 2rem;
-}
-
-.previous-meetup > section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    margin: 2rem 0;
 }
 
 .previous-meetup .meetup-date {
@@ -35,6 +29,10 @@
     margin-top: 0;
     line-height: 1.6rem;
     text-transform: uppercase;
+}
+
+.previous-meetup img {
+    object-fit: contain;
 }
 
 .previous-meetup article:not(:last-of-type) {

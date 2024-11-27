@@ -1,4 +1,3 @@
 export { getJsonFilenames } from './getJsonFilenames'
-export { parseJsonFilesInDirectory } from './parseJsonFilesInDirectory'
-export { readJsonFileFromDirectory } from './readJsonFileFromDirectory'
+export { getFileContent } from './getFileContent'
 export { parseDateFromString } from './parseDateFromString'

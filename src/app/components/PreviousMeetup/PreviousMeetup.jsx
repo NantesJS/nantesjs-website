@@ -29,16 +29,18 @@ export function PreviousMeetup ({ meetup }) {
                     <Link href={`/meetup/${id}`}>{title}</Link>
                 </h2>
                 {talks.map((talk) => (
-                    <article key={talk.id}>
-                        {talk.title && <strong>{talk.title}</strong>}
+                    <article key={talk.title}>
+                        <strong>{talk.title}</strong>
                         <p>{talk.speakers}</p>
                     </article>
                 ))}
             </section>
             <div>
-                <p>
-                    Sponsorisé par <strong>{sponsor.name}</strong>
-                </p>
+                {sponsor && (
+                    <p>
+                        Sponsorisé par <strong>{sponsor.name}</strong>
+                    </p>
+                )}
                 <p>
                     Hébergé par <strong>{hosting.name}</strong>
                 </p>

@@ -1,6 +1,6 @@
 import { getDataById } from '@/lib'
-import { parseDateFromString, readJsonFileFromDirectory } from '@/lib/utils'
-import { MEETUPS_DIRECTORY } from '@/lib/utils/constants'
+import { parseDateFromString, getFileContent } from '@/lib/utils'
+import { MAIN_DIRECTORY, MEETUPS_DIRECTORY } from '@/lib/utils/constants'
 
 /**
  * Retrieves a specific meetup by its id.
@@ -11,34 +11,17 @@ import { MEETUPS_DIRECTORY } from '@/lib/utils/constants'
  */
 
 export function getMeetupById ({ id }) {
-    if (typeof id !== 'number' || id <= 0) {
-        throw new Error(`Invalid ${type} id`)
-    }
+    const meetup = getFileContent(`meetup-${id}`)
 
-    try {
-        const jsonContent = readJsonFileFromDirectory({
-            directory: MEETUPS_DIRECTORY,
-            filename: `meetup-${id}.json`
-        })
-
-        const fileContents = JSON.parse(jsonContent)
-
-        const parsedDate = parseDateFromString(fileContents.date)
-        if (!parsedDate) {
-            console.warn(`Invalid date for meetup: ${JSON.stringify(fileContents.id)}`)
-        }
-
-        const sponsor = getDataById({ id: fileContents.sponsor, type: 'sponsors' })
-        const hosting = getDataById({ id: fileContents.hosting, type: 'hosting' })
+    if (meetup) {
+        const sponsors = getFileContent('sponsors', MAIN_DIRECTORY)
+        const hostings = getFileContent('hosting', MAIN_DIRECTORY)
 
         return {
-            ...fileContents,
-            date: parsedDate,
-            sponsor,
-            hosting
+            ...meetup,
+            date: parseDateFromString(meetup.date),
+            sponsor: sponsors.find((sponsor) => sponsor.id === meetup.sponsor) || null,
+            hosting: hostings.find((hosting) => hosting.id === meetup.hosting) || null
         }
-    } catch (error) {
-        console.error(`Error reading or parsing meetup for id: ${id}`, error)
-        return null
     }
 }

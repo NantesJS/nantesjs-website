@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 import { describe, expect, it, beforeEach, afterEach } from 'vitest'
-import { readJsonFileFromDirectory } from './readJsonFileFromDirectory'
+import { getFileContent } from './getFileContent'
 
 const testDirectory = path.join(process.cwd(), 'src/data/test')
 const testFilename = 'test1.json'
@@ -10,7 +10,7 @@ const testFileContent = JSON.stringify({ title: 'Test 1' })
 const invalidDirectory = 123
 const invalidFilename = null
 
-describe('readJsonFileFromDirectory', () => {
+describe('getFileContent', () => {
     beforeEach(() => {
         fs.mkdirSync(testDirectory, { recursive: true })
         fs.writeFileSync(path.join(testDirectory, testFilename), testFileContent)
@@ -21,7 +21,7 @@ describe('readJsonFileFromDirectory', () => {
     })
 
     it('should correctly read and return file content', () => {
-        const result = readJsonFileFromDirectory({
+        const result = getFileContent({
             directory: testDirectory,
             filename: testFilename
         })
@@ -30,7 +30,7 @@ describe('readJsonFileFromDirectory', () => {
     })
 
     it('should return null for invalid input types', () => {
-        const result = readJsonFileFromDirectory({
+        const result = getFileContent({
             directory: invalidDirectory,
             filename: invalidFilename
         })

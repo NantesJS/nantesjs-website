@@ -1,4 +1,5 @@
 import fs from 'fs'
+import path from 'path'
 
 /**
  * Gets filenames from a given directory.
@@ -8,14 +9,11 @@ import fs from 'fs'
  * @returns {string[]} - An array of json filenames.
  */
 export function getJsonFilenames (directory) {
-    if (typeof directory !== 'string') {
-        console.error('Invalid type for directory')
-        return []
-    }
-
     try {
-        const fileNames = fs.readdirSync(directory)
-        return fileNames.filter((filename) => filename.endsWith('.json'))
+        const jsonFileList = fs.readdirSync(directory)
+            .filter((file) => path.parse(file).ext === '.json')
+
+        return jsonFileList.map((file) => path.parse(file).name)
     } catch (error) {
         console.error(`Error reading directory ${directory}:`, error)
         return []

@@ -61,3 +61,8 @@ ul {
 .block-fullwidth:nth-child(even) {
     background-color: var(--color-medium-grey);
 }
+
+.previous-years {
+    display: flex;
+    gap: 1rem;
+}

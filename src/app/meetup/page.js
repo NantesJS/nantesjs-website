@@ -1,10 +1,10 @@
 /*
  * import Link from 'next/link'
- * import { getMeetupsByYear } from '@/lib/getMeetupsByYear.js'
+ * import { getMeetupListByYear } from '@/lib/getMeetupListByYear.js'
  */
 
 export default async function Page () {
-    // const posts = getMeetupsByYear()
+    // const posts = getMeetupListByYear()
 
     return <div>Coucou</div>
 }
