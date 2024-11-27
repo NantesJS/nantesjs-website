@@ -1,4 +1,5 @@
 ---
+
 id: 14866e9d-a8dd-4b32-b6c9-d4bbb36c2deb
 status: done
 title: 'MEETUP 26'
@@ -6,18 +7,17 @@ date: '16/11/2017'
 image: /images/meetup/cycle.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-26-39606119971
 venue:
-    name: 'Lucca'
-    id: 17b7a76b-58f9-44dc-9291-8371e58efea9
-    link: 'https://www.lucca.fr/'
+name: 'Lucca'
+id: 17b7a76b-58f9-44dc-9291-8371e58efea9
+link: 'https://www.lucca.fr/'
 sponsor:
-    name: 'Zenika'
-    id: ac6183f7-d946-4db8-882e-909e77d8f91f
-    link: 'https://www.zenika.com/'
-talks:
-    -
-        id: fe3ee3a2-e96f-4260-bb7d-525cdd50a897
-        title: "DoYouBuzz v3 : de la programmation impérative à la programmation réactive"
-        description: "Fin septembre 2017, après 3 mois de recherches, de tests et de sessions de code, sortait la première itération d'un changement majeur dans notre front-end : le passage d'AngularJS à Cycle.js.
+name: 'Zenika'
+id: ac6183f7-d946-4db8-882e-909e77d8f91f
+link: 'https://www.zenika.com/'
+talks: -
+id: fe3ee3a2-e96f-4260-bb7d-525cdd50a897
+title: "DoYouBuzz v3 : de la programmation impérative à la programmation réactive"
+description: "Fin septembre 2017, après 3 mois de recherches, de tests et de sessions de code, sortait la première itération d'un changement majeur dans notre front-end : le passage d'AngularJS à Cycle.js.
 
         Cette migration a été riche en apprentissages et découvertes que j'aimerais partager avec vous!
 

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Akeneo",
+        "link": "https://www.akeneo.com/fr/",
+        "postalCode": "44000",
+        "address": "2 Pl. Général Mellinet",
+        "city": "Nantes",
+        "latitude": 47.211666,
+        "longitude": -1.5780146
+    },
+    {
+        "id": 2,
+        "name": "Epitech",
+        "link": "https://www.epitech.eu/ecole-informatique-nantes/",
+        "postalCode": "44000",
+        "address": "5 rue d’Alger",
+        "city": "Nantes",
+        "latitude": 47.2105453,
+        "longitude": -1.5693601
+    },
+    {
+        "id": 3,
+        "name": "Lucca",
+        "link": "https://lucca.fr",
+        "postal_code": "44000",
+        "address": "3 Rue Michel Columb",
+        "city": "Nantes",
+        "latitude": 47.20695,
+        "longitude": -1.5534403
+    }
+]

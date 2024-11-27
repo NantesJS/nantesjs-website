@@ -8,7 +8,7 @@ import './MeetupTitle.css'
  * This component displays the meetup's logo, title, sponsor and host details, and the date.
  */
 export function MeetupTitle ({ meetup }) {
-    const { date, image, title, sponsor, venue } = meetup
+    const { date, image, title, sponsor, hosting } = meetup
 
     return (
         <div className="meetup-title">
@@ -25,7 +25,7 @@ export function MeetupTitle ({ meetup }) {
                     Sponsorisé par <strong>{sponsor.name}</strong>
                 </p>
                 <p>
-                    Hébergé par <strong>{venue.name}</strong>
+                    Hébergé par <strong>{hosting.name}</strong>
                 </p>
             </section>
 

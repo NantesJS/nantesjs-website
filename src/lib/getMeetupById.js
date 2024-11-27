@@ -1,16 +1,18 @@
+import { getDataById } from '@/lib'
 import { parseDateFromString, readJsonFileFromDirectory } from '@/lib/utils'
 import { MEETUPS_DIRECTORY } from '@/lib/utils/constants'
 
 /**
- * Retrieves data for a specific meetup by its ID.
+ * Retrieves a specific meetup by its id.
  *
- * @param {string} id - The ID of the meetup.
- * @returns {Object|null} An object containing meetup data, including the parsed date, or `null` if an error occurs.
- * @throws {Error} If the provided ID is invalid.
+ * @param {number} id - The id of the meetup
+ * @returns {Object|null} An object containing meetup, or `null` if an error occurs.
+ * @throws {Error} If the provided id is invalid.
  */
-export async function getMeetupById (id) {
-    if (typeof id !== 'string' || id.trim() === '') {
-        throw new Error('Invalid meetup ID')
+
+export function getMeetupById ({ id }) {
+    if (typeof id !== 'number' || id <= 0) {
+        throw new Error(`Invalid ${type} id`)
     }
 
     try {
@@ -18,15 +20,25 @@ export async function getMeetupById (id) {
             directory: MEETUPS_DIRECTORY,
             filename: `meetup-${id}.json`
         })
+
         const fileContents = JSON.parse(jsonContent)
+
+        const parsedDate = parseDateFromString(fileContents.date)
+        if (!parsedDate) {
+            console.warn(`Invalid date for meetup: ${JSON.stringify(fileContents.id)}`)
+        }
+
+        const sponsor = getDataById({ id: fileContents.sponsor, type: 'sponsors' })
+        const hosting = getDataById({ id: fileContents.hosting, type: 'hosting' })
 
         return {
             ...fileContents,
-            id,
-            date: parseDateFromString(fileContents.date)
+            date: parsedDate,
+            sponsor,
+            hosting
         }
     } catch (error) {
-        console.error(`Error reading or parsing meetup data for ID: ${id}`, error)
+        console.error(`Error reading or parsing meetup for id: ${id}`, error)
         return null
     }
 }

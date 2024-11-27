@@ -8,7 +8,7 @@ import { Meetup } from '@/app/components'
  */
 export async function generateMetadata ({ params }) {
     const { id } = await params
-    const postData = await getMeetupById(id)
+    const postData = await getMeetupById({ id: parseInt(id) })
 
     return {
         title: postData.title
@@ -17,7 +17,7 @@ export async function generateMetadata ({ params }) {
 
 export default async function Post ({ params }) {
     const { id } = await params
-    const meetup = await getMeetupById(id)
+    const meetup = await getMeetupById({ id: parseInt(id) })
 
     return <Meetup meetup={meetup} />
 }

@@ -1,1 +1,1 @@
-export { MEETUPS_DIRECTORY } from './meetups-constants'
+export { MAIN_DIRECTORY, MEETUPS_DIRECTORY } from './meetups-constants'

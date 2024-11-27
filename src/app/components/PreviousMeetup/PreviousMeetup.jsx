@@ -6,7 +6,7 @@ import { MainSection } from '@/app/(layout)'
 import './PreviousMeetup.css'
 
 export function PreviousMeetup ({ meetup }) {
-    const { date, id, image, title, sponsor, venue } = meetup
+    const { date, id, image, title, sponsor, hosting } = meetup
 
     const talks = meetup.talks.map((talk) => ({
         ...talk,
@@ -40,7 +40,7 @@ export function PreviousMeetup ({ meetup }) {
                     Sponsorisé par <strong>{sponsor.name}</strong>
                 </p>
                 <p>
-                    Hébergé par <strong>{venue.name}</strong>
+                    Hébergé par <strong>{hosting.name}</strong>
                 </p>
             </div>
         </MainSection>

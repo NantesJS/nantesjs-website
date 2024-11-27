@@ -1,6 +1,7 @@
 import { getYear } from 'date-fns'
-import { parseJsonFilesInDirectory, parseDateFromString } from './utils'
+import { parseJsonFilesInDirectory, parseDateFromString, readJsonFileFromDirectory } from './utils'
 import { MEETUPS_DIRECTORY } from './utils/constants'
+import { getMeetupById } from '@/lib'
 
 const currentYear = new Date().getFullYear()
 
@@ -19,15 +20,7 @@ export function getMeetupsByYear (year = currentYear) {
     const allFilesData = parseJsonFilesInDirectory({ directory: MEETUPS_DIRECTORY })
 
     const meetupList = allFilesData.map((meetup) => {
-        const parsedDate = parseDateFromString(meetup.date)
-        if (!parsedDate) {
-            console.warn(`Invalid date for meetup: ${JSON.stringify(meetup)}`)
-        }
-
-        return {
-            ...meetup,
-            date: parsedDate
-        }
+        return getMeetupById({ id: meetup.id })
     })
 
     return meetupList

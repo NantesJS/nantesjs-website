@@ -1,3 +1,4 @@
+export { getDataById } from './getDataById'
 export { getMeetupById } from './getMeetupById'
-export { getPastMeetupYears } from './getPastMeetupYears'
 export { getMeetupsByYear } from './getMeetupsByYear'
+export { getPastMeetupYears } from './getPastMeetupYears'
