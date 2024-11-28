@@ -1,0 +1,49 @@
+footer {
+    background-color: var(--color-dark-grey);
+    color: var(--color-yellow-nantesjs);
+    height: 7.5rem;
+    margin-top: 20px;
+    position: relative;
+}
+
+footer p {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    height: 100%;
+    justify-content: center;
+}
+
+footer p > svg {
+    fill: var(--color-yellow-nantesjs);
+    width: 1.2rem;
+}
+
+
+footer > .logo {
+    border-radius: 75px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-color: var(--color-dark-grey);
+    overflow: hidden;
+    position: absolute;
+    right: 40px;
+    top: -45px;
+}
+
+@media screen and (max-width: 767px) {
+    footer > .logo {
+        border-radius: 50px;
+        width: 75px;
+        height: 75px;
+        padding: 15px;
+        right: 20px;
+        top: -35px;
+    }
+
+    footer > .logo > img {
+        max-height: 50px;
+    }
+}
+
