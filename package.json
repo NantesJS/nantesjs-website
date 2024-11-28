@@ -9,13 +9,15 @@
     "lint": "next lint",
     "stylelint": "stylelint \"**/*.css\"",
     "start": "next start",
-    "test": "vitest"
+    "test": "vitest",
+    "generate:posters": "node src/scripts/generatePosterForNewMeetups"
   },
   "dependencies": {
     "classnames": "^2.5.1",
     "date-fns": "^4.1.0",
     "gray-matter": "^4.0.3",
     "next": "^15.0.3",
+    "node-html-to-image": "^5.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-feather": "^2.0.10"

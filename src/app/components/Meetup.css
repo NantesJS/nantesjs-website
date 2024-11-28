@@ -6,8 +6,18 @@
     margin-bottom: 1rem;
 }
 
+.meetup article {
+    padding: 2rem 0;
+}
+
+.meetup article:not(:last-of-type) {
+    border-bottom: 0.1rem solid #ccc;
+}
+
+
 .meetup > .reservation {
     display: flex;
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -31,10 +41,24 @@
     transition: all 0.4s ease-in-out;
 }
 
-.meetup article {
-    padding: 2rem 0;
+.meetup > .reservation a.meetup-poster {
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: var(--color-dark-grey);
+    transition: border 0.4s ease-in-out;
 }
 
-.meetup article:not(:last-of-type) {
-    border-bottom: 0.1rem solid #ccc;
+.meetup > .reservation a.meetup-poster:hover {
+    border: 2px solid var(--color-dark-grey);
+    transition: border 0.4s ease-in-out;
+}
+
+.meetup > .reservation a.meetup-poster > svg {
+    color: var(--color-medium-grey);
+    transition: color 0.4s ease-in-out;
+}
+
+.meetup > .reservation a.meetup-poster:hover > svg {
+    color: var(--color-dark-grey);
+    transition: color 0.4s ease-in-out;
 }

@@ -1,6 +1,5 @@
-import { getDataById } from '@/lib'
 import { parseDateFromString, getFileContent } from '@/lib/utils'
-import { MAIN_DIRECTORY, MEETUPS_DIRECTORY } from '@/lib/utils/constants'
+import { MAIN_DIRECTORY } from '@/lib/utils/constants'
 
 /**
  * Retrieves a specific meetup by its id.

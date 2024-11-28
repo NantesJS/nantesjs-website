@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { MEETUPS_DIRECTORY } from '@/lib/utils/constants'
+import { MEETUPS_DIRECTORY } from '../utils/constants.js'
 
 /**
  * Reads and returns the content of a json file. If an error occurs, logs the error and returns null.
