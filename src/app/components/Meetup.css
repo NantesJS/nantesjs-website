@@ -6,6 +6,31 @@
     margin-bottom: 1rem;
 }
 
+.meetup > .reservation {
+    display: flex;
+    justify-content: center;
+}
+
+.meetup > .reservation a {
+    align-items: center;
+    background-color: var(--color-dark-grey);
+    border: 2px solid var(--color-dark-grey);
+    color: var(--color-light-grey);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    width: fit-content;
+}
+
+.meetup > .reservation a:hover {
+    background-color: var(--color-light-grey);
+    color: var(--color-dark-grey);
+    transition: all 0.4s ease-in-out;
+}
+
 .meetup article {
     padding: 2rem 0;
 }
