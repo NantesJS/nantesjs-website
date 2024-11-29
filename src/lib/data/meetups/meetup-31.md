@@ -4,9 +4,9 @@ id: a0c038f2-849f-4203-a0a2-5ad97217b85d
 status: done
 title: 'MEETUP 31'
 date: '17/05/2018'
-image: /images/meetup/kata.gif
+image: kata.gif
 ticketsUrl: https://bit.ly/2rGSsa5
-venue:
+hosting:
 id: 7c8220b5-eca7-40c2-bf36-b43fdd530237
 name: 'Zenika'
 link: 'https://nantes.zenika.com'

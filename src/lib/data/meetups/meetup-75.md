@@ -4,9 +4,9 @@ id: c0d12ffb-c70d-48b1-b67f-9cd9994afb87
 status: done
 title: 'Meetup #75'
 date: '20/09/2023'
-image: /images/meetup/htmx.png
+image: htmx.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-75-719214288297
-venue:
+hosting:
 id: '5ecb8190-3889-4de2-b438-4614b7f803f6'
 name: 'Zenika'
 link: 'https://zenika.com/agency/nantes'

@@ -4,13 +4,13 @@ id: 45375fd3-4f5c-4fe9-84d3-030191744086
 status: done
 title: 'Meetup #41'
 date: '06/06/2019'
-image: /images/meetup/nuxt.png
+image: nuxt.png
 ticketsUrl: https://www.eventbrite.fr/e/meetup-41-tickets-62567805992
-venue:
+hosting:
 id: '32741668'
 name: 'iAdvize'
 link: 'https://www.iadvize.com'
-postal_code: 44000
+postalCode: 44000
 address: 9 Rue Nina Simone
 city: Nantes
 latitude: 47.2172557

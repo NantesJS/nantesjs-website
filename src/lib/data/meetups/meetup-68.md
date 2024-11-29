@@ -6,11 +6,11 @@ title: 'Meetup #68'
 date: '17/11/2022'
 image: images/meetup/angular2.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-68-460695922907
-venue:
+hosting:
 id: 'bec84f12-e0b3-43be-b177-4889c7405f56'
 name: 'Shopopop'
 link: 'https://www.shopopop.com/'
-postal_code: 44000
+postalCode: 44000
 address: 1 TER Mail Pablo Picasso
 city: Nantes
 latitude: 47.2166537

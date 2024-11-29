@@ -4,9 +4,9 @@ id: ebc6b158-e294-439e-895d-3ffe0ca5acf2
 status: done
 title: 'Meetup #72'
 date: '20/04/2023'
-image: /images/meetup/typescript.svg
+image: typescript.svg
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-72-615540828187
-venue:
+hosting:
 id: 'c62a5ffd-409b-4654-9ae6-82a10a6835f3'
 name: 'SNCF Connect & Tech'
 link: 'https://vous.sncf-connect.com/'

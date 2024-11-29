@@ -4,13 +4,13 @@ id: 033a0248-66e8-4078-a88d-f75943f4a577
 status: done
 title: 'Meetup #48'
 date: '19/02/2020'
-image: /images/meetup/node.png
+image: node.png
 ticketsUrl: https://www.eventbrite.fr/e/meetup-48-tickets-94133324307
-venue:
+hosting:
 id: '47713559'
 name: 'Lucca'
 link: 'http://www.lucca.fr/'
-postal_code: 44000
+postalCode: 44000
 address: 18 rue Scribe
 city: Nantes
 latitude: 47.21403

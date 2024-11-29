@@ -4,12 +4,12 @@ id: d1391825-873f-442f-96ec-33c0e6f1685d
 status: done
 title: 'MEETUP 37'
 date: '21/02/2019'
-image: /images/meetup/guess.png
+image: guess.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-37-56359512820
-venue:
+hosting:
 id: f7821fb2-6969-424c-9cf2-700bf7e1fccb
 name: 'Clever Age'
-postal_code: 44000
+postalCode: 44000
 address: Bâtiment 7, 4 Rue des Olivettes - Passage d'ouard
 city: Nantes
 latitude: 47.2118285

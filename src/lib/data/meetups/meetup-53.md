@@ -4,10 +4,10 @@ id: 'a48e8142-0a30-11eb-adc1-0242ac120002'
 status: done
 title: 'Meetup #53'
 date: '15/10/2020'
-image: /images/meetup/maposaic.png
+image: maposaic.png
 ticketsUrl: https://youtu.be/IsRPxvxL9a0
 remote: true
-venue:
+hosting:
 id: '50201588'
 name: 'NantesJS'
 link: 'https://www.youtube.com/c/NantesJS'

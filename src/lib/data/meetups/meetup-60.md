@@ -4,10 +4,10 @@ id: db74ce68-29ef-4981-8880-306c51962e78
 status: done
 title: 'Meetup #60'
 date: '17/06/2021'
-image: /images/meetup/chaosmonkey.png
+image: chaosmonkey.png
 ticketsUrl: "https://youtu.be/KdlFYaDceak"
 remote: true
-venue:
+hosting:
 id: '54608799'
 name: 'NantesJS'
 link: 'https://www.youtube.com/c/NantesJS'

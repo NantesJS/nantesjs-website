@@ -7,7 +7,7 @@ date: '20/01/2022'
 image: images/meetup/nuxt.svg
 remote: true
 ticketsUrl: https://youtu.be/KfJh14cyGpI  
-venue:
+hosting:
 id: '54608799'
 name: 'NantesJS'
 link: 'https://www.youtube.com/c/NantesJS'

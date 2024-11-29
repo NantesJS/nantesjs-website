@@ -1,0 +1,44 @@
+{
+  "id": 4,
+  "status": "done",
+  "title": "MEETUP 04",
+  "date": "20/06/2012",
+  "image": "fnb-national-center-computer.jpg",
+  "hosting": 4,
+  "talks": [
+    {
+      "title": "Welcome / JS News",
+      "link": "http://lanyrd.com/2012/nantesjs-meetup-4/stymz/",
+      "speakers":[
+        {
+          "name": "Alexandre Morgaut",
+          "link": "amorgaut"
+        },
+        {
+          "name": "Thomas Moyse",
+          "link": "t8g"
+        }
+      ]
+    },
+    {
+      "title": "AngularJS",
+      "link": "https://angularjs.org/",
+      "speakers": [
+        {
+          "name": "Thomas Moyse",
+          "link": "t8g"
+        }
+      ]
+    },
+    {
+      "title": "JS Remote Debugging",
+      "link": "http://lanyrd.com/2012/nantesjs-meetup-4/stypc/",
+      "speakers": [
+        {
+          "name": "Thomas Gratier",
+          "link": "thomasg77"
+        }
+      ]
+    }
+  ]
+}

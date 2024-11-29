@@ -4,9 +4,9 @@ id: 955c904b-550d-4009-85c1-a3c8c0ddf741
 status: done
 title: 'MEETUP 33'
 date: '20/09/2018'
-image: /images/meetup/houdini.png
+image: houdini.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-33-49801021195
-venue:
+hosting:
 id: 6c2d8579-7c23-409a-a19e-43de4a97936b
 name: 'La fourchette'
 link: 'https://www.lafourchette.com/'

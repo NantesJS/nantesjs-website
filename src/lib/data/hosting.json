@@ -1,7 +1,7 @@
 [
     {
-        "id": 1,
         "name": "Akeneo",
+        "id": 1,
         "link": "https://www.akeneo.com/fr/",
         "postalCode": "44000",
         "address": "2 Pl. Général Mellinet",
@@ -10,8 +10,20 @@
         "longitude": -1.5780146
     },
     {
-        "id": 2,
+        "name": "Atelier Iceberg",
+        "id": 10
+    },
+    {
+        "name": "Clever Age",
+        "id": 6
+    },
+    {
+        "name": "Eodim",
+        "id": 9
+    },
+    {
         "name": "Epitech",
+        "id": 2,
         "link": "https://www.epitech.eu/ecole-informatique-nantes/",
         "postalCode": "44000",
         "address": "5 rue d’Alger",
@@ -20,23 +32,83 @@
         "longitude": -1.5693601
     },
     {
-        "id": 3,
+        "name": "iAdvize",
+        "id": 11
+    },
+    {
+        "name": "KNPLabs",
+        "id": 5
+    },
+    {
+        "name": "La Cantine",
+        "id": 4,
+        "link": "https://www.lacantine.co/",
+        "postalCode": "44200",
+        "address": "40 Rue la Tour d'Auvergne",
+        "city": "Nantes",
+        "latitude": 47.20640020463858,
+        "longitude": -1.5602729867411953
+    },
+    {
         "name": "Lucca",
+        "id": 3,
         "link": "https://lucca.fr",
-        "postal_code": "44000",
+        "postalCode": "44000",
         "address": "3 Rue Michel Columb",
         "city": "Nantes",
         "latitude": 47.20695,
         "longitude": -1.5534403
     },
     {
-        "id": 4,
-        "name": "La Cantine",
-        "link": "https://www.lacantine.co/",
-        "postal_code": "44200",
-        "address": "40 Rue la Tour d'Auvergne",
-        "city": "Nantes",
-        "latitude": 47.20640020463858,
-        "longitude": -1.5602729867411953
+        "name": "Smile",
+        "id": 7
+    },
+    {
+        "name": "Startup Palace",
+        "id": 12
+    },
+    {
+        "name": "Stereolux",
+        "id": 8
+    },
+    {
+        "name": "Zenika Nantes",
+        "id": 12
+    },
+    {
+        "name": "Lengow",
+        "id": 13
+    },
+    {
+        "name": "DojoCrea Nantes",
+        "id": 14,
+        "link": "http://www.dojonantes.fr/"
+    },
+    {
+        "name": "La Fourchette",
+        "id": 15,
+        "link": "https://www.lafourchette.com/",
+        "latitude": 47.2074047,
+        "longitude": -1.5582155
+    },
+    {
+        "name": "Groupe Creative",
+        "id": 16
+    },
+    {
+        "name": "UmanIT",
+        "id": 17
+    },
+    {
+        "name": "Externatic",
+        "id": 18
+    },
+    {
+        "name": "Lone Stone",
+        "id": 19
+    },
+    {
+        "name": "Le phare",
+        "id": 20
     }
 ]

@@ -4,10 +4,10 @@ id: 721d1a34-097a-46dc-8f60-6a46edde2383
 status: done
 title: 'Meetup #49'
 date: '16/04/2020'
-image: /images/meetup/react-graphql.png
+image: react-graphql.png
 ticketsUrl: https://youtu.be/xuzlD95v2Gk
 remote: true
-venue:
+hosting:
 id: '50201588'
 name: 'NantesJS'
 link: 'https://www.youtube.com/c/NantesJS'

@@ -1,0 +1,40 @@
+{
+  "id": 2,
+  "status": "done",
+  "title": "MEETUP 02",
+  "date": "15/02/2012",
+  "image": "harwell-witch-computer.jpg",
+  "hosting": 4,
+  "talks": [
+    {
+      "title": "I/O - Framework pour faire des applis découplées en node.js",
+      "link": "https://github.com/t8g/nantesjs-hook",
+      "speakers":[
+        {
+          "name": "Thomas Moyse",
+          "link": "t8g'
+        }
+      ]
+    },
+    {
+      "title": "Pattern objet 'JavaScript' : le pouvoir des closures et du prototype",
+      "link": "http://lanyrd.com/2012/nantesjs-meetup-2/spdrz/",
+      "speakers":[
+        {
+          "name": "Alexandre Morgaut",
+          "link": "amorgaut"
+        }
+      ]
+    },
+    {
+      "title": "JS everywhere with Wakanda (version courte)",
+      "link": "http://lanyrd.com/2012/nantesjs-meetup-2/spdtb/",
+      "speakers": [
+        {
+          "name": "Alexandre Morgaut",
+          "link": "amorgaut"
+        }
+      ]
+    }
+  ]
+}

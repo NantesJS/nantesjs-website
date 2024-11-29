@@ -1,0 +1,32 @@
+{
+  "id": 18,
+  "status": "done",
+  "title": "MEETUP 18",
+  "date": "17/03/2016",
+  "image": "pattern-matching.jpg",
+  "hosting": 13,
+  "sponsor": 9,
+  "link": "http://www.lengow.com/",
+  "talks": [
+    {
+      "title": "Implémentation de Pattern Matching en JavaScript",
+      "video": "B1QltudEeds",
+      "speakers": [
+        {
+          "name": "FG Ribreau",
+          "link": "FGRibreau"
+        }
+      ]
+    },
+    {
+      "title": "Présentation de elm",
+      "video": "WjrXxJv7En8",
+      "speakers": [
+        {
+          "name": "Julien Tanguy",
+          "link": "jutanguy"
+        }
+      ]
+    }
+  ]
+}

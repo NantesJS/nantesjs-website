@@ -4,13 +4,13 @@ id: d5806787-09e2-490e-b7ff-e20a62d00f32
 status: done
 title: 'Meetup #45'
 date: '17/10/2019'
-image: /images/meetup/oss.png
+image: oss.png
 ticketsUrl: https://www.eventbrite.fr/e/meetup-45-tickets-76005882641
-venue:
+hosting:
 id: '40193139'
 name: 'UmanIT'
 link: 'https://www.umanit.fr/'
-postal_code: 44000
+postalCode: 44000
 address: 13 Place Sophie Trébuchet
 city: Nantes
 latitude: 47.2202226

@@ -4,10 +4,10 @@ id: 1896dc3f-ac6f-46d5-8a33-085fb638059b
 status: done
 title: 'Meetup #56'
 date: '18/02/2021'
-image: /images/meetup/Typescript.svg
+image: Typescript.svg
 ticketsUrl: https://youtu.be/5AWtVMdCFFo
 remote: true
-venue:
+hosting:
 id: '54608799'
 name: 'NantesJS'
 link: 'https://www.youtube.com/c/NantesJS'

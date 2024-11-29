@@ -4,9 +4,9 @@ id: 175dc5d5-8fca-4d6c-bcd9-7dd10c12b8a4
 status: done
 title: 'Meetup #71'
 date: '16/03/2023'
-image: /images/meetup/react.svg
+image: react.svg
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-71-564657093567
-venue:
+hosting:
 id: '5ecb8190-3889-4de2-b438-4614b7f803f6'
 name: 'Zenika'
 link: 'https://zenika.com/agency/nantes'

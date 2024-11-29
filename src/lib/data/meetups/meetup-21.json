@@ -1,0 +1,39 @@
+{
+  "id": 21,
+  "status": "done",
+  "title": "MEETUP 21",
+  "date": "17/01/2017",
+  "image": "ionic2.png",
+  "hosting": 1,
+  "sponsor": 11,
+  "talks": [
+    {
+      "title": "Ionic2",
+      "speakers": [
+        {
+          "name": "PeekMo",
+          "link": "PeekMo"
+        }
+      ]
+    }, {
+      "title": "Introduction à D3",
+      "link": "https://calvein.github.io/nantesjs-20170117/",
+      "speakers": [
+        {
+          "name": "François Robichet",
+          "link": "calvein"
+        }
+      ]
+    },
+    {
+      "title": "La dataviz sans D3",
+      "link": "http://slides.com/jacomyal/la-dataviz-sans-d3-le-retour#/",
+      "speakers": [
+        {
+          "name": "Alexis Jacomy",
+          "link": "jacomyal"
+        }
+      ]
+    }
+  ]
+}

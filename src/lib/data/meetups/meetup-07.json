@@ -1,0 +1,24 @@
+{
+  "id": 7,
+  "status": "done",
+  "title": "MEETUP 07",
+  "date": "19/11/2013",
+  "image": "gruntjs.png",
+  "hosting": 7,
+  "talks": [
+    {
+      "title": "Workshop : GruntJS",
+      "link": "http://slides.com/t8g/gruntjs",
+      "speakers": [
+        {
+          "name": "Xavier Seignard",
+          "link": "xavier_seignard"
+        },
+        {
+          "name": "Thomas Moyse",
+          "link": "t8g"
+        }
+      ]
+    }
+  ]
+}

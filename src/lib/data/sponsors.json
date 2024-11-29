@@ -3,5 +3,68 @@
         "id": 1,
         "name": "NantesJS",
         "link": "https://nantesjs.org"
+    },
+    {
+        "id": 2,
+        "name": "La Cantine",
+        "link": "https://www.lacantine.co/"
+    },
+    {
+        "id": 3,
+        "name": "Wiztivi"
+    },
+    {
+        "id": 4,
+        "name": "Conserto"
+    },
+    {
+        "id": 5,
+        "name": "Seyos"
+    },
+    {
+        "id": 6,
+        "name": "DoYouBuzz"
+    },
+    {
+        "id": 7,
+        "name": "Akeneo"
+    },
+    {
+        "id": 8,
+        "name": "Zenika Nantes"
+    },
+    {
+        "id": 9,
+        "name": "ByteClub"
+    },
+    {
+        "id": 10,
+        "name": "Lucca"
+    },
+    {
+        "id": 11,
+        "name": "MyScript",
+        "link": "http://myscript.com/"
+    },
+    {
+        "id": 12,
+        "name": "Externatic",
+        "link": "http://www.externatic.fr/"
+    },
+    {
+        "id": 13,
+        "name": "Clever Cloud"
+    },
+    {
+        "id": 14,
+        "name": "The Tribe"
+    },
+    {
+        "id": 15,
+        "name": "La Fourchette"
+    },
+    {
+        "id": 16,
+        "name": "KNP Labs"
     }
 ]

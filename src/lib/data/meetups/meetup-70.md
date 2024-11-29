@@ -6,11 +6,11 @@ title: 'Meetup #70'
 date: '16/02/2023'
 image: images/meetup/mobile.jpeg
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-70-536907894967
-venue:
+hosting:
 id: 'bb8d1ec5-0853-4326-8456-e327e856712c'
 name: 'SII'
 link: 'https://sii-group.com/fr-FR'
-postal_code: 44200
+postalCode: 44200
 address: 10 Rue Magdeleine
 city: Nantes
 latitude: 47.2041778

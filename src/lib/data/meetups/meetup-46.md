@@ -4,13 +4,13 @@ id: c3b7626f-51d2-4497-bd9a-0ba48ce2db16
 status: done
 title: 'Meetup #46'
 date: '21/11/2019'
-image: /images/meetup/webgl.svg
+image: webgl.svg
 ticketsUrl: https://www.eventbrite.fr/e/meetup-46-tickets-81708922587
-venue:
+hosting:
 id: '42612243'
 name: 'Talend SA (R&D Center)'
 link: 'http://www.talend.com/'
-postal_code: 44200
+postalCode: 44200
 address: 89 Boulevard de la Prairie au Duc
 city: Nantes
 latitude: 47.2038802

@@ -4,10 +4,10 @@ id: e7a118d3-33b6-4b38-8232-c39473b72f3e
 status: done
 title: 'Meetup #52'
 date: '17/09/2020'
-image: /images/meetup/accessibility-blue.png
+image: accessibility-blue.png
 ticketsUrl: https://youtu.be/diJAyifTaSc
 remote: true
-venue:
+hosting:
 id: '50201588'
 name: 'NantesJS'
 link: 'https://www.youtube.com/c/NantesJS'

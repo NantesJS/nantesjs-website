@@ -1,0 +1,20 @@
+{
+  "id": 9,
+  "status": "done",
+  "title": "MEETUP 09",
+  "date": "17/02/2014",
+  "image": "casperjs.png",
+  "hosting": 2,
+  "talks": [
+    {
+      "title": "Workshop : CasperJS by CasperJS",
+      "link": "http://casperjs.org/",
+      "speakers": [
+        {
+          "name": "Nicolas Perriault (aka CasperJS)",
+          "link": "n1k0"
+        }
+      ]
+    }
+  ]
+}

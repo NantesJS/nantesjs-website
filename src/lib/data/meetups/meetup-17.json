@@ -1,0 +1,38 @@
+{
+  "id": 17,
+  "status": "done",
+  "title": "MEETUP 17",
+  "date": "18/02/2016",
+  "hosting": 12,
+  "sponsor": 8,
+  "image": "angular2.png",
+  "link": "ZenikaNantes",
+  "talks": [
+    {
+      "title": "Migration vers Angular 2",
+      "speakers": [
+        {
+          "name": "Laurent Maillet",
+          "link": "Nebounet"
+        }
+      ]
+    },
+    {
+      "title": "Lightning talk : Pourquoi le développement d'applications Web n'est pas encore résolu ?",
+      "speakers": [
+        {
+          "name": "Alexis Jacomy",
+          "link": "jacomyal"
+        }
+      ]
+    },
+    {
+      "title": "Lightning talk : Retour d""expérience sur la stack MEAN",
+      "speakers": [
+        {
+          "name": "Pierre Medard"
+        }
+      ]
+    }
+  ]
+}

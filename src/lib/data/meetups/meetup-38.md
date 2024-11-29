@@ -4,13 +4,13 @@ id: b9c94d43-2939-4b91-8e37-b1d331ac823e
 status: done
 title: 'Meetup #38'
 date: '21/03/2019'
-image: /images/meetup/typescript.png
+image: typescript.png
 ticketsUrl: https://www.eventbrite.fr/e/meetup-38-tickets-58796237128
-venue:
+hosting:
 id: 570e25af-2e90-4f59-b12e-c7e3142cc556
 name: 'Epitech'
 link: 'https://www.epitech.eu/fr/ecole-informatique-nantes/'
-postal_code: 44100
+postalCode: 44100
 address: 18 Rue Flandres - Dunkerque 40
 city: Nantes
 latitude: 47.2116262

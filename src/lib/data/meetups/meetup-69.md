@@ -6,11 +6,11 @@ title: 'Meetup #69'
 date: '26/01/2023'
 image: images/meetup/rust.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-69-516238351807
-venue:
+hosting:
 id: '117f2b8e-8dfa-4ee6-a887-1d4483e97721'
 name: 'Niji'
 link: 'https://www.niji.fr/fr/'
-postal_code: 44200
+postalCode: 44200
 address: 10 Rue Magdeleine
 city: Nantes
 latitude: 47.2041778

@@ -4,13 +4,13 @@ id: 6344108a-8c11-46c4-a3f5-5e0e7afb6474
 status: done
 title: 'Meetup #39'
 date: '18/04/2019'
-image: /images/meetup/tree.png
+image: tree.png
 ticketsUrl: https://www.eventbrite.fr/e/meetup-39-tickets-60120001543
-venue:
+hosting:
 id: 1f99f64c-3a54-40f2-b5dd-4a10bc2b7e58
 name: 'Gens de confiance'
 link: 'https://gensdeconfiance.fr/'
-postal_code: 44000
+postalCode: 44000
 address: 16 Boulevard Gabriel Guist&#x27;Hau
 city: Nantes
 latitude: 47.21620250000001

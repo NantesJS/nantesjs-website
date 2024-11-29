@@ -5,9 +5,9 @@ status: done
 title: 'MEETUP 29'
 date: '15/03/2018'
 secondLogo: /images/graphdb.png
-image: /images/meetup/graphql.png
+image: graphql.png
 ticketsUrl: http://bit.ly/2FKIDOj
-venue:
+hosting:
 id: 40b52f5b-3550-4457-95c6-4a6d1c710664
 name: 'Externatic'
 link: 'https://www.externatic.fr/'

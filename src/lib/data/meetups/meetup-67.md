@@ -6,11 +6,11 @@ title: 'Meetup #67'
 date: '16/06/2022'
 image: images/meetup/angular2.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-67-356230283367
-venue:
+hosting:
 id: 'b2c5e4ab-3ad2-40f4-8607-d34bc8b57c70'
 name: 'Lucca'
 link: 'https://lucca.fr'
-postal_code: 44000
+postalCode: 44000
 address: 3 Rue Michel Columb
 city: Nantes
 latitude: 47.20695

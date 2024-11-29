@@ -7,7 +7,7 @@ date: '16/09/2021'
 image: /images/logotype.png
 ticketsUrl: "https://youtu.be/WXCXDrVRO7Y"
 remote: true
-venue:
+hosting:
 id: '54608799'
 name: 'NantesJS'
 link: 'https://www.youtube.com/c/NantesJS'

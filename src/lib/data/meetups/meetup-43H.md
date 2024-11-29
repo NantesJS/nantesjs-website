@@ -5,9 +5,9 @@ type: meetup-hero
 status: done
 title: 'Le meetup dont vous êtes le héros'
 date: '18/07/2019'
-image: /images/meetup/casque.png
+image: casque.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-le-meetup-dont-vous-etes-le-heros-64661933584
-venue:
+hosting:
 id: 2a8bf286-0930-486c-850b-7dca3e47978a
 name: 'Akeneo'
 link: 'https://www.akeneo.com/fr/'

@@ -1,0 +1,38 @@
+{
+  "id": 13,
+  "status": "done",
+  "title": "MEETUP 13",
+  "date": "15/10/2015",
+  "sponsor": 4,
+  "hosting": 10,
+  "image": "react.svg",
+  "talks": [
+    {
+      "title": "Live coding sur le Framework React Native",
+      "speakers": [
+        {
+          "name": "Axel Cateland",
+          "link": "catelandaxel"
+        }
+      ]
+    },
+    {
+      "title": "Lightning talk : Bacon.js",
+      "speakers": [
+        {
+          "name": "Rodolphe Belouin",
+          "link": "rbelouin"
+        }
+      ]
+    },
+    {
+      "title": "Lightning talk : Webpack (Slides)",
+      "speakers": [
+        {
+          "name": "Thomas Moyse",
+          "link": "t8g"
+        }
+      ]
+    }
+  ]
+}

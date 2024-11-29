@@ -4,13 +4,13 @@ id: 17232255-9e67-4b00-ade1-38e623d41f9e
 status: done
 title: 'Meetup #44'
 date: '19/09/2019'
-image: /images/meetup/yarn.svg
+image: yarn.svg
 ticketsUrl: https://www.eventbrite.fr/e/meetup-44-tickets-72080752471
-venue:
+hosting:
 id: '37927789'
 name: 'Lucca'
 link: 'https://www.lucca.fr/'
-postal_code: 44000
+postalCode: 44000
 address: 1-3 Rue Michel Columb
 city: Nantes
 latitude: 47.2070237

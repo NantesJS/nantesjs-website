@@ -4,9 +4,9 @@ id: f21adb13-f98a-4cd3-9932-f93be4c334e6
 status: done
 title: 'MEETUP 32'
 date: '14/06/2018'
-image: /images/meetup/vintage_computers_02.jpg
+image: vintage_computers_02.jpg
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-32-46653271190
-venue:
+hosting:
 id: 8fb48bd3-c1f2-470d-949e-09117ce819ef
 name: 'Pôle Emploi'
 link: 'https://www.pole-emploi.fr/accueil/'

@@ -1,0 +1,30 @@
+{
+  "id": 14,
+  "status": "done",
+  "title": "MEETUP 14",
+  "date": "19/11/2015",
+  "hosting": "iAdvize",
+  "sponsor": "Seyos",
+  "image": "flux.svg",
+  "talks": [
+    {
+      "title": "Flux : les doigts dans le Flux ! (Slides)",
+      "speakers": [
+        {
+          "name": "Thomas Belin",
+          "link": "atomrc"
+        }
+      ]
+    },
+    {
+      "title": "Lightning talk : Meteor",
+      "link": "https://www.meteor.com/",
+      "speakers": [
+        {
+          "name": "Yann Danthu",
+          "link": "YannDanthu"
+        }
+      ]
+    }
+  ]
+}

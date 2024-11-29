@@ -7,7 +7,7 @@ date: '28/10/2021'
 image: NOT_IMPLEMENTED_YET
 remote: true
 ticketsUrl: https://www.eventbrite.fr/e/meetup-62-tickets-195742359667
-venue:
+hosting:
 id: '54608799'
 name: 'NantesJS'
 link: 'https://www.youtube.com/c/NantesJS'

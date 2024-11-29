@@ -4,13 +4,13 @@ id: c4566af7-9472-4b67-abec-6cfc816dc29d
 status: done
 title: 'Meetup #42'
 date: '20/06/2019'
-image: /images/meetup/jhipster.png
+image: jhipster.png
 ticketsUrl: https://www.eventbrite.fr/e/meetup-42-tickets-63375292205
-venue:
+hosting:
 id: '33163596'
 name: 'Ippon'
 link: 'https://fr.ippon.tech/'
-postal_code: 44200
+postalCode: 44200
 address: 3 allée Susan Brownell Anthony, ZAC des Prairies
 city: Nantes
 latitude: 47.2037747

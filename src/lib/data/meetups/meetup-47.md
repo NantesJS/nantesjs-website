@@ -4,13 +4,13 @@ id: 31f3f22e-da62-4040-8416-52057587c79c
 status: done
 title: 'Meetup #47'
 date: '16/01/2020'
-image: '/images/meetup/accessibility-blue.png'
+image: 'accessibility-blue.png'
 ticketsUrl: https://www.eventbrite.fr/e/meetup-47-tickets-88659810881
-venue:
+hosting:
 id: '45295071'
 name: 'SII'
 link: 'http://www.groupe-sii.com/fr'
-postal_code: 44200
+postalCode: 44200
 address: 10 Rue Magdeleine
 city: Nantes
 latitude: 47.2044435

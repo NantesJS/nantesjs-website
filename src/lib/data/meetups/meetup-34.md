@@ -4,9 +4,9 @@ id: 1b509bae-ecc8-4ef4-985b-19c9661ec901
 status: done
 title: 'MEETUP 34'
 date: '25/10/2018'
-image: /images/meetup/gamestation.jpg
+image: gamestation.jpg
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-34-51327446775
-venue:
+hosting:
 id: 27c85b97-1608-4c03-8af7-79a336d51e61
 name: 'Nickel'
 link: 'https://compte-nickel.fr/'

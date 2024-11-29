@@ -6,7 +6,7 @@ title: 'Meetup #64'
 date: '17/03/2022'
 image: images/meetup/cadenas.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-64-289723720447
-venue:
+hosting:
 id: '0a2f186c-b6fc-4756-a10f-2015238fce17'
 name: 'Doctolib'
 link: 'https://www.doctolib.fr'

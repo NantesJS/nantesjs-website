@@ -4,13 +4,13 @@ id: 8c5a9d2b-7d70-453c-8e93-d0fae400ca93
 status: done
 title: 'Meetup #40'
 date: '16/05/2019'
-image: /images/meetup/react.svg
+image: react.svg
 ticketsUrl: https://www.eventbrite.fr/e/meetup-40-tickets-61638504426
-venue:
+hosting:
 id: '32141745'
 name: 'Wild Code School'
 link: 'https://wildcodeschool.fr/'
-postal_code: 44200
+postalCode: 44200
 address: 2 bis Quai François Mitterrand
 city: Nantes
 latitude: 47.2071068

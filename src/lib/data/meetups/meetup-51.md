@@ -4,10 +4,10 @@ id: 7695d52d-698d-4362-90e7-47b2cd61bdcf
 status: done
 title: 'Meetup #51'
 date: '18/06/2020'
-image: /images/meetup/svelte.png
+image: svelte.png
 ticketsUrl: https://youtu.be/iX8bsvS6s5c
 remote: true
-venue:
+hosting:
 id: '50201588'
 name: 'NantesJS'
 link: 'https://www.youtube.com/c/NantesJS'

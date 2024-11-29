@@ -4,9 +4,9 @@ id: 20dd8ab1-c862-415a-abaf-ebf6b320491b
 status: done
 title: 'MEETUP 30'
 date: '19/04/2018'
-image: /images/meetup/vintage_computers_01.jpg
+image: vintage_computers_01.jpg
 ticketsUrl: https://bit.ly/2H8nIYH
-venue:
+hosting:
 id: 3bf61741-a331-455c-8fef-3eaf9447f9bd
 name: 'READi Design Lab'
 link: 'https://www.lecolededesign.com/recherche-et-design-labs/readi-design-lab/'

@@ -4,12 +4,12 @@ id: 1bcdfd34-6185-40e3-8085-89fa931fe953
 status: done
 title: 'MEETUP 36'
 date: '17/01/2019'
-image: /images/meetup/axe-core.png
+image: axe-core.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-36-54638426003<Paste>
-venue:
+hosting:
 id: a5e77240-30eb-4384-9380-f7f3cf86e867
 name: 'Pôle Emploi'
-postal_code: 44000
+postalCode: 44000
 address: 2 rue Konrad Adénauer
 city: Nantes
 latitude: 47.2087549

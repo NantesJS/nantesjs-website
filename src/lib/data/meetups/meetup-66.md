@@ -6,7 +6,7 @@ title: 'Meetup #66'
 date: '19/06/2022'
 image: images/meetup/graphile.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-66-338095702347
-venue:
+hosting:
 id: '8aff2e75-da0d-4b65-a5ba-41ad02210bef'
 name: 'LaFourchette'
 link: 'https://thefork.fr'

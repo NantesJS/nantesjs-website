@@ -4,12 +4,12 @@ id: ab36d815-3e69-4722-b1e2-9c42f5fb9144
 status: done
 title: 'MEETUP 35'
 date: '15/11/2018'
-image: /images/meetup/drone_js.png
+image: drone_js.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-nantesjs-meetup-35-52305278496
-venue:
+hosting:
 id: 0c16f066-29f6-440d-b49b-9861596ce603
 name: 'Beekast'
-postal_code: 44000
+postalCode: 44000
 address: 1-3 Rue Michel Columb
 city: Nantes
 latitude: 47.2070383

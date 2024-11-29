@@ -4,9 +4,9 @@ id: 3ef21f43-3a54-4c67-b025-296e5b8746e0
 status: done
 title: 'Meetup #73'
 date: '22/06/2023'
-image: /images/meetup/chatgpt.png
+image: chatgpt.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-73-656245827937
-venue:
+hosting:
 id: '1f8a0c69-a3cd-4fc6-8aff-e92a6dd6fbdf'
 name: 'Gens de confiance'
 link: 'https://gensdeconfiance.com/fr/'

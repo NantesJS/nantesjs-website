@@ -6,7 +6,7 @@ title: 'Meetup #65'
 date: '21/04/2022'
 image: images/meetup/node.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-65-317548364707
-venue:
+hosting:
 id: '5ecb8190-3889-4de2-b438-4614b7f803f6'
 name: 'Zenika'
 link: 'https://zenika.com/agency/nantes'
