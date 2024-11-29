@@ -26,14 +26,14 @@
     "@stylistic/eslint-plugin": "^2.11.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
-    "@vitejs/plugin-react": "^4.3.3",
+    "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.15.0",
     "eslint-config-next": "^15.0.3",
     "jest-axe": "^9.0.0",
     "jsdom": "^25.0.1",
-    "prettier": "3.4.0",
-    "stylelint": "^16.10.0",
+    "prettier": "3.4.1",
+    "stylelint": "^16.11.0",
     "stylelint-config-standard": "^36.0.1",
-    "vitest": "^2.1.5"
+    "vitest": "^2.1.6"
   }
 }
