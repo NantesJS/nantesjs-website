@@ -1,23 +1,5 @@
 {
-  "extends": "next/core-web-vitals",
-  "plugins": [
-    "@stylistic"
-  ],
-  "rules": {
-    "@stylistic/array-bracket-spacing": ["error", "always", { "singleValue": false }],
-    "@stylistic/array-element-newline": ["error", "consistent"],
-    "@stylistic/dot-location": ["error", "property"],
-    "@stylistic/function-call-argument-newline": ["error", "never"],
-    "@stylistic/jsx-first-prop-new-line": ["error", "multiline"],
-    "@stylistic/max-len": ["error", { "code": 120 }],
-    "@stylistic/multiline-ternary": ["error", "always-multiline"],
-    "@stylistic/no-extra-parens": ["error", "all", { "ignoreJSX":  "all" }],
-    "@stylistic/object-curly-spacing": ["error", "always"],
-    "@stylistic/object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true}],
-    "@stylistic/padded-blocks": ["error", "never"],
-    "@stylistic/quote-props": ["error", "as-needed"],
-    "@stylistic/quotes": ["error", "single"],
-    "@stylistic/semi": ["error", "never"],
-    "@stylistic/jsx-quotes": ["error", "prefer-double"]
-  }
+  "extends": [
+    "next/core-web-vitals"
+  ]
 }
