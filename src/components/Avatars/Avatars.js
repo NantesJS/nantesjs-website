@@ -55,9 +55,7 @@ export function Avatars ({ speakers }) {
                 [styles.avatars__portraitSingle]: speakersWithLink.length === 1
               }
             )}
-            src={
-              `https://avatars.charlyx.dev/twitter?username=${ speaker.link }&size=original`
-            }
+            src={speaker.image}
           />
         )
       })}

@@ -28,6 +28,7 @@ talks:
           id: ded7a100-4739-4b25-81c7-14202b4248d0
           name: 'Alexandre Morgaut'
           link: 'amorgaut'
+          image: 'https://avatars0.githubusercontent.com/u/49318?v=4'
   -
     id: '508986f3-97b6-4b75-9769-f469db1e6e38'
     title: "Adieu RxJS ! Vive les Signals ! Oh wait…"
@@ -39,3 +40,4 @@ Est-ce qu’on veut vraiment que RxJS soit entièrement remplacé par les Signal
           id: '2db847ff-266d-4cbb-acd6-1345757cf5c0'
           name: 'Anthony Pena'
           link: '_Anthony_Pena'
+          image: 'https://avatars.githubusercontent.com/u/2668904?v=4'
