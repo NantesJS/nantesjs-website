@@ -1,35 +1,38 @@
 import { Avatar } from '@/app/components/Avatar.jsx'
 import Image from 'next/image.js'
 
-export function MeetupDetails ({ meetup }) {
+export function MeetupDetails({ meetup }) {
   const isMeetupHero = meetup.type === 'meetup-hero'
 
   return (
     <>
       {meetup.talks.map((talk, index) => {
-        const description = isMeetupHero
-          ? (
-            <MeetupHeroDescription
-              description={talk.description}
-              final={talk.final}
-            />
-          )
-          : (
-            <p>{talk.description}</p>
-          )
+        const description = isMeetupHero ? (
+          <MeetupHeroDescription
+            description={talk.description}
+            final={talk.final}
+          />
+        ) : (
+          <p>{talk.description}</p>
+        )
 
         return (
           <article key={`${talk.title}-article`}>
             <section>
               {talk.speakers.map((speaker) => (
-                <Avatar speaker={speaker} key={`${speaker.name}-avatar`} />
+                <Avatar
+                  speaker={speaker}
+                  key={`${speaker.name}-avatar`}
+                />
               ))}
             </section>
             <section>
               {talk.title && <h2>{talk.title}</h2>}
               {description}
               {talk.requirements && (
-                <TalkRequirements requirements={talk.requirements} />
+                <TalkRequirements
+                  requirements={talk.requirements}
+                />
               )}
             </section>
           </article>

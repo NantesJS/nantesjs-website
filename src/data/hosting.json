@@ -120,5 +120,19 @@
         "city": "Nantes",
         "latitude": 47.2186596,
         "longitude": -1.5545694
+    },
+    {
+        "name": "GraphDB",
+        "id": 22
+    },
+    {
+        "name": "READi Design Lab",
+        "id": 23,
+        "link": "https://www.lecolededesign.com/recherche-et-design-labs/readi-design-lab/"
+    },
+    {
+        "id": 24,
+        "name": "Pôle Emploi",
+        "link": "https://www.pole-emploi.fr/accueil/"
     }
 ]

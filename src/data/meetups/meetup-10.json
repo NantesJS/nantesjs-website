@@ -1,20 +1,20 @@
 {
-  "id": 10,
-  "status": "done",
-  "title": "MEETUP 10",
-  "date": "23/09/2014",
-  "image": "sigmajs.png",
-  "hosting": 9,
-  "talks": [
-    {
-      "title": "SigmaJS",
-      "link": "http://sigmajs.org/",
-      "speakers": [
+    "id": 10,
+    "status": "done",
+    "title": "MEETUP 10",
+    "date": "23/09/2014",
+    "image": "sigmajs.png",
+    "hosting": 9,
+    "talks": [
         {
-          "name": "Alexis Jacomy",
-          "link": "jacomyal"
+            "title": "SigmaJS",
+            "link": "http://sigmajs.org/",
+            "speakers": [
+                {
+                    "name": "Alexis Jacomy",
+                    "link": "jacomyal"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

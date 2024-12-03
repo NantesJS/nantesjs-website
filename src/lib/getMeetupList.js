@@ -15,16 +15,18 @@ const hostings = getFileContent('hosting', MAIN_DIRECTORY)
  * @returns {Array<Object>} - A sorted array of meetups, each containing original data and a parsed `date` field.
  * @throws {Error} If the provided year is invalid.
  */
-export function getMeetupListByYear (year = currentYear) {
-    if (!Number.isInteger(year) || year <= 0) {
-        throw new Error(`Invalid year provided: ${year}`)
-    }
+export function getMeetupListByYear(year = currentYear) {
+  if (!Number.isInteger(year) || year <= 0) {
+    throw new Error(`Invalid year provided: ${year}`)
+  }
 
-    const meetupList = getMeetupList()
+  const meetupList = getMeetupList()
 
-    return meetupList
-        .filter((meetup) => meetup.date && getYear(new Date(meetup.date)) === year)
-        .sort((a, b) => new Date(b.date) - new Date(a.date))
+  return meetupList
+    .filter(
+      (meetup) => meetup.date && getYear(new Date(meetup.date)) === year
+    )
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
 }
 
 /**
@@ -36,19 +38,23 @@ export function getMeetupListByYear (year = currentYear) {
  * @returns {FileData[]} - Un tableau d'objets contenant les données extraites des fichiers JSON.
  *
  */
-export function getMeetupList () {
-    const jsonFilenames = getJsonFilenames(MEETUPS_DIRECTORY)
+export function getMeetupList() {
+  const jsonFilenames = getJsonFilenames(MEETUPS_DIRECTORY)
 
-    return jsonFilenames.map((filename) => {
-        const meetup = getFileContent(filename)
+  return jsonFilenames
+    .map((filename) => {
+      const meetup = getFileContent(filename)
 
-        if (meetup) {
-            return {
-                ...meetup,
-                date: parseDateFromString(meetup.date),
-                sponsor: sponsors.find((s) => s.id === meetup.sponsor) || null,
-                hosting: hostings.find((h) => h.id === meetup.hosting) || null
-            }
+      if (meetup) {
+        return {
+          ...meetup,
+          date: parseDateFromString(meetup.date),
+          sponsor:
+                        sponsors.find((s) => s.id === meetup.sponsor) || null,
+          hosting:
+                        hostings.find((h) => h.id === meetup.hosting) || null,
         }
-    }).filter(Boolean) // Enlever les valeurs `null`
+      }
+    })
+    .filter(Boolean) // Enlever les valeurs `null`
 }

@@ -1,32 +1,32 @@
 {
-  "id": 28,
-  "status": "done",
-  "title": "MEETUP 28",
-  "date": "16/11/2017",
-  "image": "cycle.png",
-  "ticketsUrl": "https://www.eventbrite.fr/e/billets-nantesjs-meetup-26-39606119971",
-  "hosting": 3,
-  "sponsor": 8,
-  "talks": [
-    {
-      "title": "DoYouBuzz v3 : de la programmation impérative à la programmation réactive",
-      "description": "Fin septembre 2017, après 3 mois de recherches, de tests et de sessions de code, sortait la première itération d'un changement majeur dans notre front-end : le passage d'AngularJS à Cycle.js. Cette migration a été riche en apprentissages et découvertes que j'aimerais partager avec vous ! Pourquoi nous avons choisi Cycle.js et comment se distingue-t-il des autres alternatives ? Comment nous avons pu envisager une migration progressive plutôt qu'une réécriture ? En quoi la programmation réactive a complètement changé la sémantique de notre codebase ? Laissez vous guider dans ce paradigme qui poussera votre code à être aussi fonctionnel que JavaScript peut le permettre",
-      "speakers": [
+    "id": 28,
+    "status": "done",
+    "title": "MEETUP 28",
+    "date": "16/11/2017",
+    "image": "cycle.png",
+    "ticketsUrl": "https://www.eventbrite.fr/e/billets-nantesjs-meetup-26-39606119971",
+    "hosting": 3,
+    "sponsor": 8,
+    "talks": [
         {
-          "name": "Thomas Belin",
-          "link": "atomrc"
-        }
-      ]
-    },
-    {
-      "title": "Introduction à React Native",
-      "description": "React Native est une déclinaison de React adaptée au développement d'apps natives. Rapide introduction de l'API, en live coding d'une todo-list",
-      "speakers": [
+            "title": "DoYouBuzz v3 : de la programmation impérative à la programmation réactive",
+            "description": "Fin septembre 2017, après 3 mois de recherches, de tests et de sessions de code, sortait la première itération d'un changement majeur dans notre front-end : le passage d'AngularJS à Cycle.js. Cette migration a été riche en apprentissages et découvertes que j'aimerais partager avec vous ! Pourquoi nous avons choisi Cycle.js et comment se distingue-t-il des autres alternatives ? Comment nous avons pu envisager une migration progressive plutôt qu'une réécriture ? En quoi la programmation réactive a complètement changé la sémantique de notre codebase ? Laissez vous guider dans ce paradigme qui poussera votre code à être aussi fonctionnel que JavaScript peut le permettre",
+            "speakers": [
+                {
+                    "name": "Thomas Belin",
+                    "link": "atomrc"
+                }
+            ]
+        },
         {
-          "name": "Nicolas Kerdelhué",
-          "link": "zakarby"
+            "title": "Introduction à React Native",
+            "description": "React Native est une déclinaison de React adaptée au développement d'apps natives. Rapide introduction de l'API, en live coding d'une todo-list",
+            "speakers": [
+                {
+                    "name": "Nicolas Kerdelhué",
+                    "link": "zakarby"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

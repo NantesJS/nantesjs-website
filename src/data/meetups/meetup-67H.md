@@ -24,6 +24,7 @@ talks: -
 id: 6cdee27c-cfb3-4f62-991a-27057a8af37c
 title: ''
 description: "
+
 <ul style='margin-left:0;'>
 <li>1. <strong>Réunissez votre tribu</strong> - Constituez votre équipe sur place ou amenez des amis.</li>
 <li>2. <strong>Le choix des armes</strong> - Choisissez un des sujets proposés (vous pouvez aussi amener le vôtre).</li>

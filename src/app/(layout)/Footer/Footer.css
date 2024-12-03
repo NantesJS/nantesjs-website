@@ -19,7 +19,6 @@ footer p > svg {
     width: 1.2rem;
 }
 
-
 footer > .logo {
     border-radius: 75px;
     width: 100px;
@@ -46,4 +45,3 @@ footer > .logo {
         max-height: 50px;
     }
 }
-

@@ -1,20 +1,20 @@
 {
-  "id": 11,
-  "status": "done",
-  "title": "MEETUP 11",
-  "date": "17/03/2015",
-  "image": "gremlin.png",
-  "hosting": 4,
-  "sponsor": 2,
-  "talks": [
-    {
-      "title": "Bases de données graphe (framework TinkerPop, langage Gremlin) et leur utilisation avec JavaScript/Node.js",
-      "speakers": [
+    "id": 11,
+    "status": "done",
+    "title": "MEETUP 11",
+    "date": "17/03/2015",
+    "image": "gremlin.png",
+    "hosting": 4,
+    "sponsor": 2,
+    "talks": [
         {
-          "name": "Jean-Baptiste Musso",
-          "link": "jbmusso"
+            "title": "Bases de données graphe (framework TinkerPop, langage Gremlin) et leur utilisation avec JavaScript/Node.js",
+            "speakers": [
+                {
+                    "name": "Jean-Baptiste Musso",
+                    "link": "jbmusso"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

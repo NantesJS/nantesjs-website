@@ -8,14 +8,15 @@ import path from 'path'
  * @param {string} directory - The directory to read from.
  * @returns {string[]} - An array of json filenames.
  */
-export function getJsonFilenames (directory) {
-    try {
-        const jsonFileList = fs.readdirSync(directory)
-            .filter((file) => path.parse(file).ext === '.json')
+export function getJsonFilenames(directory) {
+  try {
+    const jsonFileList = fs
+      .readdirSync(directory)
+      .filter((file) => path.parse(file).ext === '.json')
 
-        return jsonFileList.map((file) => path.parse(file).name)
-    } catch (error) {
-        console.error(`Error reading directory ${directory}:`, error)
-        return []
-    }
+    return jsonFileList.map((file) => path.parse(file).name)
+  } catch (error) {
+    console.error(`Error reading directory ${directory}:`, error)
+    return []
+  }
 }

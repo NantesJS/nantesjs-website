@@ -1,36 +1,36 @@
 {
-  "id": 12,
-  "status": "done",
-  "title": "MEETUP 12",
-  "date": "17/09/2015",
-  "hosting": 10,
-  "sponsor": 3,
-  "image": "ionic.svg",
-  "talks": [
-    {
-      "title": "Présentation du Framework Ionic",
-      "speakers": [
+    "id": 12,
+    "status": "done",
+    "title": "MEETUP 12",
+    "date": "17/09/2015",
+    "hosting": 10,
+    "sponsor": 3,
+    "image": "ionic.svg",
+    "talks": [
         {
-          "link": "aboudard",
-          "name": "Alain Boudard"
-        }
-      ]
-    },
-    {
-      "title": "Lightning talk : React",
-      "speakers": [
+            "title": "Présentation du Framework Ionic",
+            "speakers": [
+                {
+                    "link": "aboudard",
+                    "name": "Alain Boudard"
+                }
+            ]
+        },
         {
-          "name": "Antoine Cellier"
-        }
-      ]
-    },
-    {
-      "title": "Lightning talk : Déploiement de projet front avec Lidlet",
-      "speakers": [
+            "title": "Lightning talk : React",
+            "speakers": [
+                {
+                    "name": "Antoine Cellier"
+                }
+            ]
+        },
         {
-          "name": "Jonathan Redoute"
+            "title": "Lightning talk : Déploiement de projet front avec Lidlet",
+            "speakers": [
+                {
+                    "name": "Jonathan Redoute"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -3,8 +3,8 @@
  * import { getMeetupListByYear } from '@/lib/getMeetupListByYear.js'
  */
 
-export default async function Page () {
-    // const posts = getMeetupListByYear()
+export default async function Page() {
+  // const posts = getMeetupListByYear()
 
-    return <div>Coucou</div>
+  return <div>Coucou</div>
 }

@@ -3,6 +3,7 @@
     "next/core-web-vitals"
   ],
   "rules": {
+    "indent": ["error", 2],
     "object-curly-spacing": ["error", "always"]
   }
 }

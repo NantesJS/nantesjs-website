@@ -35,7 +35,8 @@
     },
     {
         "id": 9,
-        "name": "ByteClub"
+        "name": "ByteClub",
+        "link": "http://byteclub.fr/"
     },
     {
         "id": 10,
@@ -66,5 +67,10 @@
     {
         "id": 16,
         "name": "KNP Labs"
+    },
+    {
+        "id": 17,
+        "name": "Pôle Emploi",
+        "link": "https://www.pole-emploi.fr/accueil/"
     }
 ]

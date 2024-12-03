@@ -7,14 +7,14 @@ const currentYear = new Date().getFullYear()
  *
  * @returns {number[]} - A sorted array of previous years in descending order.
  */
-export function getPastMeetupYears () {
-    const allFilesData = getMeetupList()
+export function getPastMeetupYears() {
+  const allFilesData = getMeetupList()
 
-    const previousYears = allFilesData
-        .map((meetup) => {
-            return meetup.date ? meetup.date.getFullYear() : null
-        })
-        .filter((year) => year && year !== currentYear)
+  const previousYears = allFilesData
+    .map((meetup) => {
+      return meetup.date ? meetup.date.getFullYear() : null
+    })
+    .filter((year) => year && year !== currentYear)
 
-    return [...new Set(previousYears)].sort((a, b) => b - a)
+  return [...new Set(previousYears)].sort((a, b) => b - a)
 }

@@ -9,18 +9,22 @@ import { MAIN_DIRECTORY } from '@/lib/utils/constants'
  * @throws {Error} If the provided id is invalid.
  */
 
-export function getMeetupById ({ id }) {
-    const meetup = getFileContent(`meetup-${id}`)
+export function getMeetupById({ id }) {
+  const meetup = getFileContent(`meetup-${id}`)
 
-    if (meetup) {
-        const sponsors = getFileContent('sponsors', MAIN_DIRECTORY)
-        const hostings = getFileContent('hosting', MAIN_DIRECTORY)
+  if (meetup) {
+    const sponsors = getFileContent('sponsors', MAIN_DIRECTORY)
+    const hostings = getFileContent('hosting', MAIN_DIRECTORY)
 
-        return {
-            ...meetup,
-            date: parseDateFromString(meetup.date),
-            sponsor: sponsors.find((sponsor) => sponsor.id === meetup.sponsor) || null,
-            hosting: hostings.find((hosting) => hosting.id === meetup.hosting) || null
-        }
+    return {
+      ...meetup,
+      date: parseDateFromString(meetup.date),
+      sponsor:
+                sponsors.find((sponsor) => sponsor.id === meetup.sponsor) ||
+                null,
+      hosting:
+                hostings.find((hosting) => hosting.id === meetup.hosting) ||
+                null,
     }
+  }
 }

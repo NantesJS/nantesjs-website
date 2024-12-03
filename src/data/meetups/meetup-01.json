@@ -1,50 +1,50 @@
 {
-  "id": 1,
-  "status": "done",
-  "title": "MEETUP 01",
-  "date": "09/01/2012",
-  "image": "eniac-computer.jpg",
-  "hosting": 4,
-  "talks": [
-    {
-      "title": "NantesJS premier meetup Welcome",
-      "link": "http://www.slideshare.net/alexandre_morgaut/nantesjs-premier-meetup-welcome",
-      "speakers": [
+    "id": 1,
+    "status": "done",
+    "title": "MEETUP 01",
+    "date": "09/01/2012",
+    "image": "eniac-computer.jpg",
+    "hosting": 4,
+    "talks": [
         {
-          "name": "Alexandre Morgaut",
-          "link": "amorgaut"
-        }
-      ]
-    },
-    {
-      "title": "Server-side JavaScript : How To Start ?",
-      "link": "http://www.slideshare.net/quentinadam/server-side-javascript-how-to-start",
-      "speakers": [
+            "title": "NantesJS premier meetup Welcome",
+            "link": "http://www.slideshare.net/alexandre_morgaut/nantesjs-premier-meetup-welcome",
+            "speakers": [
+                {
+                    "name": "Alexandre Morgaut",
+                    "link": "amorgaut"
+                }
+            ]
+        },
         {
-          "name": "Quentin Adam",
-          "link": "waxzce"
-        }
-      ]
-    },
-    {
-      "title": "State of the art: server-side JavaScript",
-      "link": "http://www.slideshare.net/alexandre_morgaut/state-of-the-art-serverside-javascript-nantesjs",
-      "speakers": [
+            "title": "Server-side JavaScript : How To Start ?",
+            "link": "http://www.slideshare.net/quentinadam/server-side-javascript-how-to-start",
+            "speakers": [
+                {
+                    "name": "Quentin Adam",
+                    "link": "waxzce"
+                }
+            ]
+        },
         {
-          "name": "Alexandre Morgaut",
-          "link": "amorgaut"
-        }
-      ]
-    },
-    {
-      "title": "Javascript dans le cadre du développement d'applications pour TV connectées",
-      "link": "http://www.slideshare.net/loic_guillois/nantesjs",
-      "speakers": [
+            "title": "State of the art: server-side JavaScript",
+            "link": "http://www.slideshare.net/alexandre_morgaut/state-of-the-art-serverside-javascript-nantesjs",
+            "speakers": [
+                {
+                    "name": "Alexandre Morgaut",
+                    "link": "amorgaut"
+                }
+            ]
+        },
         {
-          "name": "Loïc Guillois",
-          "link": "loic_guillois"
+            "title": "Javascript dans le cadre du développement d'applications pour TV connectées",
+            "link": "http://www.slideshare.net/loic_guillois/nantesjs",
+            "speakers": [
+                {
+                    "name": "Loïc Guillois",
+                    "link": "loic_guillois"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -25,9 +25,9 @@ talks:
       title: 'Démystifier les contributions open source'
       description: 'A quel projet contribuer?
     Que puis-je apporter?  
-    Comment vais-je être perçu?  
-    Et surtout, suis-je légitime?  
-    Alors que l’idée de contribuer à des projets open source germe en nous, de nombreuses questions viennent à se poser, tant sur un axe fonctionnel que technique.
+     Comment vais-je être perçu?  
+     Et surtout, suis-je légitime?  
+     Alors que l’idée de contribuer à des projets open source germe en nous, de nombreuses questions viennent à se poser, tant sur un axe fonctionnel que technique.
     Aborder un projet ou mettre son code à nu aux yeux de tous ne sont pas des démarches aisées pour tous les développeurs.
     Dans le parcours qui vous amènera jusqu’à la pull request, découvrez quels sont les mécanismes humains et techniques qui interviendront dans cette démarche.
     '

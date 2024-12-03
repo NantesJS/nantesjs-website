@@ -1,38 +1,38 @@
 {
-  "id": 20,
-  "status": "done",
-  "title": "MEETUP 20",
-  "date": "19/05/2016",
-  "hosting": 3,
-  "image": "ionic.png",
-  "sponsor": 10,
-  "talks": [
-    {
-      "title": "Ionic",
-      "speakers": [
+    "id": 20,
+    "status": "done",
+    "title": "MEETUP 20",
+    "date": "19/05/2016",
+    "hosting": 3,
+    "image": "ionic.png",
+    "sponsor": 10,
+    "talks": [
         {
-          "name": "Loïc Guillois",
-          "link": "loic_guillois"
-        }
-      ]
-    },
-    {
-      "title": "Reconnaissance d'écriture",
-      "speakers": [
+            "title": "Ionic",
+            "speakers": [
+                {
+                    "name": "Loïc Guillois",
+                    "link": "loic_guillois"
+                }
+            ]
+        },
         {
-          "name": "Pierre Alban Dewitte",
-          "link": "padewitte"
-        }
-      ]
-    },
-    {
-      "title": "Transducers en transat",
-      "speakers": [
+            "title": "Reconnaissance d'écriture",
+            "speakers": [
+                {
+                    "name": "Pierre Alban Dewitte",
+                    "link": "padewitte"
+                }
+            ]
+        },
         {
-          "name": "Bruno Heridet",
-          "link": "delapouite"
+            "title": "Transducers en transat",
+            "speakers": [
+                {
+                    "name": "Bruno Heridet",
+                    "link": "delapouite"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -9,18 +9,18 @@ import { MEETUPS_DIRECTORY } from '../utils/constants.js'
  * @param {string} filename - The name of the file to read.
  * @returns {null|string} The file's contents as a string, or null if an error occurs.
  */
-export function getFileContent (filename, directory = MEETUPS_DIRECTORY) {
-    const fullPath = path.join(directory, `${filename}.json`)
+export function getFileContent(filename, directory = MEETUPS_DIRECTORY) {
+  const fullPath = path.join(directory, `${filename}.json`)
 
-    try {
-        const jsonContent = fs.readFileSync(fullPath, 'utf8')
-        return JSON.parse(jsonContent)
-    } catch (error) {
-        if (error.code === 'ENOENT') {
-            console.warn(`File not found: ${fullPath}`)
-        } else {
-            console.error(`Error reading file ${fullPath}:`, error)
-        }
-        return null
+  try {
+    const jsonContent = fs.readFileSync(fullPath, 'utf8')
+    return JSON.parse(jsonContent)
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.warn(`File not found: ${fullPath}`)
+    } else {
+      console.error(`Error reading file ${fullPath}:`, error)
     }
+    return null
+  }
 }

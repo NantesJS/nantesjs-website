@@ -1,40 +1,40 @@
 {
-  "id": 5,
-  "status": "done",
-  "title": "MEETUP 05",
-  "date": "18/04/2013",
-  "hosting": 5,
-  "image": "univac-computer.jpg",
-  "talks": [
-    {
-      "title": "Présentation et échanges sur FranceJS",
-      "link": "http://francejs.org/",
-      "speakers": [
+    "id": 5,
+    "status": "done",
+    "title": "MEETUP 05",
+    "date": "18/04/2013",
+    "hosting": 5,
+    "image": "univac-computer.jpg",
+    "talks": [
         {
-          "name": "Thomas Moyse",
-          "link": "t8g"
-        }
-      ]
-    },
-    {
-      "title": "AngularJS",
-      "link": "https://angularjs.org/",
-      "speakers": [
+            "title": "Présentation et échanges sur FranceJS",
+            "link": "http://francejs.org/",
+            "speakers": [
+                {
+                    "name": "Thomas Moyse",
+                    "link": "t8g"
+                }
+            ]
+        },
         {
-          "name": "Thomas Moyse",
-          "link": "t8g"
-        }
-      ]
-    },
-    {
-      "title": "W3C System Application and other APIs",
-      "link": "http://www.w3.org/2012/sysapps/",
-      "speakers": [
+            "title": "AngularJS",
+            "link": "https://angularjs.org/",
+            "speakers": [
+                {
+                    "name": "Thomas Moyse",
+                    "link": "t8g"
+                }
+            ]
+        },
         {
-          "name": "Alexandre Morgaut",
-          "link": "amorgaut"
+            "title": "W3C System Application and other APIs",
+            "link": "http://www.w3.org/2012/sysapps/",
+            "speakers": [
+                {
+                    "name": "Alexandre Morgaut",
+                    "link": "amorgaut"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

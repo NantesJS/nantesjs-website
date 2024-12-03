@@ -1,32 +1,32 @@
 {
-  "id": 26,
-  "status": "done",
-  "title": "MEETUP 26",
-  "date": "21/09/2017",
-  "image": "hipster.jpg",
-  "ticketsUrl": "https://www.eventbrite.fr/e/billets-nantesjs-meetup-24-37661677090",
-  "hosting": 18,
-  "sponsor": 14,
-  "talks": [
-    {
-      "title": "La dataviz pour les hipsters",
-      "description": "La dataviz est dehosting mainstream. Comme D3.js a quasi tué la profession, tout le monde en fait et on ne peut plus se démarquer… Vraiment ? Petit voyage au cœur des technos les plus insolites, afin de pouvoir encore faire la différence en 2017 !",
-      "speakers": [
+    "id": 26,
+    "status": "done",
+    "title": "MEETUP 26",
+    "date": "21/09/2017",
+    "image": "hipster.jpg",
+    "ticketsUrl": "https://www.eventbrite.fr/e/billets-nantesjs-meetup-24-37661677090",
+    "hosting": 18,
+    "sponsor": 14,
+    "talks": [
         {
-          "name": "Alexis Jacomy",
-          "link": "jacomyal"
-        }
-      ]
-    },
-    {
-      "title": "Un bon Brunch dans une bonne auberge",
-      "description": "Brunch est un build tool, qui a l’instar de Task Runner comme Gulp ou Grunt nécessite très peu de conf pour faire la même chose... en mieux. Un petit quickie pour présenter l'outil avec ses qualités et ses défauts.",
-      "speakers": [
+            "title": "La dataviz pour les hipsters",
+            "description": "La dataviz est dehosting mainstream. Comme D3.js a quasi tué la profession, tout le monde en fait et on ne peut plus se démarquer… Vraiment ? Petit voyage au cœur des technos les plus insolites, afin de pouvoir encore faire la différence en 2017 !",
+            "speakers": [
+                {
+                    "name": "Alexis Jacomy",
+                    "link": "jacomyal"
+                }
+            ]
+        },
         {
-          "name": "Pierre Chabiland",
-          "link": "PierreChabiland"
+            "title": "Un bon Brunch dans une bonne auberge",
+            "description": "Brunch est un build tool, qui a l’instar de Task Runner comme Gulp ou Grunt nécessite très peu de conf pour faire la même chose... en mieux. Un petit quickie pour présenter l'outil avec ses qualités et ses défauts.",
+            "speakers": [
+                {
+                    "name": "Pierre Chabiland",
+                    "link": "PierreChabiland"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

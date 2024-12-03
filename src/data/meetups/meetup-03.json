@@ -1,33 +1,33 @@
 {
-  "id": 3,
-  "status": "done",
-  "title": "MEETUP 03",
-  "date": "21/03/2012",
-  "image": "avidac-computer.jpg",
-  "hosting": 4,
-  "talks": [
-    {
-      "title": "Accueil & actualité du Web",
-      "link": "http://lanyrd.com/2012/nantesjs-meetup-3/sqmrg/",
-      "speakers": [
+    "id": 3,
+    "status": "done",
+    "title": "MEETUP 03",
+    "date": "21/03/2012",
+    "image": "avidac-computer.jpg",
+    "hosting": 4,
+    "talks": [
         {
-          "name": "Alexandre Morgaut",
-          "link": "amorgaut"
+            "title": "Accueil & actualité du Web",
+            "link": "http://lanyrd.com/2012/nantesjs-meetup-3/sqmrg/",
+            "speakers": [
+                {
+                    "name": "Alexandre Morgaut",
+                    "link": "amorgaut"
+                },
+                {
+                    "name": "Yoann Digue"
+                }
+            ]
         },
         {
-          "name": "Yoann Digue"
+            "title": "Analyse d'un test de recrutement de développeur Front-end",
+            "link": "http://lanyrd.com/2012/nantesjs-meetup-3/sqmrh/",
+            "speakers": [
+                {
+                    "name": "Alexandre Morgaut",
+                    "link": "amorgaut"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "title": "Analyse d'un test de recrutement de développeur Front-end",
-      "link": "http://lanyrd.com/2012/nantesjs-meetup-3/sqmrh/",
-      "speakers": [
-        {
-          "name": "Alexandre Morgaut",
-          "link": "amorgaut"
-        }
-      ]
-    }
-  ]
+    ]
 }

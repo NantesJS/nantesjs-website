@@ -1,23 +1,23 @@
 {
-  "id": 19,
-  "status": "done",
-  "title": "MEETUP 19",
-  "date": "07/04/2016",
-  "hosting": 14,
-  "image": "phaser.png",
-  "talks": [
-    {
-      "title": "Workshop Phaser",
-      "speakers": [
+    "id": 19,
+    "status": "done",
+    "title": "MEETUP 19",
+    "date": "07/04/2016",
+    "hosting": 14,
+    "image": "phaser.png",
+    "talks": [
         {
-          "name": "Alvin Berthelot",
-          "link": "alvinberthelot"
-        },
-        {
-          "name": "Pierre Chabiland",
-          "link": "pierrechabiland"
+            "title": "Workshop Phaser",
+            "speakers": [
+                {
+                    "name": "Alvin Berthelot",
+                    "link": "alvinberthelot"
+                },
+                {
+                    "name": "Pierre Chabiland",
+                    "link": "pierrechabiland"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
