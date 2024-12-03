@@ -1,6 +1,8 @@
-import { MAIN_DIRECTORY, MEETUPS_DIRECTORY } from '@/lib/utils/constants'
-import { getFileContent, getJsonFilenames, parseDateFromString } from '@/lib/utils'
 import { getYear } from 'date-fns'
+import { MAIN_DIRECTORY, MEETUPS_DIRECTORY } from '../lib/utils/constants.js'
+import { getFileContent } from '../lib/utils/getFileContent.js'
+import { getJsonFilenames } from '../lib/utils/getJsonFilenames.js'
+import { parseDateFromString } from '../lib/utils/parseDateFromString.js'
 
 const currentYear = new Date().getFullYear()
 const sponsors = getFileContent('sponsors', MAIN_DIRECTORY)

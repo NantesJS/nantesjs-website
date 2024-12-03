@@ -29,7 +29,6 @@ export async function generatePoster (meetup) {
     if (fs.existsSync(outputPath)) return outputPath
 
     const templateFile = path.join(TEMPLATE_DIRECTORY, `${meetup.type || 'meetup'}-poster.html`)
-    const meetupDate = parseDateFromString(meetup.date)
     const talks = meetup.talks.map((talk) => ({
         ...talk,
         speakers: talk.speakers.map((speaker) => speaker.name).join(', ')
@@ -42,8 +41,8 @@ export async function generatePoster (meetup) {
             ...meetup,
             hosting: meetup.hosting ? meetup.hosting.name : '',
             sponsor: meetup.sponsor ? meetup.sponsor.name : '',
-            day: format(meetupDate, 'dd', { locale: fr }),
-            month: format(meetupDate, 'MMM', { locale: fr }),
+            day: format(meetup.date, 'dd', { locale: fr }),
+            month: format(meetup.date, 'MMM', { locale: fr }),
             logo: meetup.type ? logoBase64 : svgLogoBase64,
             talks,
             crossedSwords

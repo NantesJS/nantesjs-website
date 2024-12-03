@@ -1,33 +1,38 @@
 import fs from 'fs'
 import path from 'path'
 import { generatePoster } from '../lib/generatePoster.js'
-import { getFileContent } from '../lib/utils/getFileContent.js'
-import { MEETUPS_DIRECTORY, POSTERS_DIRECTORY } from '../lib/utils/constants.js'
-import { getJsonFilenames } from '../lib/utils/getJsonFilenames.js'
+import { POSTERS_DIRECTORY } from '../lib/utils/constants.js'
+import { getMeetupList } from '../lib/getMeetupList.js'
 
 async function main () {
-    console.log('🔍 Checking for new meetups without posters...')
-    const fileNames = getJsonFilenames(MEETUPS_DIRECTORY)
+    console.log('🚛 Removing last poster...')
 
-    const meetups = fileNames
-        .map((file) => {
-            const meetup = getFileContent(file, MEETUPS_DIRECTORY)
-            return {
-                ...meetup,
-                file
-            }
+    const folderContent = fs.readdirSync(POSTERS_DIRECTORY)
+
+    if (folderContent.length > 0) {
+        folderContent.forEach((file) => {
+            fs.unlink(path.join(POSTERS_DIRECTORY, file), (err) => {
+                if (err) {
+                    console.error(err);
+                    return;
+                }
+                console.log('🧹Poster deleted');
+            })
         })
-
-    const postersToGenerate = meetups.filter(({ id }) => {
-        const posterPath = path.join(POSTERS_DIRECTORY, `meetup-${id}-poster.jpg`)
-        return !fs.existsSync(posterPath)
-    })
-
-    console.log(`🚀 Generating ${postersToGenerate.length} posters...`)
-    for (const meetup of postersToGenerate) {
-        await generatePoster(meetup)
-        console.log(`✅ Poster generated for ${meetup.file}`)
+    } else {
+        console.log('∅ No poster to delete')
     }
+
+    console.log('🔍 Checking for the last meetup...')
+
+    const meetups = getMeetupList()
+
+    const posterToGenerate = meetups.find(({ status }) => status === 'next')
+
+    console.log(`🚀 Generating poster...`)
+    await generatePoster(posterToGenerate)
+
+    console.log(`✅ Poster generated for ${posterToGenerate.title}`)
 }
 
 main().catch((error) => {
