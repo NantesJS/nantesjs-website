@@ -29,7 +29,7 @@ export function PreviousMeetup ({ meetup }) {
                     <Link href={`/meetup/${id}`}>{title}</Link>
                 </h2>
                 {talks.map((talk) => (
-                    <article key={talk.title}>
+                    <article key={`${talk.title}-talk`}>
                         <strong>{talk.title}</strong>
                         <p>{talk.speakers}</p>
                     </article>

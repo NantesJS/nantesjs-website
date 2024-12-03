@@ -4,9 +4,14 @@
 
 .meetup h2 {
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .meetup article {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 6fr;
+    justify-content: center;
     padding: 2rem 0;
 }
 

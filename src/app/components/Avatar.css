@@ -1,0 +1,30 @@
+.avatar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.avatar:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.avatar img {
+    border-radius: 50%;
+    height: auto;
+    max-width: 6.5rem;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.avatar p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .avatar {
+        display: none;
+    }
+}

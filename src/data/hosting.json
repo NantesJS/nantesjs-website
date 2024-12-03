@@ -110,5 +110,15 @@
     {
         "name": "Le phare",
         "id": 20
+    },
+    {
+        "name": "SNCF Connect & Tech",
+        "id": 21,
+        "link": "https://vous.sncf-connect.com/",
+        "postalCode": "44000",
+        "address": "16 rue de Cornulier",
+        "city": "Nantes",
+        "latitude": 47.2186596,
+        "longitude": -1.5545694
     }
 ]
