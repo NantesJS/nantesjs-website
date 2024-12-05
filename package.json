@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "homepage": "http://frinyvonnick.github.io/nantesjs",
   "dependencies": {
+    "@eslint/js": "^9.16.0",
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",

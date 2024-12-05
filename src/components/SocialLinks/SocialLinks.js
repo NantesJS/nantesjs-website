@@ -24,7 +24,6 @@ SocialLinks.propTypes = {
 
 const links = [
   {
-    // eslint-disable-next-line max-len
     href: 'https://join.slack.com/t/nantesjs/shared_invite/enQtNTM0MjA0NTE0NTkzLTc3YWRkMjk3MTg3ZjEwYzVhYTA1YTA1OGE3MTdkMGE2ZjgzNzE1YzMwYWQwYmU0ZTEzNDhkZWUwZGY2ZjQ5OWY',
     label: 'Slack',
     icon: faSlack,
@@ -57,7 +56,6 @@ const links = [
 ]
 
 export function SocialLinks ({
-  bordered,
   vertical,
   withoutLabel,
   iconSize = '1x',
