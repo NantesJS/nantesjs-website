@@ -11,7 +11,6 @@ import { SocialIcons } from '../SocialIcons'
 import * as styles from './Header.module.css'
 
 export function Header () {
-  // eslint-disable-next-line max-len
   const proposalLink = 'https://conference-hall.io/public/event/DWIXMKeUnghfgJHerwEh'
   return (
     <header className={styles.header}>

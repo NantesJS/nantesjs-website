@@ -55,7 +55,6 @@ const createResource = (
   const pickProperties = pick(properties)
 
   const resource = entities.map(({ id, ...entity }) => {
-    // eslint-disable-next-line no-console
     if (isNil(id)) console.warn(`Missing entity#ID in resource ${ name }.`)
 
     const href = `/${ name }/${ id }.json`

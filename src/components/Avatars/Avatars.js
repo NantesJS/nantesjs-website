@@ -14,7 +14,7 @@ function Circle ({ src = '', className, style }) {
   return (
     <div
       className={classNames(styles.circle, className)}
-      style={{ backgroundImage: `url(${ src })`, ...style }}
+      style={{ backgroundImage: `url(${ src })`, ... style }}
     />
   )
 }
