@@ -1,5 +1,0 @@
-/* Trick to crop images without using background-size: cover https://jonathannicol.com/blog/2014/06/16/centre-crop-thumbnails-with-css/ */
-.picture__frame {
-  background-size: cover;
-  background-position: center center;
-}

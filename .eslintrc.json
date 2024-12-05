@@ -1,0 +1,12 @@
+{
+  "extends": "next/core-web-vitals",
+  "plugins": [
+    "@stylistic/js"
+  ],
+  "rules": {
+    "@stylistic/js/max-len": ["error", { "code": 120 }],
+    "@stylistic/js/object-curly-spacing": ["error", "always"],
+    "@stylistic/js/quotes": ["error", "single"],
+    "@stylistic/js/semi": ["error", "never"]
+  }
+}

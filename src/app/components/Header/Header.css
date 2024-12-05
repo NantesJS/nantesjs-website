@@ -1,0 +1,9 @@
+header {
+    background-color: var(--color-dark-grey);
+    color: var(--color-yellow-nantesjs);
+}
+header > section {
+    margin: auto;
+    max-width: 100%;
+    width: 1160px;
+}

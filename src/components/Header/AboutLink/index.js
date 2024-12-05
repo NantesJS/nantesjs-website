@@ -1,1 +1,0 @@
-export { AboutLink } from './AboutLink'

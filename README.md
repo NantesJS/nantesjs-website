@@ -1,67 +1,36 @@
-[![Build Status](https://travis-ci.org/NantesJS/nantesjs-website.svg?branch=master)](https://travis-ci.org/NantesJS/nantesjs-website)
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
-[![Coverage Status](https://coveralls.io/repos/github/NantesJS/nantesjs-website/badge.svg?branch=master)](https://coveralls.io/github/NantesJs/nantesjs-website?branch=master)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# NantesJS.org
+## Getting Started
 
-This is the source of the [nantesjs.org](http://nantesjs.org) website.
-
-Fork it to propose enhancements, as it is in a `master` branch, you can show the result of your version to anyone via URLs formed like this:
-
-    http://{Your_GitHub_Username}.github.com/nantesjs-website/
-
-For anything but little fixes, send a `Pull Request` so all the community can agree on it.
-
-Note that any updates done to this website will available under the license given below.
-
-## Installation for development
-
-First you will need [yarn](https://yarnpkg.com/en/docs/install) installed on your machine.
-
-Then simply run :
+First, run the development server:
 
 ```bash
-yarn start
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Add a new meetup
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To add a new meetup, you need to create a `.md` file in `datas/meetups/`.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-The suggested method is to duplicate the last meetup file and to fill in the fields with the new data.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Don't forget to set the `status` of the previous meetup to `done` for it to be displayed in the previous section.
+## Learn More
 
-You could also use [nantesjs-organizer](https://github.com/NantesJS/nantesjs-organizer) to generate the markdown file.
+To learn more about Next.js, take a look at the following resources:
 
-## Contributors
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="http://charlyx.dev"><img src="https://avatars2.githubusercontent.com/u/481446?v=4?s=100" width="100px;" alt="Charles-Henri GUERIN"/><br /><sub><b>Charles-Henri GUERIN</b></sub></a><br /><a href="https://github.com/NantesJS/nantesjs-website/commits?author=charlyx" title="Code">💻</a> <a href="#eventOrganizing-charlyx" title="Event Organizing">📋</a> <a href="#maintenance-charlyx" title="Maintenance">🚧</a> <a href="#projectManagement-charlyx" title="Project Management">📆</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://twitter.com/YvonnickFrin"><img src="https://avatars0.githubusercontent.com/u/13099512?v=4?s=100" width="100px;" alt="Yvonnick FRIN"/><br /><sub><b>Yvonnick FRIN</b></sub></a><br /><a href="https://github.com/NantesJS/nantesjs-website/commits?author=frinyvonnick" title="Code">💻</a> <a href="#eventOrganizing-frinyvonnick" title="Event Organizing">📋</a> <a href="#maintenance-frinyvonnick" title="Maintenance">🚧</a> <a href="#projectManagement-frinyvonnick" title="Project Management">📆</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://twitter.com/t8g"><img src="https://avatars2.githubusercontent.com/u/639759?v=4?s=100" width="100px;" alt="Thomas Moyse"/><br /><sub><b>Thomas Moyse</b></sub></a><br /><a href="#eventOrganizing-t8g" title="Event Organizing">📋</a> <a href="#maintenance-t8g" title="Maintenance">🚧</a> <a href="#projectManagement-t8g" title="Project Management">📆</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/greizgh"><img src="https://avatars1.githubusercontent.com/u/1313624?v=4?s=100" width="100px;" alt="greizgh"/><br /><sub><b>greizgh</b></sub></a><br /><a href="https://github.com/NantesJS/nantesjs-website/commits?author=greizgh" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://jtanguy.me"><img src="https://avatars2.githubusercontent.com/u/551107?v=4?s=100" width="100px;" alt="Julien Tanguy"/><br /><sub><b>Julien Tanguy</b></sub></a><br /><a href="https://github.com/NantesJS/nantesjs-website/commits?author=jtanguy" title="Code">💻</a> <a href="#video-jtanguy" title="Videos">📹</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ripoul"><img src="https://avatars3.githubusercontent.com/u/23215341?v=4?s=100" width="100px;" alt="Jules"/><br /><sub><b>Jules</b></sub></a><br /><a href="https://github.com/NantesJS/nantesjs-website/commits?author=ripoul" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/bdeglane"><img src="https://avatars1.githubusercontent.com/u/11388230?v=4?s=100" width="100px;" alt="Benoît Deglane"/><br /><sub><b>Benoît Deglane</b></sub></a><br /><a href="https://github.com/NantesJS/nantesjs-website/commits?author=bdeglane" title="Code">💻</a></td>
-    </tr>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/marionnousvalentin"><img src="https://avatars.githubusercontent.com/u/43779561?v=4?s=100" width="100px;" alt="Marion Valentin"/><br /><sub><b>Marion Valentin</b></sub></a><br /><a href="#eventOrganizing-marionnousvalentin" title="Event Organizing">📋</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mcampourcy"><img src="https://avatars.githubusercontent.com/u/11388201?v=4?s=100" width="100px;" alt="mcampourcy"/><br /><sub><b>mcampourcy</b></sub></a><br /><a href="#eventOrganizing-mcampourcy" title="Event Organizing">📋</a></td>
-    </tr>
-  </tbody>
-</table>
+## Deploy on Vercel
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

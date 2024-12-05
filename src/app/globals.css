@@ -1,0 +1,47 @@
+:root {
+  --color-dark-grey: #333;
+  --color-light-grey: #f1f1f1;
+  --color-yellow-nantesjs: #f3e049;
+  --font: 'Montserrat', sans-serif;
+}
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*  }*/
+/*}*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*html,*/
+/*body {*/
+/*  max-width: 100vw;*/
+/*  overflow-x: hidden;*/
+/*}*/
+
+body {
+  background-color: var(--color-light-grey);
+  font-family: var(--font);
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-dark-grey);
+  font-family: var(--font-title);
+  font-weight: 400;
+}
+
+a {
+  /*color: inherit;*/
+  /*text-decoration: none;*/
+}
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  html {*/
+/*    color-scheme: dark;*/
+/*  }*/
+/*}*/
+

@@ -1,1 +1,0 @@
-export { ContributorsLink } from './ContributorsLink'
