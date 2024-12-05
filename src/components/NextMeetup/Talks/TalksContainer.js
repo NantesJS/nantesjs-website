@@ -18,6 +18,7 @@ export function TalksContainer () {
                           id
                           name
                           link
+                          image
                       }
                   }
                 }
