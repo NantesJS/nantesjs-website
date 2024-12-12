@@ -12,8 +12,8 @@ venue:
   postal_code: 44000
   address: 16 rue de Cornulier
   city: Nantes
-  latitude: 47.2186596
-  longitude: -1.5545694
+  latitude: 47.21492413573591
+  longitude: -1.5401068176184445
 sponsor:
     id: '1d32244c-e025-460f-8ca7-b25113db50ac'
     name: 'NantesJS'
