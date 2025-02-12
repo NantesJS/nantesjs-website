@@ -35,7 +35,7 @@ L’impact de ces techniques sur la performance, la consommation des ressources 
       -
           id: 121ECB7B-793A-4BDC-BA6C-DC35C2A8BB29
           name: 'Alexandre Richard'
-          image: 'https://lh3.googleusercontent.com/a/ACg8ocL2YcYGWmbH45E3Dc2YWYoEM7ZwQbtQVd8DauCDk6lOqnxFKBOI=s96-c'
+          image: '/images/speaker1.jpg'
   -
     id: '508986f3-97b6-4b75-9769-f469db1e6e38'
     title: "HTMX en prod, retour d'expérience"
@@ -45,4 +45,4 @@ L’impact de ces techniques sur la performance, la consommation des ressources 
           id: '5BD2226A-F275-4F52-978F-16E8745283CB'
           name: 'Aleth Gueguen'
           link: 'pl4n3th'
-          image: 'https://avatars0.githubusercontent.com/u/6920364?v=4'
+          image: '/images/speaker2.jpg'
