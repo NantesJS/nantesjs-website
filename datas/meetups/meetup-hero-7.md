@@ -5,7 +5,7 @@ status: next
 title: 'Le meetup dont vous êtes le héros'
 date: '03/07/2025'
 image: /images/meetup/casque.png
-ticketsUrl: https://lnkd.in/eQVnrse6
+ticketsUrl: https://www.eventbrite.fr/e/billets-le-meetup-dont-vous-etes-le-heros-7-1434775184199
 venue:
     id: 2a8bf286-0930-486c-850b-7dca3e47978c
     name: 'Akeneo'
