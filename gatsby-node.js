@@ -82,7 +82,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  
+
   createMeetupsByYearPage(result, { createPage })
 
   await createMeetupPosters(result)
@@ -110,7 +110,7 @@ async function createMeetupPosters (result) {
 
   const postersGroupByType = groupBy(postersToCreate, 'type')
   const types = Object.keys(postersGroupByType)
- 
+
   await Promise.all(types.map(type => {
     return nodeHtmlToImage({
       html: fs.readFileSync(path.join(__dirname, 'src', 'templates', `${ type }-poster.html`)).toString('utf8'),
@@ -169,7 +169,7 @@ function prepareDataForMeetupTemplate (meetup) {
         if (speaker.link) {
           const linkParts = speaker.link.split('/')
           speaker.handle = linkParts.pop()
-        } 
+        }
 
         if (talk.speakers.length > 1) {
           const minSize = 25

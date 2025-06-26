@@ -54,6 +54,7 @@ export default function Component ({ data }) {
                   <div className={styles.video__wrapper}>
                     <iframe
                       key={id}
+                      title={id}
                       className={styles.video__iframe}
                       src={`https://www.youtube.com/embed/${ video }`}
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
