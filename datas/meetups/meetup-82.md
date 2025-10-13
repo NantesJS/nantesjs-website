@@ -2,7 +2,7 @@
 id: 8BB42CFB-2187-4F41-A9AC-79E59938A1AF
 status: next
 title: 'Meetup #82'
-date: '24/04/2025'
+date: '23/10/2025'
 image: /images/meetup/chaosmonkey.png
 ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-81-1317672807839
 venue:
