@@ -4,7 +4,7 @@ status: next
 title: 'Meetup #82'
 date: '23/10/2025'
 image: /images/meetup/chaosmonkey.png
-ticketsUrl: https://www.eventbrite.fr/e/billets-meetup-81-1317672807839
+ticketsUrl: https://www.eventbrite.fr/e/nantesjs-meetup-82-tickets-1817727605199
 venue:
     id: 2a8bf286-0930-486c-850b-7dca3e47978c
     name: 'Akeneo'
