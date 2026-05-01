@@ -60,7 +60,7 @@ export function OldMeetupsContainer () {
       return compareDesc(a.parsedDate, b.parsedDate)
     })
 
-  const pastYearsMeetups = allMeetups.filter(meetup => meetup.year != currentYear)
+  const pastYearsMeetups = allMeetups.filter(meetup => meetup.year !== currentYear)
   const years = [...new Set(pastYearsMeetups.map(meetup => meetup.year))]
 
   return (
